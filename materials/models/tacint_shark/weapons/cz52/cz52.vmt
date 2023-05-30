@@ -1,5 +1,4 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models/tacint_shark/weapons/cz52/cz52"
-	"$nocull 0"
 }
