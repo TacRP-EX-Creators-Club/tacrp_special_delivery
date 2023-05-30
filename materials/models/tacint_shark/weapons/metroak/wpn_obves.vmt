@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\tacint_shark\weapons\metroak\wpn_obves"
+	"$bumpmap" "models\tacint_shark\weapons\metroak\wpn_obves_bump"
+	"$normalmapalphaenvmapmask" 1
+}
