@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture"	"models\tacint_shark\weapons\famas\side"
+	"$bumpmap"	"models\tacint_shark\weapons\famas\side_n"
+	"$envmap" 	"env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$phongtint"		"[0.8 0.9 1]"
+	"$envmaptint"		"[0.03 0.03 0.03]"
+	"$phong"     "1"
+	"$phongboost"   "0.3"
+	"$phongexponent"	"10"
+	"$phongfresnelranges"      "[1 3 6]"
+	"$phongexponenttexture"       "models\tacint_shark\weapons\famas\side"
+	"$phongalbedotint"		"1"
+	"$halflambert" 		"1"
+}
