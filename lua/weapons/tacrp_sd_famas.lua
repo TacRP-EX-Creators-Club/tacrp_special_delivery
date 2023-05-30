@@ -181,9 +181,10 @@ SWEP.DropMagazineTime = 0.8
 
 // sounds
 
-local path = "tacrp/weapons/aug/aug_"
+local path = "tacint_shark/weapons/famas/"
+local path1 = "tacrp/weapons/aug/aug_"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "famas-1.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -221,6 +222,7 @@ SWEP.EjectEffect = 2
 // WM:
 // attack1
 SWEP.AnimationTranslationTable = {
+	["deploy"] = "unholster",
     ["fire_iron"] = "idle",
     ["fire1"] = "fire1_M",
     ["fire2"] = "fire2_M",
@@ -229,6 +231,8 @@ SWEP.AnimationTranslationTable = {
     ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"}
 }
+
+SWEP.DeployTimeMult = 2.25
 
 // attachments
 
@@ -323,8 +327,8 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_famas.insert_clip", path .. "insert_clip.wav")
-addsound("tacint_famas.remove_clip", path .. "remove_clip.wav")
+addsound("tacint_famas.insert_clip", path .. "Clipin.wav")
+addsound("tacint_famas.remove_clip", path .. "Clipout.wav")
 addsound("tacint_famas.Handle_FoldDown", path .. "handle_folddown.wav")
-addsound("tacint_famas.bolt_lockback", path .. "bolt_lockback.wav")
-addsound("tacint_famas.bolt_release", path .. "bolt_release.wav")
+addsound("tacint_famas.bolt_lockback", path .. "boltpull.wav")
+addsound("tacint_famas.bolt_release", path .. "boltforward.wav")
