@@ -2,7 +2,7 @@
 
 -------------------------------------------------
 
-# Heads up, operators!  We just got a shipment of weird and exotic weaponry to HQ and command is passing them out to anyone who wants 'em.  These guns may require some unorthodox techniques to handle, so if you don't know what you're doing, uh...  I dunno!  Google the owner's manual or something!
+## Heads up, operators!  We just got a shipment of weird and exotic weaponry to HQ and command is passing them out to anyone who wants 'em.  These guns may require some unorthodox techniques to handle, so if you don't know what you're doing, uh...  I dunno!  Google the owner's manual or something!
 
 -------------------------------------------------
 
