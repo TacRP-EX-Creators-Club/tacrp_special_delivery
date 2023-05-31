@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "AK-2012"
-SWEP.Category = "Tactical RP - Special Delivery" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
