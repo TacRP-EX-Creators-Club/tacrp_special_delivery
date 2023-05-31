@@ -185,7 +185,7 @@ local path = "tacint_shark/weapons/famas/"
 local path1 = "tacrp/weapons/aug/aug_"
 
 SWEP.Sound_Shoot = "^" .. path .. "famas-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
