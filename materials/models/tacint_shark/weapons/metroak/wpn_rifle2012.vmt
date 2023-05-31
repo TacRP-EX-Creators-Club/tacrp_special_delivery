@@ -1,7 +1,4 @@
 VertexLitGeneric
 {
 	"$basetexture"	"models\tacint_shark\weapons\metroak\wpn_rifle2012"
-	"$bumpmap" "models\tacint_shark\weapons\metroak\wpn_obves_bump"
-//	"$envmap" "env_cubemap"
-	"$normalmapalphaenvmapmask" 0
 }
