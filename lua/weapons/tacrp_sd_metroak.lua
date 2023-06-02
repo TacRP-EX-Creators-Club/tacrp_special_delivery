@@ -165,14 +165,13 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 40
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/p90.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.85
 SWEP.DropMagazineTime = 0.55
 
-SWEP.ReloadTimeMult = 1.2
+SWEP.ReloadTimeMult = 1.35
 
 // sounds
 
