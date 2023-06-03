@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\wa2000\Lens"
+	"$translucent" "1"
+	"$bumpmap" "models\tacint_shark\weapons\wa2000\Lens_Normal"
+ 	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+}
