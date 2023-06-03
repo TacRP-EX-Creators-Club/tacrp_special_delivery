@@ -200,7 +200,7 @@ SWEP.QCA_Muzzle = 1
 SWEP.QCA_Eject = 2
 
 SWEP.MuzzleEffect = "muzzleflash_smg"
-SWEP.EjectEffect = 2
+SWEP.EjectEffect = 1
 
 // anims
 
