@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\dualeagle\DE gold"
+      "$bumpmap" "models\tacint_shark\weapons\dualeagle\DE gold norm"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1 
+}

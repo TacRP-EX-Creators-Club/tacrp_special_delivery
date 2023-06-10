@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+
+	"$baseTexture" "models\tacint_shark\weapons\dualies\black_silver_m9"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\tacint_shark\weapons\dualies\black_silver_m9_ref"
+}

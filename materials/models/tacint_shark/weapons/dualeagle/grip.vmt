@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\dualeagle\grip"
+      "$bumpmap" "models\tacint_shark\weapons\dualeagle\grip_normal"
+}
