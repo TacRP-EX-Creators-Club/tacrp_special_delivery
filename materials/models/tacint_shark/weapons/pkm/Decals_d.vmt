@@ -1,0 +1,5 @@
+"Vertexlitgeneric"
+{
+	"$basetexture"  "models\tacint_shark\weapons\pkm\decals"
+	"$nocull" "1"
+}
