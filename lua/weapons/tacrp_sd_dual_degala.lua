@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "As if the Deagle wasn't already impractical enough, you've channeled your inner gangster and decieded to dual-wield a pair of them sporting cheap gold finishes."
+SWEP.Description = "As if the Desert Eagle wasn't already impractical enough, you've channeled your inner gangster and decieded to dual-wield a pair of them sporting cheap gold finishes."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_eagles.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
@@ -19,9 +19,10 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 24,
-        Damage_Min = 12,
-        RPM = 750,
+        Damage_Max = 75,
+        Damage_Min = 40,
+
+        Spread = 0.03,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3.75,
@@ -34,8 +35,6 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        Spread = 0.02,
-
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 1,
@@ -43,13 +42,13 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 14,
-        Damage_Min = 6,
-        Range_Min = 500,
+        Damage_Max = 45,
+        Damage_Min = 20,
+        Range_Min = 100,
         Range_Max = 1500,
-        RPM = 600,
+        RPM = 300,
 
-        Spread = 0.02,
+        Spread = 0.03,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
@@ -71,15 +70,14 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 18,
-        Damage_Min = 9,
-        RPM = 750,
+        Damage_Max = 65,
+        Damage_Min = 30,
 
-        Spread = 0.01,
+        Spread = 0.015,
 
-        MoveSpeedMult = 0.95,
+        MoveSpeedMult = 1,
         ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 1,
+        SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -89,14 +87,15 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
-SWEP.Damage_Min = 15
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
-SWEP.Penetration = 1 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.6
+SWEP.Damage_Max = 80
+SWEP.Damage_Min = 40
+SWEP.Range_Min = 150
+SWEP.Range_Max = 1500
+SWEP.Penetration = 10 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.85
+SWEP.ArmorBonus = 5
 
-SWEP.MuzzleVelocity = 9500
+SWEP.MuzzleVelocity = 10000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4.5,
@@ -111,30 +110,26 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {-2}
-SWEP.Firemode = -2
-SWEP.RunawayBurst = true
-SWEP.PostBurstDelay = 0.07
+SWEP.Firemode = 1
+SWEP.RPM = 360
 
-SWEP.RPM = 500
-
-SWEP.Spread = 0.015
+SWEP.Spread = 0.025
 
 SWEP.MoveSpreadPenalty = 0
 SWEP.MidAirSpreadPenalty = 0.075
 SWEP.HipFireSpreadPenalty = 0
 
-SWEP.RecoilPerShot = 2
-SWEP.RecoilMaximum = 20
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 20
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 10
+SWEP.RecoilResetTime = 0.175
+SWEP.RecoilDissipationRate = 12
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 5
+SWEP.RecoilVisualKick = 4
 
-SWEP.RecoilKick = 10
+SWEP.RecoilKick = 15
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.004
 
 SWEP.Sway = 0.5
 

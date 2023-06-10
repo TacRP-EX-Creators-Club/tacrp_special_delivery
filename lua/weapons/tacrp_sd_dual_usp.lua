@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Dual Matches"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Pair of robust pistols with compensators attached.  A getup like this wouldn't look out of place in a mid-00's low-budget action movie."
@@ -19,9 +19,10 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 24,
-        Damage_Min = 12,
-        RPM = 750,
+        Damage_Max = 32,
+        Damage_Min = 9,
+
+        Spread = 0.0175,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3.75,
@@ -34,8 +35,6 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        Spread = 0.02,
-
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 1,
@@ -43,13 +42,13 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 14,
-        Damage_Min = 6,
+        Damage_Max = 20,
+        Damage_Min = 8,
         Range_Min = 500,
         Range_Max = 1500,
-        RPM = 600,
+        RPM = 450,
 
-        Spread = 0.02,
+        Spread = 0.0175,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
@@ -73,7 +72,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 18,
         Damage_Min = 9,
-        RPM = 750,
 
         Spread = 0.01,
 
@@ -89,8 +87,8 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
-SWEP.Damage_Min = 15
+SWEP.Damage_Max = 27
+SWEP.Damage_Min = 5
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
@@ -114,9 +112,9 @@ SWEP.BodyDamageMultipliers = {
 SWEP.Firemodes = {-2}
 SWEP.Firemode = -2
 SWEP.RunawayBurst = true
-SWEP.PostBurstDelay = 0.07
+SWEP.PostBurstDelay = 0.1
 
-SWEP.RPM = 650
+SWEP.RPM = 500
 
 SWEP.Spread = 0.015
 
@@ -125,16 +123,16 @@ SWEP.MidAirSpreadPenalty = 0.075
 SWEP.HipFireSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 20
+SWEP.RecoilMaximum = 12
 SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 20
+SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 5
+SWEP.RecoilKick = 8
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.0035
 
 SWEP.Sway = 0.5
 
