@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\tacint_shark\weapons\mp40\map2"
+	$bumpmap "models\tacint_shark\weapons\mp40\map2_normal.vtf"
+        $normalmapalphaenvmapmask 1
+}
+

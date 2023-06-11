@@ -12,7 +12,7 @@ SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "Classic WWII SMG boasting a low fire rate, allowing for great control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
 
-SWEP.ViewModel = "models/weapons/tacint/v_k1a_2.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_k1a.mdl"
 
 SWEP.Slot = 2
@@ -154,10 +154,10 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0, 0, 0)
-SWEP.SightPos = Vector(-4.4, -7.5, -3.46)
+SWEP.SightAng = Angle(-0.15, 0.45, 0)
+SWEP.SightPos = Vector(-4.48, -7.5, -2.76)
 
-SWEP.CorrectivePos = Vector(0, 0, 0.1)
+SWEP.CorrectivePos = Vector(0.02, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterVisible = true
@@ -179,10 +179,11 @@ SWEP.DropMagazineTime = 0.4
 
 // sounds
 
-local path = "tacrp/weapons/k1a/"
+local path = "tacint_shark/weapons/mp40/"
+local path1 = "tacrp/weapons/k1a/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "ump45-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 110
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -194,8 +195,8 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_ak47"
-SWEP.EjectEffect = 2
+SWEP.MuzzleEffect = "muzzleflash_smg"
+SWEP.EjectEffect = 1
 
 // anims
 
@@ -264,8 +265,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
-        Pos_VM = Vector(-5.15, 0.22, 6),
+        VMScale = 0.9,
+        Pos_VM = Vector(-4.25, 0.22, 10),
         Pos_WM = Vector(0, 5, 1.4),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
@@ -277,7 +278,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-2.8, 0.225, 31),
+		VMScale = 0.9,
+        Pos_VM = Vector(-3.2, 0.225, 28.5),
         Pos_WM = Vector(-0.25, 30, -1),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
@@ -335,7 +337,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_k1a.Remove_Clip", path .. "clip_out-1.wav")
-addsound("tacint_k1a.Insert_Clip", path .. "clip_in-1.wav")
-addsound("tacint_k1a.bolt_back", path .. "bolt_back-1.wav")
-addsound("tacint_k1a.bolt_forward", path .. "bolt_forward-1.wav")
+addsound("tacint_mp40.Remove_Clip", path .. "ump45_clipout.wav")
+addsound("tacint_mp40.Insert_Clip", path .. "ump45_clipin.wav")
+addsound("tacint_mp40.bolt_back", path .. "ump45_boltslap.wav")
+addsound("tacint_mp40.bolt_forward", path .. "bolt_forward-1.wav")
