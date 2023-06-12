@@ -12,7 +12,7 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Unique experimental rifle, essentially an AK reconfigured as a bullpup."
 
-SWEP.ViewModel = "models/weapons/tacint/v_ak47.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
 
 SWEP.Slot = 2
@@ -148,7 +148,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -4)
+SWEP.PassivePos = Vector(0, 2, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -156,8 +156,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.05, 0, 0)
-SWEP.SightPos = Vector(-4.66, -7.5, -2.9)
+SWEP.SightAng = Angle(0, -0.38, 0)
+SWEP.SightPos = Vector(-4.71, -6.5, -4)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
@@ -182,10 +182,11 @@ SWEP.FreeAimMaxAngle = 4.5
 
 // sounds
 
-local path = "tacrp/weapons/ak47/ak47_"
+local path = "tacint_shark/weapons/groza/"
+local path1 = "tacrp/weapons/ak47/ak47_"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "ak47-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -223,7 +224,7 @@ SWEP.EjectEffect = 2
 // attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "deploy",
-    ["fire_iron"] = "fire1_M",
+    ["fire_iron"] = "idle",
     ["fire1"] = "fire1_M",
     ["fire2"] = "fire2_M",
     ["fire3"] = "fire3_M",
@@ -236,14 +237,6 @@ SWEP.AnimationTranslationTable = {
 // attachments
 
 SWEP.AttachmentElements = {
-    ["foldstock"] = {
-        BGs_VM = {
-            {1, 1}
-        },
-        BGs_WM = {
-            {1, 1}
-        }
-    },
     ["tactical"] = {
         BGs_VM = {
             {2, 1}
@@ -258,11 +251,10 @@ SWEP.Attachments = {
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
-        InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
-        Pos_VM = Vector(-5.15, 0.15, 4),
+        Pos_VM = Vector(-6.7, 0.15, 1),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 3, 0.5),
         Ang_WM = Angle(0, -90, 0),
@@ -274,7 +266,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.2, 0.075, 27.6),
+		VMScale = 0.75,
+        Pos_VM = Vector(-3.1, 0.152, 14),
         Pos_WM = Vector(0, 28, -1.75),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
@@ -284,16 +277,17 @@ SWEP.Attachments = {
         Category = "tactical",
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
+		InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.25, -0.1, 19),
+        Pos_VM = Vector(-3.25, -0.55, 1),
         Pos_WM = Vector(0, 19, -2),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -90, 180),
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_sling", "acc_duffle", "perk_extendedmag"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
@@ -332,7 +326,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_ak47.remove_clip", path .. "remove_clip.wav")
-addsound("tacint_ak47.insert_clip", path .. "insert_clip.wav")
-addsound("tacint_ak47.boltaction", path .. "boltaction.wav")
-addsound("tacint_ak47.Buttstock_Back", path .. "buttstock_back.wav")
+addsound("tacint_groza.remove_clip", path .. "famas_clipout.wav")
+addsound("tacint_groza.insert_clip", path .. "famas_clipin.wav")
+addsound("tacint_groza.boltaction", path .. "famas_forearm.wav")
+addsound("tacint_groza.Buttstock_Back", path .. "buttstock_back.wav")

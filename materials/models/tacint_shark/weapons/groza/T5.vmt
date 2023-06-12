@@ -1,0 +1,11 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\groza\T5"
+	"$bumpmap" "models\tacint_shark\weapons\groza\T5_fongi"
+	"$phong" "1"
+	"$phongexponent" "45"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[1 8 6]"
+
+}
+
