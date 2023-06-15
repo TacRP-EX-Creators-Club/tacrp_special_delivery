@@ -198,15 +198,11 @@ SWEP.HolsterAng = Angle(90, 0, 0)
 // reload
 
 SWEP.ClipSize = 2
-SWEP.Ammo = "pistol"
+SWEP.Ammo = "buckshot"
 
 SWEP.ReloadUpInTime = 1
-SWEP.DropMagazineTime = 0.25
 
 SWEP.ReloadTimeMult = 1.2
-
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/vertec.mdl"
-SWEP.DropMagazineImpact = "pistol"
 
 // sounds
 
