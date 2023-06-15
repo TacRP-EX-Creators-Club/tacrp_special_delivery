@@ -1,0 +1,6 @@
+- DB melee anims and tweaks
+- All weapon stats
+- PKM bullet bodygroups fix
+- Thompson G2 Contender
+- Spencer 1882
+- Worldmodels

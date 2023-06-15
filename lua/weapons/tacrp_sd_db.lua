@@ -4,13 +4,13 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Sawed-Off"
+SWEP.PrintName = "Stoeger Double Defense"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Double-barrel shotgun, cut down for easy concealment and fitted with tactical rails to accept attachments."
+SWEP.Description = "Modern take on a classic concept; a double barrel shotgun with tactical rails for attachments."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dbshotgun.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"
@@ -183,8 +183,8 @@ SWEP.BlindFireSuicidePos = Vector(-7, 30, -25)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(0.04, 1.4, 0)
-SWEP.SightPos = Vector(-3.1, 0, 1.5)
+SWEP.SightAng = Angle(-0.1, 1.4, 0)
+SWEP.SightPos = Vector(-3.18, 0, 1.5)
 
 SWEP.CorrectiveAng = Angle(-0.2, 0, 0.5)
 SWEP.CorrectivePos = Vector(-0.025, 0, 0.15)
@@ -200,7 +200,7 @@ SWEP.HolsterAng = Angle(90, 0, 0)
 SWEP.ClipSize = 2
 SWEP.Ammo = "buckshot"
 
-SWEP.ReloadUpInTime = 1
+SWEP.ReloadUpInTime = 1.8
 
 SWEP.ReloadTimeMult = 1.2
 
@@ -262,8 +262,8 @@ SWEP.Attachments = {
         Bone = "db_barrels",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 0.95,
-        Pos_VM = Vector(0.02, -1.7, -3),
+        VMScale = 0.8,
+        Pos_VM = Vector(0.02, -1.65, -3),
         Pos_WM = Vector(7, 1.5, -5.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -3.5, 180),
