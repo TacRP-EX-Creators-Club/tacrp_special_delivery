@@ -1,0 +1,6 @@
+- All weapon stats
+- PKM bullet bodygroups fix
+- Thompson G2 Contender
+- MBA Gyrojet Pistol
+- Worldmodels
+- Spawnmenu icons

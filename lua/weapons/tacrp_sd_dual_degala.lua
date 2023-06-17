@@ -182,7 +182,7 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 // reload
 
 SWEP.ClipSize = 16
-SWEP.Ammo = "pistol"
+SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 1
 
