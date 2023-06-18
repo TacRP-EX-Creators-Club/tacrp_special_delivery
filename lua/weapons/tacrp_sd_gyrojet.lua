@@ -1,19 +1,21 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "MBA Gyrojet"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP (Special)" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
 
-SWEP.Description = "Incredibly bizarre experimental pistol that fires minirocket projectiles that accelerate as they fly."
+SWEP.Description = "Experimental pistol firing self-propelled minirockets that accelerate as they fly. \nThis particular example has been modified to use removable magazines."
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_dbshotgun.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_gyrojet.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"
+
+SWEP.NoRanger = true
 
 SWEP.Slot = 1
 
@@ -21,7 +23,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 30,
         Damage_Min = 21,
-        RPM = 420,
         ArmorPenetration = 0.6,
 
         BodyDamageMultipliers = {
@@ -46,7 +47,6 @@ SWEP.BalanceStats = {
         Damage_Min = 17,
         Range_Min = 750,
         Range_Max = 2500,
-        RPM = 300,
 
         RecoilSpreadPenalty = 0.0025,
         RecoilFirstShotMult = 0.75,
@@ -73,7 +73,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 14,
         Damage_Min = 7,
-        RPM = 420,
 
         HipFireSpreadPenalty = 0.015,
 
@@ -124,7 +123,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 100
+SWEP.RPM = 75
 
 SWEP.Spread = 0.005
 
@@ -170,22 +169,19 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(1, 2, 0)
+SWEP.PassivePos = Vector(0, -2, -5)
 
-SWEP.BlindFireAng = Angle(0, 0, 0)
-SWEP.BlindFirePos = Vector(2, 2, -1)
+SWEP.BlindFireAng = Angle(0, 5, 0)
+SWEP.BlindFirePos = Vector(0, -2, -5)
 
-SWEP.BlindFireSuicideAng = Angle(0, 120, 20)
-SWEP.BlindFireSuicidePos = Vector(-7, 30, -25)
+SWEP.BlindFireSuicideAng = Angle(-135, 0, 45)
+SWEP.BlindFireSuicidePos = Vector(25, 19, -5)
 
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(-0.1, 1.4, 0)
-SWEP.SightPos = Vector(-3.18, 0, 1.5)
-
-SWEP.CorrectiveAng = Angle(-0.2, 0, 0.5)
-SWEP.CorrectivePos = Vector(-0.025, 0, 0.15)
+SWEP.SightAng = Angle(-0.2, -0.5, 0)
+SWEP.SightPos = Vector(-3.37, 1, -4)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
@@ -200,11 +196,12 @@ SWEP.Ammo = "rpg_round"
 
 SWEP.ReloadUpInTime = 1.8
 
-SWEP.ReloadTimeMult = 1.05
+SWEP.ReloadTimeMult = 1.3
 
 // sounds
 
-local path = "tacint_shark/weapons/db/"
+local path = "tacint_shark/weapons/gyrojet/"
+local path1 = "tacrp/weapons/xd45/"
 
 SWEP.Sound_Shoot = "^" .. path .. "deagle-1.wav"
 
@@ -216,7 +213,9 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 // the .qc attachment for the muzzle
 SWEP.QCA_Muzzle = 1
 
-SWEP.MuzzleEffect = "muzzleflash_shotgun"
+SWEP.QCA_Eject = 2
+
+SWEP.MuzzleEffect = "muzzleflash_suppressed"
 
 // anims
 
@@ -241,13 +240,10 @@ SWEP.MuzzleEffect = "muzzleflash_shotgun"
 // attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
-    ["fire_iron"] = "fire1",
-    ["fire"] = {"fire1", "fire2"},
-    ["blind_fire"] = {"blind_fire1", "blind_fire2"},
-    ["melee"] = {"melee1", "melee2"},
+    ["fire"] = {"shoot1", "shoot2", "shoot3"},
+    ["blind_fire"] = {"blind_shoot1", "blind_shoot2", "blind_shoot3"},
+    ["melee"] = {"melee1", "melee2"}
 }
-
-SWEP.DeployTimeMult = 2.1
 
 SWEP.LastShot = false
 
@@ -255,54 +251,18 @@ SWEP.LastShot = false
 
 SWEP.Attachments = {
     [1] = {
-        PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium"},
-        Bone = "db_barrels",
-        AttachSound = "TacRP/weapons/optic_on.wav",
-        DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 0.8,
-        Pos_VM = Vector(0.02, -1.65, -3),
-        Pos_WM = Vector(7, 1.5, -5.5),
-        Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -3.5, 180),
-    },
-    [2] = {
-        PrintName = "Tactical",
-        Category = "tactical",
-        Bone = "db_barrels",
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-		VMScale = 1.1,
-        Pos_VM = Vector(0, 0, 9),
-        Pos_WM = Vector(14, 3, -3),
-        Ang_VM = Angle(90, 0, 90),
-        Ang_WM = Angle(0, -3.5, 90),
-    },
-    [3] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_holster", "acc_brace"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [4] = {
-        PrintName = "Bolt",
-        Category = {"bolt_automatic"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [5] = {
-        PrintName = "Trigger",
-        Category = {"trigger_semi"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [6] = {
+    [2] = {
         PrintName = "Ammo",
         Category = {"ammo_shotgun"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [7] = {
+    [3] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
@@ -319,9 +279,12 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_db.magrelease", path .. "magrelease.wav")
-addsound("tacint_db.open", path .. "open.wav")
-addsound("tacint_db.close", path .. "close.wav")
-addsound("tacint_db.magout", path .. "insert1.wav")
-addsound("tacint_db.magin", path .. "insert2.wav")
-addsound("tacint_db.unholster", path .. "cloth.wav")
+addsound("tacint_gyrojet.clip_in", path1 .. "clip_in-1.wav")
+addsound("tacint_gyrojet.clip_out", path1 .. "clip_out-1.wav")
+addsound("tacint_gyrojet.clip_slap", path1 .. "clip_slap-1.wav")
+addsound("tacint_gyrojet.slide_back", {
+    path1 .. "slide_back-1.wav",
+    path1 .. "slide_back-2.wav",
+})
+addsound("tacint_gyrojet.cock_hammer", path1 .. "cockhammer.wav")
+addsound("tacint_gyrojet.safety_switch", path1 .. "safety_switch.wav")

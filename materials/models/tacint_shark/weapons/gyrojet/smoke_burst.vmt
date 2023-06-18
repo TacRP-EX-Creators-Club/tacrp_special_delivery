@@ -1,0 +1,8 @@
+UnLitGeneric {
+	"$basetexture" "models\weapons\v_models\pist_gyrojet\smoke_burst"
+	"$translucent" "1"
+	"$additive"  "1"
+	//"$selfillum" "1"
+	"$nocull" "1"
+
+}
