@@ -4,25 +4,23 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Dual Matches"
+SWEP.PrintName = "Dueling Wyverns"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Pair of robust pistols with compensators attached.  A getup like this wouldn't look out of place in a mid-00's low-budget action movie."
+SWEP.Description = "A pair of gaudy, custom made golden M1911 pistols complete with wyvern-engraved grip. Hits hard, but its low capacity can be hurting."
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_usp.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_1911.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
 
 SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 32,
-        Damage_Min = 9,
-
-        Spread = 0.0175,
+        Damage_Max = 36,
+        Damage_Min = 10,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3.75,
@@ -42,13 +40,11 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 20,
-        Damage_Min = 8,
-        Range_Min = 500,
-        Range_Max = 1500,
+        Damage_Max = 23,
+        Damage_Min = 10,
+        Range_Min = 400,
+        Range_Max = 1400,
         RPM = 450,
-
-        Spread = 0.0175,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
@@ -70,10 +66,10 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 18,
-        Damage_Min = 9,
+        Damage_Max = 22,
+        Damage_Min = 11,
 
-        Spread = 0.01,
+        Spread = 0.008,
 
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
@@ -87,12 +83,12 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 27
-SWEP.Damage_Min = 5
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
-SWEP.Penetration = 1 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.6
+SWEP.Damage_Max = 33
+SWEP.Damage_Min = 7
+SWEP.Range_Min = 900 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
+SWEP.Penetration = 4 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.75
 
 SWEP.MuzzleVelocity = 9500
 
@@ -109,12 +105,9 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {-2}
-SWEP.Firemode = -2
-SWEP.RunawayBurst = false
-SWEP.PostBurstDelay = 0.08
+SWEP.Firemode = 1
 
-SWEP.RPM = 500
+SWEP.RPM = 450
 
 SWEP.Spread = 0.015
 
@@ -123,16 +116,16 @@ SWEP.MidAirSpreadPenalty = 0.075
 SWEP.HipFireSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 15
+SWEP.RecoilMaximum = 8
+SWEP.RecoilResetTime = 0.14
+SWEP.RecoilDissipationRate = 12
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 8
+SWEP.RecoilKick = 9
 
-SWEP.RecoilSpreadPenalty = 0.0035
+SWEP.RecoilSpreadPenalty = 0.004
 
 SWEP.Sway = 0.5
 
@@ -184,7 +177,7 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.ClipSize = 24
+SWEP.ClipSize = 16
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1
@@ -199,9 +192,9 @@ SWEP.DropMagazineTime = 0.25
 // sounds
 
 local path = "tacrp_extras/usp/"
-local path1 = "tacrp/weapons/mtx/"
+local path1 = "tacint_shark/weapons/dual1911/"
 
-SWEP.Sound_Shoot = "^" .. path .. "Fire.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "fire-1.wav"
 
 SWEP.Vol_Shoot = 110
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -286,12 +279,12 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_dualusp.clip_in_left", path .. "clipin.wav")
-addsound("tacint_dualusp.clip_in_right", path .. "clipin.wav")
-addsound("tacint_dualusp.clip_out", path .. "clipout.wav")
-addsound("tacint_dualusp.slide_back", path .. "slideback.wav")
-addsound("tacint_dualusp.slide_release", path .. "boltrelease.wav")
-addsound("tacint_dualusp.slide_shut", path .. "boltrelease.wav")
+addsound("tacint_dual1911.clip_in_left", path1 .. "elite_leftclipin.wav")
+addsound("tacint_dual1911.clip_in_right", path1 .. "elite_rightclipin.wav")
+addsound("tacint_dual1911.clip_out", path1 .. "elite_reloadstart.wav")
+addsound("tacint_dual1911.slide_back", path1 .. "elite_reloadstart.wav")
+addsound("tacint_dual1911.slide_release", path1 .. "sliderelease.wav")
+addsound("tacint_dual1911.slide_shut", path1 .. "sliderelease.wav")
 
 SWEP.Scope = false
 

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\dual1911\sights"
+	"$envmapmask" "models\tacint_shark\weapons\dual1911\sights_ref"
+	"$envmap" "env_cubemap"
+}
+      
