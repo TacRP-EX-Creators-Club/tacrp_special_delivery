@@ -10,32 +10,17 @@ SWEP.Category = "Tactical RP (Special)" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
 
-SWEP.Description = "Experimental pistol firing self-propelled minirockets that accelerate as they fly. \nThis particular example has been modified to use removable magazines."
+SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming. This model was further developed to allow for removable magazines and can accept additional ammo types."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_gyrojet.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"
 
-SWEP.NoRanger = true
+SWEP.NoRanger = false
 
 SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 30,
-        Damage_Min = 21,
-        ArmorPenetration = 0.6,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 3.75, // barely enough for hollowpoints to 1tap head
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 1,
-            [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -43,27 +28,7 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 23,
-        Damage_Min = 17,
-        Range_Min = 750,
-        Range_Max = 2500,
-
-        RecoilSpreadPenalty = 0.0025,
-        RecoilFirstShotMult = 0.75,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2.5,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
-        ReloadTimeMult = 1.15 * 1.25,
-
+        ReloadTimeMult = 1 * 1.25,
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         MeleeSpeedMult = 1,
@@ -71,22 +36,6 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 14,
-        Damage_Min = 7,
-
-        HipFireSpreadPenalty = 0.015,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 1,
-            [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -99,47 +48,52 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 33
-SWEP.Damage_Min = 18
-SWEP.Range_Min = 1200
-SWEP.Range_Max = 3000
-SWEP.Penetration = 3
-SWEP.ArmorPenetration = 0.575
+SWEP.Damage_Max = 75
+SWEP.Damage_Min = 75
 
-SWEP.MuzzleVelocity = 12000
+SWEP.Range_Min = 9000
+SWEP.Range_Max = 9000
+
+SWEP.Penetration = 20
+SWEP.ArmorPenetration = 1
+
+SWEP.ShootEnt = "tacrp_proj_gyrojet"
+SWEP.ShootEntForce = 15000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4.5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
-    [HITGROUP_LEFTLEG] = 0.75,
-    [HITGROUP_RIGHTLEG] = 0.75,
-    [HITGROUP_GEAR] = 0.9
+    [HITGROUP_LEFTLEG] = 1,
+    [HITGROUP_RIGHTLEG] = 1,
+    [HITGROUP_GEAR] = 1
 }
 
 // misc. shooting
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 75
+SWEP.RPM = 180
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0.0025
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 1.5
-SWEP.RecoilMaximum = 10
-SWEP.RecoilResetTime = 0.3
-SWEP.RecoilDissipationRate = 7
+SWEP.JamFactor = 0.8
+
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 3
+SWEP.RecoilResetTime = 0.2
+SWEP.RecoilDissipationRate = 4
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 2
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 3
 
-SWEP.RecoilSpreadPenalty = 0.003
+SWEP.RecoilSpreadPenalty = 0.01
 
 SWEP.CanBlindFire = true
 
@@ -161,11 +115,11 @@ SWEP.FreeAimMaxAngle = 3
 
 // hold types
 
-SWEP.HoldType = "shotgun"
+SWEP.HoldType = "revolver"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeBlindFire = "pistol"
 
-SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
 
 SWEP.PassiveAng = Angle(0, 0, 0)
@@ -188,6 +142,8 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
 SWEP.HolsterPos = Vector(0, 3, -4)
 SWEP.HolsterAng = Angle(90, 0, 0)
 
+SWEP.CorrectivePos = Vector(0, 0, 0)
+SWEP.CorrectiveAng = Angle(0, 0, 0)
 
 // reload
 
@@ -251,18 +207,38 @@ SWEP.LastShot = false
 
 SWEP.Attachments = {
     [1] = {
-        PrintName = "Accessory",
-        Category = {"acc", "acc_holster", "acc_brace"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
+        PrintName = "Optic",
+        Category = "optic_pistol",
+        Bone = "xd45_rig.slide",
+        WMBone = "Box01",
+        AttachSound = "tacrp/weapons/optic_on.wav",
+        DetachSound = "tacrp/weapons/optic_off.wav",
+        VMScale = 1,
+        WMScale = 1,
+        Pos_VM = Vector(0.04, -0.4, 1.1),
+        Ang_VM = Angle(0, -90, 0),
+        Pos_WM = Vector(0, -1, -1),
+        Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
-        PrintName = "Ammo",
-        Category = {"ammo_shotgun"},
+        PrintName = "Accessory",
+        Category = {"acc_extmag_pistol2", "acc", "acc_holster", "acc_brace"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [3] = {
+        PrintName = "Trigger",
+        Category = {"trigger_semi"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+    },
+    [4] = {
+        PrintName = "Ammo",
+        Category = {"ammo_gyrojet"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+    },
+    [5] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
