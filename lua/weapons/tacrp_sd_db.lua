@@ -107,7 +107,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 180
+SWEP.RPM = 240
 
 SWEP.Spread = 0.03
 SWEP.ShotgunPelletSpread = 0.01
@@ -115,7 +115,7 @@ SWEP.ShotgunPelletSpread = 0.01
 SWEP.HipFireSpreadPenalty = 0.01
 SWEP.MidAirSpreadPenalty = 0
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.75
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 2
@@ -123,9 +123,9 @@ SWEP.RecoilResetTime = 0.3
 SWEP.RecoilDissipationRate = 5
 SWEP.RecoilFirstShotMult = 1
 
-SWEP.RecoilVisualKick = 2
+SWEP.RecoilVisualKick = 3
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 7
 
 SWEP.RecoilSpreadPenalty = 0.02
 
@@ -229,7 +229,8 @@ SWEP.MuzzleEffect = "muzzleflash_shotgun"
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
     ["fire_iron"] = "fire1",
-    ["fire"] = {"fire1", "fire2"},
+    ["fire1"] = "fire1",
+    ["fire2"] = "fire1",
     ["blind_fire"] = {"blind_fire1", "blind_fire2"},
     ["melee"] = {"melee1", "melee2"},
 }
