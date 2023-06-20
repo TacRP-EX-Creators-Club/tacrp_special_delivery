@@ -28,7 +28,12 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
+
+        Damage_Max = 50,
+        Damage_Min = 50,
+
         ReloadTimeMult = 1 * 1.25,
+
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         MeleeSpeedMult = 1,
@@ -36,6 +41,10 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
+
+        Damage_Max = 30,
+        Damage_Min = 30,
+
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -81,17 +90,17 @@ SWEP.Spread = 0.0025
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.JamFactor = 0.8
+SWEP.JamFactor = 0.25
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 3
+SWEP.RecoilMaximum = 4
 SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 4
 SWEP.RecoilFirstShotMult = 1
 
-SWEP.RecoilVisualKick = 2
+SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 3
+SWEP.RecoilKick = 2
 
 SWEP.RecoilSpreadPenalty = 0.01
 
@@ -148,7 +157,7 @@ SWEP.CorrectiveAng = Angle(0, 0, 0)
 // reload
 
 SWEP.ClipSize = 6
-SWEP.Ammo = "rpg_round"
+SWEP.Ammo = "357"
 
 SWEP.ReloadUpInTime = 1.8
 
@@ -169,7 +178,8 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 // the .qc attachment for the muzzle
 SWEP.QCA_Muzzle = 1
 
-SWEP.QCA_Eject = 2
+SWEP.QCA_Eject = 0
+SWEP.EjectEffect = 0
 
 SWEP.MuzzleEffect = "muzzleflash_suppressed"
 

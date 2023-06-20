@@ -13,7 +13,7 @@ ENT.InstantFuse = false
 ENT.RemoteFuse = false
 ENT.ImpactFuse = true
 
-ENT.ExplodeOnDamage = true
+ENT.ExplodeOnDamage = false
 ENT.ExplodeUnderwater = true
 
 ENT.Delay = 0
@@ -38,6 +38,35 @@ local function GetSmokeImage()
     return smokeimages[math.random(#smokeimages)]
 end
 
+function ENT:MakeSmoke()
+    local emitter = ParticleEmitter(self:GetPos())
+
+    local smoke = emitter:Add(GetSmokeImage(), self:GetPos())
+
+    smoke:SetStartAlpha(55)
+    smoke:SetEndAlpha(0)
+
+    smoke:SetStartSize(4)
+    smoke:SetEndSize(math.Rand(16, 24))
+
+    smoke:SetRoll(math.Rand(-180, 180))
+    smoke:SetRollDelta(math.Rand(-1, 1))
+
+    smoke:SetPos(self:GetPos())
+    smoke:SetVelocity(-self:GetAngles():Forward() * 200 + (VectorRand() * 5)
+            + self:GetAngles():Right() * math.sin(CurTime() * math.pi * 16) * 32
+            + self:GetAngles():Up() * math.cos(CurTime() * math.pi * 16) * 32)
+
+    smoke:SetColor(255, 255, 255)
+    smoke:SetLighting(true)
+
+    smoke:SetDieTime(math.Rand(0.4, 0.6))
+
+    smoke:SetGravity(Vector(0, 0, 0))
+
+    emitter:Finish()
+end
+
 function ENT:Think()
     if !IsValid(self) or self:GetNoDraw() then return end
 
@@ -45,33 +74,25 @@ function ENT:Think()
         self.FlareColor = false
     end
 
+    if !self.SpawnTime then
+        self.SpawnTime = CurTime()
+    end
+
+    if !self.Armed and isnumber(self.TimeFuse) and self.SpawnTime + self.TimeFuse < CurTime() then
+        self.ArmTime = CurTime()
+        self.Armed = true
+    end
+
+    if self.Armed and self.ArmTime + self.Delay < CurTime() then
+        self:PreDetonate()
+    end
+
+    if self.ExplodeUnderwater and self:WaterLevel() > 0 then
+        self:PreDetonate()
+    end
+
     if CLIENT and self.SmokeTrail and CurTime() - self.SpawnTime >= 0.1 then
-        local emitter = ParticleEmitter(self:GetPos())
-
-        local smoke = emitter:Add(GetSmokeImage(), self:GetPos())
-
-        smoke:SetStartAlpha(55)
-        smoke:SetEndAlpha(0)
-
-        smoke:SetStartSize(4)
-        smoke:SetEndSize(math.Rand(16, 24))
-
-        smoke:SetRoll(math.Rand(-180, 180))
-        smoke:SetRollDelta(math.Rand(-1, 1))
-
-        smoke:SetPos(self:GetPos())
-        smoke:SetVelocity(-self:GetAngles():Forward() * 200 + (VectorRand() * 5)
-                + self:GetAngles():Right() * math.sin(CurTime() * math.pi * 16) * 32
-                + self:GetAngles():Up() * math.cos(CurTime() * math.pi * 16) * 32)
-
-        smoke:SetColor(255, 255, 255)
-        smoke:SetLighting(true)
-
-        smoke:SetDieTime(math.Rand(0.4, 0.6))
-
-        smoke:SetGravity(Vector(0, 0, 0))
-
-        emitter:Finish()
+        self:MakeSmoke()
     end
 
     self:OnThink()
@@ -88,7 +109,7 @@ function ENT:Impact(data, collider)
 
     local attacker = self.Attacker or self:GetOwner() or self
     local inflictor = attacker.GetWeapon and attacker:GetWeapon("tacrp_sd_gyrojet")
-    local dmg = inflictor and inflictor:GetValue("Damage_Max") or 40
+    local dmg = inflictor and inflictor.GetValue and inflictor:GetValue("Damage_Max") or 75
     self:FireBullets({
         Attacker = attacker,
         Inflictor = inflictor or self,
@@ -98,6 +119,7 @@ function ENT:Impact(data, collider)
         Dir = data.OurOldVelocity:GetNormalized(),
         Src = data.HitPos,
         Damage = dmg,
+        HullSize = 2,
         Callback = function(att, btr, dmginfo)
             if IsValid(btr.Entity) then
                 if inflictor then
@@ -106,6 +128,9 @@ function ENT:Impact(data, collider)
                 end
             else
                 -- Even though bullet did not hit, projectile did; just apply damage
+                if attacker:IsNPC() and !TacRP.ConVars["npc_equality"]:GetBool() then
+                    dmg:ScaleDamage(0.25)
+                end
                 data.HitEntity:TakeDamageInfo(dmginfo)
             end
 
@@ -113,7 +138,7 @@ function ENT:Impact(data, collider)
     })
 
     self:Remove()
-    return true
+    return false
 end
 
 function ENT:Detonate()
