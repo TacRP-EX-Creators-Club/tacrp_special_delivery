@@ -19,68 +19,24 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 30,
-        Damage_Min = 21,
-        RPM = 420,
-        ArmorPenetration = 0.6,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 3.75, // barely enough for hollowpoints to 1tap head
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 1,
-            [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
-        MoveSpeedMult = 1,
-        ShootingSpeedMult = 1,
-        SightedSpeedMult = 1,
+        MoveSpeedMult = 0.95,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.9,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 23,
-        Damage_Min = 17,
-        Range_Min = 750,
-        Range_Max = 2500,
-        RPM = 300,
 
-        RecoilSpreadPenalty = 0.0025,
-        RecoilFirstShotMult = 0.75,
+        Damage_Max = 10,
+        Damage_Min = 4,
+
+        Range_Min = 150,
+        Range_Max = 1500,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
             [HITGROUP_CHEST] = 1,
             [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
-        ReloadTimeMult = 1.15 * 1.25,
-
-        MoveSpeedMult = 1,
-        ShootingSpeedMult = 1,
-        MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.75,
-        ReloadSpeedMult = 0.9,
-    },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 14,
-        Damage_Min = 7,
-        RPM = 420,
-
-        HipFireSpreadPenalty = 0.015,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
             [HITGROUP_LEFTARM] = 1,
             [HITGROUP_RIGHTARM] = 1,
             [HITGROUP_LEFTLEG] = 0.75,
@@ -88,9 +44,33 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        MoveSpeedMult = 1,
-        ShootingSpeedMult = 1,
-        SightedSpeedMult = 1,
+        ReloadTimeMult = 1.25,
+
+        MoveSpeedMult = 0.95,
+        ShootingSpeedMult = 0.9,
+        MeleeSpeedMult = 1,
+        SightedSpeedMult = 0.7,
+        ReloadSpeedMult = 0.8,
+    },
+    [TacRP.BALANCE_PVE] = {
+
+        Damage_Max = 9,
+        Damage_Min = 5,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 1.5,
+            [HITGROUP_CHEST] = 1,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 0.75,
+            [HITGROUP_RIGHTARM] = 0.75,
+            [HITGROUP_LEFTLEG] = 0.5,
+            [HITGROUP_RIGHTLEG] = 0.5,
+            [HITGROUP_GEAR] = 0.9
+        },
+
+        MoveSpeedMult = 0.95,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.9,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     }
@@ -100,49 +80,54 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 33
-SWEP.Damage_Min = 18
-SWEP.Range_Min = 1200
-SWEP.Range_Max = 3000
-SWEP.Penetration = 3
-SWEP.ArmorPenetration = 0.575
+SWEP.Damage_Max = 11
+SWEP.Damage_Min = 4
+SWEP.Range_Min = 250
+SWEP.Range_Max = 2500
+SWEP.Penetration = 1
+SWEP.ArmorPenetration = 0.45
 
-SWEP.Num = 6
+SWEP.Num = 10
 
-SWEP.MuzzleVelocity = 12000
+SWEP.MuzzleVelocity = 8000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4.5,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
-    [HITGROUP_LEFTLEG] = 0.75,
-    [HITGROUP_RIGHTLEG] = 0.75,
+    [HITGROUP_LEFTLEG] = 0.9,
+    [HITGROUP_RIGHTLEG] = 0.9,
     [HITGROUP_GEAR] = 0.9
 }
+
 
 // misc. shooting
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 75
+SWEP.RPM = 180
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0.03
+SWEP.ShotgunPelletSpread = 0.01
+
+SWEP.HipFireSpreadPenalty = 0.01
+SWEP.MidAirSpreadPenalty = 0
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 1.5
-SWEP.RecoilMaximum = 10
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 2
 SWEP.RecoilResetTime = 0.3
-SWEP.RecoilDissipationRate = 7
+SWEP.RecoilDissipationRate = 5
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 2
 
 SWEP.RecoilKick = 4
 
-SWEP.RecoilSpreadPenalty = 0.003
+SWEP.RecoilSpreadPenalty = 0.02
 
 SWEP.CanBlindFire = true
 
@@ -274,7 +259,7 @@ SWEP.Attachments = {
         Bone = "db_barrels",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
-		VMScale = 1.1,
+        VMScale = 1.1,
         Pos_VM = Vector(0, 0, 9),
         Pos_WM = Vector(14, 3, -3),
         Ang_VM = Angle(90, 0, 90),
@@ -282,29 +267,17 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_holster", "acc_brace"},
+        Category = {"acc", "acc_holster"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [4] = {
-        PrintName = "Bolt",
-        Category = {"bolt_automatic"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [5] = {
-        PrintName = "Trigger",
-        Category = {"trigger_semi"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [6] = {
         PrintName = "Ammo",
         Category = {"ammo_shotgun"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [7] = {
+    [5] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
