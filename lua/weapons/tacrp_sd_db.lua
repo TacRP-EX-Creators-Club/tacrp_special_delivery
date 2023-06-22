@@ -54,7 +54,7 @@ SWEP.BalanceStats = {
     },
     [TacRP.BALANCE_PVE] = {
 
-        Damage_Max = 9,
+        Damage_Max = 10,
         Damage_Min = 5,
 
         BodyDamageMultipliers = {
@@ -80,14 +80,14 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 11
+SWEP.Damage_Max = 12
 SWEP.Damage_Min = 4
 SWEP.Range_Min = 250
 SWEP.Range_Max = 2500
 SWEP.Penetration = 1
 SWEP.ArmorPenetration = 0.45
 
-SWEP.Num = 10
+SWEP.Num = 9
 
 SWEP.MuzzleVelocity = 8000
 
