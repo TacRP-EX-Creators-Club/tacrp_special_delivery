@@ -3,4 +3,5 @@
 - Thompson G2 Contender
 - MBA Gyrojet Pistol
 - Worldmodels
+- Magazines
 - Spawnmenu icons
