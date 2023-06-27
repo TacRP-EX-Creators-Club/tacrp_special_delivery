@@ -181,7 +181,7 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.ClipSize = 16
+SWEP.ClipSize = 14
 SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 1
@@ -248,7 +248,7 @@ SWEP.Akimbo = true
 SWEP.Attachments = {
     [1] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_holster"},
+        Category = {"acc_dual", "acc_extmag_dual2"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
