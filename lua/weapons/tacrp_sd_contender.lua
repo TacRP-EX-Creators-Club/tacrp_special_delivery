@@ -1,5 +1,5 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
@@ -12,29 +12,13 @@ SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Single-shot pistol with incredible accuracy and stopping power."
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_dbshotgun.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_contender_test.mdl"
+SWEP.WorldModel = ""
 
 SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 30,
-        Damage_Min = 21,
-        RPM = 420,
-        ArmorPenetration = 0.6,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 3.75, // barely enough for hollowpoints to 1tap head
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 1,
-            [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -42,27 +26,7 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 23,
-        Damage_Min = 17,
-        Range_Min = 750,
-        Range_Max = 2500,
-        RPM = 300,
-
-        RecoilSpreadPenalty = 0.0025,
-        RecoilFirstShotMult = 0.75,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2.5,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
-        ReloadTimeMult = 1.15 * 1.25,
+        ReloadTimeMult = 1.25,
 
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
@@ -71,23 +35,6 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 14,
-        Damage_Min = 7,
-        RPM = 420,
-
-        HipFireSpreadPenalty = 0.015,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 1,
-            [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -162,7 +109,7 @@ SWEP.FreeAimMaxAngle = 3
 
 // hold types
 
-SWEP.HoldType = "shotgun"
+SWEP.HoldType = "revolver"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeBlindFire = "pistol"
 
@@ -170,7 +117,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(1, 2, 0)
+SWEP.PassivePos = Vector(0, 0, 0)
 
 SWEP.BlindFireAng = Angle(0, 0, 0)
 SWEP.BlindFirePos = Vector(2, 2, -1)
@@ -247,7 +194,7 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"},
 }
 
-SWEP.DeployTimeMult = 2.1
+SWEP.DeployTimeMult = 1
 
 SWEP.LastShot = false
 
