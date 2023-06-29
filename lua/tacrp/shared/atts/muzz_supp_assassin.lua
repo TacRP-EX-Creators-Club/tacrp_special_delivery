@@ -3,7 +3,7 @@ ATT.FullName = "Assassin Suppressor"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_compact.png", "mips smooth")
 ATT.Description = "Extended suppressor improving range significantly at cost of stability."
 ATT.Pros = {"stat.vol_shoot", "stat.range", "stat.muzzlevelocity"}
-ATT.Cons = {"stat.recoilkick", "stat.recoildissipation"}
+ATT.Cons = {"stat.recoil",  "rating.handling"}
 
 ATT.Model = "models/weapons/tacint_shark/addons/suppressor_assassin.mdl"
 ATT.Scale = 1.6
@@ -23,6 +23,10 @@ ATT.Mult_MuzzleVelocity = 1.1
 ATT.Mult_RecoilKick = 1.25
 ATT.Add_RecoilKick = 1
 ATT.Mult_RecoilDissipationRate = 0.75
+
+ATT.Add_SprintToFireTime = 0.03
+ATT.Add_AimDownSightsTime = 0.03
+ATT.Add_DeployTimeMult = 0.25
 
 ATT.Add_Pitch_Shoot = 5
 
