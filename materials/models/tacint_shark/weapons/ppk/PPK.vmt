@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models\tacint_shark\weapons\ppk\PPK"
+    "$envmap" "env_cubemap"
+    "$envmapmask" "models\tacint_shark\weapons\ppk\PPK_ref"
+} 
