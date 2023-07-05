@@ -229,9 +229,9 @@ SWEP.AnimationTranslationTable = {
     ["fire2"] = "fire2_M",
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
-    ["fire5"] = "fire5_M",
+    ["fire5"] = "fire4_M",
     ["melee"] = {"melee1", "melee2"},
-	["jam"] = "mid_reload"
+    ["jam"] = "mid_reload"
 }
 
 SWEP.DeployTimeMult = 2.2
