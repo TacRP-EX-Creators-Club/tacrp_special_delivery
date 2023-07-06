@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its small magazine and poor control."
+SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its small magazine and pretty intense recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_famas.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_aug.mdl"
@@ -103,24 +103,23 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 1100
 
-SWEP.Spread = 0.0008
+SWEP.Spread = 0.002
 
-SWEP.PostBurstDelay = 0.3
+SWEP.PostBurstDelay = 0.25
 
 SWEP.RunawayBurst = true
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.175
-SWEP.RecoilDissipationRate = 21
+SWEP.RecoilResetTime = 0.2
+SWEP.RecoilDissipationRate = 25
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 4
 
-SWEP.RecoilKick = 3
-
-SWEP.RecoilSpreadPenalty = 0.0015
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.RecoilSpreadPenalty = 0.002
+SWEP.HipFireSpreadPenalty = 0.025
 
 SWEP.CanBlindFire = true
 
@@ -228,7 +227,7 @@ SWEP.AnimationTranslationTable = {
     ["fire2"] = "fire2_M",
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
-    ["fire5"] = "fire5_M",
+    ["fire5"] = "fire4_M",
     ["melee"] = {"melee1", "melee2"}
 }
 
