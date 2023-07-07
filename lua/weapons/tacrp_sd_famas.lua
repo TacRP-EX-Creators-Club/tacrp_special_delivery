@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its small magazine and pretty intense recoil."
+SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_famas.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_aug.mdl"

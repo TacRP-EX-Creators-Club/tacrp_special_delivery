@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Machine Gun"
 
-SWEP.Description = "Machine gun with incredible stopping power that is nearly impossible to lug around given its heft."
+SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power. Can tear armor to shreds but has a significant heft to it."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mg4.mdl"
@@ -23,7 +23,7 @@ SWEP.BalanceStats = {
         Damage_Max = 28,
         Damage_Min = 22,
 
-        ClipSize = 80,
+        ClipSize = 75,
 
         MoveSpeedMult = 0.75,
         ShootingSpeedMult = 0.5,

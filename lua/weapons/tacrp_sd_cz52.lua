@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Czech Cold War-era pistol with decent damage and handling but limited attachment options."
+SWEP.Description = "Large and sleek pistol from the Eastern Bloc.  Similar to other large calibre pistols, but lighter and performs better at range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_cz52.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"

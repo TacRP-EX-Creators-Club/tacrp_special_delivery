@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Modern take on a classic concept; a double barrel shotgun with tactical rails for attachments."
+SWEP.Description = "Modern take on a classic concept, a compact double-barrel with tactical rails.  Easy to handle, reliable and deadly in close quarters."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dbshotgun.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"

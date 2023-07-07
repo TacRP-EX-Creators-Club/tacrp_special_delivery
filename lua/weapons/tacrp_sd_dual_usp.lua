@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Pair of robust pistols with compensators attached.  A getup like this wouldn't look out of place in a mid-00's low-budget action movie."
+SWEP.Description = "Pair of pistols pilfered from a pair of dead metrocops. Decent damage and capacity but hefty and slow to fire."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_usp.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"

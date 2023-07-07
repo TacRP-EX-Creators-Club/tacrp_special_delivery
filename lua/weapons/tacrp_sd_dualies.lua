@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Pair of customized pistols with a two-tone finish and dragons emblazoned on the grips. These embellishments offer no tactical advantage but they look pretty gangster and that's all that really matters."
+SWEP.Description = "Pair of customized pistols with a two-tone finish and dragons emblazoned on the grips.  Swift handling and decent recoil control but low stopping power."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dualies.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"

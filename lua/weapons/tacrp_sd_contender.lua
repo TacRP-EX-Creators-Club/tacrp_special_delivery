@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Single-shot pistol with incredible accuracy and stopping power."
+SWEP.Description = "Single-shot hunting pistol chambered for a rifle round.  Can kill almost anything that moves with deadly accuracy but is obviously limited by its capacity."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_contender_test.mdl"
 SWEP.WorldModel = ""

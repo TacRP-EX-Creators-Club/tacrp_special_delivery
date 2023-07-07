@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "Classic WWII SMG boasting a low fire rate, allowing for great control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
+SWEP.Description = "WWII-era SMG with exceptional handling and recoil control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_k1a.mdl"

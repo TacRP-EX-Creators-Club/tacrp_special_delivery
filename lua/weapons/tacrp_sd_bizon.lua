@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "AK-derrivative SMG with a high-capacity helical magazine.  Pretty weak but easy to control."
+SWEP.Description = "AK-derrivative SMG with a high-capacity helical magazine.  Pretty weak but easy to control, the lack of power is made up for by the large magazine."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_bizon.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"

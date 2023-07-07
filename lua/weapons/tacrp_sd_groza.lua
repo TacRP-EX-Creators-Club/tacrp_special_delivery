@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Unique experimental rifle, essentially an AK reconfigured as a bullpup."
+SWEP.Description = "Unique experimental rifle, chambered for subsonic ammunition.  It's naturally quiet even when not suppressed, but performs poorly at long range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
