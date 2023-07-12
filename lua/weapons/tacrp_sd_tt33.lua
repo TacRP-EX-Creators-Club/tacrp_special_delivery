@@ -4,15 +4,15 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "CZ 52"
+SWEP.PrintName = "Norinco Type 54"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Large and sleek pistol from the Eastern Bloc.  Similar to other large calibre pistols, but lighter and performs better at range."
+SWEP.Description = "Large pistol originating from behind the Iron Curtain, copied in large quantities by the Chinese.  Similar to other large calibre pistols, but lighter and performs better at range."
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_cz52.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"
 
 SWEP.Slot = 1
@@ -181,8 +181,8 @@ SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(-0.01, 0.14, 0)
-SWEP.SightPos = Vector(-3.2, 0, -3.35)
+SWEP.SightAng = Angle(-0.01, 1.55, 0)
+SWEP.SightPos = Vector(-3.2, 0, -3.75)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
@@ -205,10 +205,10 @@ SWEP.DropMagazineImpact = "pistol"
 
 // sounds
 
-local path = "tacint_shark/weapons/cz52/cz52_"
+local path = "tacint_shark/weapons/tt33/tt33_"
 local path1 = "tacrp/weapons/p250/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
 SWEP.Sound_Shoot_Silenced = path1 .. "p250_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -344,9 +344,9 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_cz52.clip_in", path .. "clipin.wav")
-addsound("tacint_cz52.clip_in-mid", path .. "clipin.wav")
-addsound("tacint_cz52.clip_out", path .. "clipout.wav")
-addsound("tacint_cz52.slide_action", path .. "slide_action.wav")
-addsound("tacint_cz52.slide_shut", path .. "sliderelease.wav")
-addsound("tacint_cz52.cock_hammer", path .. "cockhammer.wav")
+addsound("tacint_tt33.clip_in", path .. "clipin.wav")
+addsound("tacint_tt33.clip_in-mid", path .. "clipin.wav")
+addsound("tacint_tt33.clip_out", path .. "clipout.wav")
+addsound("tacint_tt33.slide_action", path .. "slide.wav")
+addsound("tacint_tt33.slide_shut", path .. "sliderelease.wav")
+addsound("tacint_tt33.cock_hammer", path .. "cockhammer.wav")
