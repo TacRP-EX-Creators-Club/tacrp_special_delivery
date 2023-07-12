@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{        
+                 // Original shader: VertexLitTexture
+	"$basetexture" "models\tacint_shark\weapons\auto5\browninga5_d"
+	"$bumpmap" "models\tacint_shark\weapons\auto5\browninga5_n"
+	"$halflambert" "1"	
+
+"$color2" "[0.5 0.5 0.5]"
+    "$blendTintByBaseAlpha"    "1"			
+		
+	"$normalmapalphaenvmapmask" 1				
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" ".4"	
+                "$ambientocclusion" 1
+                "$ambientoccltexture" "models\tacint_shark\weapons\auto5\browninga5_a"						
+
+	$phong 1
+	$phongalbedotint 1
+	$phongboost 10
+	$phongfresnelranges "[.5 1 4]"
+	$phongexponenttexture "models\tacint_shark\weapons\auto5\exponent.vtf"
+	$lightwarptexture "models\tacint_shark\weapons\auto5\lightwarp.vtf"			
+}

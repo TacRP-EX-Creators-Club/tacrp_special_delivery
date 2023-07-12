@@ -12,7 +12,7 @@ SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Rustic semi-auto shotgun with excellent control and range."
 
-SWEP.ViewModel = "models/weapons/tacint/v_m4star10.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_auto5.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_m4star10.mdl"
 
 SWEP.Slot = 2
@@ -177,8 +177,8 @@ SWEP.SprintPos = Vector(5, 0, -2)
 SWEP.SightAng = Angle(0.2, 0.5, 0)
 SWEP.SightPos = Vector(-2.9, -5, -4.2)
 
-SWEP.SightPos = Vector(-2.815, -4, -4.025)
-SWEP.SightAng = Angle(0.4, -0.75, 0)
+SWEP.SightPos = Vector(-2.815, -4, -4.225)
+SWEP.SightAng = Angle(0.4, -0.45, 0)
 
 SWEP.CorrectivePos = Vector(-0.05, 0, -0.1)
 SWEP.CorrectiveAng = Angle(0.395, 1.039, 0)
@@ -207,7 +207,7 @@ SWEP.JamBaseMSB = 9
 
 // local path = "tacrp/weapons/m4star10/"
 
-SWEP.Sound_Shoot = "^tacrp/weapons/m4star10/fire-2.wav"
+SWEP.Sound_Shoot = "tacint_shark/weapons/auto5/xm1014-1.wav"
 SWEP.Sound_Shoot_Silenced = "tacint/weapons/sg551/sg551_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -251,6 +251,25 @@ SWEP.AnimationTranslationTable = {
     ["jam"] = "reload_finish"
 }
 
+SWEP.AttachmentElements = {
+    ["extmag"] = {
+        BGs_VM = {
+            {1, 1}
+        },
+        BGs_WM = {
+            {1, 1}
+        }
+    },
+	["tacrail"] = {
+        BGs_VM = {
+            {3, 1}
+        },
+        BGs_WM = {
+            {3, 1}
+        }
+    },
+}
+
 // attachments
 
 SWEP.Attachments = {
@@ -258,11 +277,11 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium"},
         Bone = "ValveBiped._ROOT_Super90",
-        InstalledElements = {"sights"},
+        InstalledElements = {"tacrail"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
-        Pos_VM = Vector(-5.25, 0.2, 8),
+        VMScale = 0.85,
+        Pos_VM = Vector(-5.55, 0.2, 4.5),
         Pos_WM = Vector(11, 1.5, -5.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
@@ -282,7 +301,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_duffle", "acc_extmag_shotgun", "acc_sling"},
+        Category = {"acc", "acc_duffle", "acc_extmag_a5", "acc_sling"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
@@ -329,6 +348,6 @@ addsound("tacint_fp6.Insertshell",
     }
 )
 addsound("tacint_Bekas.Movement", "tacrp/weapons/bekas/movement-1.wav")
-addsound("tacint_M4Star10.Bolt_Back", "tacrp/weapons/m4star10/bolt_back.wav")
-addsound("tacint_M4Star10.Bolt_release", "tacrp/weapons/m4star10/bolt_release.wav")
+addsound("tacint_auto5.Bolt_Back", "tacrp/weapons/m4star10/bolt_back.wav")
+addsound("tacint_auto5.Bolt_release", "tacrp/weapons/m4star10/bolt_release.wav")
 addsound("tacint_m4.throw_catch", "tacrp/weapons/m4/m4_throw_catch.wav")
