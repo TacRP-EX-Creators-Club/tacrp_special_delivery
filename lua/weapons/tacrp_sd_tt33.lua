@@ -4,7 +4,7 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Norinco Type 54"
+SWEP.PrintName = "Norinco Type 54" -- The model is actually the Russian TT-33 but let's pretend it's China gun because it was what Chow Yun-fat used in the Hard Boiled teahouse shootout.
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "4Consumer"
