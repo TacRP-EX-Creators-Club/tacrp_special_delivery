@@ -6,33 +6,46 @@
 
 -------------------------------------------------
 
-A small pack of xxx new weapons for TacRP, featuring more delightfully crusty Gamebanana models that some of you might recognize from classic GMod weapon addons.  Built around TacRP's mechanics and using modified TacInt animations, Special Delivery is the perfect addition to any tactical GMod player's arsenal.
+A small pack of xxx new weapons for TacRP, featuring more delightfully crusty Gamebanana models that some of you might recognize from classic GMod weapon addons.  Built around TacRP's mechanics and using modified TacInt animations (and some wholly original ones), Special Delivery is the perfect addition to any tactical GMod player's arsenal.
 
 [h1]But what's so special about this new pack?[/h1]
 
-TacRP InterOps was an expansion featuring a multitude of new weapons, all created by taking models from third-party sources and rigging them onto TI's animations.  This posed a unique challenge, as certain weapon types like bullpups and break-action weapons couldn't be implemented owing to TI having no weapon with a suitable set of animations for them.  While some minor animation edits were made, we strayed away from more ambitious modifications, owing to the large amount of (mostly unused) animations that would need to be edited for every minor change we made (nearly 70-per weapon!).
-
-That was until shortly after InterOps' completion when I felt the motivation to start seriously editing TacInt's animations in order to implement weapons we were previously unable to.  The weapon pack started with a loose theming of obscure and exotic weapons, but ultimately became somewhat of an InterOps addendum, touching on weapon types that weren't covered by that pack.
-
-This weapon pack aims to pick up the pieces of what was ultimately left out of InterOps, and serve as a fun, natural addition to the expanding TacRP arsenal.
+When making TacRP InterOps, we limited ourselves to rigging third-party assets onto the vanilla TacInt animations, which proved restrictive at times as we couldn't add certain weapons without significantly editing the animations or creating new ones from scratch.  Special Delivery makes heavy use of animation edits and original animations to bring weapons to TacRP that we couldn't with InterOps, meaning we finally have things like more bullpups and break-action weapons!  We also used this as an opportunity to fill in some holes we left unfilled with InterOps, such as expanding the dual-wielding arsenal.
 
 [h1]Features:[/h1]
-[*] xxx weapons with worldmodels, c_hands, and stylish animations from [i]Tactical Intervention[/i], edited by yours truly
-[*] Fine tuned balance with 4 different modes for different styles of play
-[*] Customize your weapons with a wide range of attachments. Make meaningful decisions and adjust your guns to your preference, and gain an advantage with unique tactical attachments like blind-fire cameras, blinding flashlights, and radars.
-[*] Melee bash close enemies, Blindfire above and around cover or quickthrow grenades, with animations for every weapon
+[*] xx weapons with worldmodels, c_hands, and stylish animations from both [i]Tactical Intervention[/i] and yours truly!
+[*] Four different balancing schemes for multiple styles of play.
+[*] Extensive weapon customization with unique attachments.
+[*] Grenade quickthrowing.
+[*] Blindfire.
+[*] Melee bashing.
 
 [h1]Weapon List[/h1]
 
-[*] CZ 52
 [*] AAC Honey Badger
-[*] FAMAS F1
-[*] PP-19 Bizon
-[*] Walther WA2000
-[*] PKM
-[*] MP 40
-[*] OTs-14 Groza
-[*] "Duelling Dragons" Berettas
-[*] Dual USP Matches
-[*] Dual Desert Eagles
+[*] Browning Auto-5
 [*] Combat Knife
+[*] DeLisle Carbine
+[*] Dual Beretta "Dragons"
+[*] Dual Desert Eagles
+[*] Dual M1911 "Wyverns"
+[*] Dual PPKs
+[*] Dual USP Matches
+[*] FAMAS F1
+[*] MBA Gyrojet Pistol
+[*] MP 40
+[*] Norinco Type 54
+[*] OTs-14 Groza
+[*] PKM
+[*] PP-19 Bizon
+[*] Stoeger Double Defense
+[*] Thompson/Center G2 Contender
+[*] Walther PPK
+[*] Walter WA 2000
+
+[h1]Credits:[/h1]
+speedonerd - Rigging, animation, design
+8Z - Rigging, animation, balance, code
+Arctic - TacRP
+
+Additional credits for models used can be found here: [link]
