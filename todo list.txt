@@ -1,7 +1,6 @@
-- All weapon stats
+- All weapon stats; see "balance ideas.txt" for more
 - PKM bullet bodygroups fix
-- Thompson G2 Contender
-- MBA Gyrojet Pistol
+- Contender anims
 - Worldmodels
 - Magazines
 - Spawnmenu icons
