@@ -24,7 +24,6 @@ When making TacRP InterOps, we limited ourselves to rigging third-party assets o
 
 [*] AAC Honey Badger
 [*] Browning Auto-5
-[*] Combat Knife
 [*] DeLisle Carbine
 [*] Dual Beretta "Dragons"
 [*] Dual Desert Eagles
