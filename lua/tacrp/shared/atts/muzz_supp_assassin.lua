@@ -1,6 +1,6 @@
 ATT.PrintName = "A. Suppressor"
 ATT.FullName = "Assassin Suppressor"
-ATT.Icon = Material("entities/tacrp_att_muzz_supp_compact.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
 ATT.Description = "Extended suppressor improving range significantly at cost of stability."
 ATT.Pros = {"stat.vol_shoot", "stat.range", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.recoil",  "rating.handling"}
