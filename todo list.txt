@@ -1,6 +1,13 @@
+Major:
 - All weapon stats; see "balance ideas.txt" for more
-- PKM bullet bodygroups fix
-- Contender anims
 - Worldmodels
 - Magazines
 - Spawnmenu icons
+
+Minor:
+- FAMAS and Groza handpose improvements
+- PKM bullet bodygroups fix
+- Tokarev texture touch ups
+
+Save for later:
+- Contender (the whole thing)
