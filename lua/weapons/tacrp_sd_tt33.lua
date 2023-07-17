@@ -100,14 +100,14 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 33
-SWEP.Damage_Min = 18
-SWEP.Range_Min = 1200
+SWEP.Damage_Max = 26
+SWEP.Damage_Min = 12
+SWEP.Range_Min = 800
 SWEP.Range_Max = 3000
 SWEP.Penetration = 3
 SWEP.ArmorPenetration = 0.575
 
-SWEP.MuzzleVelocity = 12000
+SWEP.MuzzleVelocity = 13000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4.5,
@@ -130,17 +130,17 @@ SWEP.Spread = 0.005
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 1.5
-SWEP.RecoilMaximum = 10
-SWEP.RecoilResetTime = 0.3
-SWEP.RecoilDissipationRate = 7
-SWEP.RecoilFirstShotMult = 1
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 6
+SWEP.RecoilResetTime = 0.15
+SWEP.RecoilDissipationRate = 10
+SWEP.RecoilFirstShotMult = 0.75
 
 SWEP.RecoilVisualKick = 2
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 6
 
-SWEP.RecoilSpreadPenalty = 0.003
+SWEP.RecoilSpreadPenalty = 0.0035
 
 SWEP.CanBlindFire = true
 
@@ -155,7 +155,7 @@ SWEP.ReloadSpeedMult = 0.75
 SWEP.AimDownSightsTime = 0.25
 SWEP.SprintToFireTime = 0.25
 
-SWEP.Sway = 1.05
+SWEP.Sway = 1
 SWEP.ScopedSway = 0.5
 
 SWEP.FreeAimMaxAngle = 3
@@ -198,7 +198,7 @@ SWEP.Ammo = "pistol"
 SWEP.ReloadUpInTime = 1
 SWEP.DropMagazineTime = 0.25
 
-SWEP.ReloadTimeMult = 1.05
+SWEP.ReloadTimeMult = 0.9
 
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/vertec.mdl"
 SWEP.DropMagazineImpact = "pistol"

@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Machine Gun"
 
-SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power. Can tear armor to shreds but has a significant heft to it."
+SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power.  Can effectively hold down sightlines and choke points but has terrible mobility and handling."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mg4.mdl"
@@ -23,13 +23,14 @@ SWEP.BalanceStats = {
         Damage_Max = 28,
         Damage_Min = 22,
 
-        ClipSize = 75,
+        ClipSize = 100,
 
         MoveSpeedMult = 0.75,
-        ShootingSpeedMult = 0.5,
-        SightedSpeedMult = 0.75,
+        ShootingSpeedMult = 0.65,
+        SightedSpeedMult = 0.65,
+		ReloadTimeMult = 1.15,
         MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
+        ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_TTT] = {
 
@@ -77,9 +78,9 @@ SWEP.BalanceStats = {
 SWEP.TTTReplace = TacRP.TTTReplacePreset.MachineGun
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4,
-    [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_HEAD] = 3,
+    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
     [HITGROUP_RIGHTARM] = 0.9,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -89,10 +90,10 @@ SWEP.BodyDamageMultipliers = {
 
 // "ballistics"
 
-SWEP.Damage_Max = 32
-SWEP.Damage_Min = 27
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 28
+SWEP.Damage_Min = 22
+SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
+SWEP.Range_Max = 3600 // distance at which we drop to minimum damage
 SWEP.Penetration = 10 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.8
 
@@ -109,36 +110,36 @@ SWEP.Spread = 0.008
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 20
-SWEP.RecoilResetTime = 0.2
+SWEP.RecoilMaximum = 15
+SWEP.RecoilResetTime = 0.3
 SWEP.RecoilDissipationRate = 25
 SWEP.RecoilFirstShotMult = 2 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 5
 
-SWEP.HipFireSpreadPenalty = 0.025
-SWEP.RecoilSpreadPenalty = 0.0014
+SWEP.HipFireSpreadPenalty = 0.045
+SWEP.RecoilSpreadPenalty = 0.001
 
 SWEP.CanBlindFire = true
 
 // handling
 
 SWEP.MoveSpeedMult = 0.75
-SWEP.ShootingSpeedMult = 0.4
-SWEP.SightedSpeedMult = 0.5
+SWEP.ShootingSpeedMult = 0.55
+SWEP.SightedSpeedMult = 0.55
 
-SWEP.ReloadSpeedMult = 0.1
+SWEP.ReloadSpeedMult = 0.15
 SWEP.ReloadSpeedMultTime = 1
 
-SWEP.AimDownSightsTime = 0.5
-SWEP.SprintToFireTime = 0.5
+SWEP.AimDownSightsTime = 0.65
+SWEP.SprintToFireTime = 0.75
 
-SWEP.Sway = 2
+SWEP.Sway = 3.5
 SWEP.ScopedSway = 0.75
 
-SWEP.FreeAimMaxAngle = 7
+SWEP.FreeAimMaxAngle = 8
 
 // hold types
 
@@ -171,10 +172,10 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 // reload
 
-SWEP.ClipSize = 100
+SWEP.ClipSize = 125
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.25
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mg4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -303,7 +304,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "extendedbelt", "acc_duffle", "acc_bipod", "acc_sling"},
+        Category = {"acc", "acc_duffle", "acc_bipod", "acc_sling"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },

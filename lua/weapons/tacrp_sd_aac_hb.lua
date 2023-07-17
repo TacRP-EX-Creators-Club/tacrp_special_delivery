@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "A unique assault rifle with an integral suppressor and chambered for the .300 Blackout round.  Very powerful in close quarters but performs poorly at range."
+SWEP.Description = "A lightweight assault rifle with an integral suppressor.  Very powerful in close quarters but wide spread and damage dropoff makes it performs poorly at range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_aac_hb.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_m4.mdl"
@@ -19,8 +19,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
+		MoveSpeedMult = 0.85,
+		ShootingSpeedMult = 0.85,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
@@ -76,15 +76,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 22
-SWEP.Damage_Min = 15
-SWEP.Range_Min = 1600
+SWEP.Damage_Max = 25
+SWEP.Damage_Min = 12
+SWEP.Range_Min = 700
 SWEP.Range_Max = 3500
-SWEP.Penetration = 8 // units of metal this weapon can penetrate
+SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -105,39 +105,38 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 800
 
-SWEP.Spread = 0.004
+SWEP.Spread = 0.0089
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.12
+SWEP.RecoilResetTime = 0.1
 SWEP.RecoilDissipationRate = 16
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilKick = 3.5
 
-SWEP.RecoilKick = 3
-
-SWEP.RecoilSpreadPenalty = 0.0022
-SWEP.HipFireSpreadPenalty = 0.04
+SWEP.RecoilSpreadPenalty = 0.003
+SWEP.HipFireSpreadPenalty = 0.035
 SWEP.PeekPenaltyFraction = 0.2
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
-SWEP.ShootingSpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.65
+SWEP.MoveSpeedMult = 0.85
+SWEP.ShootingSpeedMult = 0.75
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.36
-SWEP.SprintToFireTime = 0.38
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.32
 
-SWEP.Sway = 1.25
-SWEP.ScopedSway = 0.15
+SWEP.Sway = 1.3
+SWEP.ScopedSway = 0.2
 
 SWEP.FreeAimMaxAngle = 4.5
 
@@ -192,7 +191,7 @@ SWEP.Sound_Shoot_Silenced = "^" .. path .. "HB_Fire.wav"
 
 SWEP.Silencer = true
 
-SWEP.Vol_Shoot = 130
+SWEP.Vol_Shoot = 75
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects

@@ -19,12 +19,12 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
+        Damage_Max = 18,
+        Damage_Min = 13,
+		FreeAimMaxAngle = 3,
 
         RecoilKick = 2,
 
-        MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
@@ -76,17 +76,17 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 15
+SWEP.Damage_Min = 10
+SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -110,32 +110,32 @@ SWEP.Spread = 0.003
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
+SWEP.RecoilMaximum = 10
 SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 0.5
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 1
 
 SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.HipFireSpreadPenalty = 0.05
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
+SWEP.MoveSpeedMult = 0.95
 SWEP.ShootingSpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.65
 
-SWEP.ReloadSpeedMult = 0.5
+SWEP.ReloadSpeedMult = 0.65
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.3
 
-SWEP.Sway = 1.25
+SWEP.Sway = 1.3
 SWEP.ScopedSway = 0.15
 
 // hold types
@@ -178,7 +178,7 @@ SWEP.DropMagazineImpact = "metal"
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 5
 
 // sounds
 

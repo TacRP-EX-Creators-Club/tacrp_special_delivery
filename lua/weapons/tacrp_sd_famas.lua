@@ -19,11 +19,7 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 20,
-        Damage_Min = 12,
-
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
+        ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
@@ -82,7 +78,7 @@ SWEP.Penetration = 7
 SWEP.ArmorPenetration = 0.8
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 3, -- Must land at least 2 shots from a burst to get a headshot kill at full health.
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -111,31 +107,31 @@ SWEP.RunawayBurst = true
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.2
-SWEP.RecoilDissipationRate = 25
+SWEP.RecoilResetTime = 0.3
+SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 4
+SWEP.RecoilVisualKick = 2.5
+SWEP.RecoilKick = 6
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.0025
 SWEP.HipFireSpreadPenalty = 0.025
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.95
+SWEP.MoveSpeedMult = 0.85
 SWEP.ShootingSpeedMult = 0.7
 SWEP.SightedSpeedMult = 0.7
 
-SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.25
+SWEP.AimDownSightsTime = 0.35
+SWEP.SprintToFireTime = 0.35
 
-SWEP.Sway = 1
+SWEP.Sway = 1.15
 SWEP.ScopedSway = 0.125
 
-SWEP.FreeAimMaxAngle = 2
+SWEP.FreeAimMaxAngle = 3
 
 // hold types
 

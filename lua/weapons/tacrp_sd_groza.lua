@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Unique experimental rifle, chambered for subsonic ammunition.  It's naturally quiet even when not suppressed, but performs poorly at long range."
+SWEP.Description = "Unique experimental rifle, chambered for subsonic ammunition.  It's naturally quiet, even when not suppressed, and maintains damage over range better than integrally-suppressed weapons."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
@@ -19,12 +19,6 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
-
-        RecoilKick = 2,
-
-        MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
@@ -76,10 +70,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 19
+SWEP.Damage_Min = 17
+SWEP.Range_Min = 1300 // distance for which to maintain maximum damage
+SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
@@ -110,14 +104,14 @@ SWEP.Spread = 0.003
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
+SWEP.RecoilMaximum = 10
 SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 3
 
 SWEP.RecoilSpreadPenalty = 0.002
 SWEP.HipFireSpreadPenalty = 0.03
@@ -126,17 +120,17 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
+SWEP.MoveSpeedMult = 0.85
 SWEP.ShootingSpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.4
+SWEP.AimDownSightsTime = 0.35
 SWEP.SprintToFireTime = 0.4
 
-SWEP.Sway = 1.25
-SWEP.ScopedSway = 0.15
+SWEP.Sway = 1.4
+SWEP.ScopedSway = 0.2
 
 // hold types
 
@@ -188,7 +182,7 @@ local path1 = "tacrp/weapons/ak47/ak47_"
 SWEP.Sound_Shoot = "^" .. path .. "ak47-1.wav"
 SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
-SWEP.Vol_Shoot = 130
+SWEP.Vol_Shoot = 95
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects

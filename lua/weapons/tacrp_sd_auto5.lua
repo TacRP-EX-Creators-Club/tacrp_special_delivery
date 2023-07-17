@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Rustic semi-auto shotgun with excellent control and range."
+SWEP.Description = "Slow, old-world semi-auto shotgun with decent control and range but poor handling."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_auto5.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_m4star10.mdl"
@@ -21,14 +21,14 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 10,
-        Damage_Min = 5,
+        Damage_Max = 9,
+        Damage_Min = 6,
 
         FreeAimMaxAngle = 5,
 
-        MoveSpeedMult = 0.9,
-        ShootingSpeedMult = 0.7,
-        SightedSpeedMult = 0.9,
+        MoveSpeedMult = 0.85,
+        ShootingSpeedMult = 0.75,
+        SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -96,17 +96,17 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AutoShotgun
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.Damage_Max = 12
-SWEP.Damage_Min = 9
-SWEP.Range_Min = 900 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 10
+SWEP.Damage_Min = 8
+SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
+SWEP.Range_Max = 3500 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.8
 SWEP.ArmorBonus = 2
 
 SWEP.Num = 6
 
-SWEP.MuzzleVelocity = 9000
+SWEP.MuzzleVelocity = 12000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 2,
@@ -123,9 +123,9 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 250
+SWEP.RPM = 200
 
-SWEP.Spread = 0.03
+SWEP.Spread = 0.024
 SWEP.ShotgunPelletSpread = 0.01
 
 SWEP.HipFireSpreadPenalty = 0.015
@@ -134,27 +134,28 @@ SWEP.MidAirSpreadPenalty = 0
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 2
 SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 3.5
+SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1.5
-SWEP.RecoilKick = 10
-SWEP.RecoilStability = 0.1
+SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 2
+SWEP.RecoilStability = 0.35
 
-SWEP.RecoilSpreadPenalty = 0.025
+SWEP.RecoilSpreadPenalty = 0.015
+SWEP.HipFireSpreadPenalty = 0.045
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.9
+SWEP.MoveSpeedMult = 0.8
 SWEP.ShootingSpeedMult = 0.65
 SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.35
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.45
+SWEP.SprintToFireTime = 0.45
 
 // hold types
 
@@ -202,6 +203,8 @@ SWEP.ShotgunReload = true
 SWEP.ReloadTimeMult = 1.15
 
 SWEP.JamBaseMSB = 9
+
+SWEP.ReloadTimeMult = 1.15
 
 // sounds
 

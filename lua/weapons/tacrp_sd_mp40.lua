@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WWII-era SMG with exceptional handling and recoil control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
+SWEP.Description = "WWII SMG with exceptional handling and recoil control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_k1a.mdl"
@@ -19,12 +19,6 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 20,
-        Damage_Min = 9,
-
-        RecoilKick = 1,
-
-        MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.8,
         MeleeSpeedMult = 1,
@@ -75,10 +69,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 16
-SWEP.Damage_Min = 12
-SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3200 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 13
+SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2700 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.75
 
@@ -93,7 +87,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 25000
+SWEP.MuzzleVelocity = 20000
 
 // misc. shooting
 
@@ -103,10 +97,10 @@ SWEP.PostBurstDelay = 0.16
 
 SWEP.RPM = 550
 
-SWEP.Spread = 0.0025
+SWEP.Spread = 0.0035
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
+SWEP.RecoilMaximum = 5
 SWEP.RecoilResetTime = 0.25
 SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
@@ -116,8 +110,8 @@ SWEP.RecoilVisualShake = 0.25
 
 SWEP.RecoilKick = 2
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.02
+SWEP.RecoilSpreadPenalty = 0.005
+SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
 
@@ -125,16 +119,16 @@ SWEP.CanBlindFire = true
 
 SWEP.MoveSpeedMult = 0.925
 SWEP.ShootingSpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.65
+SWEP.SightedSpeedMult = 0.75
 
-SWEP.ReloadSpeedMult = 0.5
+SWEP.ReloadSpeedMult = 0.75
 
-SWEP.AimDownSightsTime = 0.35
-SWEP.SprintToFireTime = 0.375
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.25
 
 SWEP.Sway = 1.25
 SWEP.ScopedSway = 0.15
-SWEP.FreeAimMaxAngle = 3.5
+SWEP.FreeAimMaxAngle = 4
 
 // hold types
 
