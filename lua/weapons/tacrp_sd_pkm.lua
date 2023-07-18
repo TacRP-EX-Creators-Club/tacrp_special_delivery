@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Machine Gun"
 SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power.  Can effectively hold down sightlines and choke points but has terrible mobility and handling."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mg4.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_pkm.mdl"
 
 SWEP.Slot = 2
 SWEP.SlotAlt = 3
