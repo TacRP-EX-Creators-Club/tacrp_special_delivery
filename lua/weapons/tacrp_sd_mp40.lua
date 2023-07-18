@@ -13,7 +13,7 @@ SWEP.SubCatType = "3Submachine Gun"
 SWEP.Description = "WWII SMG with exceptional handling and recoil control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_k1a.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"
 
 SWEP.Slot = 2
 
@@ -245,7 +245,7 @@ SWEP.AttachmentElements = {
             {1, 1}
         },
         BGs_WM = {
-            {1, 0}
+            {1, 1}
         }
     },
 }
