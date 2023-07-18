@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Sidearm"
 SWEP.Description = "As if the Desert Eagle wasn't already impractical enough, you've decieded to dual-wield a pair of them.  Insane power times two, with poor recoil control and handling, times two."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_eagles.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_eagles.mdl"
 
 SWEP.Slot = 1
 
