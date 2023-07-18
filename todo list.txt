@@ -1,12 +1,9 @@
 Major:
 - All weapon stats; see "balance ideas.txt" for more
-- Worldmodels
-- Magazines
-- Spawnmenu icons
 
 Minor:
 - Small animation improvements (bad handposes, wobbly movement)
-- Tokarev texture touch ups
+- PPK and Delisle Sounds
 
-Save for later:
+Save for later (Post-Launch):
 - Contender (the whole thing)

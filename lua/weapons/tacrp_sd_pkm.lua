@@ -176,7 +176,7 @@ SWEP.ClipSize = 125
 SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1.25
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mg4.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/pkm.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 3.5

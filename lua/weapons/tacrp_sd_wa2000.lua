@@ -194,7 +194,7 @@ SWEP.Ammo = "SniperPenetratedRound"
 
 SWEP.ReloadTimeMult = 0.9
 SWEP.DropMagazineImpact = "metal"
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/uratio.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/wa2000.mdl"
 
 SWEP.ReloadUpInTime = 2.2
 SWEP.DropMagazineTime = 0.8
