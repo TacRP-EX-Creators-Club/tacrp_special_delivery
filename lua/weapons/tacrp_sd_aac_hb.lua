@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "A lightweight assault rifle with an integral suppressor.  Very powerful in close quarters but wide spread and damage dropoff makes it performs poorly at range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_aac_hb.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_m4.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_aac_hb.mdl"
 
 SWEP.Slot = 2
 
@@ -241,10 +241,16 @@ SWEP.AttachmentElements = {
     ["foldstock"] = {
         BGs_VM = {
             {1, 1}
+        },        
+		BGs_WM = {
+            {1, 1}
         },
     },
     ["sights"] = {
         BGs_VM = {
+            {2, 1}
+        },
+		BGs_WM = {
             {2, 1}
         },
     },
