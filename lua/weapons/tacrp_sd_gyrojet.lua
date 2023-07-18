@@ -159,6 +159,11 @@ SWEP.CorrectiveAng = Angle(0, 0, 0)
 SWEP.ClipSize = 6
 SWEP.Ammo = "357"
 
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/gyrojet.mdl"
+SWEP.DropMagazineImpact = "pistol"
+
+SWEP.DropMagazineTime = 0.9
+
 SWEP.ReloadUpInTime = 1.8
 
 SWEP.ReloadTimeMult = 1.3
