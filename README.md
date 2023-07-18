@@ -2,7 +2,7 @@
 
 -------------------------------------------------
 
-Special Delivery: A pack of 20 weapons extra weapons to complete the TacRP arsenal, ranging from conventional to absurd.
+Special Delivery: A pack of 19 weapons extra weapons to complete the TacRP arsenal, ranging from conventional to absurd.
 
 [h1]About TacRP[/h1]
 TacRP is a weapon pack featuring weapons and animations from Tactical Intervention, an ill-fated Source shooter featuring animations from Minh "Gooseman" Le, the original animator for Counter-Strike.
@@ -14,7 +14,7 @@ With effort and passion, TacRP revived these weapons and animations and brought 
 TacRP InterOps was created by rigging third-party assets onto Tactical Intervention's animations.  While we got quite a lot of mileage out of this, it proved limiting in some areas.  Special Delivery leverages edited and entirely new animations to accomodate new types of weapons, such as additional bullpups and TacRP's first double-barrel shotgun!
 
 [h1]Features:[/h1]
-[*] 20 new weapons with worldmodels, c_hands, NPC support and stylish animations from both [i]Tactical Intervention[/i] and yours truly!
+[*] 19 new weapons with worldmodels, c_hands, NPC support and stylish animations from both [i]Tactical Intervention[/i] and yours truly!
 [*] Customize your weapons with a wide range of attachments. Make meaningful decisions and adjust your guns to your preference, and gain an advantage with unique tactical attachments like blind-fire cameras, blinding flashlights, and radars.
 [*] Visible weapons on your back when holstered, and reloading drops magazine models.
 [*] Melee bash close enemies, Blindfire above and around cover or quickthrow grenades, with animations for every weapon
