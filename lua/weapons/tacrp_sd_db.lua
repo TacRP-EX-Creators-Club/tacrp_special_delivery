@@ -19,6 +19,9 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 12,
+        Damage_Min = 4,
+
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.9,
@@ -80,7 +83,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 12
+SWEP.Damage_Max = 10
 SWEP.Damage_Min = 4
 SWEP.Range_Min = 250
 SWEP.Range_Max = 2500
@@ -110,7 +113,7 @@ SWEP.Firemode = 1
 SWEP.RPM = 240
 
 SWEP.Spread = 0.03
-SWEP.ShotgunPelletSpread = 0.01
+SWEP.ShotgunPelletSpread = 0.015
 
 SWEP.HipFireSpreadPenalty = 0.01
 SWEP.MidAirSpreadPenalty = 0
@@ -124,8 +127,8 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 3
-
-SWEP.RecoilKick = 7
+SWEP.RecoilKick = 15
+SWEP.RecoilAltMultiplier = 200
 
 SWEP.RecoilSpreadPenalty = 0.02
 

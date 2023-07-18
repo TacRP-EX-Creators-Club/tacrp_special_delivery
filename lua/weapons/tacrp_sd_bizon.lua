@@ -21,7 +21,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 15,
         Damage_Min = 9,
-		FreeAimMaxAngle = 3,
+        Spread = 0.008,
+        FreeAimMaxAngle = 3,
 
         RecoilKick = 2,
 
@@ -31,13 +32,13 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 16,
-        Damage_Min = 11,
+        Damage_Max = 10,
+        Damage_Min = 6,
 
         Range_Min = 400,
         Range_Max = 2000,
 
-        RPM = 600,
+        RPM = 700,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -52,7 +53,7 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        ReloadTimeMult = 1.25,
+        ReloadTimeMult = 1.4,
 
         MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
@@ -105,7 +106,7 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 700
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.012
 
 SWEP.ShootTimeMult = 0.5
 
@@ -116,8 +117,8 @@ SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.5
-
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
+SWEP.RecoilAltMultiplier = 400
 
 SWEP.RecoilSpreadPenalty = 0.002
 SWEP.HipFireSpreadPenalty = 0.05
@@ -276,7 +277,7 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-		VMScale = 0.75,
+        VMScale = 0.75,
         Pos_VM = Vector(-3.55, 0.15, 19.6),
         Pos_WM = Vector(0, 28, -1.75),
         Ang_VM = Angle(90, 0, 0),

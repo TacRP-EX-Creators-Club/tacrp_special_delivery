@@ -7,10 +7,10 @@ AddCSLuaFile()
 SWEP.PrintName = "PKM"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Machine Gun"
 
-SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power.  Can effectively hold down sightlines and choke points but has terrible mobility and handling."
+SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power. High damage and capacity makes for effective area denial, but the weapon is very bulky and hard to control."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_pkm.mdl"
@@ -26,9 +26,9 @@ SWEP.BalanceStats = {
         ClipSize = 100,
 
         MoveSpeedMult = 0.75,
-        ShootingSpeedMult = 0.65,
+        ShootingSpeedMult = 0.6,
         SightedSpeedMult = 0.65,
-		ReloadTimeMult = 1.15,
+        ReloadTimeMult = 1.15,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 0.9,
     },
@@ -56,14 +56,14 @@ SWEP.BalanceStats = {
         ReloadTimeMult = 1.2,
 
         MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.4,
+        ShootingSpeedMult = 0.35,
         MeleeSpeedMult = 1,
         SightedSpeedMult = 0.5,
         ReloadSpeedMult = 0.4,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 19,
-        Damage_Min = 14,
+        Damage_Max = 20,
+        Damage_Min = 12,
 
         ClipSize = 100,
 
@@ -90,10 +90,10 @@ SWEP.BodyDamageMultipliers = {
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
-SWEP.Damage_Min = 22
-SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3600 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 32
+SWEP.Damage_Min = 24
+SWEP.Range_Min = 2200 // distance for which to maintain maximum damage
+SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
 SWEP.Penetration = 10 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.8
 
@@ -110,16 +110,16 @@ SWEP.Spread = 0.008
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.3
-SWEP.RecoilDissipationRate = 25
-SWEP.RecoilFirstShotMult = 2 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 30
+SWEP.RecoilResetTime = 0.25
+SWEP.RecoilDissipationRate = 45
+SWEP.RecoilFirstShotMult = 2
 
 SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 4
+SWEP.RecoilStability = 0.5
 
-SWEP.RecoilKick = 5
-
-SWEP.HipFireSpreadPenalty = 0.045
+SWEP.HipFireSpreadPenalty = 0.05
 SWEP.RecoilSpreadPenalty = 0.001
 
 SWEP.CanBlindFire = true
@@ -127,7 +127,7 @@ SWEP.CanBlindFire = true
 // handling
 
 SWEP.MoveSpeedMult = 0.75
-SWEP.ShootingSpeedMult = 0.55
+SWEP.ShootingSpeedMult = 0.5
 SWEP.SightedSpeedMult = 0.55
 
 SWEP.ReloadSpeedMult = 0.15

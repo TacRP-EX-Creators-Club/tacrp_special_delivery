@@ -19,6 +19,13 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 30,
+        Damage_Min = 48,
+
+        Range_Min = 1500,
+        Range_Max = 5000,
+
+
         MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.85,
@@ -53,15 +60,15 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.7,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 8,
-        Damage_Min = 4,
+        Damage_Max = 24,
+        Damage_Min = 36,
 
-        Range_Min = 1500,
+        Range_Min = 1400,
         Range_Max = 4000,
 
-        HipFireSpreadPenalty = 0.02,
+        HipFireSpreadPenalty = 0.03,
 
-        RecoilKick = 2,
+        RecoilKick = 4,
 
         MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
@@ -75,10 +82,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
-SWEP.Damage_Min = 12
+SWEP.Damage_Max = 45
+SWEP.Damage_Min = 32
 SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 5500 // distance at which we drop to minimum damage
+SWEP.Range_Max = 7500 // distance at which we drop to minimum damage
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -102,24 +109,24 @@ SWEP.Firemodes = {
     2
 }
 
-SWEP.RPM = 500
+SWEP.RPM = 480
 
-SWEP.Spread = 0.00025
+SWEP.Spread = 0.0008
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 5
-SWEP.RecoilMaximum = 20
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 8
 SWEP.RecoilResetTime = 0.2  // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 16
-SWEP.RecoilFirstShotMult = 0.15
+SWEP.RecoilDissipationRate = 12
+SWEP.RecoilFirstShotMult = 0.4
 
-SWEP.RecoilVisualKick = 2.25
+SWEP.RecoilVisualKick = 2
 SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.25
+SWEP.RecoilStability = 0.5
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.035
+SWEP.RecoilSpreadPenalty = 0.006
+SWEP.HipFireSpreadPenalty = 0.045
 
 SWEP.CanBlindFire = true
 

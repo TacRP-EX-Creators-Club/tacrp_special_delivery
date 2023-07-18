@@ -21,12 +21,10 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-
         Damage_Max = 70,
-        Damage_Min = 140,
-
+        Damage_Min = 100,
         Range_Min = 900,
-        Range_Max = 5000,
+        Range_Max = 6000,
 
         MoveSpeedMult = 0.7,
         ShootingSpeedMult = 0.5,
@@ -65,10 +63,10 @@ SWEP.BalanceStats = {
     },
     [TacRP.BALANCE_PVE] = {
 
-        Damage_Max = 120,
-        Damage_Min = 92,
-        Range_Min = 4000,
-        Range_Max = 8000,
+        Damage_Max = 48,
+        Damage_Min = 90,
+        Range_Min = 600,
+        Range_Max = 5000,
 
         MoveSpeedMult = 0.7,
         ShootingSpeedMult = 0.5,
@@ -81,17 +79,17 @@ SWEP.BalanceStats = {
 // "ballistics"
 
 SWEP.Damage_Max = 75 // damage at minimum range
-SWEP.Damage_Min = 20 // damage at maximum range
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 7400 // distance at which we drop to minimum damage
+SWEP.Damage_Min = 40 // damage at maximum range
+SWEP.Range_Min = 3000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 8000 // distance at which we drop to minimum damage
 SWEP.Penetration = 30 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 1.5
+SWEP.ArmorPenetration = 0.95
 SWEP.ArmorBonus = 6
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2, // nobody is surviving this
+    [HITGROUP_HEAD] = 3, // nobody is surviving this
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1.1,
     [HITGROUP_LEFTARM] = 0.8,
     [HITGROUP_RIGHTARM] = 0.8,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -105,23 +103,22 @@ SWEP.MuzzleVelocity = 30000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 250
+SWEP.RPM = 200
 
 SWEP.Spread = 0
-SWEP.RecoilSpreadPenalty = 0.045
+SWEP.RecoilSpreadPenalty = 0.02
 SWEP.HipFireSpreadPenalty = 0.1
 SWEP.PeekPenaltyFraction = 0.2
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 2
-SWEP.RecoilResetTime = 0.25
-SWEP.RecoilDissipationRate = 1.5
-SWEP.RecoilFirstShotMult = 0.8
-SWEP.RecoilCrouchMult = 0.25
+SWEP.RecoilResetTime = 0.2
+SWEP.RecoilDissipationRate = 3
+SWEP.RecoilFirstShotMult = 0.75
 
-SWEP.RecoilVisualKick = 3
-
+SWEP.RecoilVisualKick = 2
 SWEP.RecoilKick = 5
+SWEP.RecoilStability = 0.75
 
 SWEP.CanBlindFire = true
 
@@ -133,8 +130,8 @@ SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.2
 
-SWEP.AimDownSightsTime = 0.55
-SWEP.SprintToFireTime = 0.45 // multiplies how long it takes to recover from sprinting
+SWEP.AimDownSightsTime = 0.45
+SWEP.SprintToFireTime = 0.55
 
 SWEP.Sway = 2
 SWEP.ScopedSway = 0.1

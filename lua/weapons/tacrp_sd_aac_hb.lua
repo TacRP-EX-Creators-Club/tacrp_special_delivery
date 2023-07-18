@@ -19,18 +19,21 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-		MoveSpeedMult = 0.85,
-		ShootingSpeedMult = 0.85,
+        Damage_Max = 24,
+        Damage_Min = 11,
+
+        MoveSpeedMult = 0.85,
+        ShootingSpeedMult = 0.85,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
-        Damage_Min = 8,
+        Damage_Min = 6,
 
-        Range_Min = 600,
-        Range_Max = 2000,
+        Range_Min = 800,
+        Range_Max = 2200,
 
         RPM = 650,
 
@@ -79,7 +82,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 SWEP.Damage_Max = 25
 SWEP.Damage_Min = 12
 SWEP.Range_Min = 700
-SWEP.Range_Max = 3500
+SWEP.Range_Max = 3000
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -116,7 +119,8 @@ SWEP.RecoilDissipationRate = 16
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilKick = 3.5
+SWEP.RecoilKick = 4
+SWEP.RecoilStability = 0.3
 
 SWEP.RecoilSpreadPenalty = 0.003
 SWEP.HipFireSpreadPenalty = 0.035
@@ -242,7 +246,7 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {1, 1}
         },        
-		BGs_WM = {
+        BGs_WM = {
             {1, 1}
         },
     },
@@ -250,7 +254,7 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
+        BGs_WM = {
             {2, 1}
         },
     },

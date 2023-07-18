@@ -7,10 +7,10 @@ AddCSLuaFile()
 SWEP.PrintName = "Steyr MP 40"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WWII SMG with exceptional handling and recoil control. \nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
+SWEP.Description = "WW2-era SMG notable for its ease of control thanks to a low fire rate.\nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"
@@ -19,6 +19,9 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 25,
+        Damage_Min = 15,
+
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.8,
         MeleeSpeedMult = 1,
@@ -70,14 +73,14 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 18
-SWEP.Damage_Min = 13
+SWEP.Damage_Min = 6
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2700 // distance at which we drop to minimum damage
+SWEP.Range_Max = 3200 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.75
+SWEP.ArmorPenetration = 0.65
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -91,27 +94,24 @@ SWEP.MuzzleVelocity = 20000
 
 // misc. shooting
 
-SWEP.Firemodes = {2}
-SWEP.RunawayBurst = true
-SWEP.PostBurstDelay = 0.16
+SWEP.Firemode = 2
 
 SWEP.RPM = 550
 
-SWEP.Spread = 0.0035
+SWEP.Spread = 0.009
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 5
-SWEP.RecoilResetTime = 0.25
-SWEP.RecoilDissipationRate = 15
+SWEP.RecoilMaximum = 8
+SWEP.RecoilResetTime = 0.17
+SWEP.RecoilDissipationRate = 22
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilVisualShake = 0.25
-
 SWEP.RecoilKick = 2
+SWEP.RecoilStability = 0.6
 
-SWEP.RecoilSpreadPenalty = 0.005
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.RecoilSpreadPenalty = 0.002
+SWEP.HipFireSpreadPenalty = 0.02
 
 SWEP.CanBlindFire = true
 
@@ -126,9 +126,9 @@ SWEP.ReloadSpeedMult = 0.75
 SWEP.AimDownSightsTime = 0.3
 SWEP.SprintToFireTime = 0.25
 
-SWEP.Sway = 1.25
+SWEP.Sway = 0.9
 SWEP.ScopedSway = 0.15
-SWEP.FreeAimMaxAngle = 4
+SWEP.FreeAimMaxAngle = 3.5
 
 // hold types
 
@@ -223,14 +223,14 @@ SWEP.AnimationTranslationTable = {
 }
 
 SWEP.ProceduralIronFire = {
-    vm_pos = Vector(0, -0.5, -0.125),
+    vm_pos = Vector(0, -0.5, -0.3),
     vm_ang = Angle(0, 0.5, 0),
     t = 0.15,
     tmax = 0.2,
     bones = {
         {
             bone = "ValveBiped.bolt_cover",
-            pos = Vector(0, 0, -3),
+            pos = Vector(0, 0, 3),
             t0 = 0,
             t1 = 0.1,
         },

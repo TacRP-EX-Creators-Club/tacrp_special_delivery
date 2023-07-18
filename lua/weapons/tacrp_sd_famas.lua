@@ -25,14 +25,14 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 13,
-        Damage_Min = 9,
+        Damage_Max = 14,
+        Damage_Min = 10,
         Range_Min = 400,
-        Range_Max = 1800,
+        Range_Max = 2200,
         PostBurstDelay = 0.2,
 
         RecoilResetTime = 0.2,
-        RecoilSpreadPenalty = 0.004,
+        RecoilSpreadPenalty = 0.003,
         RecoilDissipationRate = 18,
 
         BodyDamageMultipliers = {
@@ -101,18 +101,18 @@ SWEP.RPM = 1100
 
 SWEP.Spread = 0.002
 
-SWEP.PostBurstDelay = 0.25
-
+SWEP.PostBurstDelay = 0.22
 SWEP.RunawayBurst = true
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.3
+SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 2.5
+SWEP.RecoilVisualKick = 2
 SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.4
 
 SWEP.RecoilSpreadPenalty = 0.0025
 SWEP.HipFireSpreadPenalty = 0.025

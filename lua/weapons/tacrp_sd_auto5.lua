@@ -97,12 +97,12 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AutoShotgun
 SWEP.ShootTimeMult = 0.5
 
 SWEP.Damage_Max = 10
-SWEP.Damage_Min = 8
+SWEP.Damage_Min = 7
 SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3500 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.8
-SWEP.ArmorBonus = 2
+SWEP.ArmorPenetration = 0.7
+SWEP.ArmorBonus = 1
 
 SWEP.Num = 6
 
@@ -125,10 +125,9 @@ SWEP.Firemode = 1
 
 SWEP.RPM = 200
 
-SWEP.Spread = 0.024
-SWEP.ShotgunPelletSpread = 0.01
+SWEP.Spread = 0.018
+SWEP.ShotgunPelletSpread = 0.012
 
-SWEP.HipFireSpreadPenalty = 0.015
 SWEP.MidAirSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
@@ -137,12 +136,13 @@ SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start d
 SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 2
-SWEP.RecoilStability = 0.35
+SWEP.RecoilVisualKick = 1.5
+SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.6
+SWEP.RecoilAltMultiplier = 600
 
-SWEP.RecoilSpreadPenalty = 0.015
-SWEP.HipFireSpreadPenalty = 0.045
+SWEP.RecoilSpreadPenalty = 0.012
+SWEP.HipFireSpreadPenalty = 0.02
 
 SWEP.CanBlindFire = true
 
@@ -203,8 +203,6 @@ SWEP.ShotgunReload = true
 SWEP.ReloadTimeMult = 1.15
 
 SWEP.JamBaseMSB = 9
-
-SWEP.ReloadTimeMult = 1.15
 
 // sounds
 
@@ -328,7 +326,7 @@ SWEP.Attachments = {
     },
     [6] = {
         PrintName = "Ammo",
-        Category = {"ammo_shotgun"},
+        Category = {"ammo_shotgun2"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     }
