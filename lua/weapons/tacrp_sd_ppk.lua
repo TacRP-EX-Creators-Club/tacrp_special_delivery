@@ -125,7 +125,7 @@ SWEP.Firemode = 1
 
 SWEP.RPM = 600
 
-SWEP.Spread = 0.0025
+SWEP.Spread = 0.004
 
 SWEP.ShootTimeMult = 0.5
 
