@@ -13,7 +13,7 @@ A small pack of xxx new weapons for TacRP, featuring more delightfully crusty Ga
 When making TacRP InterOps, we limited ourselves to rigging third-party assets onto the vanilla TacInt animations, which proved restrictive at times as we couldn't add certain weapons without significantly editing the animations or creating new ones from scratch.  Special Delivery makes heavy use of animation edits and original animations to bring weapons to TacRP that we couldn't with InterOps, meaning we finally have things like more bullpups and break-action weapons!  We also used this as an opportunity to fill in some holes we left unfilled with InterOps, such as expanding the dual-wielding arsenal.
 
 [h1]Features:[/h1]
-[*] xx weapons with worldmodels, c_hands, and stylish animations from both [i]Tactical Intervention[/i] and yours truly!
+[*] 20 weapons with worldmodels, c_hands, and stylish animations from both [i]Tactical Intervention[/i] and yours truly!
 [*] Four different balancing schemes for multiple styles of play.
 [*] Extensive weapon customization with unique attachments.
 [*] Grenade quickthrowing.
@@ -31,6 +31,7 @@ When making TacRP InterOps, we limited ourselves to rigging third-party assets o
 [*] Dual PPKs
 [*] Dual USP Matches
 [*] FAMAS F1
+[*] H&K G3SG/1
 [*] MBA Gyrojet Pistol
 [*] MP 40
 [*] Norinco Type 54
@@ -38,7 +39,6 @@ When making TacRP InterOps, we limited ourselves to rigging third-party assets o
 [*] PKM
 [*] PP-19 Bizon
 [*] Stoeger Double Defense
-[*] Thompson/Center G2 Contender
 [*] Walther PPK
 [*] Walter WA 2000
 

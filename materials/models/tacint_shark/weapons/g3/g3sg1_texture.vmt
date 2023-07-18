@@ -1,0 +1,24 @@
+"Vertexlitgeneric"
+{
+	"$basetexture"  "models\tacint_shark\weapons\g3\g3sg1"
+	"$bumpmap"     "models\tacint_shark\weapons\g3\g3sg1_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$normalmapalphaphongmask"    "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ 0.14 0.14 0.14 ]"
+	"$nocull" "1"
+
+	"$phong"     "1"
+	"$phongboost"   "2"
+	"$phongfresnelranges"      "[1 3 6]"
+//	"$phongtint"                   "[0.2 0.2 0.2]" 
+	"$phongexponenttexture" 	"models\tacint_shark\weapons\g3\g3sg1_exp"
+	"$phongalbedotint"		"1"
+	"$phongalbedoboost" 	"14"
+	"$halflambert" 		"1"
+
+	"$rimlight" 	"1"
+	"$rimlightexponent" 	"66"	
+	"$rimlightboost"	"0.6"
+	"$rimmask" 	"1"
+}
