@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Sidearm"
 SWEP.Description = "Pair of customized pistols with a two-tone finish and dragons emblazoned on the grips.  Swift handling and decent recoil control but low stopping power."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dualies.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dualies.mdl"
 
 SWEP.Slot = 1
 
