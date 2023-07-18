@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Sidearm"
 SWEP.Description = "Pair of pistols pilfered from a pair of dead metrocops. Decent damage and capacity but hefty and slow to fire."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_usp.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_usp.mdl"
 
 SWEP.Slot = 1
 
