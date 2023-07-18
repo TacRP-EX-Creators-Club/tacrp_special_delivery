@@ -19,3 +19,7 @@ ATT.Mult_ShootTimeMult = 2.5
 ATT.Mult_RPM = 0.5
 
 ATT.ShootEnt = "tacrp_proj_gyrojet_ratshot"
+
+if engine.ActiveGamemode() == "terrortown" then
+    ATT.Free = true
+end

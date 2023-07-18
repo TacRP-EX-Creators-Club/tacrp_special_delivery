@@ -277,3 +277,14 @@ addsound("tacint_delisle.Clip_In", path .. "clip_in-1.wav")
 addsound("tacint_delisle.Bolt_Back", path .. "bolt_back-1.wav")
 addsound("tacint_delisle.bolt_forward", path .. "bolt_forward-1.wav")
 addsound("tacint_delisle.safety", path .. "safety-1.wav")
+
+if engine.ActiveGamemode() == "terrortown" then
+    SWEP.HolsterVisible = false
+    SWEP.AutoSpawnable = false
+    SWEP.Kind = WEAPON_HEAVY
+    SWEP.CanBuy = { ROLE_TRAITOR }
+    SWEP.EquipMenuData = {
+        type = "Weapon",
+        desc = "Stealthy bolt action rifle with no tracers.\nUses standard pistol ammo, low muzzle velocity.\n\nHidden while holstered.",
+    }
+end

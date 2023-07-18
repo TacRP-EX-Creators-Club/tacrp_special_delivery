@@ -29,3 +29,7 @@ ATT.Override_BodyDamageMultipliers = {
     [HITGROUP_RIGHTLEG] = 1,
     [HITGROUP_GEAR] = 1
 }
+
+if engine.ActiveGamemode() == "terrortown" then
+    ATT.Free = true
+end

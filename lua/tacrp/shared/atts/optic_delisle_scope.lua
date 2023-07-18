@@ -17,3 +17,7 @@ ATT.Override_ScopeFOV = 90 / 4
 ATT.Add_AimDownSightsTime = 0.04
 
 ATT.InstalledElements = {"scope"}
+
+if engine.ActiveGamemode() == "terrortown" then
+    ATT.Free = true
+end
