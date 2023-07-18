@@ -14,7 +14,7 @@ SWEP.SubCatType = "7Sniper Rifle"
 SWEP.Description = "Pistol caliber bolt-action carbine with an integrated suppressor. One of the quietest firearms ever made, its subsonic rounds have no tracer but travel slowly."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_delisle.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_spr.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_delisle.mdl"
 
 SWEP.Slot = 2
 SWEP.SlotAlt = 3
