@@ -10,10 +10,10 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "Accurized battle rifle with a precise first shot.  Capable of automatic fire but it cripples accuracy and control. \nEquipped with a 6x scope by default."
+SWEP.Description = "Accurized battle rifle with excellent precision but poor control and handling.  Capable of automatic fire. \nEquipped with a 6x scope by default."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_g3.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mp5.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_g3.mdl"
 
 SWEP.Slot = 2
 
@@ -104,21 +104,21 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 500
 
-SWEP.Spread = 0.0005
+SWEP.Spread = 0.00025
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 2
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.3  // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilPerShot = 5
+SWEP.RecoilMaximum = 20
+SWEP.RecoilResetTime = 0.25  // time after you stop shooting for recoil to start dissipating
 SWEP.RecoilDissipationRate = 16
 SWEP.RecoilFirstShotMult = 0.15
 
 SWEP.RecoilVisualKick = 2.25
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 5
 SWEP.RecoilStability = 0.25
 
-SWEP.RecoilSpreadPenalty = 0.0045
+SWEP.RecoilSpreadPenalty = 0.002
 SWEP.HipFireSpreadPenalty = 0.035
 
 SWEP.CanBlindFire = true
@@ -157,8 +157,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(8, -1, -2)
 
-SWEP.SightAng = Angle(0, 0.8, 0)
-SWEP.SightPos = Vector(-4.555, -7.5, -3.6)
+SWEP.SightAng = Angle(-0.14, 0.12, 0)
+SWEP.SightPos = Vector(-4.6, -7.5, -3.1)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -181,7 +181,7 @@ SWEP.ScopeHideWeapon = true
 SWEP.ClipSize = 20
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1.25
+SWEP.ReloadTimeMult = 1.3
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mp5.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
@@ -247,16 +247,13 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {1, 1}
         },
-        BGs_WM = {
-            {1, 1}
-        },
     },
     ["irons"] = {
         BGs_VM = {
             {2, 1}
         },
 		BGs_WM = {
-            {2, 1}
+            {1, 1}
         },
     },
 	["optic"] = {
