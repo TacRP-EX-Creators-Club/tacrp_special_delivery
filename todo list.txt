@@ -1,7 +1,5 @@
 Major:
 - All weapon stats; see "balance ideas.txt" for more
-- Magazines
-- Spawnmenu icons
 
 Minor:
 - Small animation improvements (bad handposes, wobbly movement)
