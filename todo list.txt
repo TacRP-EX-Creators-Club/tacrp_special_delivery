@@ -5,8 +5,7 @@ Major:
 - Spawnmenu icons
 
 Minor:
-- FAMAS and Groza handpose improvements
-- PKM bullet bodygroups fix
+- Small animation improvements (bad handposes, wobbly movement)
 - Tokarev texture touch ups
 
 Save for later:
