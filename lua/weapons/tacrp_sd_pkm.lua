@@ -191,7 +191,7 @@ SWEP.BulletBodygroups = {
     [6] = {5, 5},
     [7] = {5, 6},
 }
-SWEP.DefaultBodygroups = "000007"
+SWEP.DefaultBodygroups = "000006"
 
 // sounds
 
