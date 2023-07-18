@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Sidearm"
 SWEP.Description = "A pair of gaudy, custom made golden M1911 pistols complete with wyvern-engraved grip. Hits hard, but its low capacity can be hurting."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_1911.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_1911.mdl"
 
 SWEP.Slot = 1
 
