@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_famas.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_aug.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_famas.mdl"
 
 SWEP.Slot = 2
 
@@ -135,7 +135,7 @@ SWEP.FreeAimMaxAngle = 3
 
 // hold types
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeBlindFire = false
 
