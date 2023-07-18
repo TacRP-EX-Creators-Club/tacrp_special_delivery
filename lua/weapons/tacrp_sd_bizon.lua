@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "AK-derrivative SMG with a high-capacity helical magazine.  Pretty weak but easy to control, the lack of power is made up for by the large magazine."
+SWEP.Description = "AK-derrivative SMG with a high-capacity helical magazine.  Pretty weak but easy to control and handle."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_bizon.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_bizon.mdl"
@@ -19,8 +19,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 18,
-        Damage_Min = 13,
+        Damage_Max = 15,
+        Damage_Min = 9,
 		FreeAimMaxAngle = 3,
 
         RecoilKick = 2,
