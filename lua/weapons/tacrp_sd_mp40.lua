@@ -28,18 +28,15 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 15,
-        Damage_Min = 10,
+        Damage_Max = 14,
+        Damage_Min = 9,
         Range_Min = 600,
-        Range_Max = 2000,
-        RPM = 800,
-        PostBurstDelay = 0.25,
-
-        RecoilSpreadPenalty = 0.0025,
+        Range_Max = 2200,
+        RPM = 500,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
-            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_CHEST] = 1,
             [HITGROUP_STOMACH] = 1,
             [HITGROUP_LEFTARM] = 0.9,
             [HITGROUP_RIGHTARM] = 0.9,
@@ -123,8 +120,8 @@ SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.75
 
-SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.25
+SWEP.AimDownSightsTime = 0.31
+SWEP.SprintToFireTime = 0.28
 
 SWEP.Sway = 0.9
 SWEP.ScopedSway = 0.15
@@ -272,7 +269,7 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-		VMScale = 0.9,
+        VMScale = 0.9,
         Pos_VM = Vector(-3.2, 0.225, 28.5),
         Pos_WM = Vector(-0.25, 30, -1),
         Ang_VM = Angle(90, 0, 0),
