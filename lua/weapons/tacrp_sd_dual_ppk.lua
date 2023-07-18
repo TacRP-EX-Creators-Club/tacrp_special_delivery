@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Sidearm"
 SWEP.Description = "A pair of suppressed PPK pistols. Swift and accurate, but the low capacity and mediocre damage demands a sharp eye and trigger discpline."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_ppk.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mtx.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_ppk.mdl"
 
 SWEP.Slot = 1
 
