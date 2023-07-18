@@ -13,7 +13,7 @@ SWEP.SubCatType = "7Sniper Rifle"
 SWEP.Description = "Elegant bullpup sniper with incredible stopping power and precision.  Perfect fit for a silent assassin. \nFitted with a 10x scope by default, lacks ironsights."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_as50.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"
 
 SWEP.Slot = 2
 SWEP.SlotAlt = 3
