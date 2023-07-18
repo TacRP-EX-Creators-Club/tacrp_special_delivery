@@ -13,7 +13,7 @@ SWEP.SubCatType = "5Shotgun"
 SWEP.Description = "Modern take on a classic concept, a compact double-barrel with tactical rails.  Easy to handle, reliable and deadly in close quarters."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dbshotgun.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/v_cz52.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dbshotgun.mdl"
 
 SWEP.Slot = 1
 
@@ -154,7 +154,7 @@ SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeBlindFire = "pistol"
 
 SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
-SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
+SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN
 
 SWEP.PassiveAng = Angle(0, 0, 0)
 SWEP.PassivePos = Vector(1, 2, 0)
