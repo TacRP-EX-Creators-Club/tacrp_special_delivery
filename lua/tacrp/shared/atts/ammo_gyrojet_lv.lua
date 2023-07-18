@@ -20,3 +20,7 @@ ATT.Add_ClipSize = 3
 ATT.Mult_ShootEntForce = 0.5
 
 ATT.ShootEnt = "tacrp_proj_gyrojet_lv"
+
+if engine.ActiveGamemode() == "terrortown" then
+    ATT.Free = true
+end
