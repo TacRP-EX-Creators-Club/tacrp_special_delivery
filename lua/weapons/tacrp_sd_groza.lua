@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "Unique experimental rifle, chambered for subsonic ammunition.  It's naturally quiet, even when not suppressed, and maintains damage over range better than integrally-suppressed weapons."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
 
 SWEP.Slot = 2
 
@@ -246,40 +246,41 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.AK47_rootbone",
-        WMBone = "Box01",
+        WMBone = "ValveBiped.Bip01_R_Hand",
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
+        WMScale = 0.75,
         Pos_VM = Vector(-6.7, 0.15, 1),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
-        Ang_WM = Angle(0, -90, 0),
+        Pos_WM = Vector(4, 1.15, -7.25),
+        Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
         Bone = "ValveBiped.AK47_rootbone",
-        WMBone = "Box01",
+        WMBone = "ValveBiped.Bip01_R_Hand",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
 		VMScale = 0.75,
         Pos_VM = Vector(-3.1, 0.152, 14),
-        Pos_WM = Vector(0, 28, -1.75),
+        Pos_WM = Vector(17, 1.1, -3.5),
         Ang_VM = Angle(90, 0, 0),
-        Ang_WM = Angle(0, -90, 0),
+        Ang_WM = Angle(0, 0, 0),
     },
     [3] = {
         PrintName = "Tactical",
         Category = "tactical",
         Bone = "ValveBiped.AK47_rootbone",
-        WMBone = "Box01",
+        WMBone = "ValveBiped.Bip01_R_Hand",
 		InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.25, -0.55, 1),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_WM = Vector(4, 1.5, -3.75),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -90, 180),
+        Ang_WM = Angle(0, 0, 90),
     },
     [4] = {
         PrintName = "Accessory",
