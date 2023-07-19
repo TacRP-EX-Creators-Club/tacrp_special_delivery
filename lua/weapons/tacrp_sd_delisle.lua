@@ -20,6 +20,47 @@ SWEP.Slot = 2
 SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
+    [TacRP.BALANCE_SBOX] = {
+        MoveSpeedMult = 0.9,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.75,
+        MeleeSpeedMult = 1,
+        ReloadSpeedMult = 1,
+    },
+    [TacRP.BALANCE_TTT] = {
+        Damage_Max = 60,
+        Damage_Min = 25,
+
+        Range_Min = 250,
+        Range_Max = 2500,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 3,
+            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.75,
+            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_GEAR] = 0.9
+        },
+
+        MoveSpeedMult = 0.92,
+        ShootingSpeedMult = 0.85,
+        MeleeSpeedMult = 1,
+        SightedSpeedMult = 0.6,
+        ReloadSpeedMult = 0.75,
+    },
+    [TacRP.BALANCE_PVE] = {
+        Damage_Max = 35,
+        Damage_Min = 10,
+
+        MoveSpeedMult = 0.9,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.75,
+        MeleeSpeedMult = 1,
+        ReloadSpeedMult = 1,
+    },
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
@@ -27,11 +68,11 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
 // "ballistics"
 
 SWEP.Damage_Max = 55 // damage at minimum range
-SWEP.Damage_Min = 25 // damage at maximum range
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
+SWEP.Damage_Min = 18 // damage at maximum range
+SWEP.Range_Min = 1800 // distance for which to maintain maximum damage
 SWEP.Range_Max = 7000 // distance at which we drop to minimum damage
 SWEP.Penetration = 4 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.65
+SWEP.ArmorPenetration = 0.75
 SWEP.ArmorBonus = 2
 
 SWEP.BodyDamageMultipliers = {
@@ -45,7 +86,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.5
 }
 
-SWEP.MuzzleVelocity = 10000
+SWEP.MuzzleVelocity = 12000
 
 // misc. shooting
 

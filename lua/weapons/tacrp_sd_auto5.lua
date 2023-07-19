@@ -261,7 +261,7 @@ SWEP.AttachmentElements = {
             {1, 1}
         }
     },
-	["tacrail"] = {
+    ["tacrail"] = {
         BGs_VM = {
             {3, 1}
         },

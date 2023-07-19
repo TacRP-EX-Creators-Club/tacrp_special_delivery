@@ -259,15 +259,15 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
+        BGs_WM = {
             {1, 1}
         },
     },
-	["optic"] = {
+    ["optic"] = {
         BGs_VM = {
             {2, 2}
         },
-		BGs_WM = {
+        BGs_WM = {
             {1, 1}
         },
     },
@@ -297,8 +297,8 @@ SWEP.Attachments = {
         Bone = "ValveBiped.mp5_rootbone",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-		VMScale = 0.75,
-		WMScale = 0.75,
+        VMScale = 0.75,
+        WMScale = 0.75,
         Pos_VM = Vector(-4.1, -0.25, 29.75),
         Pos_WM = Vector(32, 1.2, -4.5),
         Ang_VM = Angle(90, 0, 0),
