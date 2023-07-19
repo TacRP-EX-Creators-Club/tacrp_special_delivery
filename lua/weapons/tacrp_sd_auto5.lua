@@ -265,9 +265,6 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {3, 1}
         },
-        BGs_WM = {
-            {3, 1}
-        }
     },
 }
 
@@ -283,7 +280,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.85,
         Pos_VM = Vector(-5.55, 0.2, 4.5),
-        Pos_WM = Vector(11, 1.5, -5.5),
+        Pos_WM = Vector(8, 1.25, -6.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
     },
@@ -296,7 +293,7 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         VMScale = 1.25,
         Pos_VM = Vector(-3, 1, 15),
-        Pos_WM = Vector(19, 0.25, -3.75),
+        Pos_WM = Vector(19, 0.4, -4.25),
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(0, 0, -90),
     },

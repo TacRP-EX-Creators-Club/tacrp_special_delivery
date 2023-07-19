@@ -298,10 +298,10 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
         VMScale = 0.5,
-        WMScale = 0.5,
-        Pos_VM = Vector(-3.25, 0, 10),
+        WMScale = 0.65,
+        Pos_VM = Vector(-3.1, 0, 9.75),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 8.5, -1.5),
+        Pos_WM = Vector(0, 9, -1.75),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {

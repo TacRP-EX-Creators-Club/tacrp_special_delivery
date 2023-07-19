@@ -275,7 +275,7 @@ SWEP.Attachments = {
         InstalledElements = {"optic"},
         Pos_VM = Vector(-5.5, -0.1, 5.3),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 5, 1.75),
+        Pos_WM = Vector(0, 3, 1),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -286,7 +286,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/silencer_off.wav",
         Pos_VM = Vector(-3, 0, 27.5),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(23, 1, -4.5),
+        Pos_WM = Vector(31, 1.25, -4.5),
         Ang_WM = Angle(0, 0, 180),
     },
     [3] = {
@@ -299,7 +299,7 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         VMScale = 1.25,
         Pos_VM = Vector(-1.5, -1.1, 18),
-        Pos_WM = Vector(1.5, 16, -0.5),
+        Pos_WM = Vector(1.1, 15, -2.8),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -90, -90),
     },

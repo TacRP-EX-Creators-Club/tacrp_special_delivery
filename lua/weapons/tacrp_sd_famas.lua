@@ -253,7 +253,7 @@ SWEP.Attachments = {
         VMScale = 1,
         Pos_VM = Vector(-7.25, 0, 4),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(4.5, 1, -7),
+        Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
@@ -263,9 +263,10 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
 		VMScale = 0.9,
+		WMScale = 0.9,
         Pos_VM = Vector(-3.25, 0, 20.5),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(23, 1, -4.5),
+        Pos_WM = Vector(22, 1, -4.4),
         Ang_WM = Angle(0, 0, 180),
     },
     [3] = {
@@ -278,8 +279,8 @@ SWEP.Attachments = {
 		VMScale = 1.05,
         Pos_VM = Vector(-5, -0.5, 11.5),
         Ang_VM = Angle(90, 0, -90),
-        Pos_WM = Vector(14, 1, -6),
-        Ang_WM = Angle(0, 0, 180),
+        Pos_WM = Vector(14.75, 1.5, -6),
+        Ang_WM = Angle(0, 0, 90),
     },
     [4] = {
         PrintName = "Accessory",
