@@ -179,7 +179,7 @@ SWEP.SightAng = Angle(0.2, 0.5, 0)
 SWEP.SightPos = Vector(-2.9, -5, -4.2)
 
 SWEP.SightPos = Vector(-2.815, -4, -4.225)
-SWEP.SightAng = Angle(0.4, -0.45, 0)
+SWEP.SightAng = Angle(0.4, -0.8, 0)
 
 SWEP.CorrectivePos = Vector(-0.05, 0, -0.1)
 SWEP.CorrectiveAng = Angle(0.395, 1.039, 0)
@@ -279,7 +279,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.85,
-        Pos_VM = Vector(-5.55, 0.2, 4.5),
+        Pos_VM = Vector(-5.3, 0.2, 6),
         Pos_WM = Vector(8, 1.25, -6.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
@@ -292,7 +292,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
         VMScale = 1.25,
-        Pos_VM = Vector(-3, 1, 15),
+        Pos_VM = Vector(-3.5, 0.8, 18),
         Pos_WM = Vector(19, 0.4, -4.25),
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(0, 0, -90),
