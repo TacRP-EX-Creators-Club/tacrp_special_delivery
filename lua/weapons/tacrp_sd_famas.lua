@@ -154,8 +154,8 @@ SWEP.SprintPos = Vector(5, 0, -2)
 SWEP.SightAng = Angle(-0.9, 1.3, 0)
 SWEP.SightPos = Vector(-4.2, -6, -4.9)
 
-SWEP.CorrectivePos = Vector(0.06, 0, -0.2)
-SWEP.CorrectiveAng = Angle(0, 0, -0.2)
+SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
+SWEP.CorrectiveAng = Angle(0.8, -0.1, -0.2)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
