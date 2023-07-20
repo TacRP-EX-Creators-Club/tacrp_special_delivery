@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\tacint_shark\weapons\superx3\v_ammo_sgshell_d"
+//	$bumpmap "models\tacint_shark\weapons\superx3\v_ammo_sgshell_n"
+	$halflambert "1"	
+	$model "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "1"
+	"$rimlightboost" "1"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongtint" "2 2 2"
+	"$phongboost" ".1"	
+	"$phongfresnelranges"	"[1 8 13]"
+	"$basemapalphaphongmask" ".1"
+//	"$phongexponenttexture" "models\tacint_shark\weapons\superx3\v_ammo_sgshell_n"
+	"$phongalbedotint" "1"
+}

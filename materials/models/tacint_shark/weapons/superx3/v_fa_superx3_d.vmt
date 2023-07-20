@@ -1,0 +1,8 @@
+"vertexlitgeneric"
+{
+$baseTexture "models\tacint_shark\weapons\superx3\v_fa_superx3_d"
+$bumpmap "models\tacint_shark\weapons\superx3\v_fa_superx3_n"
+
+$surfaceprop "weapon"
+	"keywords" "superx3"
+}

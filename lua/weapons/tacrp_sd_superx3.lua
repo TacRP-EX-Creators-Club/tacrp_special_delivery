@@ -12,7 +12,7 @@ SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Civilian sporting shotgun with decent control and range but poor handling."
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_auto5.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_superx3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_auto5.mdl"
 
 SWEP.Slot = 2
@@ -123,7 +123,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 200
+SWEP.RPM = 185
 
 SWEP.Spread = 0.018
 SWEP.ShotgunPelletSpread = 0.012
@@ -141,7 +141,7 @@ SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.6
 SWEP.RecoilAltMultiplier = 600
 
-SWEP.RecoilSpreadPenalty = 0.012
+SWEP.RecoilSpreadPenalty = 0.014
 SWEP.HipFireSpreadPenalty = 0.02
 
 SWEP.CanBlindFire = true
@@ -208,7 +208,7 @@ SWEP.JamBaseMSB = 9
 
 // local path = "tacrp/weapons/m4star10/"
 
-SWEP.Sound_Shoot = "tacint_shark/weapons/auto5/xm1014-1.wav"
+SWEP.Sound_Shoot = "tacint_shark/weapons/auto5/winchestersx3_fire_01.wav"
 SWEP.Sound_Shoot_Silenced = "tacint/weapons/sg551/sg551_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -299,7 +299,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_duffle", "acc_extmag_a5", "acc_sling"},
+        Category = {"acc", "acc_duffle", "acc_extmag_shotgun", "acc_sling"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
@@ -340,12 +340,14 @@ end
 
 addsound("tacint_fp6.Insertshell",
     {
-        "tacrp/weapons/fp6/fp6_insertshell-1.wav",
-        "tacrp/weapons/fp6/fp6_insertshell-2.wav",
-        "tacrp/weapons/fp6/fp6_insertshell-3.wav",
+        "tacint_shark/weapons/auto5/shotgun_semiauto_reload1.wav",
+        "tacint_shark/weapons/auto5/shotgun_semiauto_reload2.wav",
+        "tacint_shark/weapons/auto5/shotgun_semiauto_reload3.wav",
+        "tacint_shark/weapons/auto5/shotgun_semiauto_reload4.wav",
+        "tacint_shark/weapons/auto5/shotgun_semiauto_reload5.wav",
     }
 )
 addsound("tacint_Bekas.Movement", "tacrp/weapons/bekas/movement-1.wav")
-addsound("tacint_auto5.Bolt_Back", "tacrp/weapons/m4star10/bolt_back.wav")
-addsound("tacint_auto5.Bolt_release", "tacrp/weapons/m4star10/bolt_release.wav")
+addsound("tacint_auto5.Bolt_Back", "tacint_shark/weapons/auto5/shotgun_semiauto_slide1.wav")
+addsound("tacint_auto5.Bolt_release", "tacint_shark/weapons/auto5/shotgun_semiauto_slide2.wav")
 addsound("tacint_m4.throw_catch", "tacrp/weapons/m4/m4_throw_catch.wav")
