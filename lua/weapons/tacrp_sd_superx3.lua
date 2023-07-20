@@ -338,7 +338,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_fp6.Insertshell",
+addsound("tacint_auto5.Insertshell",
     {
         "tacint_shark/weapons/auto5/shotgun_semiauto_reload1.wav",
         "tacint_shark/weapons/auto5/shotgun_semiauto_reload2.wav",
