@@ -200,7 +200,7 @@ SWEP.ClipSize = 5
 SWEP.Ammo = "buckshot"
 SWEP.ShotgunReload = true
 
-SWEP.ReloadTimeMult = 1.15
+SWEP.ReloadTimeMult = 1.2
 
 SWEP.JamBaseMSB = 9
 
@@ -208,7 +208,7 @@ SWEP.JamBaseMSB = 9
 
 // local path = "tacrp/weapons/m4star10/"
 
-SWEP.Sound_Shoot = "tacint_shark/weapons/auto5/winchestersx3_fire_01.wav"
+SWEP.Sound_Shoot = "tacint_shark/weapons/auto5/winchestersx3_fire_02.wav"
 SWEP.Sound_Shoot_Silenced = "tacint/weapons/sg551/sg551_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
