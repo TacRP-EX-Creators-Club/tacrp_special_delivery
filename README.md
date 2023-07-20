@@ -22,7 +22,6 @@ TacRP InterOps was created by rigging third-party assets onto Tactical Intervent
 [h1]Weapon List[/h1]
 
 [*] AAC Honey Badger
-[*] Browning Auto-5
 [*] DeLisle Carbine
 [*] Dual Beretta "Dragons"
 [*] Dual Desert Eagles
@@ -31,7 +30,7 @@ TacRP InterOps was created by rigging third-party assets onto Tactical Intervent
 [*] Dual USP Matches
 [*] FAMAS F1
 [*] H&K G3SG/1
-[*] MBA Gyrojet Pistol
+[*] MBA Gyrojet Pistol - Complete with unique rocket projectiles!
 [*] MP 40
 [*] Norinco Type 54
 [*] OTs-14 Groza
@@ -40,6 +39,7 @@ TacRP InterOps was created by rigging third-party assets onto Tactical Intervent
 [*] Stoeger Double Defense
 [*] Walther PPK
 [*] Walter WA 2000
+[*] Winchester Super X3
 
 [h1]Credits:[/h1]
 
