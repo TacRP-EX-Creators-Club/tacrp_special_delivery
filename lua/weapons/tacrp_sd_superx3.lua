@@ -1,16 +1,16 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false -- Depreciated by Winchester Super X3.  I might bring this thing back one day, who knows.
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Browning Auto-5"
+SWEP.PrintName = "Winchester Super X3"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Slow, old-world semi-auto shotgun with decent control and range but poor handling."
+SWEP.Description = "Civilian sporting shotgun with decent control and range but poor handling."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_auto5.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_auto5.mdl"
