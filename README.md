@@ -14,15 +14,18 @@ With effort and passion, TacRP revived these weapons and animations and brought 
 TacRP InterOps was created by rigging third-party assets onto Tactical Intervention's animations.  While we got quite a lot of mileage out of this, it proved limiting in some areas.  Special Delivery leverages edited and entirely new animations to accomodate new types of weapons, such as additional bullpups and TacRP's first double-barrel shotgun!
 
 [h1]Features:[/h1]
+[list]
 [*] 19 new weapons with worldmodels, c_hands, NPC support and stylish animations from both [i]Tactical Intervention[/i] and yours truly!
 [*] Customize your weapons with a wide range of attachments. Make meaningful decisions and adjust your guns to your preference, and gain an advantage with unique tactical attachments like blind-fire cameras, blinding flashlights, and radars.
 [*] Visible weapons on your back when holstered, and reloading drops magazine models.
 [*] Melee bash close enemies, Blindfire above and around cover or quickthrow grenades, with animations for every weapon
+[/list]
 
 [h1]Weapon List[/h1]
 
+[list]
 [*] AAC Honey Badger
-[*] DeLisle Carbine
+[*] De Lisle Carbine
 [*] Dual Beretta "Dragons"
 [*] Dual Desert Eagles
 [*] Dual M1911 "Wyverns"
@@ -40,12 +43,15 @@ TacRP InterOps was created by rigging third-party assets onto Tactical Intervent
 [*] Walther PPK
 [*] Walter WA 2000
 [*] Winchester Super X3
+[/list]
 
 [h1]Credits:[/h1]
 
-[link]Model sources
+Model sources
 
+[list]
 [*] Tactical Invervention: Original animations.
 [*] speedonerd: Rigging, animation, stats.
 [*] 8Z: Rigging, animation, stats.
 [*] Unselles: De Lisle texture fixes.
+[/list]
