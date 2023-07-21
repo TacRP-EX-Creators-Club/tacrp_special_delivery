@@ -58,8 +58,8 @@ function ENT:OnThink()
         local tr = util.TraceHull({
             start = self:GetPos(),
             endpos = self:GetPos() + self:GetVelocity():GetNormalized() * 1024,
-            mins = Vector(-8, -8, -8),
-            maxs = Vector(8, 8, 8),
+            mins = Vector(-12, -12, -12),
+            maxs = Vector(12, 12, 12),
             filter = {self, self:GetOwner()},
             mask = MASK_SHOT_HULL,
         })

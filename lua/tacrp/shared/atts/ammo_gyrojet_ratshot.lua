@@ -10,8 +10,8 @@ ATT.Category = "ammo_gyrojet"
 
 ATT.SortOrder = 4
 
-ATT.Mult_Damage_Max = 0.5
-ATT.Mult_Damage_Min = 0.5
+ATT.Mult_Damage_Max = 0.4
+ATT.Mult_Damage_Min = 0.4
 
 ATT.Mult_ShootEntForce = 0.5
 
