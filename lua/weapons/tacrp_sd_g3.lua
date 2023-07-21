@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "HK G3SG/1"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "2Operator"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "6Precision Rifle"
 
 SWEP.Description = "Accurized battle rifle with excellent precision but poor control and handling.  Capable of automatic fire. \nEquipped with a 6x scope by default."
@@ -82,11 +82,11 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 45
-SWEP.Damage_Min = 32
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 7500 // distance at which we drop to minimum damage
-SWEP.Penetration = 6 // units of metal this weapon can penetrate
+SWEP.Damage_Max = 36
+SWEP.Damage_Min = 30
+SWEP.Range_Min = 2500 // distance for which to maintain maximum damage
+SWEP.Range_Max = 7000 // distance at which we drop to minimum damage
+SWEP.Penetration = 15 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
