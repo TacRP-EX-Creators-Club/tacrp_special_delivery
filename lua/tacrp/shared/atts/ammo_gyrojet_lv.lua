@@ -1,7 +1,7 @@
 ATT.PrintName = "LV"
 ATT.FullName = "11mm Low Velocity Mini-Rockets"
 
-ATT.Icon = Material("entities/tacrp_att_ammo_40mm_smoke.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
 ATT.Description = "Projectiles with reduced diameter and velocity, leaving a less visible trail."
 ATT.Pros = {"att.procon.reliability", "stat.clipsize", "stat.rpm"}
 ATT.Cons = {"stat.damage", "stat.muzzlevelocity"}

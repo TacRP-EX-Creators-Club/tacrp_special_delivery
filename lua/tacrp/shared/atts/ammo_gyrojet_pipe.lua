@@ -1,7 +1,7 @@
 ATT.PrintName = "Pipe"
 ATT.FullName = "15mm Boosted Pipe Grenades"
 
-ATT.Icon = Material("entities/tacrp_att_ammo_40mm_smoke.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
 ATT.Description = "Heavy grenades with timed fuse. Direct hits detonate instantly."
 ATT.Pros = {"att.procon.explosive"}
 ATT.Cons = {"stat.muzzlevelocity", "stat.clipsize", "stat.rpm"}

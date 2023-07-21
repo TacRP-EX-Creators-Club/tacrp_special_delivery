@@ -52,8 +52,8 @@ function ENT:Impact(data, collider)
 end
 
 function ENT:OnThink()
-    if SERVER and (self.NextTrace or 0) < CurTime() and (CurTime() - self.SpawnTime) >= 0.2 then
-        self.NextTrace = CurTime() + 0.1
+    if SERVER and (self.NextTrace or 0) < CurTime() and (CurTime() - self.SpawnTime) >= 0.1 then
+        self.NextTrace = CurTime() + 0.05
 
         local tr = util.TraceHull({
             start = self:GetPos(),

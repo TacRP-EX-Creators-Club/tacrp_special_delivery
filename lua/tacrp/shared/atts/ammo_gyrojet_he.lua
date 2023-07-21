@@ -1,7 +1,7 @@
 ATT.PrintName = "HE"
 ATT.FullName = "13mm High Explosive Mini-Rockets"
 
-ATT.Icon = Material("entities/tacrp_att_ammo_40mm_smoke.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
 ATT.Description = "Projectile with a small explosive charge instead of a bullet head."
 ATT.Pros = {"att.procon.explosive"}
 ATT.Cons = {"stat.damage", "att.procon.unreliable", "stat.rpm"}

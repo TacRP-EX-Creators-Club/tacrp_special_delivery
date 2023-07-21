@@ -1,7 +1,7 @@
 ATT.PrintName = "Ratshot"
 ATT.FullName = "13mm Ratshot Mini-Rockets"
 
-ATT.Icon = Material("entities/tacrp_att_ammo_40mm_smoke.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
 ATT.Description = "Proximity fuse airburst mini-rockets. For rodents of unexpected size."
 ATT.Pros = {"att.procon.airburst"}
 ATT.Cons = {"stat.damage", "stat.muzzlevelocity", "stat.rpm"}
