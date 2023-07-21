@@ -48,3 +48,4 @@ TacRP InterOps was created by rigging third-party assets onto Tactical Intervent
 [*] Tactical Invervention: Original animations.
 [*] speedonerd: Rigging, animation, stats.
 [*] 8Z: Rigging, animation, stats.
+[*] Unselles: De Lisle texture fixes.
