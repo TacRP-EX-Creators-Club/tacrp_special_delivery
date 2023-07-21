@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP (Special)" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
 
-SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming. This model was further developed to allow for removable magazines and can accept additional ammo types."
+SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming. This model was modified by an enthusiast to utilize removable magazines from the obscure assault rifle variant."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_gyrojet.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_gyrojet.mdl"
