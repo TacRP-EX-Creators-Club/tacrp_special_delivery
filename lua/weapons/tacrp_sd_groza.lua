@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Unique experimental rifle, chambered for subsonic ammunition.  It's naturally quiet, even when not suppressed, and maintains damage over range better than integrally-suppressed weapons."
+SWEP.Description = "Unique experimental bullpup rifle chambered for subsonic ammunition. Great damage over range and has no visible tracer."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
@@ -70,12 +70,12 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 19
-SWEP.Damage_Min = 16
+SWEP.Damage_Max = 17
+SWEP.Damage_Min = 14
 SWEP.Range_Min = 1300 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.725
+SWEP.ArmorPenetration = 0.8
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
@@ -88,7 +88,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 25000
+SWEP.MuzzleVelocity = 14000
 
 // misc. shooting
 
@@ -109,9 +109,9 @@ SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
-
+SWEP.RecoilVisualKick = 1.25
 SWEP.RecoilKick = 3
+SWEP.RecoilStability = 0.15
 
 SWEP.RecoilSpreadPenalty = 0.0018
 SWEP.HipFireSpreadPenalty = 0.03
@@ -150,8 +150,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0, -0.38, 0)
-SWEP.SightPos = Vector(-4.71, -6.5, -4)
+SWEP.SightAng = Angle(0, -0.5, 0)
+SWEP.SightPos = Vector(-4.71, -6.5, -3.95)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
@@ -182,7 +182,7 @@ local path1 = "tacrp/weapons/ak47/ak47_"
 SWEP.Sound_Shoot = "^" .. path .. "ak47-1.wav"
 SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
-SWEP.Vol_Shoot = 95
+SWEP.Vol_Shoot = 110
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -194,6 +194,8 @@ SWEP.QCA_Eject = 2
 
 SWEP.MuzzleEffect = "muzzleflash_ak47"
 SWEP.EjectEffect = 2
+
+SWEP.TracerNum = 0
 
 // anims
 
@@ -237,6 +239,15 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+    },
+}
+
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.6, -0.1),
+    vm_ang = Angle(0, 0.5, 0),
+    t = 0.15,
+    tmax = 0.2,
+    bones = {
     },
 }
 
