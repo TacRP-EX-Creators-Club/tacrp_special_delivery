@@ -1,9 +1,0 @@
-Major:
-- All weapon stats; see "balance ideas.txt" for more
-
-Minor:
-- Small animation improvements (bad handposes, wobbly movement)
-- PPK and Delisle Sounds
-
-Save for later (Post-Launch):
-- Contender (the whole thing)
