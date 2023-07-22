@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "Sa vz. 58"
-SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
+SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Sporter Carbine"
@@ -159,10 +159,10 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.05, -0.4, 0)
-SWEP.SightPos = Vector(-4.66, -7.5, -2.9)
+SWEP.SightAng = Angle(0.03, -0.65, -0.4)
+SWEP.SightPos = Vector(-4.7, -7.5, -2.5)
 
-SWEP.CorrectivePos = Vector(-0.05, 0, -0.05)
+SWEP.CorrectivePos = Vector(-0.04, 0, -0.15)
 SWEP.CorrectiveAng = Angle(0.65, 0.7, 0)
 
 SWEP.HolsterVisible = true
@@ -236,6 +236,8 @@ SWEP.AnimationTranslationTable = {
 
 SWEP.DeployTimeMult = 2.25
 
+SWEP.LastShot = true
+
 // attachments
 
 SWEP.AttachmentElements = {
@@ -268,8 +270,8 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
-        Pos_VM = Vector(-5.5, 0.225, 4),
+        VMScale = 0.9,
+        Pos_VM = Vector(-5.1, 0.15, 13),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 3, 0.5),
         Ang_WM = Angle(0, -90, 0),
@@ -282,7 +284,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.8,
-        Pos_VM = Vector(-3.3, 0.1, 27.75),
+        Pos_VM = Vector(-3.3, 0.1, 28.5),
         Pos_WM = Vector(0, 28, -1.75),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
