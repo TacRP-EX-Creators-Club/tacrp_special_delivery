@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+$baseTexture "models\tacint_shark\weapons\vz58\v_fa_cz858_mag_d"
+$bumpmap "models\tacint_shark\weapons\vz58\v_fa_cz858_mag_n"
+$normalmapalphaenvmapmask 1
+$surfaceprop "metal"
+	"keywords" "nmrih CZ858"
+}
+}

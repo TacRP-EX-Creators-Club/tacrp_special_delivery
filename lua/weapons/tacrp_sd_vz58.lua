@@ -1,5 +1,5 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
@@ -12,7 +12,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "High-damage assault rifle with excellent armor piercing capabilities, converted to semi auto for civilian sale. \nDespite its looks, it is not an AK."
 
-SWEP.ViewModel = "models/weapons/tacint_extras/v_ak47.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_vz58.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak47.mdl"
 
 SWEP.Slot = 2
@@ -338,6 +338,6 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_extras_ak47.remove_clip", path .. "magout.mp3")
-addsound("tacint_extras_ak47.insert_clip", path .. "magin.mp3")
-addsound("tacint_extras_ak47.boltaction", path .. "bolt.mp3")
+addsound("tacint_vz58.remove_clip", path .. "magout.mp3")
+addsound("tacint_vz58.insert_clip", path .. "magin.mp3")
+addsound("tacint_vz58.boltaction", path .. "bolt.mp3")
