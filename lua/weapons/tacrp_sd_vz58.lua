@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "High-damage assault rifle with excellent armor piercing capabilities, converted to semi auto for civilian sale. \nDespite its looks, it is not an AK."
+SWEP.Description = "High-damage assault rifle with excellent armor piercing capabilities, converted to semi auto for civilian markets. \nDespite its looks, it is not an AK."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_vz58.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak47.mdl"
@@ -19,6 +19,10 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 32,
+        Damage_Min = 24,
+        RPM = 420,
+
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
@@ -26,8 +30,6 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Description = "Classic high damage assault rifle.\nAn insurgent's greatest ally and a terrorist's best friend.",
-
         Damage_Max = 20,
         Damage_Min = 15,
         Range_Min = 750,
@@ -76,15 +78,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 28
-SWEP.Damage_Min = 22
+SWEP.Damage_Min = 18
 SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
-SWEP.Penetration = 11 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.775
-SWEP.ArmorBonus = 1.25
+SWEP.Penetration = 12 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.9
+SWEP.ArmorBonus = 1
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -100,7 +102,7 @@ SWEP.MuzzleVelocity = 28000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 550
+SWEP.RPM = 360
 
 SWEP.Spread = 0.0045
 
@@ -311,7 +313,7 @@ SWEP.Attachments = {
     },
     [6] = {
         PrintName = "Trigger",
-        Category = {"trigger_auto"},
+        Category = {"trigger_semi"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
