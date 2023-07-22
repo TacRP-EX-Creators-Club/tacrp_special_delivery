@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Dual Agents"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "2Operator"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "A pair of suppressed PPK pistols. Swift and accurate, but the low capacity and mediocre damage demands a sharp eye and trigger discpline."
@@ -72,6 +72,11 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_PVE] = {
+        Damage_Max = 11,
+        Damage_Min = 6,
+
+        RecoilKick = 3,
+
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -84,7 +89,7 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
+SWEP.Damage_Max = 19
 SWEP.Damage_Min = 8
 SWEP.Range_Min = 1200
 SWEP.Range_Max = 3500

@@ -74,6 +74,7 @@ SWEP.BalanceStats = {
         Damage_Min = 9,
 
         Spread = 0.01,
+        RecoilKick = 5,
 
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
@@ -112,7 +113,7 @@ SWEP.BodyDamageMultipliers = {
 SWEP.Firemodes = {-2}
 SWEP.Firemode = -2
 SWEP.RunawayBurst = false
-SWEP.PostBurstDelay = 0.08
+SWEP.PostBurstDelay = 0.05
 
 SWEP.RPM = 500
 

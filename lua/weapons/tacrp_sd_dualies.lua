@@ -77,6 +77,7 @@ SWEP.BalanceStats = {
         RPM = 800,
 
         Spread = 0.01,
+        RecoilKick = 3,
 
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
@@ -90,8 +91,8 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
-SWEP.Damage_Min = 15
+SWEP.Damage_Max = 22
+SWEP.Damage_Min = 12
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
@@ -100,7 +101,7 @@ SWEP.ArmorPenetration = 0.6
 SWEP.MuzzleVelocity = 9500
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4.5,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -115,7 +116,7 @@ SWEP.BodyDamageMultipliers = {
 SWEP.Firemodes = {-2}
 SWEP.Firemode = -2
 SWEP.RunawayBurst = false
-SWEP.PostBurstDelay = 0.075
+SWEP.PostBurstDelay = 0.05
 
 SWEP.RPM = 700
 

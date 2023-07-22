@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Walther PPK"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "4Consumer"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Compact, low-capacity pocket pistol. High fire rate and easy to handle, but damage falls off quickly.\nBesides being an iconic weapon in the cinemas, it is also the weapon that killed Adolf Hitler."
@@ -21,6 +21,7 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 22,
         Damage_Min = 10,
+        RPM = 600,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 5,
@@ -71,8 +72,8 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 12,
-        Damage_Min = 5,
+        Damage_Max = 11,
+        Damage_Min = 6,
 
         HipFireSpreadPenalty = 0.015,
 
@@ -99,7 +100,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
+SWEP.Damage_Max = 19
 SWEP.Damage_Min = 8
 SWEP.Range_Min = 400
 SWEP.Range_Max = 2400
@@ -123,7 +124,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 600
+SWEP.RPM = 500
 
 SWEP.Spread = 0.004
 

@@ -19,7 +19,7 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 36,
+        Damage_Max = 37,
         Damage_Min = 10,
 
         BodyDamageMultipliers = {
@@ -70,6 +70,7 @@ SWEP.BalanceStats = {
         Damage_Min = 11,
 
         Spread = 0.008,
+        RecoilKick = 6,
 
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
@@ -83,7 +84,7 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 33
+SWEP.Damage_Max = 34
 SWEP.Damage_Min = 7
 SWEP.Range_Min = 900 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
