@@ -13,7 +13,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 SWEP.Description = "High-damage assault rifle with excellent armor piercing capabilities, converted to semi auto for civilian markets. \nDespite its looks, it is not an AK."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_vz58.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_vz58.mdl"
 
 SWEP.Slot = 2
 
@@ -174,7 +174,7 @@ SWEP.ClipSize = 30
 SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/ak47.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/cz858.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.65
@@ -182,10 +182,10 @@ SWEP.DropMagazineTime = 0.65
 
 // sounds
 
-local path = "tacrp_extras/ak47/"
+local path = "tacint_shark/weapons/vz58/cz858_"
 local path2 = "tacrp/weapons/ak47/ak47_"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire_01.wav"
 SWEP.Sound_Shoot_Silenced = path2 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -245,6 +245,9 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+		BGs_WM = {
+            {2, 1}
+        },
     },
     ["akmount"] = {
         BGs_VM = {
@@ -273,7 +276,7 @@ SWEP.Attachments = {
         VMScale = 0.9,
         Pos_VM = Vector(-5.1, 0.15, 13),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0, 11, 0.2),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -284,8 +287,9 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.8,
+		WMScale = 0.8,
         Pos_VM = Vector(-3.3, 0.1, 28.5),
-        Pos_WM = Vector(0, 28, -1.75),
+        Pos_WM = Vector(0, 26.8, -1.85),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -342,6 +346,6 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_vz58.remove_clip", path .. "magout.mp3")
-addsound("tacint_vz58.insert_clip", path .. "magin.mp3")
-addsound("tacint_vz58.boltaction", path .. "bolt.mp3")
+addsound("tacint_vz58.remove_clip", path .. "clipout.wav")
+addsound("tacint_vz58.insert_clip", path .. "clipin.wav")
+addsound("tacint_vz58.boltaction", path .. "slideforward.wav")
