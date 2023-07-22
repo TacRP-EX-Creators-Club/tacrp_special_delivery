@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+$nocull 1
+"$basetexture" "models\tacint_shark\weapons\1022\1022mag_d"
+"$bumpmap" "models\tacint_shark\weapons\1022\1022mag_n"
+
+
+$halflambert 1
+
+$phong 1
+$phongboost 1
+$phongfresnelranges "[.2 .7 1.2]"
+"$phongexponenttexture" "models\tacint_shark\weapons\1022\1022mag_g"
+//$phongexponent 4
+$phongalbedotint 1
+
+"$normalmapalphaenvmapmask" "1"
+$envmap env_cubemap
+$envmapfresnel 1
+$envmapFresnelMinMaxExp "[0 .6 .4]"
+
+}

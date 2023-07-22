@@ -1,5 +1,5 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
@@ -13,7 +13,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "Ultra-lightweight plinking rifle.  Barely counts as lethal but is incredibly easy to handle and reload."
 
-SWEP.ViewModel = "models/weapons/tacint/v_m14.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_1022.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_m14.mdl"
 
 SWEP.Slot = 2
@@ -27,7 +27,7 @@ SWEP.BalanceStats = {
         Range_Max = 3000,
 
         MoveSpeedMult = 0.8,
-        ShootingSpeedMult = 0.6,
+        ShootingSpeedMult = 1,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
@@ -110,43 +110,43 @@ SWEP.MuzzleVelocity = 32000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 400
+SWEP.RPM = 450
 
 SWEP.Spread = 0.0002
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 3
+SWEP.RecoilMaximum = 2
 SWEP.RecoilResetTime = 0.25 // time after you stop shooting for recoil to start dissipating
 SWEP.RecoilDissipationRate = 6
 SWEP.RecoilFirstShotMult = 0.5
 
-SWEP.RecoilVisualKick = 2
-SWEP.RecoilKick = 5
+SWEP.RecoilVisualKick = 0.5
+SWEP.RecoilKick = 0.75
 SWEP.RecoilStability = 0.75
 
 SWEP.RecoilSpreadPenalty = 0.005
-SWEP.HipFireSpreadPenalty = 0.075
+SWEP.HipFireSpreadPenalty = 0.005
 SWEP.PeekPenaltyFraction = 0.1
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.85
-SWEP.ShootingSpeedMult = 0.75
-SWEP.SightedSpeedMult = 0.5
+SWEP.MoveSpeedMult = 0.95
+SWEP.ShootingSpeedMult = 0.85
+SWEP.SightedSpeedMult = 0.7
 
-SWEP.ReloadSpeedMult = 0.4
+SWEP.ReloadSpeedMult = 0.7
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.5
+SWEP.AimDownSightsTime = 0.2
+SWEP.SprintToFireTime = 0.3
 
-SWEP.Sway = 2
+SWEP.Sway = 0.75
 SWEP.ScopedSway = 0.1
 
-SWEP.FreeAimMaxAngle = 7.5
+SWEP.FreeAimMaxAngle = 3.5
 
 // hold types
 
@@ -158,7 +158,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -6)
+SWEP.PassivePos = Vector(0, -2, -4)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -174,7 +174,7 @@ SWEP.SprintMidPoint = {
 SWEP.SightAng = Angle(0, -0.2, 0)
 SWEP.SightPos = Vector(-3.81, -7.5, -2.7)
 
-SWEP.CorrectivePos = Vector(0.025, -7.5, 0.1)
+SWEP.CorrectivePos = Vector(0.025, -1.5, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterVisible = true
@@ -182,34 +182,26 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-// scope
-
-SWEP.Scope = true
-SWEP.ScopeOverlay = Material("tacrp/scopes/l96.png", "mips smooth") // Material("path/to/overlay")
-SWEP.ScopeFOV = 90 / 6
-SWEP.ScopeLevels = 1 // 2 = like CS:S
-SWEP.ScopeHideWeapon = true
-
 // reload
 
 SWEP.ClipSize = 25
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 0.8
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m14.mdl"
-SWEP.DropMagazineImpact = "metal"
+SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.85
 SWEP.DropMagazineTime = 0.5
 
 // sounds
 
-local path = "TacRP/weapons/m14/m14_"
+local path = "tacint_shark/weapons/1022/ruger_"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire_01.wav"
+SWEP.Sound_Shoot_Silenced = "^" .. path .. "fire_supp.wav"
 
-SWEP.Vol_Shoot = 130
+SWEP.Vol_Shoot = 100
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -219,8 +211,8 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_ak47"
-SWEP.EjectEffect = 2
+SWEP.MuzzleEffect = "muzzleflash_pistol"
+SWEP.EjectEffect = 1
 
 // anims
 
@@ -244,7 +236,7 @@ SWEP.EjectEffect = 2
 // WM:
 // attack1
 SWEP.AnimationTranslationTable = {
-    ["fire_iron"] = "shoot2",
+    ["fire_iron"] = "shoot1",
     ["deploy"] = "draw",
     ["fire"] = {"shoot1", "shoot2"},
     ["blind_fire"] = "blind_shoot1"
@@ -253,7 +245,7 @@ SWEP.AnimationTranslationTable = {
 // attachments
 
 SWEP.AttachmentElements = {
-    ["sights"] = {
+    ["tacrail"] = {
         BGs_VM = {
             {1, 1}
         },
@@ -269,11 +261,11 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"ironsights_sniper", "optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.m14_rootbone",
-        InstalledElements = {"sights"},
+        InstalledElements = {"tacrail"},
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 1,
-        Pos_VM = Vector(-4.6, 0.2, 15),
+        VMScale = 0.85,
+        Pos_VM = Vector(-3.65, 0.15, 5),
         Pos_WM = Vector(14.5, 0.6, -9.1),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(-22.5, 5, 180),
@@ -284,7 +276,7 @@ SWEP.Attachments = {
         Bone = "ValveBiped.m14_rootbone",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.45, 0.2, 32.25),
+        Pos_VM = Vector(-2.65, 0.18, 31.75),
         Pos_WM = Vector(30, 0, -14.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(-22.5, 5, 180),
@@ -343,9 +335,9 @@ local function addsound(name, spath)
     })
 end
 
-addsound("TacInt_m14.remove_clip", path .. "remove_clip.wav")
-addsound("TacInt_m14.insert_clip", path .. "insert_clip.wav")
-addsound("TacInt_m14.insert_clip-mid", path .. "insert_clip-mid.wav")
-addsound("TacInt_m14.bolt_back", path .. "bolt_back.wav")
-addsound("TacInt_m14.bolt_release", path .. "bolt_release.wav")
-addsound("TacInt_m14.safety", path .. "safety.wav")
+addsound("tacint_1022.remove_clip", path .. "clipout.wav")
+addsound("tacint_1022.insert_clip", path .. "clipin.wav")
+addsound("tacint_1022.insert_clip-mid", path .. "clipin.wav")
+addsound("tacint_1022.bolt_back", path .. "slidelock.wav")
+addsound("tacint_1022.bolt_release", path .. "slideforward.wav")
+addsound("tacint_1022.safety", path .. "slideback.wav")
