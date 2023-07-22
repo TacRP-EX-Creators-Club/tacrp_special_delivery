@@ -142,11 +142,11 @@ SWEP.ShootTimeMult = 0.5
 
 // handling
 
-SWEP.MoveSpeedMult = 0.975
+SWEP.MoveSpeedMult = 1
 SWEP.ShootingSpeedMult = 0.9
 SWEP.SightedSpeedMult = 1
 
-SWEP.ReloadSpeedMult = 0.6
+SWEP.ReloadSpeedMult = 0.75
 
 SWEP.AimDownSightsTime = 0.2
 SWEP.SprintToFireTime = 0.2

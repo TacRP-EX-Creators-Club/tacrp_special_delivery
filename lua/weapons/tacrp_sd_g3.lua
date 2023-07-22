@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "Accurized battle rifle with excellent precision but poor control and handling.  Capable of automatic fire. \nEquipped with a 6x scope by default."
+SWEP.Description = "Accurized battle rifle with excellent precision but poor handling.  Capable of automatic fire. \nEquipped with a 6x scope by default."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_g3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_g3.mdl"
@@ -87,7 +87,8 @@ SWEP.Damage_Min = 30
 SWEP.Range_Min = 2500 // distance for which to maintain maximum damage
 SWEP.Range_Max = 7000 // distance at which we drop to minimum damage
 SWEP.Penetration = 15 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.7
+SWEP.ArmorPenetration = 0.775
+SWEP.ArmorBonus = 2
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4,
@@ -122,8 +123,8 @@ SWEP.RecoilDissipationRate = 12
 SWEP.RecoilFirstShotMult = 0.4
 
 SWEP.RecoilVisualKick = 2
-SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.5
+SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.7
 
 SWEP.RecoilSpreadPenalty = 0.006
 SWEP.HipFireSpreadPenalty = 0.045

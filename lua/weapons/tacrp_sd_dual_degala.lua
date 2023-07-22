@@ -35,7 +35,7 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        MoveSpeedMult = 0.95,
+        MoveSpeedMult = 0.92,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 1,
         MeleeSpeedMult = 1,
@@ -64,10 +64,10 @@ SWEP.BalanceStats = {
         ReloadTimeMult = 1.25,
 
         MoveSpeedMult = 1,
-        ShootingSpeedMult = 0.9,
+        ShootingSpeedMult = 0.75,
         MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.75,
-        ReloadSpeedMult = 0.9,
+        SightedSpeedMult = 1,
+        ReloadSpeedMult = 0.8,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 65,
@@ -76,9 +76,9 @@ SWEP.BalanceStats = {
         Spread = 0.015,
         RecoilKick = 8,
 
-        MoveSpeedMult = 1,
+        MoveSpeedMult = 0.92,
         ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 0.85,
+        SightedSpeedMult = 1,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -140,14 +140,14 @@ SWEP.ShootTimeMult = 0.6
 
 // handling
 
-SWEP.MoveSpeedMult = 0.975
-SWEP.ShootingSpeedMult = 0.9
+SWEP.MoveSpeedMult = 0.9
+SWEP.ShootingSpeedMult = 0.75
 SWEP.SightedSpeedMult = 1
 
-SWEP.ReloadSpeedMult = 0.6
+SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.25
-SWEP.SprintToFireTime = 0.25
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.3
 
 // hold types
 
