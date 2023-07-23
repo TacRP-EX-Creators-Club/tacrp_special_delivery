@@ -186,7 +186,7 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 SWEP.ClipSize = 14
 SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 0.9
+SWEP.ReloadTimeMult = 0.85
 SWEP.DeployTimeMult = 0.75
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/ppk.mdl"
@@ -198,7 +198,7 @@ SWEP.DropMagazineTime = 0.25
 
 // sounds
 
-local path = "tacrp_extras/usp/"
+local path = "tacint_shark/weapons/cz52/cz52_"
 local path1 = "tacint_shark/weapons/dual1911/"
 
 SWEP.Silencer = true
@@ -289,12 +289,12 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_dualppk.clip_in_left", path1 .. "elite_leftclipin.wav")
-addsound("tacint_dualppk.clip_in_right", path1 .. "elite_rightclipin.wav")
+addsound("tacint_dualppk.clip_in_left", path .. "clipin.wav")
+addsound("tacint_dualppk.clip_in_right", path .. "clipin.wav")
 addsound("tacint_dualppk.clip_out", path1 .. "elite_reloadstart.wav")
 addsound("tacint_dualppk.slide_back", path1 .. "elite_reloadstart.wav")
-addsound("tacint_dualppk.slide_release", path1 .. "sliderelease.wav")
-addsound("tacint_dualppk.slide_shut", path1 .. "sliderelease.wav")
+addsound("tacint_dualppk.slide_release", path .. "sliderelease.wav")
+addsound("tacint_dualppk.slide_shut", path .. "sliderelease.wav")
 
 SWEP.Scope = false
 
