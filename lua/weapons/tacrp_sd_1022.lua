@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "Ultra-lightweight plinking rifle.  Barely counts as lethal but is incredibly easy to handle and reload."
+SWEP.Description = "Ultra-lightweight plinking rifle.  Barely counts as lethal but is incredibly easy to handle and quick to reload."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1022.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_m14.mdl"
@@ -20,8 +20,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 30,
-        Damage_Min = 50,
+        Damage_Max = 10,
+        Damage_Min = 8,
 
         Range_Min = 1200,
         Range_Max = 3000,
@@ -86,8 +86,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 40 // damage at minimum range
-SWEP.Damage_Min = 32 // damage at maximum range
+SWEP.Damage_Max = 12 // damage at minimum range
+SWEP.Damage_Min = 8 // damage at maximum range
 SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
 SWEP.Penetration = 15 // units of metal this weapon can penetrate
@@ -171,8 +171,8 @@ SWEP.SprintMidPoint = {
     Ang = Angle(0, -2, -45)
 }
 
-SWEP.SightAng = Angle(0, -0.2, 0)
-SWEP.SightPos = Vector(-3.81, -7.5, -2.7)
+SWEP.SightAng = Angle(0, 0.35, 0)
+SWEP.SightPos = Vector(-3.775, -7.5, -1.9)
 
 SWEP.CorrectivePos = Vector(0.025, -1.5, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -289,7 +289,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-        Pos_VM = Vector(-3, -0.35, 20),
+        Pos_VM = Vector(-2.25, -0.2, 16),
         Pos_WM = Vector(23, 0, -11),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(-22.5, 5, 90),
