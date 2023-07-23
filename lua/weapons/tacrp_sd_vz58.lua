@@ -245,7 +245,7 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
+        BGs_WM = {
             {2, 1}
         },
     },
@@ -287,7 +287,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.8,
-		WMScale = 0.8,
+        WMScale = 0.8,
         Pos_VM = Vector(-3.3, 0.1, 28.5),
         Pos_WM = Vector(0, 26.8, -1.85),
         Ang_VM = Angle(90, 0, 0),
