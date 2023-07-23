@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "Ultra-lightweight plinking rifle.  Barely counts as lethal but is incredibly easy to handle and quick to reload."
+SWEP.Description = "Ultra-lightweight plinking rifle. Highly accurate and easy to handle, but is barely lethal unless scoring a headshot."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1022.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_m14.mdl"
@@ -20,52 +20,51 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 10,
-        Damage_Min = 8,
+        Damage_Max = 14,
+        Damage_Min = 11,
 
-        Range_Min = 1200,
-        Range_Max = 3000,
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 7.5,
+            [HITGROUP_CHEST] = 1,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.9,
+            [HITGROUP_RIGHTLEG] = 0.9,
+            [HITGROUP_GEAR] = 0.9
+        },
 
-        MoveSpeedMult = 0.8,
+        MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
-        SightedSpeedMult = 0.75,
+        SightedSpeedMult = 0.9,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-
-        Description = "Semi-automatic rifle with excellent accuracy and a lethal headshot at long range.\nEquipped with a 6x scope by default.",
-
-        Damage_Max = 22,
-        Damage_Min = 35,
+        Damage_Max = 15,
+        Damage_Min = 12,
         Range_Min = 1200,
-        Range_Max = 3000,
-        RPM = 180,
-
-        RecoilResetTime = 0.18,
-        RecoilDissipationRate = 3,
-        RecoilMaximum = 3,
-        RecoilSpreadPenalty = 0.01,
-        RecoilFirstShotMult = 0.5,
+        Range_Max = 6000,
+        RPM = 360,
 
         BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 3.5,
-            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_HEAD] = 5,
+            [HITGROUP_CHEST] = 1,
             [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.75,
-            [HITGROUP_RIGHTARM] = 0.75,
-            [HITGROUP_LEFTLEG] = 0.5,
-            [HITGROUP_RIGHTLEG] = 0.5,
-            [HITGROUP_GEAR] = 0.5
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.9,
+            [HITGROUP_RIGHTLEG] = 0.9,
+            [HITGROUP_GEAR] = 0.9
         },
 
-        ReloadTimeMult = 1.25,
+        ReloadTimeMult = 1.1,
 
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
+        MoveSpeedMult = 0.95,
+        ShootingSpeedMult = 0.9,
         MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.5,
-        ReloadSpeedMult = 0.5,
+        SightedSpeedMult = 0.75,
+        ReloadSpeedMult = 0.75,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 15,
@@ -74,9 +73,9 @@ SWEP.BalanceStats = {
         Range_Max = 3000,
         RPM = 200,
 
-        MoveSpeedMult = 0.8,
-        ShootingSpeedMult = 0.6,
-        SightedSpeedMult = 0.75,
+        MoveSpeedMult = 1,
+        ShootingSpeedMult = 1,
+        SightedSpeedMult = 0.9,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -87,10 +86,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 // "ballistics"
 
 SWEP.Damage_Max = 12 // damage at minimum range
-SWEP.Damage_Min = 8 // damage at maximum range
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
-SWEP.Penetration = 15 // units of metal this weapon can penetrate
+SWEP.Damage_Min = 9 // damage at maximum range
+SWEP.Range_Min = 800 // distance for which to maintain maximum damage
+SWEP.Range_Max = 8000 // distance at which we drop to minimum damage
+SWEP.Penetration = 3 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.85
 
 SWEP.BodyDamageMultipliers = {
@@ -112,41 +111,41 @@ SWEP.Firemode = 1
 
 SWEP.RPM = 450
 
-SWEP.Spread = 0.0002
+SWEP.Spread = 0.0005
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2
-SWEP.RecoilResetTime = 0.25 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 6
+SWEP.RecoilMaximum = 4
+SWEP.RecoilResetTime = 0.1 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 10
 SWEP.RecoilFirstShotMult = 0.5
 
 SWEP.RecoilVisualKick = 0.5
-SWEP.RecoilKick = 0.75
-SWEP.RecoilStability = 0.75
+SWEP.RecoilKick = 0.5
+SWEP.RecoilStability = 0.85
 
-SWEP.RecoilSpreadPenalty = 0.005
-SWEP.HipFireSpreadPenalty = 0.005
-SWEP.PeekPenaltyFraction = 0.1
+SWEP.RecoilSpreadPenalty = 0.0015
+SWEP.HipFireSpreadPenalty = 0.01
+SWEP.PeekPenaltyFraction = 0.5
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.95
-SWEP.ShootingSpeedMult = 0.85
-SWEP.SightedSpeedMult = 0.7
+SWEP.MoveSpeedMult = 0.98
+SWEP.ShootingSpeedMult = 0.95
+SWEP.SightedSpeedMult = 0.85
 
-SWEP.ReloadSpeedMult = 0.7
+SWEP.ReloadSpeedMult = 0.75
 
 SWEP.AimDownSightsTime = 0.2
-SWEP.SprintToFireTime = 0.3
+SWEP.SprintToFireTime = 0.34
 
 SWEP.Sway = 0.75
 SWEP.ScopedSway = 0.1
 
-SWEP.FreeAimMaxAngle = 3.5
+SWEP.FreeAimMaxAngle = 4
 
 // hold types
 
@@ -185,9 +184,9 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 // reload
 
 SWEP.ClipSize = 25
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 0.8
+SWEP.ReloadTimeMult = 0.9
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m14.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
@@ -242,6 +241,21 @@ SWEP.AnimationTranslationTable = {
     ["blind_fire"] = "blind_shoot1"
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.2, -0.1),
+    vm_ang = Angle(0, 0.3, 0),
+    t = 0.12,
+    tmax = 0.15,
+    bones = {
+        {
+            bone = "ValveBiped.bolt_handle",
+            pos = Vector(0, 0, -3),
+            t0 = 0.05,
+            t1 = 0.12,
+        },
+    },
+}
+
 // attachments
 
 SWEP.AttachmentElements = {
@@ -255,11 +269,10 @@ SWEP.AttachmentElements = {
     },
 }
 
-
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"ironsights_sniper", "optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.m14_rootbone",
         InstalledElements = {"tacrail"},
         AttachSound = "TacRP/weapons/optic_on.wav",
