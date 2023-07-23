@@ -201,7 +201,7 @@ SWEP.Ammo = "pistol"
 SWEP.ReloadUpInTime = 1
 SWEP.DropMagazineTime = 0.25
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 0.9
 
 SWEP.DeployTimeMult = 0.75
 
