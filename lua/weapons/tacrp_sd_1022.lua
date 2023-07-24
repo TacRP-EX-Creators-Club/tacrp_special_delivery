@@ -14,7 +14,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 SWEP.Description = "Ultra-lightweight plinking rifle. Highly accurate and easy to handle, but is barely lethal unless scoring a headshot."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1022.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_m14.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_1022.mdl"
 
 SWEP.Slot = 2
 
@@ -187,7 +187,7 @@ SWEP.ClipSize = 25
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 0.9
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m14.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/1022.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.85
@@ -279,9 +279,9 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 0.85,
         Pos_VM = Vector(-3.65, 0.15, 5),
-        Pos_WM = Vector(14.5, 0.6, -9.1),
+        Pos_WM = Vector(8, 1.1, -5.5),
         Ang_VM = Angle(90, 0, 0),
-        Ang_WM = Angle(-22.5, 5, 180),
+        Ang_WM = Angle(-22.5, 4, 180),
     },
     [2] = {
         PrintName = "Muzzle",
@@ -289,10 +289,11 @@ SWEP.Attachments = {
         Bone = "ValveBiped.m14_rootbone",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
+		WMScale = 0.85,
         Pos_VM = Vector(-2.65, 0.18, 31.75),
-        Pos_WM = Vector(30, 0, -14.5),
+        Pos_WM = Vector(32, -0.6, -14.75),
         Ang_VM = Angle(90, 0, 0),
-        Ang_WM = Angle(-22.5, 5, 180),
+        Ang_WM = Angle(-22.5, 4, 180),
         VMScale = 0.75
     },
     [3] = {
@@ -303,7 +304,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
         Pos_VM = Vector(-2.25, -0.2, 16),
-        Pos_WM = Vector(23, 0, -11),
+        Pos_WM = Vector(18, 0.8, -8.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(-22.5, 5, 90),
     },
