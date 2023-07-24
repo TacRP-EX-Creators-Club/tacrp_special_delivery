@@ -18,7 +18,6 @@ SWEP.WorldModel = "models/weapons/tacint_shark/w_superx3.mdl"
 SWEP.Slot = 2
 SWEP.SlotAlt = 3
 
-
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 13,
@@ -89,6 +88,7 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
 }
+
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AutoShotgun
 
@@ -222,6 +222,25 @@ SWEP.QCA_Eject = 2
 
 SWEP.MuzzleEffect = "muzzleflash_m3"
 SWEP.EjectEffect = 3
+
+hook.Add("TacRP_LoadShellEffects", "tacrp_sd_superx3", function(tbl)
+    local i = table.insert(tbl, {
+        Model = "models/tacint/shells/shotgun_shell_green.mdl",
+        Sounds = {
+            "TacRP/shells/shotshell_drop-1.wav",
+            "TacRP/shells/shotshell_drop-2.wav",
+            "TacRP/shells/shotshell_drop-3.wav",
+            "TacRP/shells/shotshell_drop-4.wav",
+            "TacRP/shells/shotshell_drop-5.wav",
+        }
+    })
+    PrintTable(tbl)
+    local wep = weapons.GetStored("tacrp_sd_superx3")
+    if wep then
+        wep.EjectEffect = i
+    end
+end)
+
 
 // anims
 
