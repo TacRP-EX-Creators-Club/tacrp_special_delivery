@@ -234,7 +234,6 @@ hook.Add("TacRP_LoadShellEffects", "tacrp_sd_superx3", function(tbl)
             "TacRP/shells/shotshell_drop-5.wav",
         }
     })
-    PrintTable(tbl)
     local wep = weapons.GetStored("tacrp_sd_superx3")
     if wep then
         wep.EjectEffect = i
