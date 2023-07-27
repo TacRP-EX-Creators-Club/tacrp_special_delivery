@@ -67,8 +67,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 55 // damage at minimum range
-SWEP.Damage_Min = 18 // damage at maximum range
+SWEP.Damage_Max = 60 // damage at minimum range
+SWEP.Damage_Min = 20 // damage at maximum range
 SWEP.Range_Min = 1800 // distance for which to maintain maximum damage
 SWEP.Range_Max = 7000 // distance at which we drop to minimum damage
 SWEP.Penetration = 4 // units of metal this weapon can penetrate
@@ -86,7 +86,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.5
 }
 
-SWEP.MuzzleVelocity = 12000
+SWEP.MuzzleVelocity = 12500
 
 // misc. shooting
 
