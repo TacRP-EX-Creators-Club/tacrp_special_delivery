@@ -129,7 +129,7 @@ function ENT:Impact(data, collider)
             else
                 -- Even though bullet did not hit, projectile did; just apply damage
                 if attacker:IsNPC() and !TacRP.ConVars["npc_equality"]:GetBool() then
-                    dmg:ScaleDamage(0.25)
+                    dmginfo:ScaleDamage(0.25)
                 end
                 data.HitEntity:TakeDamageInfo(dmginfo)
             end
