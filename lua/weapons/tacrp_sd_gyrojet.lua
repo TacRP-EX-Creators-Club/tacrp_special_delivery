@@ -283,10 +283,10 @@ addsound("tacint_gyrojet.safety_switch", path1 .. "safety_switch.wav")
 if engine.ActiveGamemode() == "terrortown" then
     SWEP.HolsterVisible = false
     SWEP.AutoSpawnable = false
-    SWEP.Kind = WEAPON_HEAVY
+    SWEP.Kind = WEAPON_PISTOL
     SWEP.CanBuy = { ROLE_TRAITOR, ROLE_DETECTIVE }
     SWEP.EquipMenuData = {
         type = "Weapon",
-        desc = "High damage pistol firing mini-rockets.\nUses standard magnum ammo.\n\nHidden while holstered.",
+        desc = "High damage pistol firing mini-rockets.\nUses standard magnum ammo.",
     }
 end

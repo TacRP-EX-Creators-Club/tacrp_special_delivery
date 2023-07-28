@@ -122,7 +122,7 @@ function ENT:Impact(data, collider)
         HullSize = 2,
         Callback = function(att, btr, dmginfo)
             if IsValid(btr.Entity) then
-                if inflictor then
+                if IsValid(inflictor) and inflictor.GetValue then
                     local range = (btr.HitPos - btr.StartPos):Length()
                     inflictor:AfterShotFunction(btr, dmginfo, range, inflictor:GetValue("Penetration"), {})
                 end

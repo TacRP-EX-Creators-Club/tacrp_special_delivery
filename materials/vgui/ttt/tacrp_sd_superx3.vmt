@@ -1,0 +1,5 @@
+"UnlitGeneric" 
+{ 
+    "$basetexture" "vgui/ttt/tacrp_sd_superx3" 
+    "$translucent" 1 
+} 

@@ -28,8 +28,8 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 60,
-        Damage_Min = 25,
+        Damage_Max = 65,
+        Damage_Min = 35,
 
         Range_Min = 250,
         Range_Max = 2500,
@@ -322,10 +322,11 @@ addsound("tacint_delisle.safety", path .. "safety-1.wav")
 if engine.ActiveGamemode() == "terrortown" then
     SWEP.HolsterVisible = false
     SWEP.AutoSpawnable = false
+    SWEP.IsSilent = true
     SWEP.Kind = WEAPON_HEAVY
     SWEP.CanBuy = { ROLE_TRAITOR }
     SWEP.EquipMenuData = {
         type = "Weapon",
-        desc = "Stealthy bolt action rifle with no tracers.\nUses standard pistol ammo, low muzzle velocity.\n\nHidden while holstered.",
+        desc = "Stealthy bolt action carbine with no tracers.\nUses normal pistol ammo, has low muzzle velocity.\nVictims do not scream when killed.",
     }
 end

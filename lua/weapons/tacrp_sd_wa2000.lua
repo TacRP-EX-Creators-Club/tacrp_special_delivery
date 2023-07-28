@@ -32,19 +32,15 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
-    [TacRP.BALANCE_TTT] = { // this is a buyable weapon in TTT
-
-        Damage_Max = 80,
-        Damage_Min = 150,
-        Range_Min = 500,
-        Range_Max = 4000,
-        RPM = 180,
-
-        Penetration = 50,
+    [TacRP.BALANCE_TTT] = {
+        Damage_Max = 25,
+        Damage_Min = 50,
+        Range_Min = 800,
+        Range_Max = 2500,
 
         BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 5,
-            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_HEAD] = 4,
+            [HITGROUP_CHEST] = 1.1,
             [HITGROUP_STOMACH] = 1,
             [HITGROUP_LEFTARM] = 1,
             [HITGROUP_RIGHTARM] = 1,
@@ -62,7 +58,6 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.25,
     },
     [TacRP.BALANCE_PVE] = {
-
         Damage_Max = 48,
         Damage_Min = 90,
         Range_Min = 600,
