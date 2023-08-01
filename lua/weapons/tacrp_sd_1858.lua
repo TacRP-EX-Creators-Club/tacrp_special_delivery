@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Antique cowboy revolver packing a serious punch, but lacking in accuracy and range.  \nCompletely impractical by modern standards, but undeniably cool."
+SWEP.Description = "Antique cowboy revolver packing a serious punch, but lacking in accuracy and range.\nCompletely impractical by modern standards, but undeniably cool."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1858.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mr96.mdl"
@@ -19,6 +19,9 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 65,
+        Damage_Min = 32,
+
         MoveSpeedMult = 1,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 1,
@@ -26,13 +29,18 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 35,
+        Damage_Max = 58,
         Damage_Min = 15,
+        Range_Min = 250,
+        Range_Max = 2500,
 
-        Range_Min = 300,
-        Range_Max = 3000,
+        RPM = 60,
+        ShootTimeMult = 1,
+        Spread = 0.006,
+        HipFireSpreadPenalty = 0.01,
 
-        RPM = 120,
+        RecoilResetTime = 0.75,
+        RecoilDissipationRate = 2,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
@@ -45,10 +53,7 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.75
         },
 
-        RecoilMaximum = 2,
-        RecoilDissipationRate = 2.5,
-
-        ReloadTimeMult = 1.25,
+        ReloadTimeMult = 1.1,
 
         MoveSpeedMult = 1,
         ShootingSpeedMult = 0.75,
@@ -57,9 +62,9 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.8,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 55,
-        Damage_Min = 24,
-        RPM = 120,
+        Damage_Max = 30,
+        Damage_Min = 10,
+        Range_Min = 900,
 
         MoveSpeedMult = 1,
         ShootingSpeedMult = 0.75,
@@ -73,23 +78,24 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Magnum
 
 // "ballistics"
 
-SWEP.Damage_Max = 52 // damage at minimum range
-SWEP.Damage_Min = 28 // damage at maximum range
-SWEP.Range_Min = 400 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
-SWEP.Penetration = 6 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.9
+SWEP.Damage_Max = 60
+SWEP.Damage_Min = 17
+SWEP.Range_Min = 600 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2500 // distance at which we drop to minimum damage
+SWEP.Penetration = 4 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.5
+SWEP.ArmorBonus = 2
 
 SWEP.MuzzleVelocity = 12500
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
-    [HITGROUP_LEFTARM] = 0.9,
-    [HITGROUP_RIGHTARM] = 0.9,
-    [HITGROUP_LEFTLEG] = 0.75,
-    [HITGROUP_RIGHTLEG] = 0.75,
+    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.9,
+    [HITGROUP_RIGHTLEG] = 0.9,
     [HITGROUP_GEAR] = 0.75
 }
 
@@ -99,23 +105,25 @@ SWEP.Firemode = 1
 
 SWEP.FiremodeName = "Single-Action" // only used externally for firemode name distinction
 
-SWEP.RPM = 100
+SWEP.RPM = 65
 
-SWEP.Spread = 0.0025
+SWEP.Spread = 0.008
 
-SWEP.ShootTimeMult = 0.75
+SWEP.ShootTimeMult = 0.8
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2.5
+SWEP.RecoilMaximum = 2
 SWEP.RecoilResetTime = 0.35
-SWEP.RecoilDissipationRate = 4
-SWEP.RecoilFirstShotMult = 0.75 // multiplier for the first shot's recoil amount
+SWEP.RecoilDissipationRate = 2
+SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 5
-SWEP.RecoilKick = 9
-SWEP.RecoilStability = 0.5
+SWEP.RecoilKick = 11
+SWEP.RecoilStability = 0.75
 
-SWEP.RecoilSpreadPenalty = 0.02
+SWEP.RecoilSpreadPenalty = 0.015
+SWEP.HipFireSpreadPenalty = 0.015
+SWEP.MidAirSpreadPenalty = 0.02
 
 SWEP.CanBlindFire = true
 
@@ -127,10 +135,10 @@ SWEP.SightedSpeedMult = 0.8
 
 SWEP.ReloadSpeedMult = 0.75
 
-SWEP.AimDownSightsTime = 0.22
-SWEP.SprintToFireTime = 0.3
+SWEP.AimDownSightsTime = 0.25
+SWEP.SprintToFireTime = 0.17
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 3
 
 // hold types
 
@@ -151,10 +159,10 @@ SWEP.BlindFireSuicideAng = Angle(-125, 0, 45)
 SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
 
 SWEP.SprintAng = Angle(0, 35, 0)
-SWEP.SprintPos = Vector(2, 0, -8)
+SWEP.SprintPos = Vector(2, 2, -10)
 
 SWEP.SightAng = Angle(-0.1, 0.5, 3.5)
-SWEP.SightPos = Vector(-4.23, 0, 1.3)
+SWEP.SightPos = Vector(-4.23, 2, 1.3)
 
 SWEP.CustomizeAng = Angle(30, 15, 0)
 SWEP.CustomizePos = Vector(3.5, 0, -1)
@@ -164,8 +172,8 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
 SWEP.HolsterPos = Vector(0, 3, -4)
 SWEP.HolsterAng = Angle(90, 0, 0)
 
-SWEP.Sway = 1.5
-SWEP.ScopedSway = 0.6
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.5
 
 // reload
 
@@ -173,8 +181,7 @@ SWEP.ClipSize = 6
 SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 0.8
-
-SWEP.ReloadUpInTime = 1.35
+SWEP.ReloadUpInTime = 2
 
 SWEP.JamSkipFix = true
 
@@ -219,8 +226,8 @@ SWEP.MuzzleEffect = "muzzleflash_1"
 // attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
-	["unholster"] = "draw_stock",
-	["dryfire"] = "fire_stock",
+    ["unholster"] = "draw_stock",
+    ["dryfire"] = "fire_stock",
     ["fire"] = "fire",
     ["fire_iron"] = "fire",
     ["blind_fire"] = "blind_fire",
@@ -261,7 +268,7 @@ SWEP.Attachments = {
 --    },
     [1] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_holster", "acc_brace", "acc_bipod"}, // yes, MR96 with bipod is a real thing!
+        Category = {"acc", "acc_holster", "acc_brace"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
@@ -285,11 +292,11 @@ SWEP.Attachments = {
     }
 }
 
-local function addsound(name, spath)
+local function addsound(name, spath, volume)
     sound.Add({
         name = name,
         channel = 16,
-        volume = 1.0,
+        volume = volume or 1.0,
         sound = spath
     })
 end
@@ -299,6 +306,6 @@ addsound("tacint_1858.pin_out", path .. "army_extract.wav")
 addsound("tacint_1858.cylinder_out", path .. "army_cylinder_out.wav")
 addsound("tacint_1858.cylinder_in", path .. "army_insert.wav")
 addsound("tacint_1858.pin_in", path .. "army_lever1.wav")
-addsound("tacint_1858.lever_up", path .. "twirl2.wav")
+addsound("tacint_1858.lever_up", path .. "twirl2.wav", 0.5)
 addsound("tacint_1858.hammer", path .. "hammer.mp3")
-addsound("tacint_1858.Deploy", path .. "twirl1.wav")
+addsound("tacint_1858.Deploy", path .. "twirl1.wav", 0.5)
