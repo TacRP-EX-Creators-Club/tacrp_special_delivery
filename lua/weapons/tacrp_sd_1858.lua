@@ -91,7 +91,7 @@ SWEP.MuzzleVelocity = 12500
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -183,7 +183,9 @@ SWEP.Ammo = "357"
 SWEP.ReloadTimeMult = 0.8
 SWEP.ReloadUpInTime = 2
 
+SWEP.JamWaitTime = 0.92
 SWEP.JamSkipFix = true
+SWEP.JamTakesRound = true
 
 // sounds
 
@@ -191,8 +193,8 @@ local path = "Tacint_shark/weapons/1858/"
 
 SWEP.Sound_Shoot = "^" .. path .. "nma_fire.wav"
 
-SWEP.Vol_Shoot = 130
-SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
+SWEP.Vol_Shoot = 115
+SWEP.ShootPitchVariance = 2.5
 
 // effects
 
@@ -238,34 +240,6 @@ SWEP.AnimationTranslationTable = {
 // attachments
 
 SWEP.Attachments = {
-    --[1] = {
-        --PrintName = "Optic",
-        --Category = {"optic_cqb", "optic_medium"},
-        --Bone = "ValveBiped.mr96_rootbone",
-        --WMBone = "Box01",
-        --AttachSound = "TacRP/weapons/optic_on.wav",
-        --DetachSound = "TacRP/weapons/optic_off.wav",
-        --VMScale = 1,
-        --WMScale = 1,
-        --Pos_VM = Vector(-3.9, -0.125, 6.5),
-        --Ang_VM = Angle(90, 0, 0),
-        --Pos_WM = Vector(0, 1.5, -0.8),
-        --Ang_WM = Angle(0, -90, 0),
-    --},
-    --[2] = {
-        --PrintName = "Tactical",
-        --Category = "tactical",
-        --Bone = "ValveBiped.mr96_rootbone",
-        --WMBone = "Box01",
-        --AttachSound = "TacRP/weapons/flashlight_on.wav",
-        --DetachSound = "TacRP/weapons/flashlight_off.wav",
-        --VMScale = 1,
-        --WMScale = 1,
-        --Pos_VM = Vector(-2.25, -0.125, 9),
-      --  Ang_VM = Angle(90, 0, 180),
-    --    Pos_WM = Vector(0, 8, -2.25),
-  --      Ang_WM = Angle(0, -90, 180),
---    },
     [1] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_holster", "acc_brace"},
@@ -286,7 +260,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Ammo",
-        Category = {"ammo_pistol", "ammo_roulette"},
+        Category = {"ammo_1858", "ammo_roulette"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     }
