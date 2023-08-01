@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "MBA Gyrojet"
-SWEP.Category = "Tactical RP (Special)" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
@@ -189,7 +189,6 @@ SWEP.EjectEffect = 0
 SWEP.MuzzleEffect = "muzzleflash_suppressed"
 
 // anims
-
 // VM:
 // idle
 // fire

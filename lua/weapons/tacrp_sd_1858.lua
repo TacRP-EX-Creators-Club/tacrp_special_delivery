@@ -5,12 +5,12 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "Remington M1858"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Antique cowboy revolver packing a serious punch, but lacking in accuracy and range.\nCompletely impractical by modern standards, but undeniably cool."
+SWEP.Description = "Antique cowboy revolver packing a serious punch, but lacking in accuracy and range.\nImpractical by modern standards, but undeniably stylish and quick to whip out. Give it a twirl too."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1858.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mr96.mdl"
@@ -91,7 +91,7 @@ SWEP.MuzzleVelocity = 12500
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_STOMACH] = 1.35,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -118,7 +118,7 @@ SWEP.RecoilDissipationRate = 2
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 5
-SWEP.RecoilKick = 11
+SWEP.RecoilKick = 9
 SWEP.RecoilStability = 0.75
 
 SWEP.RecoilSpreadPenalty = 0.015
@@ -183,7 +183,9 @@ SWEP.Ammo = "357"
 SWEP.ReloadTimeMult = 0.8
 SWEP.ReloadUpInTime = 2
 
+SWEP.JamWaitTime = 0.92
 SWEP.JamSkipFix = true
+SWEP.JamTakesRound = true
 
 // sounds
 
@@ -191,8 +193,8 @@ local path = "Tacint_shark/weapons/1858/"
 
 SWEP.Sound_Shoot = "^" .. path .. "nma_fire.wav"
 
-SWEP.Vol_Shoot = 130
-SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
+SWEP.Vol_Shoot = 115
+SWEP.ShootPitchVariance = 2.5
 
 // effects
 
@@ -205,25 +207,6 @@ SWEP.MuzzleEffect = "muzzleflash_1"
 
 // anims
 
-// VM:
-// idle
-// fire
-// fire1, fire2...
-// dryfire
-// melee
-// reload
-// midreload
-// prime_grenade
-// throw_grenade
-// throw_grenade_underhand
-// deploy
-// blind_idle
-// blind_fire
-// blind_fire1, blind_fire2...
-// blind_dryfire
-
-// WM:
-// attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
     ["unholster"] = "draw_stock",
@@ -235,37 +218,12 @@ SWEP.AnimationTranslationTable = {
     ["jam"] = "draw"
 }
 
+SWEP.HolsterTimeMult = 0.75
+SWEP.UnholsterTimeMult = 0.5
+
 // attachments
 
 SWEP.Attachments = {
-    --[1] = {
-        --PrintName = "Optic",
-        --Category = {"optic_cqb", "optic_medium"},
-        --Bone = "ValveBiped.mr96_rootbone",
-        --WMBone = "Box01",
-        --AttachSound = "TacRP/weapons/optic_on.wav",
-        --DetachSound = "TacRP/weapons/optic_off.wav",
-        --VMScale = 1,
-        --WMScale = 1,
-        --Pos_VM = Vector(-3.9, -0.125, 6.5),
-        --Ang_VM = Angle(90, 0, 0),
-        --Pos_WM = Vector(0, 1.5, -0.8),
-        --Ang_WM = Angle(0, -90, 0),
-    --},
-    --[2] = {
-        --PrintName = "Tactical",
-        --Category = "tactical",
-        --Bone = "ValveBiped.mr96_rootbone",
-        --WMBone = "Box01",
-        --AttachSound = "TacRP/weapons/flashlight_on.wav",
-        --DetachSound = "TacRP/weapons/flashlight_off.wav",
-        --VMScale = 1,
-        --WMScale = 1,
-        --Pos_VM = Vector(-2.25, -0.125, 9),
-      --  Ang_VM = Angle(90, 0, 180),
-    --    Pos_WM = Vector(0, 8, -2.25),
-  --      Ang_WM = Angle(0, -90, 180),
---    },
     [1] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_holster", "acc_brace"},
@@ -286,7 +244,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Ammo",
-        Category = {"ammo_pistol", "ammo_roulette"},
+        Category = {"ammo_1858", "ammo_roulette"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     }
@@ -306,6 +264,6 @@ addsound("tacint_1858.pin_out", path .. "army_extract.wav")
 addsound("tacint_1858.cylinder_out", path .. "army_cylinder_out.wav")
 addsound("tacint_1858.cylinder_in", path .. "army_insert.wav")
 addsound("tacint_1858.pin_in", path .. "army_lever1.wav")
-addsound("tacint_1858.lever_up", path .. "twirl2.wav", 0.5)
+addsound("tacint_1858.lever_up", path .. "twirl2.wav", 0.3)
 addsound("tacint_1858.hammer", path .. "hammer.mp3")
 addsound("tacint_1858.Deploy", path .. "twirl1.wav", 0.5)

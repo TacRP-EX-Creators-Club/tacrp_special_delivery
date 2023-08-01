@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "FAMAS F1"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
@@ -78,7 +78,7 @@ SWEP.Penetration = 7
 SWEP.ArmorPenetration = 0.8
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3, -- Must land at least 2 shots from a burst to get a headshot kill at full health.
+    [HITGROUP_HEAD] = 3, // Must land at least 2 shots from a burst to get a headshot kill at full health.
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -197,27 +197,8 @@ SWEP.EjectEffect = 2
 
 // anims
 
-// VM:
-// idle
-// fire
-// fire1, fire2...
-// dryfire
-// melee
-// reload
-// midreload
-// prime_grenade
-// throw_grenade
-// throw_grenade_underhand
-// deploy
-// blind_idle
-// blind_fire
-// blind_fire1, blind_fire2...
-// blind_dryfire
-
-// WM:
-// attack1
 SWEP.AnimationTranslationTable = {
-	["deploy"] = "unholster",
+    ["deploy"] = "unholster",
     ["fire_iron"] = "idle",
     ["fire1"] = "fire1_M",
     ["fire2"] = "fire2_M",
@@ -262,8 +243,8 @@ SWEP.Attachments = {
         Bone = "ValveBiped.AUG_rootbone",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-		VMScale = 0.9,
-		WMScale = 0.9,
+        VMScale = 0.9,
+        WMScale = 0.9,
         Pos_VM = Vector(-3.25, 0, 20.5),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(22, 1, -4.4),
@@ -276,7 +257,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-		VMScale = 1.05,
+        VMScale = 1.05,
         Pos_VM = Vector(-5, -0.5, 11.5),
         Ang_VM = Angle(90, 0, -90),
         Pos_WM = Vector(14.75, 1.5, -6),

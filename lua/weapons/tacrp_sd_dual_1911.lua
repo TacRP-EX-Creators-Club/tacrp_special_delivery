@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "Dueling Wyverns"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "1Sidearm"
@@ -192,7 +192,6 @@ SWEP.DropMagazineTime = 0.25
 
 // sounds
 
-local path = "tacrp_extras/usp/"
 local path1 = "tacint_shark/weapons/dual1911/"
 
 SWEP.Sound_Shoot = "^" .. path1 .. "fire-1.wav"
@@ -209,25 +208,6 @@ SWEP.MuzzleEffect = "muzzleflash_pistol"
 
 // anims
 
-// VM:
-// idle
-// fire
-// fire1, fire2...
-// dryfire
-// melee
-// reload
-// midreload
-// prime_grenade
-// throw_grenade
-// throw_grenade_underhand
-// deploy
-// blind_idle
-// blind_fire
-// blind_fire1, blind_fire2...
-// blind_dryfire
-
-// WM:
-// attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
     ["blind_idle"] = "idle",

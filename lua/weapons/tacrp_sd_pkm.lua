@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "PKM"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Machine Gun"
@@ -196,7 +196,6 @@ SWEP.DefaultBodygroups = "000006"
 // sounds
 
 local path = "tacint_shark/weapons/pkm/pkm"
-local path1 = "TacRP/weapons/mg4/"
 
 SWEP.Sound_Shoot = "^" .. path .. "-1.wav"
 SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
@@ -216,25 +215,6 @@ SWEP.EjectEffect = 2
 
 // anims
 
-// VM:
-// idle
-// fire
-// fire1, fire2...
-// dryfire
-// melee
-// reload
-// midreload
-// prime_grenade
-// throw_grenade
-// throw_grenade_underhand
-// deploy
-// blind_idle
-// blind_fire
-// blind_fire1, blind_fire2...
-// blind_dryfire
-
-// WM:
-// attack1
 SWEP.AnimationTranslationTable = {
     ["fire_iron"] = {"fire4_M", "fire3_M", "fire2_M", "fire1_M"},
     ["fire1"] = "fire1_L",

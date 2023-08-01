@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "Thompson/Center Contender"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
@@ -166,7 +166,6 @@ SWEP.QCA_Muzzle = 1
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
 
 // anims
-
 // VM:
 // idle
 // fire
