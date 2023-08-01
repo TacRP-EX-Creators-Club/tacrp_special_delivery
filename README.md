@@ -24,5 +24,6 @@ Second major addon pack for TacRP.  Focuses on weapons that make use of edited a
 - Walther PPK by Kimono - https://gamebanana.com/mods/214364
 - G3SG/1 by Millenia - https://gamebanana.com/mods/211787 - Texture edited by speedonerd.
 - Winchester Super X3 by Lever Games (No More Room In Hell); GMod port by Dremekeks -https://steamcommunity.com/sharedfiles/filedetails/?id=509292957
-- (wip) Sa vz. 58 by Lever Games (No More Room In Hell); GMod port by Dremekeks -https://steamcommunity.com/sharedfiles/filedetails/?id=509292957
-- (wip) Ruger 10/22 by Lever Games (No More Room In Hell); GMod port by Dremekeks -https://steamcommunity.com/sharedfiles/filedetails/?id=509292957
+- Sa vz. 58 by Lever Games (No More Room In Hell); GMod port by Dremekeks -https://steamcommunity.com/sharedfiles/filedetails/?id=509292957
+- Ruger 10/22 by Lever Games (No More Room In Hell); GMod port by Dremekeks -https://steamcommunity.com/sharedfiles/filedetails/?id=509292957
+- Remington Model 1858 by Nimrod Hempel (Fistful of Frags); Animations by CyloWalker, some sounds taken from: https://youtu.be/EeBDb2Q0ao8

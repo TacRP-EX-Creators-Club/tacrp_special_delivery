@@ -101,9 +101,9 @@ SWEP.FiremodeName = "Single-Action" // only used externally for firemode name di
 
 SWEP.RPM = 100
 
-SWEP.Spread = 0.001
+SWEP.Spread = 0.0025
 
-SWEP.ShootTimeMult = 1
+SWEP.ShootTimeMult = 0.75
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 2.5
@@ -142,10 +142,10 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, 5, -1)
+SWEP.PassivePos = Vector(-1, 3, -0.5)
 
-SWEP.BlindFireAng = Angle(0, 0, -50)
-SWEP.BlindFirePos = Vector(1, 5, 6)
+SWEP.BlindFireAng = Angle(0, 0, 0)
+SWEP.BlindFirePos = Vector(0, 0, 0)
 
 SWEP.BlindFireSuicideAng = Angle(-125, 0, 45)
 SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
@@ -155,6 +155,9 @@ SWEP.SprintPos = Vector(2, 0, -8)
 
 SWEP.SightAng = Angle(-0.1, 0.5, 3.5)
 SWEP.SightPos = Vector(-4.23, 0, 1.3)
+
+SWEP.CustomizeAng = Angle(30, 15, 0)
+SWEP.CustomizePos = Vector(3.5, 0, -1)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
@@ -187,7 +190,7 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 // effects
 
 // the .qc attachment for the muzzle
-SWEP.QCA_Muzzle = 2
+SWEP.QCA_Muzzle = 1
 SWEP.QCA_Eject = 0
 SWEP.EjectEffect = 0
 
@@ -216,9 +219,11 @@ SWEP.MuzzleEffect = "muzzleflash_1"
 // attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
+	["unholster"] = "draw_stock",
+	["dryfire"] = "fire_stock",
     ["fire"] = "fire",
     ["fire_iron"] = "fire",
-    ["blind_fire"] = "fire",
+    ["blind_fire"] = "blind_fire",
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "draw"
 }
@@ -226,53 +231,53 @@ SWEP.AnimationTranslationTable = {
 // attachments
 
 SWEP.Attachments = {
+    --[1] = {
+        --PrintName = "Optic",
+        --Category = {"optic_cqb", "optic_medium"},
+        --Bone = "ValveBiped.mr96_rootbone",
+        --WMBone = "Box01",
+        --AttachSound = "TacRP/weapons/optic_on.wav",
+        --DetachSound = "TacRP/weapons/optic_off.wav",
+        --VMScale = 1,
+        --WMScale = 1,
+        --Pos_VM = Vector(-3.9, -0.125, 6.5),
+        --Ang_VM = Angle(90, 0, 0),
+        --Pos_WM = Vector(0, 1.5, -0.8),
+        --Ang_WM = Angle(0, -90, 0),
+    --},
+    --[2] = {
+        --PrintName = "Tactical",
+        --Category = "tactical",
+        --Bone = "ValveBiped.mr96_rootbone",
+        --WMBone = "Box01",
+        --AttachSound = "TacRP/weapons/flashlight_on.wav",
+        --DetachSound = "TacRP/weapons/flashlight_off.wav",
+        --VMScale = 1,
+        --WMScale = 1,
+        --Pos_VM = Vector(-2.25, -0.125, 9),
+      --  Ang_VM = Angle(90, 0, 180),
+    --    Pos_WM = Vector(0, 8, -2.25),
+  --      Ang_WM = Angle(0, -90, 180),
+--    },
     [1] = {
-        PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium"},
-        Bone = "ValveBiped.mr96_rootbone",
-        WMBone = "Box01",
-        AttachSound = "TacRP/weapons/optic_on.wav",
-        DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 1,
-        WMScale = 1,
-        Pos_VM = Vector(-3.9, -0.125, 6.5),
-        Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 1.5, -0.8),
-        Ang_WM = Angle(0, -90, 0),
-    },
-    [2] = {
-        PrintName = "Tactical",
-        Category = "tactical",
-        Bone = "ValveBiped.mr96_rootbone",
-        WMBone = "Box01",
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-        VMScale = 1,
-        WMScale = 1,
-        Pos_VM = Vector(-2.25, -0.125, 9),
-        Ang_VM = Angle(90, 0, 180),
-        Pos_WM = Vector(0, 8, -2.25),
-        Ang_WM = Angle(0, -90, 180),
-    },
-    [3] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_holster", "acc_brace", "acc_bipod"}, // yes, MR96 with bipod is a real thing!
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [6] = {
+    [4] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
-    [4] = {
+    [2] = {
         PrintName = "Trigger",
         Category = {"trigger_revolver"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [5] = {
+    [3] = {
         PrintName = "Ammo",
         Category = {"ammo_pistol", "ammo_roulette"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
@@ -294,6 +299,6 @@ addsound("tacint_1858.pin_out", path .. "army_extract.wav")
 addsound("tacint_1858.cylinder_out", path .. "army_cylinder_out.wav")
 addsound("tacint_1858.cylinder_in", path .. "army_insert.wav")
 addsound("tacint_1858.pin_in", path .. "army_lever1.wav")
-addsound("tacint_1858.lever_up", path .. "army_lever2.wav")
+addsound("tacint_1858.lever_up", path .. "twirl2.wav")
 addsound("tacint_1858.hammer", path .. "hammer.mp3")
---addsound("tacint_1858.Deploy", path .. "mr96_deploy.wav")
+addsound("tacint_1858.Deploy", path .. "twirl1.wav")
