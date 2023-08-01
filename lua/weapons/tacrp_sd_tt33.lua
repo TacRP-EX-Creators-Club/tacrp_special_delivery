@@ -4,8 +4,8 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Norinco Type 54" -- The model is actually the Russian TT-33 but let's pretend it's China gun because it was what Chow Yun-fat used in the Hard Boiled teahouse shootout.
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.PrintName = "Norinco Type 54" // The model is actually the Russian TT-33 but let's pretend it's China gun because it was what Chow Yun-fat used in the Hard Boiled teahouse shootout.
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
@@ -224,25 +224,6 @@ SWEP.MuzzleEffect = "muzzleflash_pistol"
 
 // anims
 
-// VM:
-// idle
-// fire
-// fire1, fire2...
-// dryfire
-// melee
-// reload
-// midreload
-// prime_grenade
-// throw_grenade
-// throw_grenade_underhand
-// deploy
-// blind_idle
-// blind_fire
-// blind_fire1, blind_fire2...
-// blind_dryfire
-
-// WM:
-// attack1
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "draw",
     ["fire_iron"] = "shoot3",

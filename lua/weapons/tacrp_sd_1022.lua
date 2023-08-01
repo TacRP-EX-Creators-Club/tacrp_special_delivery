@@ -6,7 +6,7 @@ AddCSLuaFile()
 // names and stuff
 SWEP.PrintName = "Ruger 10/22"
 SWEP.AbbrevName = "10/22"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Sporter Carbine"
@@ -215,25 +215,6 @@ SWEP.EjectEffect = 1
 
 // anims
 
-// VM:
-// idle
-// fire
-// fire1, fire2...
-// dryfire
-// melee
-// reload
-// midreload
-// prime_grenade
-// throw_grenade
-// throw_grenade_underhand
-// deploy
-// blind_idle
-// blind_fire
-// blind_fire1, blind_fire2...
-// blind_dryfire
-
-// WM:
-// attack1
 SWEP.AnimationTranslationTable = {
     ["fire_iron"] = "shoot1",
     ["deploy"] = "draw",
@@ -289,7 +270,7 @@ SWEP.Attachments = {
         Bone = "ValveBiped.m14_rootbone",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-		WMScale = 0.85,
+        WMScale = 0.85,
         Pos_VM = Vector(-2.65, 0.18, 31.75),
         Pos_WM = Vector(32, -0.6, -14.75),
         Ang_VM = Angle(90, 0, 0),

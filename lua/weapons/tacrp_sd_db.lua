@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "Stoeger Double Defense"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
@@ -212,7 +212,6 @@ SWEP.QCA_Muzzle = 1
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
 
 // anims
-
 // VM:
 // idle
 // fire
