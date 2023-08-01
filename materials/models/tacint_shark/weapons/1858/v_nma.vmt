@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/tacint_shark/weapons/1858/v_nma"
+	$bumpmap "models/tacint_shark/weapons/1858/v_nma_n"
+        $alphatest 1
+
+	"$normalmapalphaenvmapmask" 1
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+
+	"$envmapconstrast" "1"
+	"$envmapsaturation" ".01"
+
+	"$phong"     "1"
+	"$phongexponent"  "10"
+	"$phongboost"   6
+	"$phongfresnelranges"   "[.75 0.5 1]"
+	"$phongalbedotint" "1"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "512"	
+	"$rimexponent" "512"
+	"$rimlightboost" ".1"
+	
+	"$envmaptint" "[.1 .1 .15 ]"	
+}
