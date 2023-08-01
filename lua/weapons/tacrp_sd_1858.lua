@@ -152,8 +152,8 @@ SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 SWEP.PassiveAng = Angle(0, 0, 0)
 SWEP.PassivePos = Vector(-1, 3, -0.5)
 
-SWEP.BlindFireAng = Angle(0, 0, 0)
-SWEP.BlindFirePos = Vector(0, 0, 0)
+SWEP.BlindFireAng = Angle(-5, 0, -5)
+SWEP.BlindFirePos = Vector(0, 5, 0)
 
 SWEP.BlindFireSuicideAng = Angle(-125, 0, 45)
 SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
