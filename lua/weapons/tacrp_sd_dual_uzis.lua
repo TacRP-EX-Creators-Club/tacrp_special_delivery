@@ -185,7 +185,7 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.ClipSize = 40
+SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1.1
@@ -241,7 +241,8 @@ SWEP.AnimationTranslationTable = {
     ["blind_fire"] = "idle",
     ["melee"] = {"melee1", "melee2"},
     ["shoot_left"] = {"shoot_left-1", "shoot_left-2"},
-    ["shoot_right"] = {"shoot_right-1", "shoot_right-2"}
+    ["shoot_right"] = {"shoot_right-1", "shoot_right-2"},
+	["jam"] = "draw"
 }
 
 SWEP.LastShot = true
