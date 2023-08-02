@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Large pistol originating from behind the Iron Curtain, copied in large quantities by the Chinese.  Similar to other large calibre pistols, but lighter and performs better at range."
+SWEP.Description = "Large pistol from beyond the Iron Curtain, copied in large quantities by the Chinese. Similar to other large calibre pistols, but lighter and performs better at range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_tt33.mdl"

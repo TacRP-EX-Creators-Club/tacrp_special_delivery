@@ -15,6 +15,7 @@ ATT.Add_ArmorPenetration = 0.15
 ATT.Add_Range_Min = 200
 ATT.Add_RecoilVisualKick = 1
 ATT.Add_RecoilKick = 4
+ATT.Mult_RecoilStability = 0.25
 
 ATT.Mult_Damage_Max = 1.25
 ATT.Mult_Damage_Min = 1.25
