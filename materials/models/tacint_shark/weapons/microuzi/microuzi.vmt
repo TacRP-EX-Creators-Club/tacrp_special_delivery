@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\microuzi\microuzi_diffuse"
+	"$bumpmap" "models\tacint_shark\weapons\microuzi\microuzi_normal"
+	"$normalmapalphaenvmapmask" 1
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.05 .05 .05]"
+	"$envmapfresnel" "1"
+
+	"$phong"	"1"
+	"$phongboost"	"2.5"
+	"$phongexponent"	"20"
+	"$phongfresnelranges"	"[.5 1 2]"
+	"$phongalbedotint"	"1"
+
+	"$rimlight"	"0"
+	"$rimlightexponent"	"70"
+	"$rimlightboost"	".1"
+	
+	"$detail"                  "blood_hands"
+	"$detailblendmode"         "2"
+	"$detailblendfactor"       "0.0"
+	"$detailscale"             "1.0"
+
+	"Proxies"
+	{
+		"BloodyTexture"
+		{
+		}
+	}
+}
