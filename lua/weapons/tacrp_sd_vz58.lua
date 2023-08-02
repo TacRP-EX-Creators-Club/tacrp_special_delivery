@@ -109,10 +109,10 @@ SWEP.Spread = 0.0045
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 14
-SWEP.RecoilResetTime = 0.14 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 16
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 12
+SWEP.RecoilResetTime = 0.12 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 15
+SWEP.RecoilFirstShotMult = 0.8 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
@@ -232,6 +232,20 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.65, -0.3),
+    vm_ang = Angle(0, 0.75, 0),
+    t = 0.2,
+    tmax = 0.2,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.15,
+        },
+    },
+}
 
 SWEP.Attachments = {
     [1] = {
