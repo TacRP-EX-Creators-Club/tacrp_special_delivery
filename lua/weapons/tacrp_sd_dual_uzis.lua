@@ -8,12 +8,12 @@ SWEP.PrintName = "Dual Micros"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "2Machine Pistol"
 
 SWEP.Description = "Pair of full-auto Micro Uzis, completely sacrificing anything in the way of accuracy or control for an insane effective rate of fire. \nNow *this* is gangster."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_uzi.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_dualies.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_uzi.mdl"
 
 SWEP.Slot = 1
 
@@ -95,6 +95,8 @@ SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.6
 
+SWEP.Num = 2
+
 SWEP.MuzzleVelocity = 9500
 
 SWEP.BodyDamageMultipliers = {
@@ -115,9 +117,10 @@ SWEP.Firemodes = {
 	1
 }
 
-SWEP.RPM = 2000
+SWEP.RPM = 1000
 
 SWEP.Spread = 0.015
+SWEP.ShotgunPelletSpread = 0.012
 
 SWEP.MoveSpreadPenalty = 0
 SWEP.MidAirSpreadPenalty = 0.075
@@ -185,12 +188,14 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.ClipSize = 50
+SWEP.AmmoPerShot = 2
+
+SWEP.ClipSize = 50 -- not realism :(
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1.1
 
-SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/dualies.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/microuzi.mdl"
 SWEP.DropMagazineImpact = "pistol"
 SWEP.DropMagazineAmount = 2
 
@@ -240,12 +245,11 @@ SWEP.AnimationTranslationTable = {
     ["blind_idle"] = "idle",
     ["blind_fire"] = "idle",
     ["melee"] = {"melee1", "melee2"},
-    ["shoot_left"] = {"shoot_left-1", "shoot_left-2"},
-    ["shoot_right"] = {"shoot_right-1", "shoot_right-2"},
+    ["shoot_left"] = {"shoot1", "shoot2"},
+    ["shoot_right"] = {"shoot1", "shoot2"},
 	["jam"] = "draw"
 }
 
-SWEP.LastShot = true
 SWEP.Akimbo = true
 
 // attachments
