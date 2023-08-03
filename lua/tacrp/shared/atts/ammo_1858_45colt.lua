@@ -1,8 +1,8 @@
 ATT.PrintName = ".45 Colt"
-ATT.FullName = "Remington M1858 .45 Colt Cylinder"
+ATT.FullName = "Remington 1858 .45 Colt Conversion"
 
 ATT.Icon = Material("entities/tacrp_att_ammo_1858_45colt.png", "mips smooth")
-ATT.Description = "Replacement cylinder loading overpressured brass rounds."
+ATT.Description = "Cartridge conversion firing larger, more powerful, but less reliable rounds."
 ATT.Pros = {"stat.damage", "stat.range_min", "att.procon.armor"}
 ATT.Cons = {"rating.control", "att.procon.unreliable"}
 
@@ -24,3 +24,7 @@ ATT.Add_Damage_Min = 5
 ATT.Add_JamFactor = 1
 
 ATT.Add_Pitch_Shoot = 7
+
+ATT.InstalledElements = {"cylinder"}
+
+ATT.Override_Sound_Shoot = "^tacint_shark/weapons/1858/nma_fire_45.wav"

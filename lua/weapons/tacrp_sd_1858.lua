@@ -4,7 +4,7 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Remington M1858"
+SWEP.PrintName = "Remington 1858 Army"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
@@ -224,6 +224,14 @@ SWEP.AnimationTranslationTable = {
 
 SWEP.HolsterTimeMult = 0.75
 SWEP.UnholsterTimeMult = 0.5
+
+SWEP.AttachmentElements = {
+    ["cylinder"] = {
+        BGs_VM = {
+            {1, 1}
+        },
+    },
+}
 
 // attachments
 
