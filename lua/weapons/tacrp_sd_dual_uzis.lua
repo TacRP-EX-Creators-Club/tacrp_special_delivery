@@ -13,7 +13,7 @@ SWEP.SubCatType = "2Machine Pistol"
 SWEP.Description = "Pair of full-auto Micro Uzis, completely sacrificing anything in the way of accuracy or control for an insane effective rate of fire. \nNow *this* is gangster."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_uzi.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_dualies.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_uzi.mdl"
 
 SWEP.Slot = 1
 
@@ -190,12 +190,12 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 50
+SWEP.ClipSize = 50 -- not realism :(
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1.1
 
-SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/dualies.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/microuzi.mdl"
 SWEP.DropMagazineImpact = "pistol"
 SWEP.DropMagazineAmount = 2
 

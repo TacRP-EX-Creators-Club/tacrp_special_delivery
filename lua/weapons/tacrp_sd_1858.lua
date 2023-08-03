@@ -181,7 +181,7 @@ SWEP.ClipSize = 6
 SWEP.Ammo = "357"
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/1858.mdl"
-SWEP.DropMagazineImpact = "steel"
+SWEP.DropMagazineImpact = "metal"
 SWEP.DropMagazineTime = 1.2
 
 SWEP.ReloadTimeMult = 0.8
