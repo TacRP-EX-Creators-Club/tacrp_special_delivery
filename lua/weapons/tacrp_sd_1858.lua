@@ -86,7 +86,7 @@ SWEP.Penetration = 4 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.5
 SWEP.ArmorBonus = 2
 
-SWEP.MuzzleVelocity = 12500
+SWEP.MuzzleVelocity = 9001
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3.5,
@@ -112,14 +112,15 @@ SWEP.Spread = 0.008
 SWEP.ShootTimeMult = 0.8
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2
+SWEP.RecoilMaximum = 3
 SWEP.RecoilResetTime = 0.35
 SWEP.RecoilDissipationRate = 2
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 5
-SWEP.RecoilKick = 9
-SWEP.RecoilStability = 0.75
+SWEP.RecoilKick = 8
+SWEP.RecoilStability = 0.35
+SWEP.RecoilAltMultiplier = 750
 
 SWEP.RecoilSpreadPenalty = 0.015
 SWEP.HipFireSpreadPenalty = 0.015
@@ -155,8 +156,8 @@ SWEP.PassivePos = Vector(-1, 3, -0.5)
 SWEP.BlindFireAng = Angle(-5, 0, -5)
 SWEP.BlindFirePos = Vector(0, 5, 0)
 
-SWEP.BlindFireSuicideAng = Angle(-125, 0, 45)
-SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
+SWEP.BlindFireSuicideAng = Angle(-110, 0, 45)
+SWEP.BlindFireSuicidePos = Vector(28, 6, -2)
 
 SWEP.SprintAng = Angle(0, 35, 0)
 SWEP.SprintPos = Vector(2, 2, -10)
