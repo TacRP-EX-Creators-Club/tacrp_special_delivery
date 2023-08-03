@@ -95,6 +95,8 @@ SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.6
 
+SWEP.Num = 2
+
 SWEP.MuzzleVelocity = 9500
 
 SWEP.BodyDamageMultipliers = {
@@ -115,9 +117,10 @@ SWEP.Firemodes = {
 	1
 }
 
-SWEP.RPM = 2000
+SWEP.RPM = 1000
 
 SWEP.Spread = 0.015
+SWEP.ShotgunPelletSpread = 0.012
 
 SWEP.MoveSpreadPenalty = 0
 SWEP.MidAirSpreadPenalty = 0.075
@@ -184,6 +187,8 @@ SWEP.HolsterPos = Vector(0, 3, -4)
 SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
+
+SWEP.AmmoPerShot = 2
 
 SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
