@@ -8,7 +8,7 @@ SWEP.PrintName = "Dual Micros"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "2Machine Pistol"
 
 SWEP.Description = "Pair of full-auto Micro Uzis, completely sacrificing anything in the way of accuracy or control for an insane effective rate of fire. \nNow *this* is gangster."
 
@@ -245,12 +245,11 @@ SWEP.AnimationTranslationTable = {
     ["blind_idle"] = "idle",
     ["blind_fire"] = "idle",
     ["melee"] = {"melee1", "melee2"},
-    ["shoot_left"] = {"shoot_left-1", "shoot_left-2"},
-    ["shoot_right"] = {"shoot_right-1", "shoot_right-2"},
+    ["shoot_left"] = {"shoot1", "shoot2"},
+    ["shoot_right"] = {"shoot1", "shoot2"},
 	["jam"] = "draw"
 }
 
-SWEP.LastShot = true
 SWEP.Akimbo = true
 
 // attachments
