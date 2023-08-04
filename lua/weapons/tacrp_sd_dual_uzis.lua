@@ -63,7 +63,8 @@ SWEP.Damage_Min = 6
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.6
+SWEP.ArmorPenetration = 0.4
+SWEP.ArmorBonus = 0.5
 
 SWEP.Num = 2
 
@@ -99,9 +100,9 @@ SWEP.RecoilResetTime = 0.125
 SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1
+SWEP.RecoilVisualKick = 2
 
-SWEP.RecoilKick = 5
+SWEP.RecoilKick = 10
 
 SWEP.RecoilSpreadPenalty = 0.002
 
