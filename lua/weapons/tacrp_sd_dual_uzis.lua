@@ -19,22 +19,8 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 18,
-        ArmorPenetration = 0.6,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 3.75,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-
-        Spread = 0.0125,
+        Damage_Max = 16,
+        Damage_Min = 8,
 
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
@@ -43,23 +29,10 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 18,
-        Damage_Min = 11,
+        Damage_Max = 12,
+        Damage_Min = 4,
         Range_Min = 750,
         Range_Max = 2500,
-
-        Spread = 0.015,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2.5,
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
 
         ReloadTimeMult = 1.25,
 
@@ -70,11 +43,8 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 9,
-        Damage_Min = 4,
-
-        Spread = 0.01,
-        RecoilKick = 3,
+        Damage_Max = 8,
+        Damage_Min = 3,
 
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
@@ -88,8 +58,8 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 22
-SWEP.Damage_Min = 12
+SWEP.Damage_Max = 15
+SWEP.Damage_Min = 6
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
@@ -97,10 +67,10 @@ SWEP.ArmorPenetration = 0.6
 
 SWEP.Num = 2
 
-SWEP.MuzzleVelocity = 9500
+SWEP.MuzzleVelocity = 12000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -112,31 +82,28 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {
-	2,
-	1
-}
+SWEP.Firemode = 2
 
 SWEP.RPM = 1000
 
-SWEP.Spread = 0.015
-SWEP.ShotgunPelletSpread = 0.012
+SWEP.Spread = 0.02
+SWEP.NotShotgun = true
 
 SWEP.MoveSpreadPenalty = 0
 SWEP.MidAirSpreadPenalty = 0.075
 SWEP.HipFireSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
+SWEP.RecoilMaximum = 12
 SWEP.RecoilResetTime = 0.125
-SWEP.RecoilDissipationRate = 18
+SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
 SWEP.RecoilKick = 5
 
-SWEP.RecoilSpreadPenalty = 0.00175
+SWEP.RecoilSpreadPenalty = 0.002
 
 SWEP.Sway = 0.5
 
@@ -190,10 +157,10 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 50 -- not realism :(
+SWEP.ClipSize = 48
 SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 1.1
+SWEP.ReloadTimeMult = 1.15
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/microuzi.mdl"
 SWEP.DropMagazineImpact = "pistol"
@@ -251,34 +218,40 @@ SWEP.AnimationTranslationTable = {
 }
 
 SWEP.Akimbo = true
-
+SWEP.AkimboBoth = true
 // attachments
 
 SWEP.Attachments = {
     [1] = {
         PrintName = "Accessory",
-        Category = {"acc_dual", "acc_extmag_dual"},
+        Category = {"acc_dual", "acc_extmag_dualsmg"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+    },
+    [2] = {
+        PrintName = "Bolt",
+        Category = {"bolt_automatic"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+    },
+    [3] = {
+        PrintName = "Trigger",
+        Category = {"trigger"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [4] = {
+        PrintName = "Ammo",
+        Category = {"ammo_pistol"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+    },
+    [5] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
-    [2] = {
-        PrintName = "Trigger",
-        Category = {"trigger_akimbo"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [3] = {
-        PrintName = "Ammo",
-        Category = {"ammo_pistol"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    }
 }
 
 SWEP.AttachmentCapacity = 30 // amount of "Capacity" this gun can accept
