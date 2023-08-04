@@ -21,7 +21,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 25,
         Damage_Min = 18,
-        ArmorPenetration = 0.6,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3.75,
@@ -34,8 +33,6 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        Spread = 0.0125,
-
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 1,
@@ -47,8 +44,6 @@ SWEP.BalanceStats = {
         Damage_Min = 11,
         Range_Min = 750,
         Range_Max = 2500,
-
-        Spread = 0.015,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
@@ -73,9 +68,6 @@ SWEP.BalanceStats = {
         Damage_Max = 9,
         Damage_Min = 4,
 
-        Spread = 0.01,
-        RecoilKick = 3,
-
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 1,
@@ -93,7 +85,8 @@ SWEP.Damage_Min = 12
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.6
+SWEP.ArmorPenetration = 0.4
+SWEP.ArmorBonus = 0.5
 
 SWEP.Num = 2
 
@@ -119,24 +112,24 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 1000
 
-SWEP.Spread = 0.015
-SWEP.ShotgunPelletSpread = 0.012
+SWEP.Spread = 0.07
+SWEP.ShotgunPelletSpread = 0.07
 
 SWEP.MoveSpreadPenalty = 0
 SWEP.MidAirSpreadPenalty = 0.075
 SWEP.HipFireSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
+SWEP.RecoilMaximum = 11
 SWEP.RecoilResetTime = 0.125
-SWEP.RecoilDissipationRate = 18
+SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1
+SWEP.RecoilVisualKick = 2
 
-SWEP.RecoilKick = 5
+SWEP.RecoilKick = 10
 
-SWEP.RecoilSpreadPenalty = 0.00175
+SWEP.RecoilSpreadPenalty = 0.015
 
 SWEP.Sway = 0.5
 
