@@ -26,5 +26,3 @@ ATT.Mult_RPM = 1.15
 ATT.Mult_ShootTimeMult = 0.85
 
 ATT.Add_Pitch_Shoot = -5
-
-ATT.Override_Sound_Shoot = "^tacint_shark/weapons/1858/nma_fire_36.wav"
