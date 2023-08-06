@@ -29,12 +29,13 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 12,
-        Damage_Min = 4,
-        Range_Min = 750,
-        Range_Max = 2500,
+        Damage_Max = 7,
+        Damage_Min = 3,
+        Range_Min = 100,
+        Range_Max = 1200,
 
-        ReloadTimeMult = 1.25,
+        RecoilSpreadPenalty = 0.0035,
+        ReloadTimeMult = 1.35,
 
         MoveSpeedMult = 1,
         ShootingSpeedMult = 0.9,
@@ -58,9 +59,9 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 15
-SWEP.Damage_Min = 6
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
+SWEP.Damage_Max = 14
+SWEP.Damage_Min = 7
+SWEP.Range_Min = 800 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.4
@@ -87,7 +88,7 @@ SWEP.Firemode = 2
 
 SWEP.RPM = 1000
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.03
 SWEP.NotShotgun = true
 
 SWEP.MoveSpreadPenalty = 0
@@ -104,7 +105,7 @@ SWEP.RecoilVisualKick = 2
 
 SWEP.RecoilKick = 10
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.003
 
 SWEP.Sway = 0.5
 
@@ -173,7 +174,6 @@ SWEP.DropMagazineTime = 0.25
 // sounds
 
 local path = "tacint_shark/weapons/microuzi/"
-local path1 = "tacrp/weapons/mtx/"
 
 SWEP.Sound_Shoot = "^" .. path .. "single.wav"
 
@@ -182,8 +182,9 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
 
-// the .qc attachment for the muzzle
-SWEP.QCA_Muzzle = 4
+SWEP.Akimbo = true
+SWEP.EffectsAlternate = true
+SWEP.EffectsDoubled = true
 
 SWEP.WM_QCA_MuzzleL = 1
 SWEP.WM_QCA_MuzzleR = 2
@@ -223,10 +224,6 @@ SWEP.AnimationTranslationTable = {
     ["jam"] = "draw"
 }
 
-SWEP.Akimbo = true
-SWEP.EffectsAlternate = true
-SWEP.EffectsDoubled = true
-
 // attachments
 
 SWEP.Attachments = {
@@ -244,7 +241,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Trigger",
-        Category = {"trigger"},
+        Category = {"trigger", "trigger_dual_uzis"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
