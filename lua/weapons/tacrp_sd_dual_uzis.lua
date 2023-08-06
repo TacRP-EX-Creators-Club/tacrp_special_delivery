@@ -215,7 +215,7 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"},
     ["shoot_left"] = {"shoot1", "shoot2"},
     ["shoot_right"] = {"shoot1", "shoot2"},
-	["jam"] = "draw"
+    ["jam"] = "draw"
 }
 
 SWEP.Akimbo = true
