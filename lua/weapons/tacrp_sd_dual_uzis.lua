@@ -219,7 +219,9 @@ SWEP.AnimationTranslationTable = {
 }
 
 SWEP.Akimbo = true
-SWEP.AkimboBoth = true
+SWEP.EffectsAlternate = true
+SWEP.EffectsDoubled = true
+
 // attachments
 
 SWEP.Attachments = {
