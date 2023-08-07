@@ -46,7 +46,7 @@ SWEP.BalanceStats = {
         Damage_Min = 20,
         Range_Min = 100,
         Range_Max = 1500,
-        RPM = 300,
+        RPM = 240,
 
         Spread = 0.03,
 
@@ -112,7 +112,7 @@ SWEP.BodyDamageMultipliers = {
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 360
+SWEP.RPM = 260
 
 SWEP.Spread = 0.025
 
