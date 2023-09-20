@@ -197,7 +197,7 @@ SWEP.Ammo = "buckshot"
 
 SWEP.ReloadUpInTime = 1.8
 
-SWEP.ReloadTimeMult = 1.1
+SWEP.ReloadTimeMult = 1.07
 
 // sounds
 
@@ -307,7 +307,7 @@ local function addsound(name, spath)
 end
 
 addsound("tacint_db.magrelease", path .. "magrelease.wav")
-addsound("tacint_db.open", path .. "open.wav")
+addsound("tacint_db.open", path .. "openeject.wav")
 addsound("tacint_db.close", path .. "close.wav")
 addsound("tacint_db.magout", path .. "insert1.wav")
 addsound("tacint_db.magin", path .. "insert2.wav")
