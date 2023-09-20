@@ -168,7 +168,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 25
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.3
+SWEP.ReloadTimeMult = 1.35
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/famas.mdl"
 SWEP.DropMagazineImpact = "metal"
 
