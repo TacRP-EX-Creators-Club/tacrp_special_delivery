@@ -193,7 +193,7 @@ SWEP.Ammo = "buckshot"
 
 SWEP.ReloadUpInTime = 1.8
 
-SWEP.ReloadTimeMult = 1.05
+SWEP.ReloadTimeMult = 1.1
 
 // sounds
 
