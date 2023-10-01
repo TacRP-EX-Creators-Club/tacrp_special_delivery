@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Elegant bullpup sniper with incredible stopping power and precision.  Perfect fit for a silent assassin. \nFitted with a 10x scope by default, lacks ironsights."
+SWEP.Description = "Elegant bullpup sniper with incredible stopping power and precision.  Perfect fit for a silent assassin. \nFitted with a 10x scope by default, lacks ironsights. \nThis thing is super rare, so don't bash people with it."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"
