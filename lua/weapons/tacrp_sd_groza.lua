@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Suppressed bullpup carbine, made from a reconfigured AK.  A bit weak, but maintains its damage over range."
+SWEP.Description = "Suppressed bullpup carbine, made from a reconfigured AK.  A bit weak, but maintains its damage over range and has no visible tracer."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
