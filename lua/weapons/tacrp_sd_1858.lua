@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Antique cowboy revolver packing a serious punch, but lacking in accuracy and range.\nImpractical by modern standards, but undeniably stylish and quick to whip out. Give it a twirl too."
+SWEP.Description = "Antique percussion revolver packing a serious punch, but lacking in accuracy and range.\nImpractical by modern standards, you're only using this look cool and feel like a cowboy."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1858.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_1858.mdl"
