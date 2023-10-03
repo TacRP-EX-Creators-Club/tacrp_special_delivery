@@ -4,13 +4,13 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "OTs-14-4 'Groza'"
+SWEP.PrintName = "OTs-14 \"Groza-4\""
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Unique bullpup rifle hacked together from an AK carbine.  A bit weak, but maintains its damage over range."
+SWEP.Description = "Suppressed bullpup carbine, made from a reconfigured AK.  A bit weak, but maintains its damage over range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
@@ -140,10 +140,10 @@ SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeBlindFire = false
 
 SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
+SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, 0.75, -5)
+SWEP.PassivePos = Vector(0, 1, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -152,10 +152,10 @@ SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
 SWEP.SightAng = Angle(0, -0.5, 0)
-SWEP.SightPos = Vector(-4.71, -6.5, -3.95)
+SWEP.SightPos = Vector(-4.62, -6.5, -3.97)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
-SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
+SWEP.CorrectiveAng = Angle(0.85, 0.72, 0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -257,9 +257,9 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.25, -0.55, 1),
+        Pos_VM = Vector(-3.25, 0.65, 1),
         Pos_WM = Vector(4, 1.5, -3.75),
-        Ang_VM = Angle(90, 0, -90),
+        Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(0, 0, 90),
     },
     [3] = {
