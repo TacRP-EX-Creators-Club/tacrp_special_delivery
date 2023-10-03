@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Unique experimental bullpup rifle chambered for subsonic ammunition. Great damage over range and has no visible tracer."
+SWEP.Description = "Unique bullpup rifle hacked together from an AK carbine.  A bit weak, but maintains its damage over range."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
@@ -143,7 +143,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, 2, -5)
+SWEP.PassivePos = Vector(0, 0.75, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -180,7 +180,7 @@ SWEP.FreeAimMaxAngle = 4.5
 local path = "tacint_shark/weapons/groza/"
 local path1 = "tacrp/weapons/ak47/ak47_"
 
-SWEP.Sound_Shoot = "^" .. path .. "ak47-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "groza_fire-1.wav"
 SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 110
@@ -193,7 +193,7 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_ak47"
+SWEP.MuzzleEffect = "muzzleflash_suppressed"
 SWEP.EjectEffect = 2
 
 SWEP.TracerNum = 0
@@ -250,19 +250,6 @@ SWEP.Attachments = {
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
-        PrintName = "Muzzle",
-        Category = "silencer",
-        Bone = "ValveBiped.AK47_rootbone",
-        WMBone = "ValveBiped.Bip01_R_Hand",
-        AttachSound = "tacrp/weapons/silencer_on.wav",
-        DetachSound = "tacrp/weapons/silencer_off.wav",
-        VMScale = 0.8,
-        Pos_VM = Vector(-3, 0.152, 14),
-        Pos_WM = Vector(17, 1.1, -3.5),
-        Ang_VM = Angle(90, 0, 0),
-        Ang_WM = Angle(0, 0, 0),
-    },
-    [3] = {
         PrintName = "Tactical",
         Category = "tactical",
         Bone = "ValveBiped.AK47_rootbone",
@@ -275,31 +262,31 @@ SWEP.Attachments = {
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, 0, 90),
     },
-    [4] = {
+    [3] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_sling", "acc_duffle", "perk_extendedmag"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
-    [5] = {
+    [4] = {
         PrintName = "Bolt",
         Category = {"bolt_automatic"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [6] = {
+    [5] = {
         PrintName = "Trigger",
         Category = {"trigger_auto"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [7] = {
+    [6] = {
         PrintName = "Ammo",
         Category = {"ammo_rifle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [8] = {
+    [7] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
