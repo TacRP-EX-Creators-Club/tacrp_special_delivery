@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Elegant bullpup sniper with incredible stopping power and precision.  Perfect fit for a silent assassin. \nFitted with a 10x scope by default, lacks ironsights. \nThis thing is super rare, so don't bash people with it."
+SWEP.Description = "Boutique sniper rifle firing a powerful round.  It's exceedingly rare, so maybe don't bash people with it. \nFitted with a 10x scope by default, lacks ironsights. \n\"Names are for friends, so I don't need one.\""
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"
@@ -144,7 +144,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(1, -1, -5.5)
+SWEP.PassivePos = Vector(1, 0, -5.25)
 
 SWEP.BlindFireAng = Angle(0, 15, 0)
 SWEP.BlindFirePos = Vector(2, -2, -4)
