@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "As if the Desert Eagle wasn't already impractical enough, you've decided to dual-wield a pair of gold-plated ones. Insane firepower times two, with poor recoil control and handling also times two."
+SWEP.Description = "Pair of gaudy gold-coated Desert Eagles, as if one wasn't enough. \nTwice the insane firepower, twice the insane recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_eagles.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_eagles.mdl"
@@ -82,6 +82,10 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        RecoilKick = 10,
+        Spread = 0.015
+    }
 }
 
 SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}

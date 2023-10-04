@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Machine Gun"
 
-SWEP.Description = "General-purpose machine gun, made for intense suppressive fire and deadly stopping power. High damage and capacity makes for effective area denial, but the weapon is very bulky and hard to control."
+SWEP.Description = "Heavy machine gun capable of intense suppressive fire. High capacity and damage but is very, very bulky."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_pkm.mdl"
@@ -75,6 +75,13 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        ClipSize = 100,
+        Damage_Max = 29,
+        RecoilMaximum = 26,
+        MoveSpeedMult = 0.7,
+        ShootingSpeedMult = 0.4
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.MachineGun

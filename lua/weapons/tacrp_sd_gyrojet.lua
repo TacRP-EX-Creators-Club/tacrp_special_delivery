@@ -50,6 +50,12 @@ SWEP.BalanceStats = {
         SightedSpeedMult = 1,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
+    },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        Description = "Experimental pistol firing self-propelled minirockets. Powerful but inaccurate, projectiles have significant travel time.",
+        ClipSize = 5,
+        JamFactor = 0,
+        Spread = 0.022
     }
 }
 
