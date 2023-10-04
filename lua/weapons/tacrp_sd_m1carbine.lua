@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "WW2-era semi-auto carbine.  Mediocre power but lightweight, accurate, and maintains damage over long range."
+SWEP.Description = "WW2-era semi-auto carbine. Intended as a defensive weapon for support troops, it is accurate and lightweight but has mediocre power."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_m1carbine.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_m1carbine.mdl"
@@ -29,20 +29,16 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-
         Damage_Max = 20,
         Damage_Min = 16,
         Range_Min = 1200,
         Range_Max = 3200,
-        RPM = 250,
+        RPM = 300,
 
-        RecoilResetTime = 0.18,
-        RecoilMaximum = 3,
-        RecoilSpreadPenalty = 0.01,
-        RecoilFirstShotMult = 0.5,
+        RecoilKick = 1.5,
 
         BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 1.5,
+            [HITGROUP_HEAD] = 3,
             [HITGROUP_CHEST] = 1.25,
             [HITGROUP_STOMACH] = 1,
             [HITGROUP_LEFTARM] = 0.75,
@@ -52,23 +48,21 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.5
         },
 
-        ReloadTimeMult = 1.25,
+        ReloadTimeMult = 1.15,
 
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
+        MoveSpeedMult = 0.92,
+        ShootingSpeedMult = 0.9,
         MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.5,
-        ReloadSpeedMult = 0.5,
+        SightedSpeedMult = 0.6,
+        ReloadSpeedMult = 0.65,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 12,
-        Damage_Min = 9,
-        Range_Min = 1500,
-        Range_Max = 3500,
-        RPM = 200,
+        Damage_Max = 10,
+        Damage_Min = 8,
+        RPM = 600,
 
-        MoveSpeedMult = 0.8,
-        ShootingSpeedMult = 0.6,
+        MoveSpeedMult = 0.92,
+        ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
@@ -81,10 +75,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 SWEP.Damage_Max = 24
 SWEP.Damage_Min = 18
-SWEP.Range_Min = 2000
-SWEP.Range_Max = 6000
-SWEP.Penetration = 15
-SWEP.ArmorPenetration = 0.65
+SWEP.Range_Min = 1800
+SWEP.Range_Max = 3500
+SWEP.Penetration = 9
+SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
