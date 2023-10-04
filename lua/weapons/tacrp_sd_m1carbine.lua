@@ -22,11 +22,9 @@ SWEP.BalanceStats = {
         Damage_Max = 25,
         Damage_Min = 20,
 
-        Range_Min = 1500,
-        Range_Max = 4000,
-
-        ShootingSpeedMult = 1,
-        SightedSpeedMult = 1,
+        MoveSpeedMult = 0.92,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -81,15 +79,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 25 // damage at minimum range
-SWEP.Damage_Min = 18 // damage at maximum range
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 5000 // distance at which we drop to minimum damage
-SWEP.Penetration = 15 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.45
+SWEP.Damage_Max = 24
+SWEP.Damage_Min = 18
+SWEP.Range_Min = 2000
+SWEP.Range_Max = 6000
+SWEP.Penetration = 15
+SWEP.ArmorPenetration = 0.65
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1.25,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -99,44 +97,44 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.75
 }
 
-SWEP.MuzzleVelocity = 32000
+SWEP.MuzzleVelocity = 29000
 
 // misc. shooting
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 350
+SWEP.RPM = 500
 
-SWEP.Spread = 0.0002
+SWEP.Spread = 0.003
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 3
-SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 6
-SWEP.RecoilFirstShotMult = 0.5
+SWEP.RecoilMaximum = 5
+SWEP.RecoilResetTime = 0.15 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 12
+SWEP.RecoilFirstShotMult = 0.75
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 3
-SWEP.RecoilStability = 0.8
+SWEP.RecoilKick = 2.5
+SWEP.RecoilStability = 0.75
+SWEP.RecoilAltMultiplier = 300
 
-SWEP.RecoilSpreadPenalty = 0.004
+SWEP.RecoilSpreadPenalty = 0.0015
 SWEP.HipFireSpreadPenalty = 0.02
-SWEP.PeekPenaltyFraction = 0.2
+SWEP.PeekPenaltyFraction = 0.25
 
 SWEP.CanBlindFire = true
 
 // handling
-
-SWEP.MoveSpeedMult = 0.9
-SWEP.ShootingSpeedMult = 0.75
-SWEP.SightedSpeedMult = 0.6
+SWEP.MoveSpeedMult = 0.92
+SWEP.ShootingSpeedMult = 0.85
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.6
 
-SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.24
+SWEP.SprintToFireTime = 0.33
 
 SWEP.Sway = 0.75
 SWEP.ScopedSway = 0.15
@@ -237,6 +235,21 @@ SWEP.AnimationTranslationTable = {
     ["blind_fire"] = "blind_shoot1"
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.25, -0.1),
+    vm_ang = Angle(0, 0.4, 0),
+    t = 0.08,
+    tmax = 0.1,
+    bones = {
+        {
+            bone = "ValveBiped.bolt_handle",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.1,
+        },
+    },
+}
+
 // attachments
 
 SWEP.AttachmentElements = {
@@ -269,13 +282,12 @@ SWEP.Attachments = {
         Bone = "ValveBiped.m14_rootbone",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-		VMScale = 0.8,
-		WMScale = 0.8,
+        VMScale = 0.75,
+        WMScale = 0.75,
         Pos_VM = Vector(-2.7, 0.2, 31),
         Pos_WM = Vector(30, -0.55, -14),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(-22.5, 5, 180),
-        VMScale = 0.75
     },
     [3] = {
         PrintName = "Tactical",
@@ -291,7 +303,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_extmag_rifle2", "acc_sling", "acc_duffle", "acc_bipod"},
+        Category = {"acc", "acc_extmag_smg", "acc_sling", "acc_duffle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
