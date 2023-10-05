@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Antique percussion revolver packing a serious punch, but lacking in accuracy and range.\nImpractical by modern standards, you're only using this look cool and feel like a cowboy."
+SWEP.Description = "Antique percussion revolver packing a punch up close, but is terribly slow to shoot. Suitable for cowboy roleplay.\n\nPass the whiskey!"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1858.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_1858.mdl"
@@ -190,7 +190,7 @@ SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/1858.mdl"
 SWEP.DropMagazineImpact = "metal"
 SWEP.DropMagazineTime = 1.2
 
-SWEP.ReloadTimeMult = 0.8
+SWEP.ReloadTimeMult = 0.9
 SWEP.ReloadUpInTime = 2
 
 SWEP.JamWaitTime = 0.92
