@@ -12,7 +12,7 @@ ATT.ModelOffset = Vector(0, 0, 0.05)
 
 ATT.Category = "silencer"
 
-ATT.SortOrder = 6
+ATT.SortOrder = 7
 
 ATT.Add_Vol_Shoot = -25
 ATT.Add_Range_Min = 500
