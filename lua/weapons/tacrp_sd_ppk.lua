@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Compact, low-capacity pocket pistol made famous by the movies. High fire rate and easy to handle, but damage falls off quickly.\n\"Shocking. Positively shocking.\""
+SWEP.Description = "Compact, low-capacity pocket pistol made famous by the movies. Best suited for close range self defense.\n\n\"Shocking. Positively shocking.\""
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_ppk.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_ppk.mdl"
@@ -131,16 +131,16 @@ SWEP.Spread = 0.004
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 8
-SWEP.RecoilResetTime = 0.14
-SWEP.RecoilDissipationRate = 20
+SWEP.RecoilMaximum = 4
+SWEP.RecoilResetTime = 0.15
+SWEP.RecoilDissipationRate = 12
 SWEP.RecoilFirstShotMult = 1
 
-SWEP.RecoilVisualKick = 1.5
-
+SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 1.5
+SWEP.RecoilStability = 0.35
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.0025
 
 SWEP.MidAirSpreadPenalty = 0.05
 SWEP.PeekPenaltyFraction = 0.2
