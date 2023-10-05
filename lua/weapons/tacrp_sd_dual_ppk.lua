@@ -206,7 +206,7 @@ local path1 = "tacint_shark/weapons/dual1911/"
 
 SWEP.Silencer = true
 SWEP.Sound_Shoot = "^" .. path1 .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = "tacrp/weapons/p250/p250_fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = "tacint_shark/weapons/ppk/suppressed_fire-1.wav"
 
 
 SWEP.Vol_Shoot = 80
