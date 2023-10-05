@@ -6,9 +6,9 @@ ATT.Pros = {"stat.vol_shoot", "stat.range", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.recoil",  "rating.handling"}
 
 ATT.Model = "models/weapons/tacint_shark/addons/suppressor_assassin.mdl"
-ATT.Scale = 1.6
+ATT.Scale = 1.4
 
-ATT.ModelOffset = Vector(1, 0, 0.05)
+ATT.ModelOffset = Vector(0, 0, 0.05)
 
 ATT.Category = "silencer"
 
