@@ -187,7 +187,7 @@ SWEP.DropMagazineTime = 0.5
 
 // sounds
 
-local path = "Tacint_shark/m1carbine/"
+local path = "Tacint_shark/weapons/m1carbine/"
 
 SWEP.Sound_Shoot = "^" .. path .. "fire.wav"
 SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
