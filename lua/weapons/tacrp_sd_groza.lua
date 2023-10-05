@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Suppressed bullpup carbine, made from a reconfigured AK.  A bit weak, but maintains its damage over range and has no visible tracer."
+SWEP.Description = "Suppressed bullpup made from a reconfigured AK. Subsonic ammunition is weak but has no visible tracer."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
@@ -71,8 +71,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 17
-SWEP.Damage_Min = 14
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 15
 SWEP.Range_Min = 1300 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
@@ -89,7 +89,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 14000
+SWEP.MuzzleVelocity = 12000
 
 // misc. shooting
 
@@ -100,7 +100,7 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 750
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0.0065
 
 SWEP.ShootTimeMult = 0.5
 
@@ -110,12 +110,12 @@ SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1.25
+SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 3
-SWEP.RecoilStability = 0.15
+SWEP.RecoilStability = 0.25
 
 SWEP.RecoilSpreadPenalty = 0.0018
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.HipFireSpreadPenalty = 0.025
 
 SWEP.CanBlindFire = true
 
@@ -151,8 +151,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0, -0.5, 0)
-SWEP.SightPos = Vector(-4.62, -6.5, -3.97)
+SWEP.SightAng = Angle(0.02, -0.6, 0)
+SWEP.SightPos = Vector(-4.61, -6.5, -3.95)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.85, 0.72, 0)
@@ -168,12 +168,12 @@ SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"
-SWEP.DropMagazineImpact = "plastic"
+SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 4
 
 // sounds
 
@@ -280,13 +280,13 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
+    -- [6] = {
+    --     PrintName = "Ammo",
+    --     Category = {"ammo_rifle"},
+    --     AttachSound = "TacRP/weapons/flashlight_on.wav",
+    --     DetachSound = "TacRP/weapons/flashlight_off.wav",
+    -- },
     [6] = {
-        PrintName = "Ammo",
-        Category = {"ammo_rifle"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [7] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
