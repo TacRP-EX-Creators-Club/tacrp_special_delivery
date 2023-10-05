@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with a low rate of fire.\nIf you see a 1942 RP player using this weapon, report them to the local authorities at once."
+SWEP.Description = "WW2-era SMG with balanced performance and decent damage. \nAn icon of cinema and a symbol of freedom and excellence."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_thompson.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"
@@ -148,8 +148,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.15, 0.45, 0)
-SWEP.SightPos = Vector(-4.48, -7.5, -2.76)
+SWEP.SightAng = Angle(-0, 0.45, 0)
+SWEP.SightPos = Vector(-4.41, -4.25, -2.15)
 
 SWEP.CorrectivePos = Vector(0.02, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -314,7 +314,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_mp40.Remove_Clip", path .. "ump45_clipout.wav")
-addsound("tacint_mp40.Insert_Clip", path .. "ump45_clipin.wav")
-addsound("tacint_mp40.bolt_back", path .. "ump45_boltslap.wav")
-addsound("tacint_mp40.bolt_forward", path .. "bolt_forward-1.wav")
+addsound("tacint_thompson.Remove_Clip", path .. "ump45_clipout.wav")
+addsound("tacint_thompson.Insert_Clip", path .. "ump45_clipin.wav")
+addsound("tacint_thompson.bolt_back", path .. "ump45_boltslap.wav")
+addsound("tacint_thompson.bolt_forward", path .. "bolt_forward-1.wav")
