@@ -13,7 +13,7 @@ SWEP.SubCatType = "3Submachine Gun"
 SWEP.Description = "WW2-era SMG with balanced performance and decent damage. \nAn icon of cinema and a landmark development in small arms history."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_thompson.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_thompson.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"
 
 SWEP.Slot = 2
 
@@ -165,8 +165,8 @@ SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/thompson.mdl"
-SWEP.DropMagazineImpact = "metal"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/mp40.mdl"
+SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.3
 SWEP.DropMagazineTime = 0.4
@@ -243,7 +243,7 @@ SWEP.Attachments = {
         VMScale = 0.9,
         WMScale = 0.9,
         Pos_VM = Vector(-3.5, 0.22, 1),
-        Pos_WM = Vector(0.1, 0, 0),
+        Pos_WM = Vector(0, 8, 0.6),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -257,7 +257,7 @@ SWEP.Attachments = {
         VMScale = 0.8,
         WMScale = 0.75,
         Pos_VM = Vector(-2.7, 0.25, 22.5),
-        Pos_WM = Vector(0, 23, -0.85),
+        Pos_WM = Vector(0, 26.25, -0.6),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -269,7 +269,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-2.7, 0.8, 2),
-        Pos_WM = Vector(0.7, 0, -1),
+        Pos_WM = Vector(0.9, 13, -1),
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(-90, -90, 0),
     },
