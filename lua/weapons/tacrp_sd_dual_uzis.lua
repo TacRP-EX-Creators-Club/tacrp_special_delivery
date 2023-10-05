@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Dual Micros"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "2Machine Pistol"
 
 SWEP.Description = "Pair of full-auto Micro Uzis, destroying any notion of accuracy and recoil control. \nNow *this* is gangster."
@@ -19,9 +19,6 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 16,
-        Damage_Min = 8,
-
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 1,
@@ -62,8 +59,8 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 14
-SWEP.Damage_Min = 7
+SWEP.Damage_Max = 16
+SWEP.Damage_Min = 8
 SWEP.Range_Min = 800 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
