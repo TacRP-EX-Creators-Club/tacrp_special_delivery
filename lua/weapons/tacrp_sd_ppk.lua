@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Compact, low-capacity pocket pistol. High fire rate and easy to handle, but damage falls off quickly.\nBesides being an iconic weapon in the cinemas, it is also the weapon that killed Adolf Hitler."
+SWEP.Description = "Compact, low-capacity pocket pistol made famous by the movies. High fire rate and easy to handle, but damage falls off quickly.\n\"Shocking. Positively shocking.\""
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_ppk.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_ppk.mdl"

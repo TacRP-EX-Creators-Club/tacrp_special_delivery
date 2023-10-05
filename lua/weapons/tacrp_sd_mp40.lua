@@ -4,13 +4,13 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Steyr MP 40"
+SWEP.PrintName = "Steyr MP40"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG notable for its ease of control thanks to a low fire rate.\nIf you see this in the hands of a 1942 RP player, report them to the local authorities at once."
+SWEP.Description = "WW2-era SMG with a low rate of fire.\nIf you see a 1942 RP player using this weapon, report them to the local authorities at once."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"
@@ -63,6 +63,9 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        RecoilMaximum = 10
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
@@ -137,7 +140,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -6)
+SWEP.PassivePos = Vector(0.5, -2, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)

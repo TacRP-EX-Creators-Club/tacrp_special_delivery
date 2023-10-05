@@ -94,6 +94,9 @@ SWEP.BalanceStats = {
         SightedSpeedMult = 1,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
+    },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        RecoilMaximum = 7
     }
 }
 

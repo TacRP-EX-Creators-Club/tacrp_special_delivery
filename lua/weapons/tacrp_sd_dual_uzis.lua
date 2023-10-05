@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "2Machine Pistol"
 
-SWEP.Description = "Pair of full-auto Micro Uzis, completely sacrificing anything in the way of accuracy or control for an insane effective rate of fire. \nNow *this* is gangster."
+SWEP.Description = "Pair of full-auto Micro Uzis, destroying any notion of accuracy and recoil control. \nNow *this* is gangster."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_uzi.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_uzi.mdl"
@@ -53,6 +53,9 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        RecoilMaximum = 18
+    }
 }
 
 SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
@@ -86,7 +89,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 2
 
-SWEP.RPM = 1000
+SWEP.RPM = 900
 
 SWEP.Spread = 0.03
 SWEP.NotShotgun = true
@@ -159,7 +162,7 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 48
+SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1.15

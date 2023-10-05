@@ -1,0 +1,27 @@
+"CSO2Generic"
+
+{
+	"$phong"	2
+	"$energyconservative"	1
+	"$blinn_fresnel"	1
+	"$bumpscale"	0.62
+	"$reflectivity"	1.00
+	"$gloss"	0.71
+	"$fresnel"	1.00
+	"$wrap"	1.00
+	"$specular"	0.00
+	"$envmap_boost"	3.28
+
+	"$basetexture"	"models\tacint_shark\weapons\thompson\v_thompson_s_opal"
+	"$bumpmap"      "models\tacint_shark\weapons\thompson\v_thompson_s_opal_normal"
+
+	"$envmap"		"env_cubemap"
+	"$normalbluetogloss"	"1"
+	
+	
+	
+	"$rimscale"				"1"
+	"$rimpower"				"0.32"
+	"$rimcolorblend"		"0.9"
+	"$rimmask"				"0.83"
+}

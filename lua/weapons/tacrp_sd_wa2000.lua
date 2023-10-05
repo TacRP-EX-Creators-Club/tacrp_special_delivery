@@ -69,6 +69,9 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        RecoilResetTime = 0.25
+    }
 }
 
 // "ballistics"

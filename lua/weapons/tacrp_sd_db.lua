@@ -76,7 +76,7 @@ SWEP.BalanceStats = {
         SightedSpeedMult = 0.9,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
-    }
+    },
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol

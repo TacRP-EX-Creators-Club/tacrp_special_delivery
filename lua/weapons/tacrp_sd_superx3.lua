@@ -87,6 +87,7 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {}
 }
 
 
@@ -155,7 +156,7 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.ReloadSpeedMult = 0.5
 
 SWEP.AimDownSightsTime = 0.45
-SWEP.SprintToFireTime = 0.45
+SWEP.SprintToFireTime = 0.5
 
 // hold types
 
