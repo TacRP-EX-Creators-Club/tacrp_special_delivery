@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "Accurized battle rifle with excellent precision but poor handling.  Capable of automatic fire. \nEquipped with a 6x scope by default."
+SWEP.Description = "Precise battle rifle with a somewhat managable automatic firemode but slow handling.\nEquipped with a 6x scope by default."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_g3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_g3.mdl"
@@ -121,10 +121,10 @@ SWEP.Spread = 0.0008
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 8
-SWEP.RecoilResetTime = 0.2  // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 12
-SWEP.RecoilFirstShotMult = 0.4
+SWEP.RecoilMaximum = 6
+SWEP.RecoilResetTime = 0.12  // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 9
+SWEP.RecoilFirstShotMult = 0.65
 
 SWEP.RecoilVisualKick = 2
 SWEP.RecoilKick = 6
