@@ -22,7 +22,8 @@ SWEP.BalanceStats = {
         Damage_Max = 25,
         Damage_Min = 15,
 
-        ShootingSpeedMult = 0.8,
+        MoveSpeedMult = 0.9,
+        ShootingSpeedMult = 0.85,
         SightedSpeedMult = 0.8,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
@@ -54,11 +55,11 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.65,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 9,
+        Damage_Max = 10,
         Damage_Min = 4,
 
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.8,
+        MoveSpeedMult = 0.9,
+        ShootingSpeedMult = 0.85,
         SightedSpeedMult = 0.8,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
@@ -74,10 +75,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 18
 SWEP.Damage_Min = 6
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3200 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.65
+SWEP.Range_Min = 800 // distance for which to maintain maximum damage
+SWEP.Range_Max = 3500 // distance at which we drop to minimum damage
+SWEP.Penetration = 5 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.6
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
@@ -96,28 +97,28 @@ SWEP.MuzzleVelocity = 20000
 
 SWEP.Firemode = 2
 
-SWEP.RPM = 550
+SWEP.RPM = 520
 
 SWEP.Spread = 0.009
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 8
-SWEP.RecoilResetTime = 0.17
-SWEP.RecoilDissipationRate = 22
+SWEP.RecoilMaximum = 12
+SWEP.RecoilResetTime = 0.13
+SWEP.RecoilDissipationRate = 16
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilKick = 2
-SWEP.RecoilStability = 0.6
+SWEP.RecoilKick = 1.5
+SWEP.RecoilStability = 0.25
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.02
+SWEP.RecoilSpreadPenalty = 0.0012
+SWEP.HipFireSpreadPenalty = 0.016
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
+SWEP.MoveSpeedMult = 0.93
 SWEP.ShootingSpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.75
 
@@ -204,16 +205,16 @@ SWEP.AnimationTranslationTable = {
 }
 
 SWEP.ProceduralIronFire = {
-    vm_pos = Vector(0, -0.5, -0.3),
-    vm_ang = Angle(0, 0.5, 0),
+    vm_pos = Vector(0, -0.3, -0.15),
+    vm_ang = Angle(0, 0.2, 0),
     t = 0.15,
-    tmax = 0.2,
+    tmax = 0.15,
     bones = {
         {
             bone = "ValveBiped.bolt_cover",
             pos = Vector(0, 0, 3),
             t0 = 0,
-            t1 = 0.1,
+            t1 = 0.11,
         },
     },
 }

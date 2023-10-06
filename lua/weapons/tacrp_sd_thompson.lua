@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with balanced performance and decent damage. \nAn icon of cinema and a landmark development in small arms history."
+SWEP.Description = "WW2-era SMG with impressive close range firepower backed by sturdy wooden furniture."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_thompson.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_thompson.mdl"
@@ -19,20 +19,21 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
+        Damage_Max = 27,
+        Damage_Min = 7,
 
+        MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 0.8,
+        SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 14,
-        Damage_Min = 9,
-        Range_Min = 600,
-        Range_Max = 2200,
-        RPM = 500,
+        Damage_Max = 16,
+        Damage_Min = 5,
+        Range_Min = 200,
+        Range_Max = 1500,
+        RPM = 650,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
@@ -47,24 +48,25 @@ SWEP.BalanceStats = {
 
         ReloadTimeMult = 1.25,
 
-        MoveSpeedMult = 0.9,
-        ShootingSpeedMult = 0.8,
+        MoveSpeedMult = 0.95,
+        ShootingSpeedMult = 0.85,
         MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.55,
-        ReloadSpeedMult = 0.65,
+        SightedSpeedMult = 0.6,
+        ReloadSpeedMult = 0.7,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 9,
-        Damage_Min = 4,
+        Damage_Max = 8,
+        Damage_Min = 3,
+        RPM = 650,
 
-        MoveSpeedMult = 0.85,
+        MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 0.8,
+        SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_OLDSCHOOL] = {
-        RecoilMaximum = 10
+        RecoilMaximum = 10,
     }
 }
 
@@ -72,12 +74,12 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
-SWEP.Damage_Min = 6
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3200 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.65
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 5
+SWEP.Range_Min = 750 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2500 // distance at which we drop to minimum damage
+SWEP.Penetration = 4 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.525
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
@@ -90,7 +92,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 20000
+SWEP.MuzzleVelocity = 12500
 
 // misc. shooting
 
@@ -107,8 +109,9 @@ SWEP.RecoilDissipationRate = 22
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilKick = 2
-SWEP.RecoilStability = 0.6
+SWEP.RecoilKick = 3
+SWEP.RecoilStability = 0.3
+SWEP.RecoilAltMultiplier = 150
 
 SWEP.RecoilSpreadPenalty = 0.002
 SWEP.HipFireSpreadPenalty = 0.02
@@ -117,18 +120,18 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
+SWEP.MoveSpeedMult = 0.92
 SWEP.ShootingSpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.75
+SWEP.SightedSpeedMult = 0.7
 
-SWEP.ReloadSpeedMult = 0.75
+SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.31
-SWEP.SprintToFireTime = 0.28
+SWEP.AimDownSightsTime = 0.39
+SWEP.SprintToFireTime = 0.37
 
-SWEP.Sway = 0.9
+SWEP.Sway = 1
 SWEP.ScopedSway = 0.15
-SWEP.FreeAimMaxAngle = 3.5
+SWEP.FreeAimMaxAngle = 5
 
 // hold types
 
@@ -148,8 +151,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0, 0.45, 0)
-SWEP.SightPos = Vector(-4.41, -4.25, -2.15)
+SWEP.SightAng = Angle(-0, 0.55, 0)
+SWEP.SightPos = Vector(-4.41, -4.25, -2.33)
 
 SWEP.CorrectivePos = Vector(0.02, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -204,10 +207,10 @@ SWEP.AnimationTranslationTable = {
 }
 
 SWEP.ProceduralIronFire = {
-    vm_pos = Vector(0, -0.5, -0.3),
-    vm_ang = Angle(0, 0.5, 0),
-    t = 0.15,
-    tmax = 0.2,
+    vm_pos = Vector(0, -0.4, -0.07),
+    vm_ang = Angle(0, 0.25, 0),
+    t = 0.12,
+    tmax = 0.12,
     bones = {
         {
             bone = "ValveBiped.bolt_cover",
@@ -275,7 +278,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock2", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_sling", "acc_duffle", "acc_extmag_smg"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
