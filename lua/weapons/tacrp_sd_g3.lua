@@ -233,6 +233,8 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"}
 }
 
+SWEP.HolsterTimeMult = 3
+
 // attachments
 
 SWEP.AttachmentElements = {
