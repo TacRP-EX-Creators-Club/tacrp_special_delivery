@@ -19,7 +19,7 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 15,
+        Damage_Max = 16,
         Damage_Min = 9,
         Spread = 0.008,
         FreeAimMaxAngle = 3,
@@ -119,6 +119,7 @@ SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.5
 SWEP.RecoilKick = 1.5
+SWEP.RecoilStability = 0.3
 SWEP.RecoilAltMultiplier = 400
 
 SWEP.RecoilSpreadPenalty = 0.002
@@ -135,10 +136,10 @@ SWEP.SightedSpeedMult = 0.65
 SWEP.ReloadSpeedMult = 0.65
 
 SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.3
+SWEP.SprintToFireTime = 0.32
 
-SWEP.Sway = 1.3
-SWEP.ScopedSway = 0.15
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.2
 
 // hold types
 
@@ -246,8 +247,8 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
-        Pos_VM = Vector(-5.35, 0.15, 4),
+        VMScale = 0.8,
+        Pos_VM = Vector(-5.55, 0.15, 4),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(-0.1, 2, 0.25),
         Ang_WM = Angle(0, -90, 0),
