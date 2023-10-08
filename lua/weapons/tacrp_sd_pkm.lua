@@ -27,7 +27,7 @@ SWEP.BalanceStats = {
 
         ClipSize = 100,
 
-        MoveSpeedMult = 0.75,
+        MoveSpeedMult = 0.7,
         ShootingSpeedMult = 0.5,
         SightedSpeedMult = 0.65,
         ReloadTimeMult = 1.15,
@@ -114,23 +114,23 @@ SWEP.Firemode = 2
 
 SWEP.RPM = 650
 
-SWEP.Spread = 0.008
+SWEP.Spread = 0.0065
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 30
-SWEP.RecoilResetTime = 0.25
-SWEP.RecoilDissipationRate = 45
-SWEP.RecoilFirstShotMult = 2
+SWEP.RecoilMaximum = 25
+SWEP.RecoilResetTime = 0.2
+SWEP.RecoilDissipationRate = 30
+SWEP.RecoilFirstShotMult = 3
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.35
+SWEP.RecoilKick = 7
+SWEP.RecoilStability = 0.25
 SWEP.RecoilAltMultiplier = 300
 
 SWEP.HipFireSpreadPenalty = 0.07
-SWEP.RecoilSpreadPenalty = 0.001
+SWEP.RecoilSpreadPenalty = 0.0012
 
 SWEP.CanBlindFire = true
 
@@ -150,6 +150,10 @@ SWEP.Sway = 3.5
 SWEP.ScopedSway = 0.75
 
 SWEP.FreeAimMaxAngle = 8
+
+SWEP.Bipod = true
+SWEP.BipodRecoil = 0.35
+SWEP.BipodKick = 0.25
 
 // hold types
 

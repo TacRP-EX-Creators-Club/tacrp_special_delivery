@@ -126,7 +126,7 @@ SWEP.RecoilResetTime = 0.12  // time after you stop shooting for recoil to start
 SWEP.RecoilDissipationRate = 9
 SWEP.RecoilFirstShotMult = 0.65
 
-SWEP.RecoilVisualKick = 2
+SWEP.RecoilVisualKick = 1.5
 SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.7
 
@@ -149,7 +149,11 @@ SWEP.SprintToFireTime = 0.5
 SWEP.Sway = 1.5
 SWEP.ScopedSway = 0.25
 
-SWEP.FreeAimMaxAngle = 4
+SWEP.FreeAimMaxAngle = 6.5
+
+SWEP.Bipod = true
+SWEP.BipodRecoil = 0.5
+SWEP.BipodKick = 0.3
 
 // hold types
 
