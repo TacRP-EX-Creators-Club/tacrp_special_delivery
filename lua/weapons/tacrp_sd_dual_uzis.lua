@@ -101,8 +101,7 @@ SWEP.RecoilResetTime = 0.125
 SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 2
-
+SWEP.RecoilVisualKick = 1.5
 SWEP.RecoilKick = 10
 
 SWEP.RecoilSpreadPenalty = 0.003
