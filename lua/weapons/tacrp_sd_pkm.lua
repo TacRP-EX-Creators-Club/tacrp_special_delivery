@@ -12,6 +12,13 @@ SWEP.SubCatType = "4Machine Gun"
 
 SWEP.Description = "Heavy machine gun capable of intense suppressive fire. High capacity and damage but is very, very bulky."
 
+SWEP.Trivia_Caliber = "7.62x54mmR"
+SWEP.Trivia_Manufacturer = "Degtyaryov Plant"
+SWEP.Trivia_Year = "1961"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Sarvs \nTextures: BuLL5h1T \nSounds: NightmareMutant\nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_pkm.mdl"
 

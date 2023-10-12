@@ -12,6 +12,14 @@ SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "A pair of gaudy, custom made golden M1911 pistols complete with wyvern-engraved grip. Hits hard, but its low capacity can be hurting."
 
+SWEP.Trivia_Caliber = ".45 ACP"
+SWEP.Trivia_Manufacturer = "Springfield Armory"
+SWEP.Trivia_Year = "2011"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Schmung \nTextures: Millenia \nAnimations: Tactical Intervention"
+
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_1911.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_1911.mdl"
 

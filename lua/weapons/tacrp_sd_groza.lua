@@ -12,6 +12,13 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Suppressed bullpup made from a reconfigured AK. Subsonic ammunition is weak but has no visible tracer."
 
+SWEP.Trivia_Caliber = "9x39mm"
+SWEP.Trivia_Manufacturer = "TsKIB SOO"
+SWEP.Trivia_Year = "1992"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Teh Snake, edited by speedonerd \nTextures: Teh Snake \nSounds: Teh Snake & speedonerd \nAnimations: Tactical Intervention, edited by speedonerd"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_groza.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_groza.mdl"
 

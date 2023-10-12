@@ -12,6 +12,13 @@ SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Civilian sporting shotgun, engineered for performance.  Long barrel and competition choke offer great control and range but poor handling."
 
+SWEP.Trivia_Caliber = "12 Gauge"
+SWEP.Trivia_Manufacturer = "Winchester Repeating Arms"
+SWEP.Trivia_Year = "2006"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = "Model,Textures & Sounds: No More Room in Hell \nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_superx3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_superx3.mdl"
 

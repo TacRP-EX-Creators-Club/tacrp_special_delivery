@@ -12,6 +12,13 @@ SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "WW2-era SMG with a low rate of fire.\nIf you see a 1942 RP player using this weapon, report them to the local authorities at once."
 
+SWEP.Trivia_Caliber = "9x19mm"
+SWEP.Trivia_Manufacturer = "Steyr-Mannlicher"
+SWEP.Trivia_Year = "1940"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Soul-Slayer \nTextures: Kimono \nSounds: Futon & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"
 

@@ -12,6 +12,13 @@ SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "High-damage assault rifle with excellent armor piercing capabilities, converted to semi auto for civilian markets. \nDespite its looks, it is not an AK."
 
+SWEP.Trivia_Caliber = "7.62x39mm"
+SWEP.Trivia_Manufacturer = "CZ Uherský Brod"
+SWEP.Trivia_Year = "1959"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model, Texture & Sounds: No More Room in Hell \nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_vz58.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_vz58.mdl"
 

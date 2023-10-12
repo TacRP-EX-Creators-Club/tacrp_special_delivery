@@ -13,6 +13,13 @@ SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "Ultra-lightweight plinking rifle. Highly accurate and easy to handle, but is barely lethal unless scoring a headshot."
 
+SWEP.Trivia_Caliber = ".22 LR"
+SWEP.Trivia_Manufacturer = "Sturm, Ruger & Co."
+SWEP.Trivia_Year = "1964"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = "Model & Sounds: No More Room in Hell \nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1022.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_1022.mdl"
 

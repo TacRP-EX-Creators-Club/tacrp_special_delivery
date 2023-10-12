@@ -12,6 +12,14 @@ SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Pair of gaudy gold-coated Desert Eagles, as if one wasn't enough. \nTwice the insane firepower, twice the insane recoil."
 
+SWEP.Trivia_Caliber = ".50 Action Express"
+SWEP.Trivia_Manufacturer = "Magnum Research"
+SWEP.Trivia_Year = "1995" --Mark XIX model
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Hav0c & Stoke \nTextures: The_Tub & Stoke \nAnimations: Tactical Intervention"
+
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_eagles.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_eagles.mdl"
 

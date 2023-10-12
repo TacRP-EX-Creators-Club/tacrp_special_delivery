@@ -12,6 +12,13 @@ SWEP.SubCatType = "6Precision Rifle"
 
 SWEP.Description = "Precise battle rifle with a somewhat managable automatic firemode but slow handling.\nEquipped with a 6x scope by default."
 
+SWEP.Trivia_Caliber = "7.62x51mm"
+SWEP.Trivia_Manufacturer = "Heckler & Koch"
+SWEP.Trivia_Year = "1958"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Pac \nTextures: Millenia, edited by speedonerd \nSounds: Nightmare Mutant \nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_g3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_g3.mdl"
 

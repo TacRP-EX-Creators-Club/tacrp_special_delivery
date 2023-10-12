@@ -12,6 +12,13 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil."
 
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "GIAT Industries" -- more like GYATT industries ahahahaha amirite fellow zoomies?
+SWEP.Trivia_Year = "1975"
+
+SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Credits = "Model: SnipaMasta \nTextures: SnipaMasta & Fnuxray \nAnimations: Tactical Intervention, edited by speedonerd"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_famas.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_famas.mdl"
 

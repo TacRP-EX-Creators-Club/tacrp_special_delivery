@@ -12,6 +12,13 @@ SWEP.SubCatType = "9Equipment"
 
 SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming. This model was modified by an enthusiast to utilize removable magazines from the obscure assault rifle variant."
 
+SWEP.Trivia_Caliber = "13mm Minirockets"
+SWEP.Trivia_Manufacturer = "MB Associates"
+SWEP.Trivia_Year = "1962"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = "Model, Textures & Sound: RedRougeXIII \nAnimations: Tactical Intervention, edited by speedonerd"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_gyrojet.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_gyrojet.mdl"
 

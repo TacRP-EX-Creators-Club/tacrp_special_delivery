@@ -10,7 +10,15 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "2Machine Pistol"
 
-SWEP.Description = "Pair of full-auto Micro Uzis, destroying any notion of accuracy and recoil control. \nNow *this* is gangster."
+SWEP.Description = "Pair of full-auto Micro Uzis, destroying any notion of accuracy and recoil control."
+SWEP.Description_Quote = "Now *this* is gangster!"
+
+SWEP.Trivia_Caliber = "9x21mm IMI"
+SWEP.Trivia_Manufacturer = "Israel Military Industries"
+SWEP.Trivia_Year = "1986"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = "Model: BrainBread 2 \nAnimations: Tactical Intervention, edited by speedonerd"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_uzi.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_uzi.mdl"

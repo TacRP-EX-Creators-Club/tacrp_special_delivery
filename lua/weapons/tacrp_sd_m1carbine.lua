@@ -12,6 +12,13 @@ SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "WW2-era semi-auto carbine. Intended as a defensive weapon for support troops, it is accurate and lightweight but has mediocre power."
 
+SWEP.Trivia_Caliber = ".30 Carbine"
+SWEP.Trivia_Manufacturer = "General Motors" -- Yes, really.
+SWEP.Trivia_Year = "1942"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model & Textures: KnechtRuprecht \nSounds: NightmareMutant \nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_m1carbine.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_m1carbine.mdl"
 

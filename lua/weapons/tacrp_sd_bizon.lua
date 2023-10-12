@@ -12,6 +12,13 @@ SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "AK-derrivative SMG with a high-capacity helical magazine.  Pretty weak but easy to control and handle."
 
+SWEP.Trivia_Caliber = "9x18mm Makarov"
+SWEP.Trivia_Manufacturer = "Izhmash"
+SWEP.Trivia_Year = "1996"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: cryomerk \nTextures: Millenia \nSounds: Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_bizon.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_bizon.mdl"
 

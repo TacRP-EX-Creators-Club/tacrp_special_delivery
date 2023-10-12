@@ -12,6 +12,13 @@ SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Pair of customized pistols with a two-tone finish and dragons emblazoned on the grips.  Swift handling and decent recoil control but low stopping power."
 
+SWEP.Trivia_Caliber = "9x19mm"
+SWEP.Trivia_Manufacturer = "Pietro Beretta"
+SWEP.Trivia_Year = "1988"
+
+SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Credits = "Model: Spydr \nTextures: NCFurious \nAnimations: Tactical Intervention"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dualies.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dualies.mdl"
 

@@ -13,6 +13,13 @@ SWEP.SubCatType = "7Sniper Rifle"
 SWEP.Description = "Boutique sniper rifle firing a powerful round. It's exceedingly rare, so maybe don't bash people with it.\nEquipped with a 12x scope by default, lacks ironsights."
 SWEP.Description_Quote = "\"Names are for friends, so I don't need one.\""
 
+SWEP.Trivia_Caliber = ".300 WinMag"
+SWEP.Trivia_Manufacturer = "Walther"
+SWEP.Trivia_Year = "1982"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = "Model: Twinkie Masta, Thanez & FxDarkloki \nTextures: Thanez & FxDarkloki \nSounds: HK & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"
 

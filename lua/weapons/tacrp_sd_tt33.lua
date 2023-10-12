@@ -4,13 +4,20 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Norinco Type 54" // --The model is actually the Russian TT-33 but let's pretend it's China gun because it was what Chow Yun-fat used in the Hard Boiled teahouse shootout.
+SWEP.PrintName = "Norinco Type 54"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Large pistol from beyond the Iron Curtain, copied in large quantities by the Chinese. Similar to other large calibre pistols, but lighter and performs better at range."
+
+SWEP.Trivia_Caliber = "7.62x25mm Tokarev"
+SWEP.Trivia_Manufacturer = "Norinco"
+SWEP.Trivia_Year = "1954"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = "Model: Mr.Rifleman \nTextures: BuLL5H1T & Mr.Rifleman \nSounds: NightmareMutant \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_tt33.mdl"
