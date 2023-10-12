@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Boutique sniper rifle firing a powerful round.  It's exceedingly rare, so maybe don't bash people with it. \nFitted with a 10x scope by default, lacks ironsights. \n\"Names are for friends, so I don't need one.\""
+SWEP.Description = "Boutique sniper rifle firing a powerful round. It's exceedingly rare, so maybe don't bash people with it.\nEquipped with a 12x scope by default, lacks ironsights."
+SWEP.Description_Quote = "\"Names are for friends, so I don't need one.\""
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"
@@ -21,10 +22,10 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 60,
-        Damage_Min = 90,
-        Range_Min = 800,
-        Range_Max = 5000,
+        Damage_Max = 64,
+        Damage_Min = 95,
+        Range_Min = 3000,
+        Range_Max = 9000,
 
         MoveSpeedMult = 0.7,
         ShootingSpeedMult = 0.5,
@@ -76,11 +77,11 @@ SWEP.BalanceStats = {
 
 // "ballistics"
 
-SWEP.Damage_Max = 75 // damage at minimum range
-SWEP.Damage_Min = 40 // damage at maximum range
-SWEP.Range_Min = 3000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 8000 // distance at which we drop to minimum damage
-SWEP.Penetration = 30 // units of metal this weapon can penetrate
+SWEP.Damage_Max = 80 // damage at minimum range
+SWEP.Damage_Min = 55 // damage at maximum range
+SWEP.Range_Min = 4000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 9000 // distance at which we drop to minimum damage
+SWEP.Penetration = 25 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.8
 SWEP.ArmorBonus = 3
 
@@ -101,7 +102,7 @@ SWEP.MuzzleVelocity = 30000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 200
+SWEP.RPM = 140
 
 SWEP.Spread = 0
 SWEP.RecoilSpreadPenalty = 0.02
@@ -114,8 +115,8 @@ SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 0.75
 
-SWEP.RecoilVisualKick = 2
-SWEP.RecoilKick = 5
+SWEP.RecoilVisualKick = 1.5
+SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.75
 
 SWEP.CanBlindFire = true
@@ -176,7 +177,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.Scope = true
 SWEP.ScopeOverlay = Material("tacrp/scopes/sniper.png", "mips smooth") // Material("path/to/overlay")
-SWEP.ScopeFOV = 90 / 10
+SWEP.ScopeFOV = 90 / 12
 SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
