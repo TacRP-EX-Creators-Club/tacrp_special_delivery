@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Auto-Ordnance Company"
 SWEP.Trivia_Year = "1942"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model, Textures & Sounds: Counter-Strike: Online 2 \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model, Textures & Sound: Counter-Strike: Online 2 \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_thompson.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_thompson.mdl"

@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Year = "1958"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Pac \nTextures: Millenia, edited by speedonerd \nSounds: Nightmare Mutant \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Pac \nTexture: Millenia, edited by speedonerd \nSound: Nightmare Mutant \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_g3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_g3.mdl"

@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Magnum Research"
 SWEP.Trivia_Year = "1995" // Mark XIX model
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Hav0c & Stoke \nTextures: The_Tub & Stoke \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Hav0c & Stoke \nTexture: The_Tub & Stoke \nAnimations: Tactical Intervention"
 
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_eagles.mdl"

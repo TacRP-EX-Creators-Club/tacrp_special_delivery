@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "CZ Uherský Brod"
 SWEP.Trivia_Year = "1959"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model, Texture & Sounds: No More Room in Hell \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model, Texture & Sound: No More Room in Hell \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_vz58.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_vz58.mdl"

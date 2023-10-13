@@ -19,7 +19,7 @@ SWEP.Trivia_Year = "1975"
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
 Model: SnipaMasta
-Textures: SnipaMasta, Fnuxray
+Texture: SnipaMasta, Fnuxray
 Animations: Tactical Intervention, edited by speedonerd
 ]]
 

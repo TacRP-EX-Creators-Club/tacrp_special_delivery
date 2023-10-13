@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Norinco"
 SWEP.Trivia_Year = "1954"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Mr.Rifleman \nTextures: BuLL5H1T & Mr.Rifleman \nSounds: NightmareMutant \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Mr.Rifleman \nTexture: BuLL5H1T & Mr.Rifleman \nSound: NightmareMutant \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_tt33.mdl"

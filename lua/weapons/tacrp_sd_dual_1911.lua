@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Springfield Armory"
 SWEP.Trivia_Year = "2011"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Schmung \nTextures: Millenia \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Schmung \nTexture: Millenia \nAnimations: Tactical Intervention"
 
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_1911.mdl"

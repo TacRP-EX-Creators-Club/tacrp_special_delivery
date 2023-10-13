@@ -18,7 +18,7 @@ SWEP.Trivia_Manufacturer = "Sterling Armaments"
 SWEP.Trivia_Year = "1942"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: RedRougeXIII \nTextures: Storm (lovingly fixed by Unselles) \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: RedRougeXIII \nTexture: Storm (lovingly fixed by Unselles) \nAnimations: Tactical Intervention"
 
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_delisle.mdl"

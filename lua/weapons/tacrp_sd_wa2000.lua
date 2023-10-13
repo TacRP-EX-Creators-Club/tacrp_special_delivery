@@ -18,7 +18,7 @@ SWEP.Trivia_Manufacturer = "Walther"
 SWEP.Trivia_Year = "1982"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model: Twinkie Masta, Thanez & FxDarkloki \nTextures: Thanez & FxDarkloki \nSounds: HK & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = "Model: Twinkie Masta, Thanez & FxDarkloki \nTexture: Thanez & FxDarkloki \nSound: HK & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"

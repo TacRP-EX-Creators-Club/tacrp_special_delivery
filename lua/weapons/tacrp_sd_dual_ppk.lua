@@ -11,13 +11,14 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "A pair of suppressed PPK pistols. Swift and accurate, but the low capacity and mediocre damage demands a sharp eye and trigger discpline."
+SWEP.Description_Quote = "You better not be picking Oddjob."
 
 SWEP.Trivia_Caliber = ".380 ACP"
 SWEP.Trivia_Manufacturer = "Walther"
 SWEP.Trivia_Year = "1929"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model & Textures: Kimono \nSounds: HK & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = "Model & Texture: Kimono\nSound: HK & Vunsunta\nAnimation: Tactical Intervention, edited by speedonerd"
 
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_ppk.mdl"

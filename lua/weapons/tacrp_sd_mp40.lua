@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Steyr-Mannlicher"
 SWEP.Trivia_Year = "1940"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Soul-Slayer \nTextures: Kimono \nSounds: Futon & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = "Model: Soul-Slayer \nTexture: Kimono \nSound: Futon & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp40.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_mp40.mdl"

@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "General Motors" -- Yes, really.
 SWEP.Trivia_Year = "1942"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model & Textures: KnechtRuprecht \nSounds: NightmareMutant \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model & Texture: KnechtRuprecht \nSound: NightmareMutant \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_m1carbine.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_m1carbine.mdl"

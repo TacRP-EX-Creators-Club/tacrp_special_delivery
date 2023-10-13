@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Stoeger"
 SWEP.Trivia_Year = "Unknown"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model: Counter-Strike: Online 2 \nSounds: Navaro & Vunsunta \nAnimations: speedonerd & 8Z"
+SWEP.Credits = "Model: Counter-Strike: Online 2 \nSound: Navaro & Vunsunta \nAnimations: speedonerd & 8Z"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dbshotgun.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dbshotgun.mdl"

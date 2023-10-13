@@ -10,14 +10,15 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Compact, low-capacity pocket pistol made famous by the movies. Best suited for close range self defense.\n\n\"Shocking. Positively shocking.\""
+SWEP.Description = "Compact, low-capacity pocket pistol made famous by the movies. Best suited for close range self defense."
+SWEP.Description_Quote = "\"Shocking. Positively shocking.\""
 
 SWEP.Trivia_Caliber = ".380 ACP"
 SWEP.Trivia_Manufacturer = "Walther"
 SWEP.Trivia_Year = "1929"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model & Textures: Kimono \nSounds: HK & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = "Model & Texture: Kimono\nSound: HK & Vunsunta\nAnimation: Tactical Intervention, edited by speedonerd"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_ppk.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_ppk.mdl"

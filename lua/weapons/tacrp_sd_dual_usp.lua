@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Year = "1993"
 
 SWEP.Faction = TacRP.FACTION_COALITION
-SWEP.Credits = "Model: Silvio Dante & Twinke Masta \nTextures: LoneWolf \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Silvio Dante & Twinke Masta \nTexture: LoneWolf \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_usp.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_usp.mdl"

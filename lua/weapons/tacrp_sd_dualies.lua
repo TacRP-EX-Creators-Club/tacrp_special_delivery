@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Pietro Beretta"
 SWEP.Trivia_Year = "1988"
 
 SWEP.Faction = TacRP.FACTION_COALITION
-SWEP.Credits = "Model: Spydr \nTextures: NCFurious \nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Spydr \nTexture: NCFurious \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dualies.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dualies.mdl"

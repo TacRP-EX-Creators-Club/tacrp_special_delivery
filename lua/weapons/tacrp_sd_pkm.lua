@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Degtyaryov Plant"
 SWEP.Trivia_Year = "1961"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Sarvs \nTextures: BuLL5h1T \nSounds: NightmareMutant\nAnimations: Tactical Intervention"
+SWEP.Credits = "Model: Sarvs \nTexture: BuLL5h1T \nSound: NightmareMutant\nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_pkm.mdl"
