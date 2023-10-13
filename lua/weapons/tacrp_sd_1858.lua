@@ -8,7 +8,7 @@ SWEP.PrintName = "Remington 1858 Army"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "2Magnum Pistol"
 
 SWEP.Description = "Antique percussion revolver packing a punch up close, but is terribly slow to shoot. Suitable for cowboy roleplay."
 SWEP.Description_Quote = "\"Pass the whiskey!\""
