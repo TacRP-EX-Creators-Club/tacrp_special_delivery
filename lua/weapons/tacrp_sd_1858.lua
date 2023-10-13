@@ -10,14 +10,18 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Antique percussion revolver packing a punch up close, but is terribly slow to shoot. Suitable for cowboy roleplay.\n\nPass the whiskey!"
+SWEP.Description = "Antique percussion revolver packing a punch up close, but is terribly slow to shoot. Suitable for cowboy roleplay."
+SWEP.Description_Quote = "\"Pass the whiskey!\""
 
 SWEP.Trivia_Caliber = ".44 Percussion"
 SWEP.Trivia_Manufacturer = "Remington Arms"
 SWEP.Trivia_Year = "1858"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Fistful of Frags \nAnimations: CyloWalker & speedonerd"
+SWEP.Credits = [[
+Assets: Nimrod Hempel (Fistful of Frags)
+Animations: CyloWalker & speedonerd
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1858.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_1858.mdl"

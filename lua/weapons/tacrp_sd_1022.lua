@@ -18,7 +18,7 @@ SWEP.Trivia_Manufacturer = "Sturm, Ruger & Co."
 SWEP.Trivia_Year = "1964"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model & Sounds: No More Room in Hell \nAnimations: Tactical Intervention"
+SWEP.Credits = "Assets: No More Room in Hell\nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1022.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_1022.mdl"
