@@ -13,11 +13,15 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil."
 
 SWEP.Trivia_Caliber = "5.56x45mm"
-SWEP.Trivia_Manufacturer = "GIAT Industries" -- more like GYATT industries ahahahaha amirite fellow zoomies?
+SWEP.Trivia_Manufacturer = "GIAT Industries" // more like GYATT industries ahahahaha amirite fellow zoomies?
 SWEP.Trivia_Year = "1975"
 
 SWEP.Faction = TacRP.FACTION_COALITION
-SWEP.Credits = "Model: SnipaMasta \nTextures: SnipaMasta & Fnuxray \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = [[
+Model: SnipaMasta
+Textures: SnipaMasta, Fnuxray
+Animations: Tactical Intervention, edited by speedonerd
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_famas.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_famas.mdl"
@@ -137,13 +141,19 @@ SWEP.MoveSpeedMult = 0.85
 SWEP.ShootingSpeedMult = 0.7
 SWEP.SightedSpeedMult = 0.7
 
-SWEP.AimDownSightsTime = 0.35
+SWEP.AimDownSightsTime = 0.33
 SWEP.SprintToFireTime = 0.35
 
 SWEP.Sway = 1.15
 SWEP.ScopedSway = 0.125
 
-SWEP.FreeAimMaxAngle = 3
+SWEP.FreeAimMaxAngle = 4
+
+
+SWEP.Bipod = true
+SWEP.BipodRecoil = 0.4
+SWEP.BipodKick = 0.25
+
 
 // hold types
 
