@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "A lightweight assault rifle with an integral suppressor. Powerful in close quarters but wide spread and harsh damage dropoff limits its ability at range."
+SWEP.Description = "A lightweight assault rifle with an integral suppressor. Powerful in close quarters and has no visible tracer, but has poor performance at range."
 
 SWEP.Trivia_Caliber = ".300 Blackout"
 SWEP.Trivia_Manufacturer = "AAC"
@@ -93,7 +93,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 25
 SWEP.Damage_Min = 12
-SWEP.Range_Min = 700
+SWEP.Range_Min = 800
 SWEP.Range_Max = 3000
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
@@ -109,7 +109,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 25000
+SWEP.MuzzleVelocity = 10000
 
 // misc. shooting
 
@@ -125,16 +125,17 @@ SWEP.Spread = 0.0089
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.1
-SWEP.RecoilDissipationRate = 16
+SWEP.RecoilMaximum = 14
+SWEP.RecoilResetTime = 0.11
+SWEP.RecoilDissipationRate = 18
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
 SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.3
+SWEP.RecoilStability = 0.2
+SWEP.RecoilAltMultiplier = 150
 
-SWEP.RecoilSpreadPenalty = 0.003
+SWEP.RecoilSpreadPenalty = 0.0027
 SWEP.HipFireSpreadPenalty = 0.035
 SWEP.PeekPenaltyFraction = 0.2
 
@@ -220,6 +221,8 @@ SWEP.QCA_Eject = 2
 SWEP.MuzzleEffect = "muzzleflash_suppressed"
 SWEP.EjectEffect = 2
 
+SWEP.TracerNum = 0
+
 // anims
 
 SWEP.AnimationTranslationTable = {
@@ -257,14 +260,14 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         InstalledElements = {"sights"},
         Bone = "ValveBiped.m4_rootbone",
         WMBone = "Box01",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 1,
-        Pos_VM = Vector(-5.45, -0.05, 6),
+        VMScale = 0.95,
+        Pos_VM = Vector(-5.55, -0.05, 6),
         Pos_WM = Vector(0.5, 4, 1.15),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),
@@ -300,12 +303,6 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [6] = {
-        PrintName = "Ammo",
-        Category = {"ammo_rifle"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [7] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
