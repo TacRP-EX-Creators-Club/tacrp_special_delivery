@@ -1,24 +1,42 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Thompson/Center Contender"
+SWEP.PrintName = "T/C G2 Contender"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "2Magnum Pistol"
 
-SWEP.Description = "Single-shot hunting pistol chambered for a rifle round.  Can kill almost anything that moves with deadly accuracy but is obviously limited by its capacity."
+SWEP.Description = "Single-shot hunting pistol. Accurate, compact and lethal, so you better make that one round count.\nEquipped with a 6x scope by default."
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_contender_test.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_contender.mdl"
 SWEP.WorldModel = ""
+
+
+SWEP.Trivia_Caliber = ".45 Colt"
+SWEP.Trivia_Manufacturer = "Thompson/Center"
+SWEP.Trivia_Year = "1998" // G2 model
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = [[
+Model: kriboez, Doktor haus
+Texture: cR45h, syncing, tenoyl, Ultimately
+Sound: Doktor haus
+Animation: 8Z, speedonerd
+]]
 
 SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 68,
+        Damage_Min = 55,
+        Range_Min = 900,
+        Range_Max = 3000,
+
         MoveSpeedMult = 1,
         ShootingSpeedMult = 1,
         SightedSpeedMult = 1,
@@ -47,18 +65,18 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 33
-SWEP.Damage_Min = 18
-SWEP.Range_Min = 1200
-SWEP.Range_Max = 3000
-SWEP.Penetration = 3
-SWEP.ArmorPenetration = 0.575
+SWEP.Damage_Max = 60
+SWEP.Damage_Min = 45
+SWEP.Range_Min = 500
+SWEP.Range_Max = 4000
+SWEP.Penetration = 12
+SWEP.ArmorPenetration = 0.875
 
-SWEP.MuzzleVelocity = 12000
+SWEP.MuzzleVelocity = 24000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4.5,
-    [HITGROUP_CHEST] = 1,
+    [HITGROUP_HEAD] = 4,
+    [HITGROUP_CHEST] = 1.5,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
@@ -71,23 +89,24 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 100
+SWEP.RPM = 80
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0.001
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 1.5
-SWEP.RecoilMaximum = 10
-SWEP.RecoilResetTime = 0.3
-SWEP.RecoilDissipationRate = 7
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 1
+SWEP.RecoilResetTime = 0.25
+SWEP.RecoilDissipationRate = 1
 SWEP.RecoilFirstShotMult = 1
 
-SWEP.RecoilVisualKick = 2
+SWEP.RecoilVisualKick = 3
+SWEP.RecoilKick = 12
+SWEP.RecoilStability = 0.85
 
-SWEP.RecoilKick = 4
-
-SWEP.RecoilSpreadPenalty = 0.003
+SWEP.RecoilSpreadPenalty = 0.01
+SWEP.HipFireSpreadPenalty = 0.025
 
 SWEP.CanBlindFire = true
 
@@ -99,13 +118,13 @@ SWEP.SightedSpeedMult = 0.8
 
 SWEP.ReloadSpeedMult = 0.75
 
-SWEP.AimDownSightsTime = 0.25
-SWEP.SprintToFireTime = 0.25
+SWEP.AimDownSightsTime = 0.29
+SWEP.SprintToFireTime = 0.29
 
-SWEP.Sway = 1.05
-SWEP.ScopedSway = 0.5
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.3
 
-SWEP.FreeAimMaxAngle = 3
+SWEP.FreeAimMaxAngle = 4
 
 // hold types
 
@@ -117,7 +136,9 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, 0, 0)
+SWEP.PassivePos = Vector(0, 0, 0.5)
+
+SWEP.CustomizePos = Vector(5, 0, -1)
 
 SWEP.BlindFireAng = Angle(0, 0, 0)
 SWEP.BlindFirePos = Vector(2, 2, -1)
@@ -126,34 +147,39 @@ SWEP.BlindFireSuicideAng = Angle(0, 120, 20)
 SWEP.BlindFireSuicidePos = Vector(-7, 30, -25)
 
 SWEP.SprintAng = Angle(0, 30, 0)
-SWEP.SprintPos = Vector(2, 0, -12)
+SWEP.SprintPos = Vector(2, 0, -6)
 
-SWEP.SightAng = Angle(-0.1, 1.4, 0)
-SWEP.SightPos = Vector(-3.18, 0, 1.5)
+SWEP.SightAng = Angle(0, 0, 0)
+SWEP.SightPos = Vector(-4.02, 0, 2.65)
 
-SWEP.CorrectiveAng = Angle(-0.2, 0, 0.5)
-SWEP.CorrectivePos = Vector(-0.025, 0, 0.15)
+SWEP.CorrectiveAng = Angle(0, 0, 0)
+SWEP.CorrectivePos = Vector(0.025, 0, 0.05)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
 SWEP.HolsterPos = Vector(0, 3, -4)
 SWEP.HolsterAng = Angle(90, 0, 0)
 
+// scope
+
+SWEP.Scope = true
+SWEP.ScopeOverlay = Material("tacrp/scopes/l96.png", "mips smooth") // Material("path/to/overlay")
+SWEP.ScopeFOV = 90 / 6
+SWEP.ScopeLevels = 1 // 2 = like CS:S
+SWEP.ScopeHideWeapon = true
 
 // reload
 
 SWEP.ClipSize = 1
 SWEP.Ammo = "357"
 
-SWEP.ReloadUpInTime = 1.8
-
-SWEP.ReloadTimeMult = 1.05
+SWEP.ReloadTimeMult = 1
 
 // sounds
 
-local path = "tacint_shark/weapons/db/"
+local path = "tacint_shark/weapons/contender/"
 
-SWEP.Sound_Shoot = "^" .. path .. "deagle-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -186,12 +212,24 @@ SWEP.MuzzleEffect = "muzzleflash_shotgun"
 // WM:
 // attack1
 SWEP.AnimationTranslationTable = {
-    ["deploy"] = "draw",
-    ["fire_iron"] = "fire1",
-    ["fire"] = {"fire1", "fire2"},
-    ["blind_fire"] = {"blind_fire1", "blind_fire2"},
+    ["deploy"] = "deploy",
+    ["fire_iron"] = "fire",
+    ["fire"] = "fire",
+    ["blind_fire"] = "fire",
     ["melee"] = {"melee1", "melee2"},
 }
+
+SWEP.AttachmentElements = {
+    ["sights"] = {
+        BGs_VM = {
+            {1, 1}
+        },
+        BGs_WM = {
+            {1, 1}
+        },
+    },
+}
+
 
 SWEP.DeployTimeMult = 1
 
@@ -202,12 +240,14 @@ SWEP.LastShot = false
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium"},
-        Bone = "db_barrels",
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "ironsights"},
+        Bone = "g2_barrel",
+        InstalledElements = {"sights"},
+
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 0.8,
-        Pos_VM = Vector(0.02, -1.65, -3),
+        VMScale = 1,
+        Pos_VM = Vector(0.02, -1.85, 1),
         Pos_WM = Vector(7, 1.5, -5.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -3.5, 180),
@@ -215,11 +255,11 @@ SWEP.Attachments = {
     [2] = {
         PrintName = "Tactical",
         Category = "tactical",
-        Bone = "db_barrels",
+        Bone = "g2_barrel",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
-        VMScale = 1.1,
-        Pos_VM = Vector(0, 0, 9),
+        VMScale = 1,
+        Pos_VM = Vector(0, -0.55, 11),
         Pos_WM = Vector(14, 3, -3),
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(0, -3.5, 90),
@@ -231,24 +271,18 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [4] = {
-        PrintName = "Bolt",
-        Category = {"bolt_automatic"},
+        PrintName = "Trigger",
+        Category = {"trigger_manual"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [5] = {
-        PrintName = "Trigger",
-        Category = {"trigger_semi"},
+        PrintName = "Ammo",
+        Category = {"ammo_rifle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [6] = {
-        PrintName = "Ammo",
-        Category = {"ammo_shotgun"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [7] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
@@ -265,9 +299,10 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_db.magrelease", path .. "magrelease.wav")
-addsound("tacint_db.open", path .. "open.wav")
-addsound("tacint_db.close", path .. "close.wav")
-addsound("tacint_db.magout", path .. "insert1.wav")
-addsound("tacint_db.magin", path .. "insert2.wav")
-addsound("tacint_db.unholster", path .. "cloth.wav")
+addsound("tacint_contender.open", path .. "open_chamber.wav")
+addsound("tacint_contender.close", path .. "close_chamber.wav")
+addsound("tacint_contender.magout", path .. "bullet_out.wav")
+addsound("tacint_contender.magin", path .. "bullet_in.wav")
+addsound("tacint_contender.hammer", path .. "hammer.wav")
+
+addsound("tacint_contender.draw", path .. "draw.wav")
