@@ -44,13 +44,29 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        ReloadTimeMult = 1.25,
+        Damage_Max = 50,
+        Damage_Min = 75,
+        Range_Min = 500,
+        Range_Max = 1500,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 2,
+            [HITGROUP_CHEST] = 1,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.75,
+            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_GEAR] = 0.9
+        },
+
+        ReloadTimeMult = 1,
 
         MoveSpeedMult = 1,
-        ShootingSpeedMult = 1,
+        ShootingSpeedMult = 0.5,
         MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.75,
-        ReloadSpeedMult = 0.9,
+        SightedSpeedMult = 0.5,
+        ReloadSpeedMult = 0.75,
     },
     [TacRP.BALANCE_PVE] = {
         MoveSpeedMult = 1,
@@ -61,7 +77,7 @@ SWEP.BalanceStats = {
     }
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
+SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
 
 // "ballistics"
 
@@ -89,7 +105,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 80
+SWEP.RPM = 100
 
 SWEP.Spread = 0.001
 
@@ -141,10 +157,16 @@ SWEP.PassivePos = Vector(0, 0, 0.5)
 SWEP.CustomizePos = Vector(5, 0, -1)
 
 SWEP.BlindFireAng = Angle(0, 0, 0)
-SWEP.BlindFirePos = Vector(2, 2, -1)
+SWEP.BlindFirePos = Vector(0, 0, 2)
 
-SWEP.BlindFireSuicideAng = Angle(0, 120, 20)
-SWEP.BlindFireSuicidePos = Vector(-7, 30, -25)
+SWEP.BlindFireLeftAng = Angle(60, 0, 0)
+SWEP.BlindFireLeftPos = Vector(14, 10, -10)
+
+SWEP.BlindFireRightAng = Angle(-60, 0, 0)
+SWEP.BlindFireRightPos = Vector(-10, 20, -11)
+
+SWEP.BlindFireSuicideAng = Angle(260, 0, 5)
+SWEP.BlindFireSuicidePos = Vector(42, 12, -4)
 
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -6)
@@ -174,6 +196,7 @@ SWEP.ClipSize = 1
 SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 1
+SWEP.ReloadUpInTime = 1.25
 
 // sounds
 
@@ -215,7 +238,7 @@ SWEP.AnimationTranslationTable = {
     ["deploy"] = "deploy",
     ["fire_iron"] = "fire",
     ["fire"] = "fire",
-    ["blind_fire"] = "fire",
+    ["blind_fire"] = "blind_fire",
     ["melee"] = {"melee1", "melee2"},
 }
 
