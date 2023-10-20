@@ -203,6 +203,7 @@ SWEP.ReloadUpInTime = 1.25
 local path = "tacint_shark/weapons/contender/"
 
 SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
+SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -238,8 +239,10 @@ SWEP.AnimationTranslationTable = {
     ["deploy"] = "deploy",
     ["fire_iron"] = "fire",
     ["fire"] = "fire",
+    ["blind_idle"] = "blind_idle",
     ["blind_fire"] = "blind_fire",
     ["melee"] = {"melee1", "melee2"},
+    ["jam"] = "jam",
 }
 
 SWEP.AttachmentElements = {
@@ -276,6 +279,18 @@ SWEP.Attachments = {
         Ang_WM = Angle(0, -3.5, 180),
     },
     [2] = {
+        PrintName = "Muzzle",
+        Category = "silencer",
+        Bone = "g2_barrel",
+        AttachSound = "TacRP/weapons/silencer_on.wav",
+        DetachSound = "TacRP/weapons/silencer_off.wav",
+        VMScale = 0.9,
+        Pos_VM = Vector(0, -0.9, 17.75),
+        Pos_WM = Vector(14, 3, -3),
+        Ang_VM = Angle(90, 0, -90),
+        Ang_WM = Angle(0, -3.5, 90),
+    },
+    [3] = {
         PrintName = "Tactical",
         Category = "tactical",
         Bone = "g2_barrel",
@@ -287,18 +302,13 @@ SWEP.Attachments = {
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(0, -3.5, 90),
     },
-    [3] = {
+    [4] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_holster", "acc_brace"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [4] = {
-        PrintName = "Trigger",
-        Category = {"trigger_manual"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
+
     [5] = {
         PrintName = "Ammo",
         Category = {"ammo_rifle"},
