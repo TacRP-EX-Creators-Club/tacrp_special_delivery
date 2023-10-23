@@ -37,10 +37,10 @@ SWEP.BalanceStats = {
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 65,
-        Damage_Min = 35,
+        Damage_Min = 40,
 
-        Range_Min = 250,
-        Range_Max = 2500,
+        Range_Min = 200,
+        Range_Max = 2000,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
@@ -267,7 +267,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_extmag_pistol", "acc_sling", "acc_duffle", "acc_bipod"},
+        Category = {"acc", "acc_extmag_pistol", "acc_sling", "acc_duffle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
@@ -284,12 +284,6 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [6] = {
-        PrintName = "Ammo",
-        Category = {"ammo_pistol"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
-    [7] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
