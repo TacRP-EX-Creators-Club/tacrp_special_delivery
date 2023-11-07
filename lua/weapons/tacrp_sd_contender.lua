@@ -16,7 +16,7 @@ SWEP.ViewModel = "models/weapons/tacint_shark/v_contender.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_contender.mdl"
 
 
-SWEP.Trivia_Caliber = ".45 Colt"
+SWEP.Trivia_Caliber = ".45-70 Govt."
 SWEP.Trivia_Manufacturer = "Thompson/Center"
 SWEP.Trivia_Year = "1998" // G2 model
 
