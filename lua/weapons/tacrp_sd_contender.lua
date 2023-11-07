@@ -13,7 +13,7 @@ SWEP.SubCatType = "2Magnum Pistol"
 SWEP.Description = "Single-shot hunting pistol. Accurate, compact and lethal, so you better make that one round count.\nEquipped with a 6x scope by default."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_contender.mdl"
-SWEP.WorldModel = ""
+SWEP.WorldModel = "models/weapons/tacint_shark/w_contender.mdl"
 
 
 SWEP.Trivia_Caliber = ".45 Colt"
@@ -148,8 +148,8 @@ SWEP.HoldType = "revolver"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeBlindFire = "pistol"
 
-SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
-SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
+SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
+SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 
 SWEP.PassiveAng = Angle(0, 0, 0)
 SWEP.PassivePos = Vector(0, 0, 0.5)
@@ -274,9 +274,9 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 1,
         Pos_VM = Vector(0.02, -1.85, 1),
-        Pos_WM = Vector(7, 1.5, -5.5),
+        Pos_WM = Vector(9, 1.3, -5.5),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -3.5, 180),
+        Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Muzzle",
@@ -285,10 +285,11 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
         VMScale = 0.9,
+        WMScale = 0.9,
         Pos_VM = Vector(0, -0.9, 17.75),
-        Pos_WM = Vector(14, 3, -3),
+        Pos_WM = Vector(27, 1.2, -4.8),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -3.5, 90),
+        Ang_WM = Angle(0, 0, 90),
     },
     [3] = {
         PrintName = "Tactical",
@@ -297,10 +298,11 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         VMScale = 1,
+        WMScale = 1.5,
         Pos_VM = Vector(0, -0.55, 11),
-        Pos_WM = Vector(14, 3, -3),
+        Pos_WM = Vector(12.5, 1, -3),
         Ang_VM = Angle(90, 0, 90),
-        Ang_WM = Angle(0, -3.5, 90),
+        Ang_WM = Angle(0, 0, 0),
     },
     [4] = {
         PrintName = "Accessory",
