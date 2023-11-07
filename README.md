@@ -10,7 +10,7 @@ Second major addon pack for TacRP.  Focuses on weapons that make use of edited a
 - FAMAS F1 by MRDeadlyFPS - https://gamebanana.com/mods/211607
 - OTs-14 Groza by Teh Snake - https://gamebanana.com/mods/209688
 - MP40 by ManTuna - https://gamebanana.com/mods/209185
-- PP-19 Bizon by Millenia - https://gamebanana.com/mods/208964
+- PP-19 Bizon by Soldier11 - https://gamebanana.com/mods/181859
 - Walther WA2000 by Thanez - https://gamebanana.com/mods/211878
 - Dual Dragon Berettas by Shark - https://gamebanana.com/mods/208208
 - Dual USP Matchs by skladfin - https://gamebanana.com/mods/208148

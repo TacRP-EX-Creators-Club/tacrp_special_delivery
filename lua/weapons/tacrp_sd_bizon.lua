@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Izhmash"
 SWEP.Trivia_Year = "1996"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: cryomerk \nTexture: Millenia \nSound: Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = "Model: Twinke Masta \nTexture: Milo \nSound: Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_bizon.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_bizon.mdl"
