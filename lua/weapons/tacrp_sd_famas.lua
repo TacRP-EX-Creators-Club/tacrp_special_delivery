@@ -189,7 +189,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 25
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.35
+SWEP.ReloadTimeMult = 1.25
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/famas.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -230,7 +230,7 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"}
 }
 
-SWEP.DeployTimeMult = 2.25
+SWEP.DeployTimeMult = 2.15
 
 // attachments
 
@@ -243,6 +243,11 @@ SWEP.AttachmentElements = {
             {1, 1}
         }
     },
+	["rail"] = {
+        BGs_VM = {
+            {2, 1}
+        },
+    },
 }
 
 
@@ -253,8 +258,9 @@ SWEP.Attachments = {
         Bone = "ValveBiped.AUG_rootbone",
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
+		InstalledElements = {"rail"},
         VMScale = 1,
-        Pos_VM = Vector(-7.25, 0, 4),
+        Pos_VM = Vector(-7.8, 0, 4),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
@@ -278,10 +284,9 @@ SWEP.Attachments = {
         Bone = "ValveBiped.AUG_rootbone",
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
-        InstalledElements = {"tactical"},
-        VMScale = 1.05,
-        Pos_VM = Vector(-5, -0.5, 11.5),
-        Ang_VM = Angle(90, 0, -90),
+        VMScale = 1,
+        Pos_VM = Vector(-4.25, -0.5, 9),
+        Ang_VM = Angle(90, 0, -75),
         Pos_WM = Vector(14.75, 1.5, -6),
         Ang_WM = Angle(0, 0, 90),
     },
