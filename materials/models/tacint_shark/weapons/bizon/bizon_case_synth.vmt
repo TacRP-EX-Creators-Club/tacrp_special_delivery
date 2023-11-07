@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models\tacint_shark\weapons\bizon\bizon_case"
+	"$bumpmap" 	"models\tacint_shark\weapons\bizon\bizon_case_normal"
+	"$envmap"	"env_cubemap"
+
+	"$nocull" 		"1"
+
+	"$normalmapalphaenvmapmask" 	"1"
+	
+	"$envmaptint"		"[0.01 0.01 0.01]"
+	
+	"$phong" 		"1"
+	"$phongboost"		"1"
+	"$phongexponent" 	"25"
+	"$phongtint"		"[1 1 0.8]"
+	"$phongfresnelranges"	"[1 4 6]"
+	"$phongalbedotint" 	"1"
+	"$halflambert" 		"1"
+}
+	
+//Soldier11 created these shaders. You may not re-use them without his permission!
+	

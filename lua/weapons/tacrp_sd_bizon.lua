@@ -166,8 +166,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.3, -0.1, -1)
-SWEP.SightPos = Vector(-4.77, -7.5, -3.38)
+SWEP.SightAng = Angle(-0.1, -0.5, -1)
+SWEP.SightPos = Vector(-4.66, -7.6, -2.7)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.07)
 SWEP.CorrectiveAng = Angle(0.8, 0.7, 0)
@@ -241,14 +241,33 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+		BGs_WM = {
+			{2, 1}
+		},
     },
+	["akmount"] = {
+		BGs_VM = {
+			{2, 0}
+		},
+		BGs_WM = {
+			{2, 0}
+		},
+		AttPosMods = {
+            [1] = {
+				VMScale = 0.7,
+                Pos_VM = Vector(-5, 0.5, 2),
+                Pos_WM = Vector(-0.4, 1, 0.5),
+            }
+        },
+		SortOrder = 2,
+	}
 }
 
 
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},
@@ -265,11 +284,12 @@ SWEP.Attachments = {
         Category = {"silencer", "muzz_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
+		VMScale = 1.25,
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.95,
         WMScale = 0.95,
-        Pos_VM = Vector(-3.54, 0.15, 20.7),
+        Pos_VM = Vector(-3.54, 0.1, 19.7),
         Pos_WM = Vector(-0.15, 18, -1.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
