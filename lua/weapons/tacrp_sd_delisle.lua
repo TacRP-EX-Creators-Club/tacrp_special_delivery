@@ -12,6 +12,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "7Sniper Rifle"
 
 SWEP.Description = "Pistol caliber bolt-action carbine with an integrated suppressor. One of the quietest firearms ever made, its subsonic rounds have no tracer but travel slowly."
+SWEP.Description_Quote = "Fired into the River Thames, not a soul heard it."
 
 SWEP.Trivia_Caliber = ".45 ACP"
 SWEP.Trivia_Manufacturer = "Sterling Armaments"
