@@ -4,20 +4,20 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "HK G3SG/1"
+SWEP.PrintName = "HK G3A3"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "Precise battle rifle with a somewhat managable automatic firemode but slow handling.\nEquipped with a 6x scope by default."
+SWEP.Description = "Precise heavy battle rifle with a somewhat managable automatic firemode but slow handling."
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Year = "1958"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Pac \nTexture: Millenia, edited by speedonerd \nSound: Nightmare Mutant \nAnimations: Tactical Intervention"
+SWEP.Credits = "Assets: Firearms: Source \nSound: Nightmare Mutant & FA:S2 \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_g3.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_g3.mdl"
@@ -26,8 +26,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 30,
-        Damage_Min = 48,
+        Damage_Max = 48,
+        Damage_Min = 30,
 
         Range_Min = 1500,
         Range_Max = 5000,
@@ -67,8 +67,8 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.7,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 24,
-        Damage_Min = 36,
+        Damage_Max = 36,
+        Damage_Min = 24,
 
         Range_Min = 1400,
         Range_Max = 4000,
@@ -117,11 +117,11 @@ SWEP.MuzzleVelocity = 25000
 // misc. shooting
 
 SWEP.Firemodes = {
-    1,
-    2
+    2,
+    1
 }
 
-SWEP.RPM = 480
+SWEP.RPM = 475
 
 SWEP.Spread = 0.0008
 
@@ -158,7 +158,7 @@ SWEP.ScopedSway = 0.25
 
 SWEP.FreeAimMaxAngle = 6.5
 
-SWEP.Bipod = true
+SWEP.Bipod = false
 SWEP.BipodRecoil = 0.5
 SWEP.BipodKick = 0.3
 
@@ -180,8 +180,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(8, -1, -2)
 
-SWEP.SightAng = Angle(0, 0.12, 0)
-SWEP.SightPos = Vector(-4.56, -7.5, -3.1)
+SWEP.SightAng = Angle(0.02, 0.6, 0)
+SWEP.SightPos = Vector(-4.56, -7.5, -3.3)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -191,20 +191,12 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-// scope
-
-SWEP.Scope = true
-SWEP.ScopeOverlay = Material("tacrp/scopes/l96.png", "mips smooth") // Material("path/to/overlay")
-SWEP.ScopeFOV = 90 / 6
-SWEP.ScopeLevels = 1 // 2 = like CS:S
-SWEP.ScopeHideWeapon = true
-
 // reload
 
 SWEP.ClipSize = 20
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1.3
+SWEP.ReloadTimeMult = 1.35
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/g3.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -214,9 +206,9 @@ SWEP.DropMagazineTime = 1
 // sounds
 
 local path = "TacRP/weapons/mp5/mp5_"
-local path1 = "tacint_shark/weapons/g3/g3sg1"
+local path1 = "tacint_shark/weapons/g3/g3sg1_"
 
-SWEP.Sound_Shoot = "^" .. path1 .. "-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "1.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 110
@@ -249,30 +241,14 @@ SWEP.HolsterTimeMult = 3
 // attachments
 
 SWEP.AttachmentElements = {
-    ["bipod"] = {
-        BGs_VM = {
-            {1, 1}
-        },
-    },
-    ["irons"] = {
-        BGs_VM = {
-            {2, 1}
-        },
-        BGs_WM = {
-            {1, 1}
-        },
-    },
     ["optic"] = {
         BGs_VM = {
-            {2, 2}
-        },
-        BGs_WM = {
             {1, 1}
         },
     },
     ["tactical"] = {
         BGs_VM = {
-            {3, 1}
+            {2, 1}
         },
     },
 }
@@ -280,12 +256,12 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"ironsights_sniper", "optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.mp5_rootbone",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
-        Pos_VM = Vector(-6, -0.3, 4),
+        Pos_VM = Vector(-6.2, -0.3, 4),
         Pos_WM = Vector(6, 1.35, -5.9),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 1, 180),
@@ -356,11 +332,11 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_g3.remove_clip", path1 .. "_clipout.wav")
-addsound("tacint_g3.insert_clip", path1 .. "_clipin.wav")
-addsound("tacint_g3.insert_clip-mid", path1 .. "_clipin.wav")
-addsound("tacint_g3.HK_Slap", path1 .. "_boltrelease.wav")
-addsound("tacint_g3.bolt_back", path1 .. "_boltpull.wav")
+addsound("tacint_g3.remove_clip", path1 .. "clipout.wav")
+addsound("tacint_g3.insert_clip", path1 .. "clipin.wav")
+addsound("tacint_g3.insert_clip-mid", path1 .. "clipin.wav")
+addsound("tacint_g3.HK_Slap", path1 .. "boltrelease.wav")
+addsound("tacint_g3.bolt_back", path1 .. "boltpull.wav")
 addsound("tacint_g3.fire_select", {
     path .. "fire_select-1.wav",
     path .. "fire_select-2.wav",
