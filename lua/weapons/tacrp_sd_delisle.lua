@@ -197,10 +197,11 @@ SWEP.DropMagazineTime = 1.4
 // sounds
 
 local path = "TacRP/weapons/spr/"
+local path1 = "tacint_shark/weapons/delisle/"
 
 SWEP.Silencer = true
 SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = "TacRP/weapons/gsr1911/gsr1911_fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = "^" .. path1 .. "delisle_fire.wav"
 
 SWEP.Vol_Shoot = 80
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
