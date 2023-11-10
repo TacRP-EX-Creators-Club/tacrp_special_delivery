@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "2Machine Pistol"
 
-SWEP.Description = "Pair of full-auto Micro Uzis. I don't know how you expect to hit, well, anything with this getup, but you do you I guess."
+SWEP.Description = "Pair of full-auto Micro Uzis, destroying any notion of accuracy and recoil control."
 SWEP.Description_Quote = "Now *this* is gangster!"
 
 SWEP.Trivia_Caliber = "9x21mm IMI"
@@ -75,12 +75,12 @@ SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.4
 SWEP.ArmorBonus = 0.5
 
-SWEP.Num = 1
+SWEP.Num = 2
 
 SWEP.MuzzleVelocity = 12000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 1.25,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -92,15 +92,9 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {
-	-2
-}
-SWEP.PostBurstDelay = 0.06
-SWEP.AutoBurst = true
-SWEP.RunawayBurst = true
-SWEP.FiremodeName = "Full-Auto" // only used externally for firemode name distinction
+SWEP.Firemode = 2
 
-SWEP.RPM = 1000
+SWEP.RPM = 900
 
 SWEP.Spread = 0.03
 SWEP.NotShotgun = true
@@ -170,12 +164,12 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.AmmoPerShot = 1
+SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 48
+SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.15
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/microuzi.mdl"
 SWEP.DropMagazineImpact = "pistol"
