@@ -10,8 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "2Machine Pistol"
 
-SWEP.Description = "Pair of full-auto Micro Uzis, destroying any notion of accuracy and recoil control."
-SWEP.Description_Quote = "Now *this* is gangster!"
+SWEP.Description = "Pair of full-auto Micro Uzis. I don't know how you expect to hit, well, anything with this getup, but you do you I guess."
 
 SWEP.Trivia_Caliber = "9x21mm IMI"
 SWEP.Trivia_Manufacturer = "Israel Military Industries"
@@ -166,10 +165,10 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 50
+SWEP.ClipSize = 60
 SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 1.15
+SWEP.ReloadTimeMult = 1.05
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/microuzi.mdl"
 SWEP.DropMagazineImpact = "pistol"
