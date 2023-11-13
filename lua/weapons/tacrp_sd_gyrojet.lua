@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP (Special)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
 
-SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming. This model was modified by an enthusiast to utilize removable magazines from the obscure assault rifle variant."
+SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming."
+SWEP.Description_Quote = "What private collection did you pilfer this one from?"
 
 SWEP.Trivia_Caliber = "13mm Minirockets"
 SWEP.Trivia_Manufacturer = "MB Associates"
