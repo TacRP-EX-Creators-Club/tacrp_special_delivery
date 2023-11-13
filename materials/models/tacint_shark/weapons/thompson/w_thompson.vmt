@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models\tacint_shark\weapons\thompson\\w_thompson"
 	"$bumpmap" "models\tacint_shark\weapons\thompson\w_thompson_normal"
-	"$envmap" "env_cubemap"
+	//"$envmap" "env_cubemap"
         "$normalmapalphaenvmapmask" 1
 	"$envmaptint"		"[ 1 1 1 ]"
 	"$envmapcontrast"	0.10000
@@ -10,7 +10,7 @@
 	"$envmapboost"		1.0000	
 		
 
-	"$rimlight"		1       //사용 1, 안사용 0
+	"$rimlight"		0       //사용 1, 안사용 0
 	"$rimlightexponent"	1.00000  
 	"$rimlightboost"	2.500000
 	"$rimlightcolorblend"	0.850000
