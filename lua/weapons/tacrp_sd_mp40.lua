@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with a low rate of fire.\nIf you see a 1942 RP player using this weapon, report them to the local authorities at once."
+SWEP.Description = "WW2-era SMG with a low rate of fire and exceptional handling."
+SWEP.Description_Quote = "Keep away from edgy teenagers."
 
 SWEP.Trivia_Caliber = "9x19mm"
 SWEP.Trivia_Manufacturer = "Steyr-Mannlicher"
