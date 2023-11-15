@@ -212,8 +212,6 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"}
 }
 
-SWEP.LastShot = true
-
 SWEP.ProceduralIronFire = {
     vm_pos = Vector(0, -0.3, -0.15),
     vm_ang = Angle(0, 0.2, 0),
