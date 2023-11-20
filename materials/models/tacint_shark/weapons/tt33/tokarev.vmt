@@ -9,8 +9,8 @@
 	"$envmapcontrast" ".4"
 	
 	"$phong" 	"1"
-	"$phongexponent" 	"20"
-	"$phongboost"	 "0.5"
+	"$phongexponent" 	"10"
+	"$phongboost"	 "0.15"
 	"$phongfresnelranges" "[1 2 4]"
 	
 }
