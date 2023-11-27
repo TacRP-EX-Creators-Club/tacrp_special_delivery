@@ -153,7 +153,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -1, -4.5)
+SWEP.PassivePos = Vector(0, 1, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -161,11 +161,11 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.95, 0.15, 0.2)
-SWEP.SightPos = Vector(-4.19, -7.5, -4.05)
+SWEP.SightAng = Angle(0.02, -0.6, 0)
+SWEP.SightPos = Vector(-4.61, -6.5, -3.95)
 
-SWEP.CorrectivePos = Vector(0.25, 0, -0.35)
-SWEP.CorrectiveAng = Angle(0.8, -0.08, -0.2)
+SWEP.CorrectivePos = Vector(0, 0, -0.05)
+SWEP.CorrectiveAng = Angle(0.85, 0.72, 0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -176,7 +176,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.5
+SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -217,7 +217,7 @@ SWEP.AnimationTranslationTable = {
     ["fire2"] = "fire2_M",
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
-    ["fire5"] = "fire5_M",
+    ["fire5"] = "fire4_M",
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
 }
@@ -227,44 +227,44 @@ SWEP.DeployTimeMult = 2.2
 // attachments
 
 SWEP.AttachmentElements = {
-    ["rail"] = {
+    ["tactical"] = {
         BGs_VM = {
-            {1, 1}
+            {2, 1}
         },
     },
 }
 
---SWEP.ProceduralIronFire = {
-    --vm_pos = Vector(0, -0.6, -0.1),
-    --vm_ang = Angle(0, 0.5, 0),
-    --t = 0.15,
-    --tmax = 0.2,
-    --bones = {
-    --},
---}
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.6, -0.1),
+    vm_ang = Angle(0, 0.5, 0),
+    t = 0.15,
+    tmax = 0.2,
+    bones = {
+    },
+}
 
 
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "ValveBiped.AK47_rootbone",
         WMBone = "ValveBiped.Bip01_R_Hand",
-		InstalledElements = {"rail"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.8,
+        VMScale = 0.75,
         WMScale = 0.75,
-		Pos_VM = Vector(-7.2, 0, 0.5),
+        Pos_VM = Vector(-6.7, 0.15, 1),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(7.6, 1, -8.3),
+        Pos_WM = Vector(4, 1.15, -7.25),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Tactical",
         Category = "tactical",
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "ValveBiped.AK47_rootbone",
         WMBone = "ValveBiped.Bip01_R_Hand",
+        InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.25, 0.65, 1),
