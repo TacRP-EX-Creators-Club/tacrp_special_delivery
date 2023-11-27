@@ -161,8 +161,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.02, -0.6, -0.5)
-SWEP.SightPos = Vector(-4.575, -6, -4)
+SWEP.SightAng = Angle(-0.95, 0.15, 0.2)
+SWEP.SightPos = Vector(-4.19, -7.5, -4.05)
 
 SWEP.CorrectivePos = Vector(0.2, 0, 0.05)
 SWEP.CorrectiveAng = Angle(0.7, 0, 0)
@@ -178,7 +178,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.5
+SWEP.ReloadTimeMult = 1.1
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -222,6 +222,22 @@ SWEP.AnimationTranslationTable = {
     ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
+}
+
+
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.2, -0.12),
+    vm_ang = Angle(0, 0.25, 0),
+    t = 0.1,
+    tmax = 0.1,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.08,
+        },
+    },
 }
 
 SWEP.DeployTimeMult = 2.2
