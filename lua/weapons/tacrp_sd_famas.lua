@@ -7,10 +7,10 @@ AddCSLuaFile()
 SWEP.PrintName = "FAMAS F1"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "2Operator"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil."
+SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil.\nHas a bipod for esoteric French reasons. "
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "GIAT Industries" // more like GYATT industries ahahahaha amirite fellow zoomies?
@@ -30,6 +30,9 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 23,
+        Damage_Min = 12,
+
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
@@ -85,10 +88,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 22
-SWEP.Damage_Min = 13
-SWEP.Range_Min = 1800
-SWEP.Range_Max = 4000
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 10
+SWEP.Range_Min = 1200
+SWEP.Range_Max = 3200
 SWEP.Penetration = 7
 SWEP.ArmorPenetration = 0.8
 
@@ -120,15 +123,18 @@ SWEP.Spread = 0.002
 SWEP.PostBurstDelay = 0.22
 SWEP.RunawayBurst = true
 
+
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.2
-SWEP.RecoilDissipationRate = 15
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 9
+SWEP.RecoilResetTime = 0.01
+SWEP.RecoilDissipationRate = 21
+SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.4
+SWEP.RecoilAltMultiplier = 350
 
 SWEP.RecoilSpreadPenalty = 0.0025
 SWEP.HipFireSpreadPenalty = 0.025
@@ -173,8 +179,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.9, 1.3, 0)
-SWEP.SightPos = Vector(-4.2, -6, -4.9)
+SWEP.SightAng = Angle(-1, 1.3, 0)
+SWEP.SightPos = Vector(-4.2, -6, -4.94)
 
 SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
 SWEP.CorrectiveAng = Angle(0.8, -0.1, -0.2)
@@ -230,6 +236,21 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"}
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.2, -0.12),
+    vm_ang = Angle(0, 0.25, 0),
+    t = 0.1,
+    tmax = 0.1,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.08,
+        },
+    },
+}
+
 SWEP.DeployTimeMult = 2.15
 
 // attachments
@@ -243,7 +264,7 @@ SWEP.AttachmentElements = {
             {1, 1}
         }
     },
-	["rail"] = {
+    ["rail"] = {
         BGs_VM = {
             {2, 1}
         },
@@ -258,7 +279,7 @@ SWEP.Attachments = {
         Bone = "ValveBiped.AUG_rootbone",
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-		InstalledElements = {"rail"},
+        InstalledElements = {"rail"},
         VMScale = 1,
         Pos_VM = Vector(-7.8, 0, 4),
         Ang_VM = Angle(90, 0, 0),

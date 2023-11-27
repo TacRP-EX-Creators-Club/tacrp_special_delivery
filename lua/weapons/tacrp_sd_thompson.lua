@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Auto-Ordnance Company"
 SWEP.Trivia_Year = "1942"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model, Textures & Sound: Counter-Strike: Online 2 \nAnimations: Tactical Intervention"
+SWEP.Credits = "Assets: Counter-Strike: Online 2\nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_thompson.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_thompson.mdl"
@@ -28,6 +28,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 27,
         Damage_Min = 7,
+
+        ReloadTimeMult = 1,
 
         MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
@@ -74,7 +76,7 @@ SWEP.BalanceStats = {
     },
     [TacRP.BALANCE_OLDSCHOOL] = {
         RecoilMaximum = 10,
-		RecoilSpreadPenalty = 0.003
+        RecoilSpreadPenalty = 0.003
     }
 }
 
@@ -83,16 +85,16 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 20
-SWEP.Damage_Min = 5
-SWEP.Range_Min = 750 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2500 // distance at which we drop to minimum damage
+SWEP.Damage_Min = 6
+SWEP.Range_Min = 500 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2000 // distance at which we drop to minimum damage
 SWEP.Penetration = 4 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.525
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1.15,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -108,21 +110,22 @@ SWEP.Firemode = 2
 
 SWEP.RPM = 700
 
-SWEP.Spread = 0.009
+SWEP.Spread = 0.0075
 
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 8
-SWEP.RecoilResetTime = 0.17
-SWEP.RecoilDissipationRate = 22
+SWEP.RecoilMaximum = 7
+SWEP.RecoilResetTime = 0
+SWEP.RecoilDissipationRate = 25
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
 SWEP.RecoilKick = 3
-SWEP.RecoilStability = 0.3
+SWEP.RecoilStability = 0.35
 SWEP.RecoilAltMultiplier = 150
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.02
+SWEP.RecoilSpreadPenalty = 0.0017
+SWEP.HipFireSpreadPenalty = 0.025
 
 SWEP.CanBlindFire = true
 
@@ -130,15 +133,15 @@ SWEP.CanBlindFire = true
 
 SWEP.MoveSpeedMult = 0.92
 SWEP.ShootingSpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.7
+SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
 SWEP.AimDownSightsTime = 0.39
-SWEP.SprintToFireTime = 0.37
+SWEP.SprintToFireTime = 0.36
 
-SWEP.Sway = 1
-SWEP.ScopedSway = 0.15
+SWEP.Sway = 0.9
+SWEP.ScopedSway = 0.2
 SWEP.FreeAimMaxAngle = 5
 
 // hold types
@@ -173,9 +176,9 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 // reload
 
 SWEP.ClipSize = 30
-SWEP.Ammo = "smg1"
+SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.15
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/thompson.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -232,14 +235,6 @@ SWEP.ProceduralIronFire = {
 // attachments
 
 SWEP.AttachmentElements = {
-    ["foldstock"] = {
-        BGs_VM = {
-            {1, 1}
-        },
-        BGs_WM = {
-            {1, 1}
-        }
-    },
 }
 
 
