@@ -164,8 +164,8 @@ SWEP.SprintPos = Vector(5, 0, -2)
 SWEP.SightAng = Angle(0.02, -0.6, -0.5)
 SWEP.SightPos = Vector(-4.575, -6, -4)
 
-SWEP.CorrectivePos = Vector(0.05, 0, 0.1)
-SWEP.CorrectiveAng = Angle(0, 0, 0.5)
+SWEP.CorrectivePos = Vector(0.2, 0, 0.05)
+SWEP.CorrectiveAng = Angle(0.7, 0, 0)
 
 SWEP.CorrectiveBoneAng = Angle(90, 38, 38)
 
@@ -245,9 +245,9 @@ SWEP.Attachments = {
         InstalledElements = {"rail"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.8,
+        VMScale = 0.75,
         WMScale = 0.75,
-        Pos_VM = Vector(-6.7, 0.15, 1),
+        Pos_VM = Vector(-7.1, -0.03, 0.5),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
