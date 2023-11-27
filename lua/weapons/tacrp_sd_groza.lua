@@ -153,7 +153,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, 1, -5)
+SWEP.PassivePos = Vector(0, -1, -4.5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -178,7 +178,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.5
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -219,7 +219,7 @@ SWEP.AnimationTranslationTable = {
     ["fire2"] = "fire2_M",
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
-    ["fire5"] = "fire4_M",
+    ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
 }
@@ -229,44 +229,34 @@ SWEP.DeployTimeMult = 2.2
 // attachments
 
 SWEP.AttachmentElements = {
-    ["tactical"] = {
+    ["rail"] = {
         BGs_VM = {
-            {2, 1}
+            {1, 1}
         },
     },
 }
-
-SWEP.ProceduralIronFire = {
-    vm_pos = Vector(0, -0.6, -0.1),
-    vm_ang = Angle(0, 0.5, 0),
-    t = 0.15,
-    tmax = 0.2,
-    bones = {
-    },
-}
-
 
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped.AK47_rootbone",
+        Bone = "ValveBiped.AUG_rootbone",
         WMBone = "ValveBiped.Bip01_R_Hand",
+        InstalledElements = {"rail"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
+        VMScale = 0.8,
         WMScale = 0.75,
-        Pos_VM = Vector(-6.7, 0.065, 1),
+        Pos_VM = Vector(-6.7, 0.15, 1),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(4, 1.15, -7.25),
+        Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Tactical",
         Category = "tactical",
-        Bone = "ValveBiped.AK47_rootbone",
+        Bone = "ValveBiped.AUG_rootbone",
         WMBone = "ValveBiped.Bip01_R_Hand",
-        InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.25, 0.65, 1),
