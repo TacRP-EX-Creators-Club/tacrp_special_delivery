@@ -100,11 +100,11 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 SWEP.Damage_Max = 30
 SWEP.Damage_Min = 5
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3500 // distance at which we drop to minimum damage
-SWEP.Penetration = 5 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.575
-SWEP.ArmorBonus = 0.5
+SWEP.Range_Min = 450
+SWEP.Range_Max = 1900
+SWEP.Penetration = 5
+SWEP.ArmorPenetration = 0.625
+SWEP.ArmorBonus = 0.75
 
 SWEP.MuzzleVelocity = 9500
 
@@ -141,7 +141,7 @@ SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 7
+SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.2
 
 SWEP.RecoilSpreadPenalty = 0.0035

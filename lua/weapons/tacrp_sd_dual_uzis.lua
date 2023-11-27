@@ -17,7 +17,7 @@ SWEP.Trivia_Manufacturer = "Israel Military Industries"
 SWEP.Trivia_Year = "1986"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model: BrainBread 2 \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = "Model: BrainBread 2\nAnimations: Tactical Intervention, edited by speedonerd"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dual_uzi.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_dual_uzi.mdl"
@@ -67,9 +67,9 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 // "ballistics"
 
 SWEP.Damage_Max = 16
-SWEP.Damage_Min = 8
-SWEP.Range_Min = 800 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Damage_Min = 5
+SWEP.Range_Min = 600
+SWEP.Range_Max = 2000
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.4
 SWEP.ArmorBonus = 0.5
@@ -95,7 +95,7 @@ SWEP.Firemode = 2
 
 SWEP.RPM = 900
 
-SWEP.Spread = 0.03
+SWEP.Spread = 0.035
 SWEP.NotShotgun = true
 
 SWEP.MoveSpreadPenalty = 0

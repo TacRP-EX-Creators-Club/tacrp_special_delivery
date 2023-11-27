@@ -101,10 +101,10 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 19
-SWEP.Damage_Min = 8
-SWEP.Range_Min = 1200
-SWEP.Range_Max = 3500
+SWEP.Damage_Max = 22
+SWEP.Damage_Min = 6
+SWEP.Range_Min = 675
+SWEP.Range_Max = 1800
 SWEP.Penetration = 5
 
 SWEP.ArmorPenetration = 0.85
@@ -129,9 +129,9 @@ SWEP.Firemode = 1
 
 SWEP.RPM = 600
 
-SWEP.Spread = 0.008
+SWEP.Spread = 0.007
 
-SWEP.MoveSpreadPenalty = 0
+SWEP.MoveSpreadPenalty = 0.005
 SWEP.MidAirSpreadPenalty = 0.06
 SWEP.HipFireSpreadPenalty = 0
 

@@ -15,7 +15,7 @@ ATT.Category = "silencer"
 ATT.SortOrder = 7
 
 ATT.Add_Vol_Shoot = -25
-ATT.Add_Range_Min = 500
+ATT.Add_Range_Min = 250
 ATT.Mult_Range_Max = 1.5
 ATT.Mult_Range_Min = 1.5
 ATT.Add_MuzzleVelocity = 5000

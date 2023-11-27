@@ -83,21 +83,21 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
 
 SWEP.Damage_Max = 60
 SWEP.Damage_Min = 45
-SWEP.Range_Min = 500
-SWEP.Range_Max = 4000
+SWEP.Range_Min = 600
+SWEP.Range_Max = 3000
 SWEP.Penetration = 12
 SWEP.ArmorPenetration = 0.875
 
 SWEP.MuzzleVelocity = 24000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4,
-    [HITGROUP_CHEST] = 1.5,
-    [HITGROUP_STOMACH] = 1,
-    [HITGROUP_LEFTARM] = 1,
-    [HITGROUP_RIGHTARM] = 1,
-    [HITGROUP_LEFTLEG] = 0.75,
-    [HITGROUP_RIGHTLEG] = 0.75,
+    [HITGROUP_HEAD] = 3,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1.5,
+    [HITGROUP_LEFTARM] = 0.75,
+    [HITGROUP_RIGHTARM] = 0.75,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
     [HITGROUP_GEAR] = 0.9
 }
 

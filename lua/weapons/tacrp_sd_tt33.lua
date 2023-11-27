@@ -28,7 +28,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 30,
         Damage_Min = 21,
-        RPM = 420,
         ArmorPenetration = 0.6,
 
         BodyDamageMultipliers = {
@@ -113,8 +112,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 SWEP.Damage_Max = 22
 SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200
-SWEP.Range_Max = 3000
+SWEP.Range_Min = 800
+SWEP.Range_Max = 2000
 SWEP.Penetration = 5
 SWEP.ArmorPenetration = 0.575
 
@@ -135,7 +134,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 480
+SWEP.RPM = 420
 
 SWEP.Spread = 0.006
 
