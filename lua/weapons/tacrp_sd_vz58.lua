@@ -90,9 +90,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 28
 SWEP.Damage_Min = 18
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
-SWEP.Penetration = 12 // units of metal this weapon can penetrate
+SWEP.Range_Min = 600
+SWEP.Range_Max = 3200
+SWEP.Penetration = 12
 SWEP.ArmorPenetration = 0.9
 SWEP.ArmorBonus = 1
 
@@ -113,7 +113,7 @@ SWEP.MuzzleVelocity = 28000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 360
+SWEP.RPM = 330
 
 SWEP.Spread = 0.0045
 

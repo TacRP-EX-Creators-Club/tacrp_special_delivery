@@ -138,6 +138,7 @@ SWEP.RecoilAltMultiplier = 300
 
 SWEP.HipFireSpreadPenalty = 0.07
 SWEP.RecoilSpreadPenalty = 0.0012
+SWEP.PeekPenaltyFraction = 0.15
 
 SWEP.CanBlindFire = true
 
@@ -180,7 +181,7 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.02, 0.1, 0)
+SWEP.SightAng = Angle(0, -0.2, 0)
 SWEP.SightPos = Vector(-4.48, -7.5, -3.9)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.125)

@@ -13,7 +13,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 SWEP.Description = "WW2-era semi-auto carbine. Intended as a defensive weapon for support troops, it is accurate and lightweight but has mediocre power."
 
 SWEP.Trivia_Caliber = ".30 Carbine"
-SWEP.Trivia_Manufacturer = "General Motors" -- Yes, really.
+SWEP.Trivia_Manufacturer = "General Motors" // Yes, really.
 SWEP.Trivia_Year = "1942"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
@@ -84,17 +84,17 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 24
-SWEP.Damage_Min = 18
-SWEP.Range_Min = 1800
-SWEP.Range_Max = 3500
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 12
+SWEP.Range_Min = 900
+SWEP.Range_Max = 3000
 SWEP.Penetration = 9
-SWEP.ArmorPenetration = 0.7
+SWEP.ArmorPenetration = 0.725
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
-    [HITGROUP_CHEST] = 1.25,
-    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_HEAD] = 3.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 0.9,
     [HITGROUP_RIGHTARM] = 0.9,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -114,34 +114,35 @@ SWEP.Spread = 0.003
 
 SWEP.ShootTimeMult = 0.5
 
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 5
-SWEP.RecoilResetTime = 0.15 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 12
-SWEP.RecoilFirstShotMult = 0.75
+SWEP.RecoilResetTime = 0
+SWEP.RecoilDissipationRate = 15
+SWEP.RecoilFirstShotMult = 1.25
 
 SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 2.5
 SWEP.RecoilStability = 0.75
 SWEP.RecoilAltMultiplier = 300
 
-SWEP.RecoilSpreadPenalty = 0.0015
+SWEP.RecoilSpreadPenalty = 0.0017
 SWEP.HipFireSpreadPenalty = 0.02
 SWEP.PeekPenaltyFraction = 0.25
 
 SWEP.CanBlindFire = true
 
 // handling
-SWEP.MoveSpeedMult = 0.92
+SWEP.MoveSpeedMult = 0.94
 SWEP.ShootingSpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.75
 
-SWEP.ReloadSpeedMult = 0.6
+SWEP.ReloadSpeedMult = 0.55
 
-SWEP.AimDownSightsTime = 0.24
-SWEP.SprintToFireTime = 0.33
+SWEP.AimDownSightsTime = 0.26
+SWEP.SprintToFireTime = 0.32
 
-SWEP.Sway = 0.75
+SWEP.Sway = 0.8
 SWEP.ScopedSway = 0.15
 
 SWEP.FreeAimMaxAngle = 4
@@ -185,7 +186,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 15
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 0.9
+SWEP.ReloadTimeMult = 0.85
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/m1carbine.mdl"
 SWEP.DropMagazineImpact = "metal"
 
