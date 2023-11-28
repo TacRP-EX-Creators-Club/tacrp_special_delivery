@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Suppressed bullpup made from a reconfigured AK. Subsonic ammunition is weak but has no visible tracer."
+SWEP.Description = "Integrally-suppressed bullpup made from a reconfigured AK. Weak, but has great handling and stability."
+SWEP.Description_Quote = "Get out of here, stalker..."
 
 SWEP.Trivia_Caliber = "9x39mm"
 SWEP.Trivia_Manufacturer = "TsKIB SOO"
@@ -138,8 +139,8 @@ SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.35
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.32
+SWEP.SprintToFireTime = 0.35
 
 SWEP.Sway = 1.4
 SWEP.ScopedSway = 0.2
@@ -299,7 +300,13 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [6] = {
+	[6] = {
+        PrintName = "Ammo",
+        Category = {"ammo_rifle"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+    },
+    [7] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
