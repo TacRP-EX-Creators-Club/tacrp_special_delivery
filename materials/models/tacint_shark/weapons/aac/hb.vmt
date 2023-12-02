@@ -3,7 +3,7 @@
      "$basetexture" "models\tacint_shark\weapons\aac\hb"
      "$bumpmap" "models\tacint_shark\weapons\aac\hbn"
 
-     "$envmap" "env_cubemap"
+     //"$envmap" "env_cubemap"
      "$basemapalphaenvmapmask" 1
      "$envmaptint" "[0.2 0.2 0.2]"
      "$normalmapalphaenvmapmask" 1
