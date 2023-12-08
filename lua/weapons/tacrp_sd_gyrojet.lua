@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP (Special)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
 
-SWEP.Description = "Obscure experimental pistol firing self-propelled minirockets. Mostly a collector's item now, it's powerful, but prone to jamming."
+SWEP.Description = "Obscure experimental pistol firing self-propelled minirockets. Mostly a collector's item now, the ammunition is powerful but unreliable."
 SWEP.Description_Quote = "Whose private collection did you steal this from?"
 
 SWEP.Trivia_Caliber = ".51 Caliber Minirockets"
