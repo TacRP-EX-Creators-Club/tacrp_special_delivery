@@ -161,8 +161,8 @@ SWEP.BlindFireSuicidePos = Vector(25, 19, -5)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(-0.2, -0.5, 0)
-SWEP.SightPos = Vector(-3.37, 1, -4)
+SWEP.SightAng = Angle(0.06, -0.4, 0)
+SWEP.SightPos = Vector(-3.35, 1, -4)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
