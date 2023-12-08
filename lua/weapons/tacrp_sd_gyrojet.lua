@@ -4,21 +4,25 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "MBA Gyrojet"
+SWEP.PrintName = "MBA Gyrojet MkI"
 SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "9Equipment"
 
-SWEP.Description = "Experimental pistol firing self-propelled minirockets. Powerful, but prone to jamming."
-SWEP.Description_Quote = "What private collection did you pilfer this one from?"
+SWEP.Description = "Obscure experimental pistol firing self-propelled minirockets. Mostly a collector's item now, it's powerful, but prone to jamming."
+SWEP.Description_Quote = "Whose private collection did you steal this from?"
 
-SWEP.Trivia_Caliber = "13mm Minirockets"
-SWEP.Trivia_Manufacturer = "MB Associates"
+SWEP.Trivia_Caliber = ".51 Caliber Minirockets"
+SWEP.Trivia_Manufacturer = "MBAssociates" // i checked every credible source and they dont put a space between MB and associates please dont change this
 SWEP.Trivia_Year = "1962"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model, Textures & Sound: RedRougeXIII \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = [[
+Model, Textures & Firing Sound: RedRougeXIII
+Reload Sound: speedonerd
+Animations: Tactical Intervention, with additions from speedonerd
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_gyrojet.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_gyrojet.mdl"
