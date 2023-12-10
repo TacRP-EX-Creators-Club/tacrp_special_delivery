@@ -10,8 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Boutique sniper rifle firing a powerful round. It's exceedingly rare, so maybe don't bash people with it.\nEquipped with a 12x scope by default, lacks ironsights."
-SWEP.Description_Quote = "\"Names are for friends, so I don't need one.\""
+SWEP.Description = "Elegant bullpup sniper rifle with a high rate of rife. Equipped with a 12x scope by default."
+SWEP.Description_Quote = "Names are for friends, so I don't need one."
 
 SWEP.Trivia_Caliber = ".300 WinMag"
 SWEP.Trivia_Manufacturer = "Walther"
@@ -94,8 +94,8 @@ SWEP.ArmorBonus = 3
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 2, // nobody is surviving this
-    [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.8,
     [HITGROUP_RIGHTARM] = 0.8,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -109,16 +109,16 @@ SWEP.MuzzleVelocity = 30000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 140
+SWEP.RPM = 160
 
 SWEP.Spread = 0
-SWEP.RecoilSpreadPenalty = 0.02
+SWEP.RecoilSpreadPenalty = 0.014
 SWEP.HipFireSpreadPenalty = 0.1
 SWEP.PeekPenaltyFraction = 0.2
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 2
-SWEP.RecoilResetTime = 0.2
+SWEP.RecoilResetTime = 0.15
 SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 0.75
 
@@ -155,7 +155,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(1, 0, -5.25)
+SWEP.PassivePos = Vector(0.85, 0, -4.75)
 
 SWEP.BlindFireAng = Angle(0, 15, 0)
 SWEP.BlindFirePos = Vector(2, -2, -4)
@@ -316,7 +316,7 @@ SWEP.Attachments = {
     },
     [8] = {
         PrintName = "Perk",
-        Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
+        Category = {"perk", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
