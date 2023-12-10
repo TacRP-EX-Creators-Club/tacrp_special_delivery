@@ -314,9 +314,19 @@ local function addsound(name, spath)
     })
 end
 
+local function addshellsound(name, spath)
+    sound.Add({
+        name = name,
+        channel = 15,
+        volume = 0.9,
+        sound = spath
+    })
+end
+
 addsound("tacint_db.magrelease", path .. "magrelease.wav")
 addsound("tacint_db.open", path .. "openeject.wav")
 addsound("tacint_db.close", path .. "close.wav")
 addsound("tacint_db.magout", path .. "insert1.wav")
 addsound("tacint_db.magin", path .. "insert2.wav")
 addsound("tacint_db.unholster", path .. "cloth.wav")
+addshellsound("tacint_db.shells", path .. "shells.wav")
