@@ -20,7 +20,8 @@ SWEP.Trivia_Year = "1858"
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
 Assets: Nimrod Hempel (Fistful of Frags)
-Animations: CyloWalker & speedonerd
+Animation: CyloWalker 
+Quickthrow & melee animations: speedonerd
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_1858.mdl"
