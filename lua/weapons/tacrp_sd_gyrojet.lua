@@ -234,38 +234,24 @@ SWEP.LastShot = false
 
 SWEP.Attachments = {
     [1] = {
-        PrintName = "Optic",
-        Category = "optic_pistol",
-        Bone = "xd45_rig.slide",
-        WMBone = "ValveBiped.Bip01_R_Hand",
-        AttachSound = "tacrp/weapons/optic_on.wav",
-        DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 1,
-        WMScale = 1,
-        Pos_VM = Vector(-0.05, -0.4, 1.1),
-        Ang_VM = Angle(0, -90, 0),
-        Pos_WM = Vector(3.2, 1.2, -5.1),
-        Ang_WM = Angle(0, 0, 180),
-    },
-    [2] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_holster", "acc_brace"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [3] = {
+    [2] = {
         PrintName = "Trigger",
         Category = {"trigger_semi"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [4] = {
+    [3] = {
         PrintName = "Ammo",
         Category = {"ammo_gyrojet"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [5] = {
+    [4] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
