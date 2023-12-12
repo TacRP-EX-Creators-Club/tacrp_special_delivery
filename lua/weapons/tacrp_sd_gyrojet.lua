@@ -19,8 +19,8 @@ SWEP.Trivia_Year = "1962"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
-Model, Textures & Firing Sound: RedRougeXIII
-Reload Sound: speedonerd
+Model & Textures: RedRougeXIII
+Sounds: speedonerd
 Animations: Tactical Intervention, with additions from speedonerd
 ]]
 
