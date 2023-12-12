@@ -186,7 +186,7 @@ SWEP.ReloadTimeMult = 1.1
 local path = "tacint_shark/weapons/gyrojet/"
 local path1 = "tacrp/weapons/xd45/"
 
-SWEP.Sound_Shoot = "^" .. path .. "deagle-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
