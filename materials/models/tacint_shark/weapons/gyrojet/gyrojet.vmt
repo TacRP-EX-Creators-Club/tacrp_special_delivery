@@ -20,4 +20,5 @@ VertexLitGeneric {
 	"$rimlight" "1" 
 	"$rimlightexponent" "10" 
 	"$rimlightboost" "1.75"
+	"$nocull" 1
 }
