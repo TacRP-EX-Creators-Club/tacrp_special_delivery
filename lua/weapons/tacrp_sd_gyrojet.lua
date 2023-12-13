@@ -8,7 +8,7 @@ SWEP.PrintName = "MBA Gyrojet MkI"
 SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
-SWEP.SubCatType = "9Equipment"
+SWEP.SubCatType = "7Special Weapon"
 
 SWEP.Description = "Obscure experimental pistol firing self-propelled minirockets. Mostly a collector's item now, the ammunition is powerful but unreliable."
 SWEP.Description_Quote = "Whose private collection did you steal this from?"
