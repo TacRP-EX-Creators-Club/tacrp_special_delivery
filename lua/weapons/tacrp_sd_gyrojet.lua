@@ -203,7 +203,7 @@ SWEP.QCA_EjectR = 3
 
 SWEP.EjectEffect = 0
 
-SWEP.MuzzleEffect = "muzzleflash_pistol"
+SWEP.MuzzleEffect = "muzzleflash_suppressed"
 
 // anims
 // VM:
