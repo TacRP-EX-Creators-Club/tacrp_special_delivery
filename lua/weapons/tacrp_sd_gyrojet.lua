@@ -106,7 +106,7 @@ SWEP.RPM = 180
 
 SWEP.Spread = 0.0025
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.7
 
 SWEP.JamFactor = 0.25
 
@@ -193,13 +193,17 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
 
-// the .qc attachment for the muzzle
-SWEP.QCA_Muzzle = 1
+SWEP.EffectsAlternate = true
+SWEP.EffectsDoubled = true
 
-SWEP.QCA_Eject = 0
+SWEP.QCA_MuzzleL = 1
+SWEP.QCA_MuzzleR = 4
+SWEP.QCA_EjectL = 2
+SWEP.QCA_EjectR = 3
+
 SWEP.EjectEffect = 0
 
-SWEP.MuzzleEffect = "muzzleflash_suppressed"
+SWEP.MuzzleEffect = "muzzleflash_pistol"
 
 // anims
 // VM:
