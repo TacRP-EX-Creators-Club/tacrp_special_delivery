@@ -247,6 +247,20 @@ SWEP.EffectsAlternate = true
 
 SWEP.Attachments = {
     [1] = {
+        PrintName = "Tactical",
+        Category = "tactical",
+        Bone = "ValveBiped.mtx_root2",
+        WMBone = "Box01",
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+        VMScale = 0.9,
+        WMScale = 1,
+        Pos_VM = Vector(-2.25, -0.2, 7),
+        Ang_VM = Angle(90, 0, 180),
+        Pos_WM = Vector(-0.1, 9, -1.5),
+        Ang_WM = Angle(0, -90, 180),
+    },
+    [2] = {
         PrintName = "Accessory",
         Category = {"acc_dual", "acc_extmag_dual2"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
