@@ -5,7 +5,7 @@ ENT.PrintName                = "Gyrojet Round"
 ENT.Spawnable                = false
 
 ENT.Model                    = "models/weapons/tacint_shark/projectiles/gyrojet_rocket.mdl"
-ENT.CollisionSphere = 1
+ENT.CollisionSphere = 2
 
 ENT.IsRocket = true
 
@@ -22,7 +22,7 @@ ENT.SafetyFuse = 0
 ENT.AudioLoop = "TacRP/weapons/rpg7/rocket_flight-1.wav"
 
 ENT.SmokeTrail = true
-ENT.FlareColor = Color(255, 255, 255, 100)
+ENT.FlareColor = Color(255, 128, 0, 100)
 ENT.FlareLife = 0.5
 
 ENT.ExplodeSounds = {
@@ -151,7 +151,7 @@ function ENT:PhysicsUpdate(phys)
     phys:AddVelocity(self:GetForward() * Lerp(f, 10, 1))
 end
 
-local mat = Material("sprites/muzzleflash4")
+local mat = Material("sprites/light_glow02_add")
 
 function ENT:Draw()
     self:DrawModel()

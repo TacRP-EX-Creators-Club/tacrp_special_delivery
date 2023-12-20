@@ -14,10 +14,10 @@ ATT.Mult_Damage_Max = 0.6
 ATT.Mult_Damage_Min = 0.6
 ATT.Mult_RPM = 1.25
 
-ATT.Add_JamFactor = -0.2
+ATT.Add_JamFactor = -0.25
 
-ATT.Add_ClipSize = 3
-ATT.Mult_ShootEntForce = 0.5
+ATT.Add_ClipSize = 4
+ATT.Mult_ShootEntForce = 0.85
 
 ATT.ShootEnt = "tacrp_proj_gyrojet_lv"
 

@@ -14,7 +14,7 @@ ENT.FlareLife = 0.1
 ENT.IsRocket = false
 ENT.InstantFuse = true
 ENT.ImpactFuse = false
-ENT.Delay = 2
+ENT.Delay = 1.5
 
 ENT.AudioLoop = false
 

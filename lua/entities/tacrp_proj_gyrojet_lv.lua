@@ -5,8 +5,8 @@ ENT.PrintName                = "LV Gyrojet Round"
 ENT.Spawnable                = false
 
 ENT.SmokeTrail = true
-ENT.FlareColor = Color(255, 255, 255, 100)
-ENT.FlareLife = 0.3
+ENT.FlareColor = Color(255, 255, 200, 100)
+ENT.FlareLife = 0.2
 
 local smokeimages = {"particle/smokesprites_0001", "particle/smokesprites_0002", "particle/smokesprites_0003", "particle/smokesprites_0004", "particle/smokesprites_0005", "particle/smokesprites_0006", "particle/smokesprites_0007", "particle/smokesprites_0008", "particle/smokesprites_0009", "particle/smokesprites_0010", "particle/smokesprites_0011", "particle/smokesprites_0012", "particle/smokesprites_0013", "particle/smokesprites_0014", "particle/smokesprites_0015", "particle/smokesprites_0016"}
 local function GetSmokeImage()

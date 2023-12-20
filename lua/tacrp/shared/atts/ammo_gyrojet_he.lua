@@ -4,19 +4,21 @@ ATT.FullName = "13mm High Explosive Mini-Rockets"
 ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
 ATT.Description = "Projectile with a small explosive charge instead of a bullet head."
 ATT.Pros = {"att.procon.explosive"}
-ATT.Cons = {"stat.damage", "att.procon.unreliable", "stat.rpm"}
+ATT.Cons = {"stat.damage", "att.procon.unreliable", "stat.rpm", "stat.muzzlevelocity"}
 
 ATT.Category = "ammo_gyrojet"
 
 ATT.SortOrder = 2
+
+ATT.Mult_ShootEntForce = 0.85
 
 ATT.Mult_Damage_Max = 0.6
 ATT.Mult_Damage_Min = 0.6
 
 ATT.Add_JamFactor = 0.5
 
-ATT.Mult_ShootTimeMult = 2
-ATT.Mult_RPM = 0.75
+ATT.Mult_ShootTimeMult = 2.5
+ATT.Mult_RPM = 0.5
 
 ATT.ShootEnt = "tacrp_proj_gyrojet_he"
 

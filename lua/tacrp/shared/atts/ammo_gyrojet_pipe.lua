@@ -12,12 +12,15 @@ ATT.SortOrder = 3
 
 ATT.Add_ClipSize = -2
 
-ATT.Mult_ShootEntForce = 0.75
+ATT.Mult_ShootEntForce = 0.15
 
 ATT.Mult_ShootTimeMult = 2.5
 ATT.Mult_RPM = 0.5
 
 ATT.ShootEnt = "tacrp_proj_gyrojet_pipe"
+
+ATT.Mult_Damage_Max = 0.725
+ATT.Mult_Damage_Min = 0.725
 
 ATT.Override_BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 1,

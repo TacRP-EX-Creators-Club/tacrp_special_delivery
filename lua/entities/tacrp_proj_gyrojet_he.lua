@@ -21,7 +21,7 @@ function ENT:Detonate()
         dmg = dmg * 0.25
     end
 
-    util.BlastDamage(self, attacker, self:GetPos(), 150, dmg)
+    util.BlastDamage(self, attacker, self:GetPos(), 128, dmg)
 
     local fx = EffectData()
     fx:SetOrigin(self:GetPos())
