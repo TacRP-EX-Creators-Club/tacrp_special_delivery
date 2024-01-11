@@ -20,7 +20,7 @@ SWEP.Trivia_Year = "1858"
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
 Assets: Nimrod Hempel (Fistful of Frags)
-Animation: CyloWalker 
+Animation: CyloWalker
 Quickthrow & melee animations: speedonerd
 ]]
 
@@ -33,12 +33,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 65,
         Damage_Min = 32,
-
-        MoveSpeedMult = 1,
-        ShootingSpeedMult = 0.75,
-        SightedSpeedMult = 1,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 58,
@@ -66,23 +60,11 @@ SWEP.BalanceStats = {
         },
 
         ReloadTimeMult = 1.1,
-
-        MoveSpeedMult = 1,
-        ShootingSpeedMult = 0.75,
-        MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.75,
-        ReloadSpeedMult = 0.8,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 30,
         Damage_Min = 10,
         Range_Min = 900,
-
-        MoveSpeedMult = 1,
-        ShootingSpeedMult = 0.75,
-        SightedSpeedMult = 1,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_OLDSCHOOL] = {
         RecoilSpreadPenalty = 0.015,

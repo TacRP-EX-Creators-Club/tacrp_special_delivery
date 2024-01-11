@@ -33,12 +33,6 @@ SWEP.BalanceStats = {
         Damage_Min = 95,
         Range_Min = 3000,
         Range_Max = 9000,
-
-        MoveSpeedMult = 0.7,
-        ShootingSpeedMult = 0.5,
-        SightedSpeedMult = 0.5,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 25,
@@ -58,24 +52,12 @@ SWEP.BalanceStats = {
         },
 
         ReloadTimeMult = 1.25,
-
-        MoveSpeedMult = 0.8,
-        ShootingSpeedMult = 0.25,
-        MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.4,
-        ReloadSpeedMult = 0.25,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 48,
         Damage_Min = 90,
         Range_Min = 600,
         Range_Max = 5000,
-
-        MoveSpeedMult = 0.7,
-        ShootingSpeedMult = 0.5,
-        SightedSpeedMult = 0.55,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_OLDSCHOOL] = {
         RecoilResetTime = 0.25

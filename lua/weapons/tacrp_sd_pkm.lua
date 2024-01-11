@@ -34,9 +34,6 @@ SWEP.BalanceStats = {
 
         ClipSize = 100,
 
-        MoveSpeedMult = 0.7,
-        ShootingSpeedMult = 0.5,
-        SightedSpeedMult = 0.65,
         ReloadTimeMult = 1.15,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 0.9,
@@ -63,24 +60,12 @@ SWEP.BalanceStats = {
         },
 
         ReloadTimeMult = 1.2,
-
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.35,
-        MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.5,
-        ReloadSpeedMult = 0.4,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 20,
         Damage_Min = 12,
 
         ClipSize = 100,
-
-        MoveSpeedMult = 0.75,
-        ShootingSpeedMult = 0.5,
-        SightedSpeedMult = 0.75,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_OLDSCHOOL] = {
         ClipSize = 100,
