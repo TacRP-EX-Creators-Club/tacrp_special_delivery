@@ -9,7 +9,7 @@ SWEP.AbbrevName = "De Lisle"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "7Sniper Rifle"
+SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "Pistol caliber bolt-action carbine with an integrated suppressor. One of the quietest firearms ever made, its subsonic rounds have no tracer but travel slowly."
 SWEP.Description_Quote = "Fired into the River Thames, not a soul heard it."
@@ -59,7 +59,7 @@ SWEP.BalanceStats = {
     }
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
+SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
