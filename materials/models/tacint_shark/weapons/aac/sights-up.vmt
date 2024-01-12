@@ -19,6 +19,6 @@
 
      "$rimlight" "1"
      "$rimlightexponent" "88"
-     "$rimlightboost""1.8"
+     "$rimlightboost""0.5"
      "$rimmask" "1"
 }
