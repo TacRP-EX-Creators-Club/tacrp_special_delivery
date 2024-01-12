@@ -2,7 +2,7 @@
 {
 	"$baseTexture" "models\tacint_shark\weapons\wa2000\Magazine"
 	"$bumpmap" 	"models\tacint_shark\weapons\wa2000\Magazine_Normal"
- 	"$envmap" "env_cubemap"
+ 	//"$envmap" "env_cubemap"
 	"$normalmapalphaenvmapmask" 1
 	"$halflambert" 	"1"
  	"$phong" "1"

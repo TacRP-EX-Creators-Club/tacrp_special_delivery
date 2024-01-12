@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-    	"$basetexture"  "models\tacint_shark\weapons\pkm\PKM_D"
+    "$basetexture"  "models\tacint_shark\weapons\pkm\PKM_D"
    	"$bumpmap"     "models\tacint_shark\weapons\pkm\PKM_N"
 	"$halflambert"     "1"
  
@@ -18,7 +18,7 @@
  
 	"$rimlight"     "1"
 	"$rimlightexponent"   "30" 
-	"$rimlightboost"   "0.5"
+	"$rimlightboost"   "0.1"
 	"$rimmask"      "1"
 	
 }
