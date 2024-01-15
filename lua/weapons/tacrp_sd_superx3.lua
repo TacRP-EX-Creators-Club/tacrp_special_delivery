@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Civilian sporting shotgun, engineered for performance.  Long barrel and competition choke offer great control and range but poor handling."
+SWEP.Description = "Civilian sporting shotgun, engineered for performance. Long barrel and competition choke offer great control and range but poor handling."
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Winchester Repeating Arms"
@@ -27,13 +27,13 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 13,
+        Damage_Max = 12,
         Damage_Min = 5,
 
         FreeAimMaxAngle = 5,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 10,
+        Damage_Max = 9,
         Damage_Min = 3,
         Range_Min = 300,
         Range_Max = 2000,
@@ -115,7 +115,7 @@ SWEP.Firemode = 1
 
 SWEP.RPM = 185
 
-SWEP.Spread = 0.018
+SWEP.Spread = 0.0205
 SWEP.ShotgunPelletSpread = 0.012
 
 SWEP.MidAirSpreadPenalty = 0
