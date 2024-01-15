@@ -27,12 +27,12 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 12,
+        Damage_Max = 10,
         Damage_Min = 4,
     },
     [TacRP.BALANCE_TTT] = {
 
-        Damage_Max = 10,
+        Damage_Max = 8,
         Damage_Min = 4,
 
         Range_Min = 150,
@@ -73,7 +73,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 10
+SWEP.Damage_Max = 8
 SWEP.Damage_Min = 4
 SWEP.Range_Min = 250
 SWEP.Range_Max = 2500
@@ -86,7 +86,7 @@ SWEP.MuzzleVelocity = 8000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 2,
-    [HITGROUP_CHEST] = 1.3,
+    [HITGROUP_CHEST] = 1.2,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
@@ -188,7 +188,7 @@ SWEP.Ammo = "buckshot"
 
 SWEP.ReloadUpInTime = 1.65
 
-SWEP.ReloadTimeMult = 1.1
+SWEP.ReloadTimeMult = 1.2
 
 // sounds
 
