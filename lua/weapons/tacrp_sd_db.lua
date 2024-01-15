@@ -99,12 +99,12 @@ SWEP.BodyDamageMultipliers = {
 // misc. shooting
 
 SWEP.Firemodes = {
-    1,
-    -2
+    -2,
+    1
 }
 
-SWEP.RPM = 240
-SWEP.RPMMultBurst = 5
+SWEP.RPM = 250
+SWEP.RPMMultBurst = 8
 SWEP.RunawayBurst = true
 
 SWEP.Spread = 0.03
@@ -188,7 +188,7 @@ SWEP.Ammo = "buckshot"
 
 SWEP.ReloadUpInTime = 1.65
 
-SWEP.ReloadTimeMult = 1.15
+SWEP.ReloadTimeMult = 1.1
 
 // sounds
 
