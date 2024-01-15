@@ -153,8 +153,8 @@ SWEP.HoldTypeBlindFire = "pistol"
 SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN
 
-SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(1, 2, 0)
+SWEP.PassiveAng = Angle(1, 0, 0)
+SWEP.PassivePos = Vector(0.25, 1, 0.2)
 
 SWEP.BlindFireAng = Angle(0, 0, 0)
 SWEP.BlindFirePos = Vector(2, 2, -1)
@@ -165,8 +165,8 @@ SWEP.BlindFireSuicidePos = Vector(-7, 30, -25)
 SWEP.SprintAng = Angle(45, -10, 0)
 SWEP.SprintPos = Vector(6, 0, 0)
 
-SWEP.SightAng = Angle(-0.1, 1.4, 0)
-SWEP.SightPos = Vector(-3.18, 0, 1.5)
+SWEP.SightAng = Angle(-0.13, 1.35, -0.1)
+SWEP.SightPos = Vector(-3.36, 0, 1.6)
 
 SWEP.CorrectiveAng = Angle(-0.2, 0, 0.5)
 SWEP.CorrectivePos = Vector(-0.025, 0, 0.15)
@@ -185,7 +185,7 @@ SWEP.HolsterAng = Angle(90, 0, 0)
 SWEP.ClipSize = 2
 SWEP.Ammo = "buckshot"
 
-SWEP.ReloadUpInTime = 1.8
+SWEP.ReloadUpInTime = 1.65
 
 SWEP.ReloadTimeMult = 1.07
 
@@ -235,7 +235,7 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"},
 }
 
-SWEP.DeployTimeMult = 2.1
+SWEP.DeployTimeMult = 2.25
 
 SWEP.LastShot = false
 
@@ -250,7 +250,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 0.8,
         WMScale = 0.8,
-        Pos_VM = Vector(0.02, -1.65, -3),
+        Pos_VM = Vector(-0.12, -1.55, -3.5),
         Pos_WM = Vector(8, 1, -5.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(-20, 3.5, 180),
@@ -263,7 +263,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         VMScale = 1.1,
         WMScale = 1.25,
-        Pos_VM = Vector(0, 0, 9),
+        Pos_VM = Vector(-0.2, 0.2, 9.5),
         Pos_WM = Vector(18, 0.5, -8),
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(-25, 3.5, 0),
