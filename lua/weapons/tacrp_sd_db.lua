@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Modern take on a classic concept, a compact double-barrel with tactical rails.  Easy to handle, reliable and deadly in close quarters."
+SWEP.Description = "Modern-production short double-barrel shotgun.  Easy to handle, reliable and deadly in close quarters."
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Stoeger"
@@ -85,7 +85,7 @@ SWEP.MuzzleVelocity = 8000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 2,
-    [HITGROUP_CHEST] = 1,
+    [HITGROUP_CHEST] = 1.3,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
