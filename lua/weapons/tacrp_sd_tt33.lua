@@ -4,17 +4,17 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Norinco Type 54"
+SWEP.PrintName = "Tokarev TT-33"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Large pistol from beyond the Iron Curtain, copied in large quantities by the Chinese. Similar to other large calibre pistols, but lighter and performs better at range."
+SWEP.Description = "Large pistol from beyond the Iron Curtain. Similar to other large calibre pistols, but lighter and performs better at range."
 
 SWEP.Trivia_Caliber = "7.62x25mm Tokarev"
-SWEP.Trivia_Manufacturer = "Norinco"
-SWEP.Trivia_Year = "1954"
+SWEP.Trivia_Manufacturer = "Tula Arms Plant"
+SWEP.Trivia_Year = "1933"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = "Model: Mr.Rifleman \nTexture: BuLL5H1T & Mr.Rifleman \nSound: NightmareMutant \nAnimations: Tactical Intervention"
@@ -174,7 +174,7 @@ SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
 SWEP.SightAng = Angle(-0.01, 1.55, 0)
-SWEP.SightPos = Vector(-3.2, 0, -3.75)
+SWEP.SightPos = Vector(-3.18, 0, -3.75)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
