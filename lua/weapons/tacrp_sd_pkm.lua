@@ -33,8 +33,6 @@ SWEP.BalanceStats = {
         Range_Max = 4000,
 
         ClipSize = 100,
-
-        ReloadTimeMult = 1.15,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 0.9,
     },
@@ -58,8 +56,6 @@ SWEP.BalanceStats = {
             [HITGROUP_RIGHTLEG] = 0.75,
             [HITGROUP_GEAR] = 0.9
         },
-
-        ReloadTimeMult = 1.2,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 20,
