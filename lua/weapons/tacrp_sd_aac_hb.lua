@@ -19,8 +19,8 @@ SWEP.Trivia_Year = "2011"
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = "Model: Hyper \nAnimations: Tactical Intervention"
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_aac_hb.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_aac_hb.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_aac_hb2.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_aac_hb2.mdl"
 
 SWEP.Slot = 2
 
