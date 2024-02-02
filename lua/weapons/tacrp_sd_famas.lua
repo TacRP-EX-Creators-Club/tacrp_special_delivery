@@ -98,12 +98,11 @@ SWEP.MuzzleVelocity = 24000
 
 SWEP.Firemodes = {
     -3,
-	2,
     1
 }
 
 SWEP.RPM = 900
-SWEP.RPMMultBurst = 1100 / 900
+SWEP.RPMMultBurst = 1000 / 900
 
 SWEP.Spread = 0.002
 
