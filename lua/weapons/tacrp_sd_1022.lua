@@ -82,6 +82,7 @@ SWEP.Range_Min = 800
 SWEP.Range_Max = 4000
 SWEP.Penetration = 5
 SWEP.ArmorPenetration = 0.85
+SWEP.ArmorBonus = 0.25
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
@@ -101,6 +102,7 @@ SWEP.MuzzleVelocity = 32000
 SWEP.Firemode = 1
 
 SWEP.RPM = 450
+SWEP.RPMMultSemi = 0.75
 
 SWEP.Spread = 0.0005
 

@@ -30,6 +30,7 @@ SWEP.BalanceStats = {
         Damage_Max = 32,
         Damage_Min = 24,
         RPM = 420,
+        ClipSize = 30,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 20,
@@ -94,6 +95,7 @@ SWEP.MuzzleVelocity = 28000
 SWEP.Firemode = 1
 
 SWEP.RPM = 330
+SWEP.RPMMultSemi = 0.7
 
 SWEP.Spread = 0.0045
 
@@ -161,7 +163,7 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
 SWEP.HolsterPos = Vector(5, -2, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.ClipSize = 30
+SWEP.ClipSize = 10
 SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1
