@@ -106,7 +106,7 @@ SWEP.Firemode = -2
 SWEP.RunawayBurst = false
 SWEP.PostBurstDelay = 0.05
 
-SWEP.RPM = 480
+SWEP.RPM = 450
 
 SWEP.Spread = 0.015
 

@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Large pistol from beyond the Iron Curtain. Similar to other large calibre pistols, but lighter and performs better at range."
+SWEP.Description = "Large pistol from beyond the Iron Curtain. Unique ammo has high penetration and recoil."
 
 SWEP.Trivia_Caliber = "7.62x25mm Tokarev"
 SWEP.Trivia_Manufacturer = "Tula Arms Plant"
@@ -28,18 +28,7 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 30,
         Damage_Min = 21,
-        ArmorPenetration = 0.6,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 3.75, // barely enough for hollowpoints to 1tap head
-            [HITGROUP_CHEST] = 1,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 1,
-            [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
+        RPM = 400,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 25,
@@ -92,12 +81,13 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 22
+SWEP.Damage_Max = 25
 SWEP.Damage_Min = 14
 SWEP.Range_Min = 800
-SWEP.Range_Max = 2000
-SWEP.Penetration = 5
-SWEP.ArmorPenetration = 0.575
+SWEP.Range_Max = 2400
+SWEP.Penetration = 8
+SWEP.ArmorPenetration = 0.8
+SWEP.ArmorBonus = 0.75
 
 SWEP.MuzzleVelocity = 13000
 
@@ -116,7 +106,8 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 420
+SWEP.RPM = 330
+SWEP.RPMMultSemi = 0.85
 
 SWEP.Spread = 0.006
 
