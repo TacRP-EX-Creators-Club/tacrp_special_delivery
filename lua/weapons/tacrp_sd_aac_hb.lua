@@ -306,8 +306,8 @@ local function addsound(name, spath)
 end
 
 addsound("tacint_aac.Remove_Clip", path .. "magout.wav")
-addsound("tacint_aac.Insert_Clip", path .. "magin.wav")
-addsound("tacint_aac.Insert_Clip-mid", path .. "magin.wav")
+addsound("tacint_aac.Insert_Clip", path .. "magin.ogg")
+addsound("tacint_aac.Insert_Clip-mid", path .. "magin.ogg")
 addsound("tacint_aac.bolt_action", path .. "boltback.wav")
-addsound("tacint_aac.bolt_slap", path .. "boltforward.wav")
+addsound("tacint_aac.bolt_slap", path .. "boltforward.ogg")
 addsound("tacint_aac.throw_catch", path1 .. "throw_catch.wav")
