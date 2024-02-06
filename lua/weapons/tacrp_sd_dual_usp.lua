@@ -101,12 +101,12 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {-2}
-SWEP.Firemode = -2
-SWEP.RunawayBurst = false
-SWEP.PostBurstDelay = 0.05
+SWEP.Firemodes = {-2, 2}
+SWEP.Firemode = false
 
-SWEP.RPM = 450
+SWEP.RPM = 400
+SWEP.RPMMultBurst = 1.1
+SWEP.RPMMultSemi = 1.1
 
 SWEP.Spread = 0.015
 

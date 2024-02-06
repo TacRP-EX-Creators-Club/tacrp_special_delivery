@@ -99,12 +99,12 @@ SWEP.Penetration = 5
 SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 0.25
 
-SWEP.MuzzleVelocity = 12000
+SWEP.MuzzleVelocity = 9000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,

@@ -16,7 +16,7 @@ SWEP.Trivia_Caliber = "9x19mm"
 SWEP.Trivia_Manufacturer = "Pietro Beretta"
 SWEP.Trivia_Year = "1988"
 
-SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = "Model: Spydr \nTexture: NCFurious \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_dualies.mdl"
@@ -81,12 +81,13 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 22
-SWEP.Damage_Min = 12
-SWEP.Range_Min = 800
-SWEP.Range_Max = 2000
-SWEP.Penetration = 1 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.6
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 9
+SWEP.Range_Min = 600
+SWEP.Range_Max = 1800
+SWEP.Penetration = 3 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.5
+SWEP.ArmorBonus = 0.5
 
 SWEP.MuzzleVelocity = 9500
 
@@ -103,12 +104,16 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {-2}
-SWEP.Firemode = -2
-SWEP.RunawayBurst = false
-SWEP.PostBurstDelay = 0.05
+SWEP.Firemodes = {-2, 2, 1}
+SWEP.Firemode = false
 
-SWEP.RPM = 600
+SWEP.RPM = 420
+SWEP.RPMMultBurst = 1.1
+SWEP.RPMMultSemi = 1.1
+
+SWEP.RunawayBurst = true
+SWEP.PostBurstDelay = 0.14
+
 
 SWEP.Spread = 0.015
 
