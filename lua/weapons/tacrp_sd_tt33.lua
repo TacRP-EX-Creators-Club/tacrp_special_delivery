@@ -81,18 +81,18 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 33
+SWEP.Damage_Max = 30
 SWEP.Damage_Min = 15
 SWEP.Range_Min = 800
 SWEP.Range_Max = 2200
 SWEP.Penetration = 8
-SWEP.ArmorPenetration = 0.8
+SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 0.75
 
 SWEP.MuzzleVelocity = 13000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4,
+    [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -106,8 +106,8 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 330
-SWEP.RPMMultSemi = 0.7
+SWEP.RPM = 360
+SWEP.RPMMultSemi = 0.75
 
 SWEP.Spread = 0.006
 
@@ -181,7 +181,7 @@ SWEP.Ammo = "pistol"
 SWEP.ReloadUpInTime = 1
 SWEP.DropMagazineTime = 0.25
 
-SWEP.ReloadTimeMult = 0.9
+SWEP.ReloadTimeMult = 1
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/tt33.mdl"
 SWEP.DropMagazineImpact = "pistol"

@@ -116,8 +116,8 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 500
-SWEP.RPMMultSemi = 0.7
+SWEP.RPM = 450
+SWEP.RPMMultSemi = 0.9
 
 SWEP.Spread = 0.004
 
@@ -130,8 +130,8 @@ SWEP.RecoilDissipationRate = 12
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 1.5
-SWEP.RecoilStability = 0.35
+SWEP.RecoilKick = 2
+SWEP.RecoilStability = 0.75
 
 SWEP.RecoilSpreadPenalty = 0.0025
 
