@@ -63,16 +63,17 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 22
-SWEP.Damage_Min = 8
+SWEP.Damage_Min = 10
 SWEP.Range_Min = 600 // distance for which to maintain maximum damage
-SWEP.Range_Max = 1800 // distance at which we drop to minimum damage
+SWEP.Range_Max = 2200 // distance at which we drop to minimum damage
 SWEP.Penetration = 5 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.6
+SWEP.ArmorPenetration = 0.675
+SWEP.ArmorBonus = 0.75
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -80,7 +81,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 20000
+SWEP.MuzzleVelocity = 15000
 
 // misc. shooting
 
@@ -98,12 +99,12 @@ SWEP.RecoilDissipationRate = 32
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 2.5
 SWEP.RecoilStability = 0.25
 SWEP.RecoilAltMultiplier = 400
 
 SWEP.RecoilSpreadPenalty = 0.0012
-SWEP.HipFireSpreadPenalty = 0.014
+SWEP.HipFireSpreadPenalty = 0.018
 
 SWEP.CanBlindFire = true
 
@@ -267,7 +268,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock2", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_foldstock2", "acc_sling", "acc_duffle", "acc_extmag_smg"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
