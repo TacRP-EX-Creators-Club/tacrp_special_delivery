@@ -5,6 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "Steyr MP40"
+SWEP.AbbrevName = "MP40"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"

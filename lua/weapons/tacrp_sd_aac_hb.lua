@@ -5,6 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "AAC Honey Badger"
+SWEP.AbbrevName = "Honey Badger"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
