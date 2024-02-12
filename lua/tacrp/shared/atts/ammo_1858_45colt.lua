@@ -12,17 +12,17 @@ ATT.SortOrder = 1
 
 ATT.Add_ArmorPenetration = 0.15
 
-ATT.Add_Range_Min = 250
+ATT.Add_Range_Min = 200
 ATT.Add_RecoilVisualKick = 1
 ATT.Add_RecoilKick = 4
 ATT.Mult_RecoilStability = 0.25
-ATT.Mult_MuzzleVelocity = 1.5
+ATT.Mult_MuzzleVelocity = 1.25
 
 ATT.Mult_Damage_Max = 1.25
 ATT.Mult_Damage_Min = 1.25
 ATT.Add_Damage_Min = 5
 
-ATT.Add_JamFactor = 1
+ATT.Add_JamFactor = 2
 
 ATT.Add_Pitch_Shoot = 7
 

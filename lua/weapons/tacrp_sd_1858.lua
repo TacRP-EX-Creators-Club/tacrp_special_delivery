@@ -186,8 +186,8 @@ SWEP.DropMagazineTime = 1.2
 SWEP.ReloadTimeMult = 0.9
 SWEP.ReloadUpInTime = 2
 
-SWEP.JamWaitTime = 0.92
-SWEP.JamSkipFix = true
+SWEP.JamWaitTime = 0
+SWEP.JamSkipFix = false
 SWEP.JamTakesRound = true
 
 // sounds
@@ -218,7 +218,7 @@ SWEP.AnimationTranslationTable = {
     ["fire_iron"] = "fire",
     ["blind_fire"] = "blind_fire",
     ["melee"] = {"melee1", "melee2"},
-    ["jam"] = "draw"
+    ["jam"] = "fire_stock",
 }
 
 SWEP.HolsterTimeMult = 0.75
