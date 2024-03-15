@@ -27,8 +27,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 24,
-        Damage_Min = 11,
+        Damage_Max = 25,
+        Damage_Min = 8,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
@@ -72,7 +72,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 27
+SWEP.Damage_Max = 28
 SWEP.Damage_Min = 10
 SWEP.Range_Min = 300
 SWEP.Range_Max = 1500
@@ -82,7 +82,7 @@ SWEP.ArmorPenetration = 0.7
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -283,7 +283,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-	[6] = {
+    [6] = {
         PrintName = "Ammo",
         Category = {"ammo_rifle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
