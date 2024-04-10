@@ -17,8 +17,11 @@ SWEP.Trivia_Manufacturer = "Degtyaryov Plant"
 SWEP.Trivia_Year = "1961"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Sarvs \nTexture: BuLL5h1T \nSound: NightmareMutant\nAnimations: Tactical Intervention"
-
+SWEP.Credits = [[
+Model & Texture: Project Reality
+Sound: NightmareMutant
+Animations: Tactical Intervention
+]]
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_pkm.mdl"
 
@@ -220,11 +223,11 @@ SWEP.EjectEffect = 2
 
 SWEP.AnimationTranslationTable = {
     ["fire_iron"] = {"fire4_M", "fire3_M", "fire2_M", "fire1_M"},
-    ["fire1"] = "fire1_L",
-    ["fire2"] = "fire2_L",
-    ["fire3"] = "fire3_L",
-    ["fire4"] = "fire4_L",
-    ["fire5"] = "fire5_L",
+    ["fire1"] = "fire1_M",
+    ["fire2"] = "fire2_M",
+    ["fire3"] = "fire3_M",
+    ["fire4"] = "fire4_M",
+    ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"}
 }
 
