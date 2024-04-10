@@ -11,14 +11,16 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
-SWEP.Description = "Large pistol from beyond the Iron Curtain. Unique ammo has high penetration and recoil."
+SWEP.Description = "Antique pistol from beyond the Iron Curtain. Unique ammo has high penetration and recoil."
 
 SWEP.Trivia_Caliber = "7.62x25mm Tokarev"
 SWEP.Trivia_Manufacturer = "Tula Arms Plant"
 SWEP.Trivia_Year = "1933"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = "Model: Mr.Rifleman \nTexture: BuLL5H1T & Mr.Rifleman \nSound: NightmareMutant \nAnimations: Tactical Intervention"
+SWEP.Credits = [[
+Sounds: Nightmare, Optical Snare
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_tt33.mdl"
@@ -165,8 +167,8 @@ SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(-0.01, 1.55, 0)
-SWEP.SightPos = Vector(-3.18, 0, -3.75)
+SWEP.SightAng = Angle(-0.01, 0.65, 0)
+SWEP.SightPos = Vector(-3.17, 0, -3.4)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
