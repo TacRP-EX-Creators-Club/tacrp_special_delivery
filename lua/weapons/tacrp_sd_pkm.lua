@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Machine Gun"
 
-SWEP.Description = "Heavy machine gun capable of intense suppressive fire. High capacity and damage but is very, very bulky."
+SWEP.Description = "General-purpose machine gun capable of intense suppressive fire. High capacity and damage but is very, very bulky."
 
 SWEP.Trivia_Caliber = "7.62x54mmR"
 SWEP.Trivia_Manufacturer = "Degtyaryov Plant"
@@ -19,7 +19,7 @@ SWEP.Trivia_Year = "1961"
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
 Model & Texture: Project Reality
-Sound: NightmareMutant
+Sounds: NightmareMutant & speedonerd
 Animations: Tactical Intervention
 ]]
 SWEP.ViewModel = "models/weapons/tacint_shark/v_pkm.mdl"
@@ -165,8 +165,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0, -0.2, 0)
-SWEP.SightPos = Vector(-4.48, -7.5, -3.9)
+SWEP.SightAng = Angle(0.03, 0.1, 0)
+SWEP.SightPos = Vector(-4.48, -7.5, -3.8)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.125)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -204,7 +204,7 @@ SWEP.DefaultBodygroups = "000006"
 local path = "tacint_shark/weapons/pkm/pkm"
 
 SWEP.Sound_Shoot = "^" .. path .. "-1.wav"
-SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = "^" .. path .. "-1_silenced.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -228,7 +228,7 @@ SWEP.AnimationTranslationTable = {
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
     ["fire5"] = "fire5_M",
-    ["melee"] = {"melee1", "melee2"}
+    ["melee"] = "melee1"
 }
 
 // attachments
@@ -246,7 +246,15 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-    }
+    },
+	["sights"] = {
+		BGs_VM = {
+            {3, 1}
+        },
+		BGs_WM = {
+			{3, 1}
+		},
+	}
 }
 
 //ValveBiped.MG4_root
@@ -259,9 +267,9 @@ SWEP.Attachments = {
         InstalledElements = {"sights"},
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 1.1,
-        Pos_VM = Vector(-1.5, 0, 0),
-        Pos_WM = Vector(11, 1.15, -8),
+        VMScale = 1.25,
+        Pos_VM = Vector(-1.75, 0, 0),
+        Pos_WM = Vector(12, 1.15, -8),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
     },
@@ -271,8 +279,8 @@ SWEP.Attachments = {
         Bone = "ValveBiped.MG4_root",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        Pos_VM = Vector(-5.2, 0, 43),
-        Pos_WM = Vector(43.5, 1.15, -5.5),
+        Pos_VM = Vector(-5.2, 0, 45),
+        Pos_WM = Vector(43.2, 1.15, -5.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
     },
@@ -283,8 +291,8 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-        Pos_VM = Vector(-5.25, -0.65, 21),
-        Pos_WM = Vector(21, 1.75, -5.25),
+        Pos_VM = Vector(-4.6, -0.8, 13),
+        Pos_WM = Vector(14, 1.75, -4.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, 0, 90),
     },
