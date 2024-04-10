@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Integrally-suppressed bullpup made from a reconfigured AK. Weak, but has great handling and stability."
+SWEP.Description = "Obscure bullpup carbine made from a reconfigured AK. Weak, but has great handling and stability. \nThe suppressor isn't integral but it acts as a foregrip."
 SWEP.Description_Quote = "Get out of here, stalker..."
 
 SWEP.Trivia_Caliber = "9x39mm"
@@ -177,7 +177,7 @@ local path = "tacint_shark/weapons/groza/"
 local path1 = "tacrp/weapons/ak47/ak47_"
 
 SWEP.Sound_Shoot = "^" .. path .. "groza_fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = "^" .. path .. "groza_fire-1.wav"
 
 SWEP.Vol_Shoot = 110
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -191,6 +191,7 @@ SWEP.QCA_Eject = 2
 
 SWEP.MuzzleEffect = "muzzleflash_suppressed"
 SWEP.EjectEffect = 2
+SWEP.Silencer = true
 
 SWEP.TracerNum = 0
 

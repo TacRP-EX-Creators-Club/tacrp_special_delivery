@@ -212,7 +212,7 @@ SWEP.EjectEffect = 2
 // anims
 
 SWEP.AnimationTranslationTable = {
-    ["deploy"] = "unholster",
+    ["deploy"] = "deploy",
     ["fire_iron"] = "idle",
     ["fire1"] = "fire1_M",
     ["fire2"] = "fire2_M",
@@ -237,7 +237,7 @@ SWEP.ProceduralIronFire = {
     },
 }
 
-SWEP.DeployTimeMult = 2.15
+SWEP.DeployTimeMult = 1.05
 
 // attachments
 
