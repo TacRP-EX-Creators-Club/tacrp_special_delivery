@@ -269,20 +269,20 @@ SWEP.LastShot = true
 // attachments
 
 SWEP.Attachments = {
-    [1] = {
-        PrintName = "Optic",
-        Category = "optic_pistol",
-        Bone = "ValveBiped.slide",
-        WMBone = "Box01",
-        AttachSound = "TacRP/weapons/optic_on.wav",
-        DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 1,
-        WMScale = 1,
-        Pos_VM = Vector(0, 0, -0.2),
-        Ang_VM = Angle(0, 90, 180),
-        Pos_WM = Vector(0, -1, -1.9),
-        Ang_WM = Angle(0, -90, 0),
-    },
+    --[1] = {
+        --PrintName = "Optic",
+        --Category = "optic_pistol",
+        --Bone = "ValveBiped.slide",
+        --WMBone = "Box01",
+        --AttachSound = "TacRP/weapons/optic_on.wav",
+        --DetachSound = "TacRP/weapons/optic_off.wav",
+        --VMScale = 1,
+        --WMScale = 1,
+        --Pos_VM = Vector(0, 0, -0.2),
+        --Ang_VM = Angle(0, 90, 180),
+        --Pos_WM = Vector(0, -1, -1.9),
+        --Ang_WM = Angle(0, -90, 0),
+    --},
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
