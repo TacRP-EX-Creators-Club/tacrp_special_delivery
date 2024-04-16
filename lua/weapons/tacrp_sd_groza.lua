@@ -12,7 +12,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Obscure bullpup carbine made from a reconfigured AK. Weak, but has great handling and stability. \nThe suppressor isn't integral but it acts as a foregrip."
-SWEP.Description_Quote = "Get out of here, stalker..."
+SWEP.Description_Quote = "\"Get out of here, stalker.\""
 
 SWEP.Trivia_Caliber = "9x39mm"
 SWEP.Trivia_Manufacturer = "TsKIB SOO"

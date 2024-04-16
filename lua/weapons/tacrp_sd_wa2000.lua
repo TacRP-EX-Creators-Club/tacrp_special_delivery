@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Elegant bullpup sniper rifle with a high rate of rife. \nMight not wanna bash stuff with a rifle this rare. \nEquipped with a 12x scope by default."
+SWEP.Description = "Elegant bullpup sniper rifle with a high rate of rife. \nEquipped with a 12x scope by default."
 SWEP.Description_Quote = "\"Names are for friends, so I don't need one.\""
 
 SWEP.Trivia_Caliber = ".300 WinMag"
