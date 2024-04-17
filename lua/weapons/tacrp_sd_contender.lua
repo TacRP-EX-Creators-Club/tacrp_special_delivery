@@ -12,6 +12,7 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "2Magnum Pistol"
 
 SWEP.Description = "Single-shot hunting pistol. Accurate, compact and lethal, so you better make that one round count.\nEquipped with a 6x scope by default."
+SWEP.Description_Quote = "\"You know what I hate? Two groups of people...\""
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_contender.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_contender.mdl"
