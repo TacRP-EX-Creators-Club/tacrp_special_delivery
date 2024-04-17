@@ -19,11 +19,12 @@ SWEP.Trivia_Year = "1933"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
-Model: Mr.Rifleman 
-Texture: BuLL5H1T & Mr.Rifleman 
-Sound: NightmareMutant 
-Animations: Tactical Intervention"
+Model: Ultimate Bastard
+Textures: Teh Snake
+Sounds: Nightmare, Optical Snare
+Animations: Tactical Intervention
 ]]
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_tt33.mdl"
 
@@ -169,8 +170,8 @@ SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(-0.01, 1.55, 0)
-SWEP.SightPos = Vector(-3.18, 0, -3.75)
+SWEP.SightAng = Angle(-0.01, 0.65, 0)
+SWEP.SightPos = Vector(-3.2, 0, -3.2)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
@@ -267,7 +268,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/silencer_off.wav",
         VMScale = 0.5,
         WMScale = 0.65,
-        Pos_VM = Vector(-3.1, 0, 9.75),
+        Pos_VM = Vector(-3, -0.02, 9.6),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 9, -1.75),
         Ang_WM = Angle(0, -90, 0),
