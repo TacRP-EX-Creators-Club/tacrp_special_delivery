@@ -19,7 +19,12 @@ SWEP.Trivia_Manufacturer = "Walther"
 SWEP.Trivia_Year = "1982"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Model: Twinkie Masta, Thanez & FxDarkloki \nTexture: Thanez & FxDarkloki \nSound: HK & Vunsunta \nAnimations: Tactical Intervention, edited by speedonerd"
+SWEP.Credits = [[
+Assets: Alliance of Valiant Arms
+Originally ported to CS 1.6 by GR_Lucia
+Sound: HK & Vunsunta 
+Animations: Tactical Intervention, edited by speedonerd
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_wa2000.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_wa2000.mdl"
@@ -109,6 +114,8 @@ SWEP.RecoilStability = 0.75
 
 SWEP.CanBlindFire = true
 
+SWEP.Bipod = true
+
 // handling
 
 SWEP.MoveSpeedMult = 0.85
@@ -136,7 +143,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0.85, 0, -4.75)
+SWEP.PassivePos = Vector(1.2, -2, -6.5)
 
 SWEP.BlindFireAng = Angle(0, 15, 0)
 SWEP.BlindFirePos = Vector(2, -2, -4)
@@ -153,8 +160,8 @@ SWEP.SprintPos = Vector(5, 0, -4)
 SWEP.SightAng = Angle(0, 0, 0)
 SWEP.SightPos = Vector(-4.485, -7.5, -5.16)
 
-SWEP.CorrectivePos = Vector(0.03, 0, 0.1)
-SWEP.CorrectiveAng = Angle(0, 0, 0)
+SWEP.CorrectivePos = Vector(0.18, 0, -0.2)
+SWEP.CorrectiveAng = Angle(0.5, 0, 0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK2
@@ -169,14 +176,12 @@ SWEP.ScopeFOV = 90 / 12
 SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
-SWEP.Melee = false
-
 // reload
 
 SWEP.ClipSize = 6
 SWEP.Ammo = "357"
 
-SWEP.ReloadTimeMult = 0.9
+SWEP.ReloadTimeMult = 1.3
 SWEP.DropMagazineImpact = "metal"
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/wa2000.mdl"
 
@@ -207,28 +212,36 @@ SWEP.EjectEffect = 2
 // anims
 
 SWEP.AnimationTranslationTable = {
-    ["deploy"] = "draw",
-    ["fire"] = {"shoot1", "shoot2"},
-    ["blind_fire"] = {"blind_shoot1", "blind_shoot2"}
+    ["deploy"] = "unholster",
+    ["fire_iron"] = "idle",
+    ["fire1"] = "fire1_M",
+    ["fire2"] = "fire2_M",
+    ["fire3"] = "fire3_M",
+    ["fire4"] = "fire4_M",
+    ["fire5"] = "fire4_M",
+    ["melee"] = "melee2"
 }
+
+SWEP.DeployTimeMult = 2.25
 
 // attachments
 
 SWEP.AttachmentElements = {
-    ["optic"] = {
+    ["bipod"] = {
         BGs_VM = {
             {1, 1}
         },
         BGs_WM = {
             {1, 1}
-        },
-        SortOrder = 1
+        }
     },
-    ["irons"] = {
+    ["optic"] = {
         BGs_VM = {
-            {1, 2}
+            {2, 1}
         },
-        SortOrder = 2
+		BGs_WM = {
+            {2, 1}
+        },
     },
 }
 
@@ -236,38 +249,38 @@ SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped._ROOT_AS50",
+        Bone = "ValveBiped.AUG_rootbone",
         WMBone = "Box01",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
-        Pos_VM = Vector(-5.5, -0.1, 5.3),
+        Pos_VM = Vector(-6.5, 0, 5),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 1),
+        Pos_WM = Vector(0, 3, 1.3),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
-        Bone = "ValveBiped._ROOT_AS50",
+        Bone = "ValveBiped.AUG_rootbone",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3, 0, 27.5),
+        Pos_VM = Vector(-3.9, 0, 29),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(31, 1.25, -4.5),
+        Pos_WM = Vector(32, 1.25, -4.7),
         Ang_WM = Angle(0, 0, 180),
     },
     [3] = {
         PrintName = "Tactical",
         Category = "tactical",
-        Bone = "ValveBiped._ROOT_AS50",
+        Bone = "ValveBiped.AUG_rootbone",
         WMBone = "Box01",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
         VMScale = 1.25,
-        Pos_VM = Vector(-1.5, -1.1, 18),
-        Pos_WM = Vector(1.1, 15, -2.8),
+        Pos_VM = Vector(-2.3, -0.8, 18),
+        Pos_WM = Vector(0.8, 15, -2.8),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -90, -90),
     },
