@@ -15,7 +15,7 @@ SWEP.Description_Quote = "\"My blood...on their hands.\""
 
 SWEP.Trivia_Caliber = ".50 AE"
 SWEP.Trivia_Manufacturer = "Magnum Research"
-SWEP.Trivia_Year = "1995" // Mark XIX model
+SWEP.Trivia_Year = "1983"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
