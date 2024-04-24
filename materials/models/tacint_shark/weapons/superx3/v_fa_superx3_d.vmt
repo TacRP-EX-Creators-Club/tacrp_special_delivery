@@ -5,4 +5,10 @@ $bumpmap "models\tacint_shark\weapons\superx3\v_fa_superx3_n"
 
 $surfaceprop "weapon"
 	"keywords" "superx3"
+	
+"$phong" 1
+"$phongboost"				2
+"$phongexponent"				50
+"$phongfresnelranges"		"[1 8 6]"
+"$phongalbedotint" "1"
 }
