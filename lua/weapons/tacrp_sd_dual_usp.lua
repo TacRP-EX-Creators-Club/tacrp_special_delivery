@@ -8,7 +8,7 @@ SWEP.PrintName = "Dual Matches"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "3Dual Wield"
+SWEP.SubCatType = "3Akimbo"
 
 SWEP.Description = "Pair of pistols pilfered from a pair of dead metrocops. Decent damage and capacity but hefty and slow to fire."
 

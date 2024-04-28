@@ -8,7 +8,7 @@ SWEP.PrintName = "Dual Agents"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "3Dual Wield"
+SWEP.SubCatType = "3Akimbo"
 
 SWEP.Description = "A pair of suppressed PPK pistols. Swift and accurate, but the low capacity and mediocre damage demands a sharp eye and trigger discpline."
 SWEP.Description_Quote = "You better not be picking Oddjob."

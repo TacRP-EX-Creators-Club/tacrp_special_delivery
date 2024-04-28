@@ -8,7 +8,7 @@ SWEP.PrintName = "Dueling Wyverns"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "3Dual Wield"
+SWEP.SubCatType = "3Akimbo"
 
 SWEP.Description = "A pair of gaudy, custom made golden M1911 pistols complete with wyvern-engraved grip. Hits hard, but its low capacity can be hurting."
 
