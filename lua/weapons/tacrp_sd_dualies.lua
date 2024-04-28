@@ -8,7 +8,7 @@ SWEP.PrintName = "Dueling Dragons"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "3Dual Wield"
 
 SWEP.Description = "Pair of customized pistols with a two-tone finish and dragons emblazoned on the grips.  Swift handling and decent recoil control but low stopping power."
 SWEP.Description_Quote = "\"I released my finger from the trigger, and it was over.\""

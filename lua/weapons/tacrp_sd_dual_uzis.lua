@@ -8,7 +8,7 @@ SWEP.PrintName = "Dual Micros"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "2Machine Pistol"
+SWEP.SubCatType = "3Dual Wield"
 
 SWEP.Description = "Pair of full-auto Micro Uzis. I don't know how you expect to hit, well, anything with this getup, but you do you I guess."
 SWEP.Description_Quote = "\"I'll hit you with so many rights you'll be begging for a left!\""

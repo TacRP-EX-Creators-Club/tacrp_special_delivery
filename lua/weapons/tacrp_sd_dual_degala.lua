@@ -8,7 +8,7 @@ SWEP.PrintName = "Dual Eagles"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
-SWEP.SubCatType = "2Magnum Pistol"
+SWEP.SubCatType = "3Dual Wield"
 
 SWEP.Description = "Pair of gaudy gold-coated Desert Eagles, as if one wasn't enough. \nTwice the insane firepower, twice the insane recoil."
 SWEP.Description_Quote = "\"My blood...on their hands.\""
