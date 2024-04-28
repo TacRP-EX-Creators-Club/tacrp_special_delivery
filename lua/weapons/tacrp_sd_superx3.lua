@@ -80,10 +80,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AutoShotgun
 
 // "ballistics"
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.6
 
-SWEP.Damage_Max = 10
-SWEP.Damage_Min = 6
+SWEP.Damage_Max = 11
+SWEP.Damage_Min = 7
 SWEP.Range_Min = 700 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
@@ -109,38 +109,38 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 160
+SWEP.RPM = 130
 
-SWEP.Spread = 0.0205
-SWEP.ShotgunPelletSpread = 0.012
+SWEP.Spread = 0.015
+SWEP.ShotgunPelletSpread = 0.0075
 
 SWEP.MidAirSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2
+SWEP.RecoilMaximum = 2.5
 SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 4
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilDissipationRate = 2.5
+SWEP.RecoilFirstShotMult = 1.25 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1.5
 SWEP.RecoilKick = 6
-SWEP.RecoilStability = 0.6
-SWEP.RecoilAltMultiplier = 600
+SWEP.RecoilStability = 0.4
+SWEP.RecoilAltMultiplier = 800
 
 SWEP.RecoilSpreadPenalty = 0.014
-SWEP.HipFireSpreadPenalty = 0.02
+SWEP.HipFireSpreadPenalty = 0.025
 
 SWEP.CanBlindFire = true
 
 // handling
 
 SWEP.MoveSpeedMult = 0.8
-SWEP.ShootingSpeedMult = 0.65
+SWEP.ShootingSpeedMult = 0.6
 SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.45
+SWEP.AimDownSightsTime = 0.475
 SWEP.SprintToFireTime = 0.5
 
 // hold types
@@ -175,8 +175,8 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK2
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.Sway = 0.8
-SWEP.ScopedSway = 0.25
+SWEP.Sway = 1.25
+SWEP.ScopedSway = 0.15
 
 SWEP.FreeAimMaxAngle = 6
 
