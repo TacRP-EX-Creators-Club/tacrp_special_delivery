@@ -9,7 +9,7 @@ SWEP.AbbrevName = "TT-33"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "1Pistol"
 
 SWEP.Description = "Antique pistol from beyond the Iron Curtain. Unique ammo has high penetration and recoil."
 

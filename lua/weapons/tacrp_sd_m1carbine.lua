@@ -8,7 +8,7 @@ SWEP.PrintName = "M1 Carbine"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "5Sporter Carbine"
+SWEP.SubCatType = "6Precision Rifle"
 
 SWEP.Description = "WW2-era semi-auto carbine. Intended as a defensive weapon for support troops, it is accurate and lightweight but has mediocre power."
 
