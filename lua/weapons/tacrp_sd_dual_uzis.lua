@@ -4,13 +4,13 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Dual Micros"
+SWEP.PrintName = "Dual Uzis" -- "dual micros" sounds gross
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "3Akimbo"
 
-SWEP.Description = "Pair of full-auto Micro Uzis. I don't know how you expect to hit, well, anything with this getup, but you do you I guess."
+SWEP.Description = "Pair of full-auto Micro Uzis. I don't know how you expect to hit anything with this getup, but you do you I guess."
 SWEP.Description_Quote = "\"I'll hit you with so many rights you'll be begging for a left!\""
 
 SWEP.Trivia_Caliber = "9x21mm IMI"
