@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\tacint_shark\weapons\tt33\tokarev_diff"
+	"$bumpmap" "models\tacint_shark\weapons\tt33\tokarev_normal"
+	"$nocull"	"1"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" ".4"
+	
+	"$phong" 	"0"
+	"$phongexponent" 	"10"
+	"$phongboost"	 "0.15"
+	"$phongfresnelranges" "[1 2 4]"
+	
+}

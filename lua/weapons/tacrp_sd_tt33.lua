@@ -18,12 +18,7 @@ SWEP.Trivia_Manufacturer = "Tula Arms Plant"
 SWEP.Trivia_Year = "1933"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
-SWEP.Credits = [[
-Model: Ultimate Bastard
-Textures: Teh Snake
-Sounds: Nightmare, Optical Snare
-Animations: Tactical Intervention
-]]
+SWEP.Credits = "Model: Mr.Rifleman \nTexture: BuLL5H1T & Mr.Rifleman \nSound: NightmareMutant \nAnimations: Tactical Intervention"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_tt33.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_tt33.mdl"
@@ -170,8 +165,8 @@ SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(-0.01, 0.65, 0)
-SWEP.SightPos = Vector(-3.2, 0, -3.2)
+SWEP.SightAng = Angle(-0.01, 1.55, 0)
+SWEP.SightPos = Vector(-3.18, 0, -3.75)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
