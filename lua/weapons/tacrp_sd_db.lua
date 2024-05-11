@@ -233,6 +233,7 @@ SWEP.AnimationTranslationTable = {
     ["fire2"] = "fire1",
     ["blind_fire"] = {"blind_fire1", "blind_fire2"},
     ["melee"] = {"melee1", "melee2"},
+    ["jam"] = {"dryfire"}
 }
 
 SWEP.DeployTimeMult = 2.25
