@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "M1 Carbine"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "5Carbine"
 
 SWEP.Description = "WW2-era semi-auto carbine. Intended as a defensive weapon for support troops, it is accurate and lightweight but has mediocre power."
@@ -88,7 +88,7 @@ SWEP.MuzzleVelocity = 29000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 550
+SWEP.RPM = 450
 SWEP.RPMMultSemi = 0.6
 
 SWEP.Spread = 0.003

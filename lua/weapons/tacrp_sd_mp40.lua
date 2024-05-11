@@ -8,10 +8,10 @@ SWEP.PrintName = "Steyr MP40"
 SWEP.AbbrevName = "MP40"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "4Consumer"
+SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with a controllable but low rate of fire. Despite its age, it still shows up in many warzones today."
+SWEP.Description = "WW2-era SMG with a low rate of fire and fiendish recoil profile. Despite its age, it still shows up in many warzones today."
 SWEP.Description_Quote = "Keep away from edgy teenagers."
 
 SWEP.Trivia_Caliber = "9x19mm"
@@ -72,7 +72,7 @@ SWEP.ArmorPenetration = 0.675
 SWEP.ArmorBonus = 0.75
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -100,8 +100,8 @@ SWEP.RecoilDissipationRate = 32
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilKick = 2.5
-SWEP.RecoilStability = 0.25
+SWEP.RecoilKick = 3
+SWEP.RecoilStability = 0.0
 SWEP.RecoilAltMultiplier = 400
 
 SWEP.RecoilSpreadPenalty = 0.0012

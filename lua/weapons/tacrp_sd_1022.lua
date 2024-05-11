@@ -8,7 +8,7 @@ SWEP.PrintName = "Ruger 10/22"
 SWEP.AbbrevName = "10/22"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "4Consumer"
+SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "5Carbine"
 
 SWEP.Description = "Ultra-lightweight plinking rifle. Highly accurate and easy to handle, but is barely lethal unless scoring a headshot."
@@ -85,7 +85,7 @@ SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 0.25
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1.5,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,

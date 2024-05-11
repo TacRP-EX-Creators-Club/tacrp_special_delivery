@@ -8,10 +8,10 @@ SWEP.PrintName = "M1A1 Thompson"
 SWEP.AbbrevName = "Thompson"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "4Consumer"
+SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with impressive close range firepower backed by sturdy wooden furniture."
+SWEP.Description = "WW2-era SMG with sturdy wooden furniture. Boasts impressive close-range firepower, but is much heavier than it has any right to be."
 
 SWEP.Trivia_Caliber = ".45 ACP"
 SWEP.Trivia_Manufacturer = "Auto-Ordnance Company"
@@ -72,7 +72,7 @@ SWEP.ArmorPenetration = 0.525
 SWEP.ArmorBonus = 0.25
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -111,7 +111,7 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.92
+SWEP.MoveSpeedMult = 0.90
 SWEP.ShootingSpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.65
 

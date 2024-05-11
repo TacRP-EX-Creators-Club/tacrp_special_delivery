@@ -8,10 +8,10 @@ SWEP.PrintName = "Tokarev TT-33"
 SWEP.AbbrevName = "TT-33"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "4Consumer"
+SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "1Pistol"
 
-SWEP.Description = "Antique pistol from beyond the Iron Curtain. Unique ammo has high penetration and recoil."
+SWEP.Description = "Antique pistol from beyond the Iron Curtain. Ammo packs a surprising punch, but it is unreliable."
 
 SWEP.Trivia_Caliber = "7.62x25mm Tokarev"
 SWEP.Trivia_Manufacturer = "Tula Arms Plant"
@@ -93,7 +93,7 @@ SWEP.ArmorBonus = 0.75
 SWEP.MuzzleVelocity = 13000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3.5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -127,6 +127,8 @@ SWEP.RecoilStability = 0.45
 SWEP.RecoilSpreadPenalty = 0.0035
 
 SWEP.CanBlindFire = true
+
+SWEP.JamFactor = 0.3
 
 // handling
 
