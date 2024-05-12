@@ -8,7 +8,7 @@ SWEP.PrintName = "PKM"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "4Machine Gun"
+SWEP.SubCatType = "5Machine Gun"
 
 SWEP.Description = "General-purpose machine gun capable of intense suppressive fire. High capacity and damage but is very, very bulky."
 
