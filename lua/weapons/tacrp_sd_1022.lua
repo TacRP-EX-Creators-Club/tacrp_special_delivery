@@ -9,7 +9,7 @@ SWEP.AbbrevName = "10/22"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "5Value"
-SWEP.SubCatType = "9Sporter"
+SWEP.SubCatType = "5Sporter"
 
 SWEP.Description = "Ultra-lightweight plinking rifle. Highly accurate and easy to handle, but is barely lethal unless scoring a headshot."
 
