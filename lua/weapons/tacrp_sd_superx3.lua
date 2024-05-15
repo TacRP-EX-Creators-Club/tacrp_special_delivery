@@ -182,7 +182,7 @@ SWEP.FreeAimMaxAngle = 6
 
 // reload
 
-SWEP.ClipSize = 5
+SWEP.ClipSize = 4
 SWEP.Ammo = "buckshot"
 SWEP.ShotgunReload = true
 
