@@ -156,7 +156,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 // reload
 
 SWEP.ClipSize = 32
-SWEP.Ammo = "smg1"
+SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/mp40.mdl"
