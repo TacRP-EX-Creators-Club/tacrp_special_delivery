@@ -234,6 +234,8 @@ SWEP.AttachmentElements = {
 
 // attachments
 
+SWEP.NoTactical = true
+
 SWEP.Attachments = {
     [1] = {
         PrintName = "Accessory",

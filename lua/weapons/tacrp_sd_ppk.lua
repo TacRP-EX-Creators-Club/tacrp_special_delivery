@@ -268,6 +268,8 @@ SWEP.LastShot = true
 
 // attachments
 
+SWEP.NoTactical = true
+
 SWEP.Attachments = {
     --[1] = {
         --PrintName = "Optic",
