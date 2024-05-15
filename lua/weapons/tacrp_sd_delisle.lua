@@ -66,13 +66,13 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 SWEP.Damage_Max = 60
 SWEP.Damage_Min = 25
 SWEP.Range_Min = 250
-SWEP.Range_Max = 2500
+SWEP.Range_Max = 3000
 SWEP.Penetration = 4
-SWEP.ArmorPenetration = 0.75
-SWEP.ArmorBonus = 2
+SWEP.ArmorPenetration = 0.85
+SWEP.ArmorBonus = 1
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 0.85,
@@ -90,7 +90,7 @@ SWEP.Firemode = 1
 
 SWEP.FiremodeName = "Bolt-Action" // only used externally for firemode name distinction
 
-SWEP.RPM = 58
+SWEP.RPM = 60
 
 SWEP.Spread = 0.001
 
@@ -108,21 +108,22 @@ SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 1.5
 
 SWEP.RecoilSpreadPenalty = 0 // extra spread per one unit of recoil
+SWEP.MidAirSpreadPenalty = 0.02
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.94
+SWEP.MoveSpeedMult = 0.96
 SWEP.ShootingSpeedMult = 0.85
-SWEP.SightedSpeedMult = 0.65
+SWEP.SightedSpeedMult = 0.7
 
-SWEP.ReloadSpeedMult = 0.5
+SWEP.ReloadSpeedMult = 0.65
 
-SWEP.AimDownSightsTime = 0.29
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.26
+SWEP.SprintToFireTime = 0.3
 
-SWEP.Sway = 1.75
+SWEP.Sway = 1
 SWEP.ScopedSway = 0.05
 
 SWEP.FreeAimMaxAngle = 4

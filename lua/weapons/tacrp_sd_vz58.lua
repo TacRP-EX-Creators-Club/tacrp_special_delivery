@@ -96,24 +96,25 @@ SWEP.MuzzleVelocity = 28000
 SWEP.Firemode = 1
 
 SWEP.RPM = 330
-SWEP.RPMMultSemi = 0.7
+SWEP.RPMMultSemi = 0.75
 
 SWEP.Spread = 0.0045
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.12 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilMaximum = 6
+SWEP.RecoilResetTime = 0.23 // time after you stop shooting for recoil to start dissipating
 SWEP.RecoilDissipationRate = 15
-SWEP.RecoilFirstShotMult = 0.8 // multiplier for the first shot's recoil amount
+SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
 SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.5
+SWEP.RecoilAltMultiplier = 350
 
-SWEP.RecoilSpreadPenalty = 0.00275
+SWEP.RecoilSpreadPenalty = 0.004
 SWEP.HipFireSpreadPenalty = 0.05
 SWEP.PeekPenaltyFraction = 0.2
 
