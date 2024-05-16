@@ -276,7 +276,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Tactical",
-        Category = {"tactical"},
+        Category = {"tactical", "tactical_zoom"},
         Bone = "g2_barrel",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
