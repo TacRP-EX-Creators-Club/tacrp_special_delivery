@@ -27,8 +27,9 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
+        Damage_Max = 28,
         Damage_Min = 8,
+        ClipSize = 24,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
@@ -72,15 +73,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
+SWEP.Damage_Max = 30
 SWEP.Damage_Min = 10
-SWEP.Range_Min = 300
+SWEP.Range_Min = 200
 SWEP.Range_Max = 1500
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -117,7 +118,7 @@ SWEP.RecoilStability = 0.2
 SWEP.RecoilAltMultiplier = 150
 
 SWEP.RecoilSpreadPenalty = 0.0027
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.HipFireSpreadPenalty = 0.02
 SWEP.PeekPenaltyFraction = 0.2
 
 SWEP.CanBlindFire = true
@@ -260,10 +261,10 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.85, -1.2, 17),
-        Pos_WM = Vector(2, 13, -0.5),
-        Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(-90, -90 + 3.5, 0),
+        Pos_VM = Vector(-2.8, -0.05, 14),
+        Pos_WM = Vector(1.1, 12, -1.5),
+        Ang_VM = Angle(90, 0, 180),
+        Ang_WM = Angle(180, -90 + 3.5, 0),
     },
     [3] = {
         PrintName = "Accessory",
