@@ -12,7 +12,7 @@ SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "WW2-era SMG with a low rate of fire and fiendish recoil profile. Despite its age, it still shows up in many warzones today."
-SWEP.Description_Quote = "Keep away from edgy teenagers."
+SWEP.Description_Quote = "\"Hans, your coffee sucks. I'm not drinking that crap.\""
 
 SWEP.Trivia_Caliber = "9x19mm"
 SWEP.Trivia_Manufacturer = "Steyr-Mannlicher"
