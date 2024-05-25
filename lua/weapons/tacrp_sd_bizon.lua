@@ -33,11 +33,6 @@ SWEP.BalanceStats = {
         FreeAimMaxAngle = 3,
 
         RecoilKick = 2,
-
-        ShootingSpeedMult = 0.75,
-        SightedSpeedMult = 0.75,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 9,

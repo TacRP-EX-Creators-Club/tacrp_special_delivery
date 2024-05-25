@@ -36,8 +36,6 @@ SWEP.BalanceStats = {
         Range_Max = 4000,
 
         ClipSize = 100,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 0.9,
     },
     [TacRP.BALANCE_TTT] = {
 
