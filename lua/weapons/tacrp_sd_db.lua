@@ -72,10 +72,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 8
+SWEP.Damage_Max = 13
 SWEP.Damage_Min = 4
-SWEP.Range_Min = 250
-SWEP.Range_Max = 2500
+SWEP.Range_Min = 100
+SWEP.Range_Max = 1200
 SWEP.Penetration = 1
 SWEP.ArmorPenetration = 0.45
 
