@@ -29,8 +29,9 @@ SWEP.SlotAlt = 3
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 12,
-        Damage_Min = 5,
-        RPM = 180,
+        Damage_Min = 8,
+        RPM = 150,
+        RecoilKick = 4,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 9,
@@ -82,8 +83,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AutoShotgun
 
 SWEP.ShootTimeMult = 0.6
 
-SWEP.Damage_Max = 11
-SWEP.Damage_Min = 7
+SWEP.Damage_Max = 12
+SWEP.Damage_Min = 6
 SWEP.Range_Min = 700 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
@@ -109,26 +110,26 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 130
+SWEP.RPM = 120
 
-SWEP.Spread = 0.015
-SWEP.ShotgunPelletSpread = 0.0075
+SWEP.Spread = 0.012
+SWEP.ShotgunPelletSpread = 0.012
 
 SWEP.MidAirSpreadPenalty = 0
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2.5
-SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 2.5
+SWEP.RecoilMaximum = 2
+SWEP.RecoilResetTime = 0.3 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 1.25 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1.5
 SWEP.RecoilKick = 6
-SWEP.RecoilStability = 0.4
-SWEP.RecoilAltMultiplier = 800
+SWEP.RecoilStability = 0.25
+SWEP.RecoilAltMultiplier = 1200
 
 SWEP.RecoilSpreadPenalty = 0.014
-SWEP.HipFireSpreadPenalty = 0.025
+SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
 
@@ -140,8 +141,8 @@ SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.475
-SWEP.SprintToFireTime = 0.5
+SWEP.AimDownSightsTime = 0.5
+SWEP.SprintToFireTime = 0.55
 
 // hold types
 
@@ -182,11 +183,11 @@ SWEP.FreeAimMaxAngle = 6
 
 // reload
 
-SWEP.ClipSize = 4
+SWEP.ClipSize = 5
 SWEP.Ammo = "buckshot"
 SWEP.ShotgunReload = true
 
-SWEP.ReloadTimeMult = 1.2
+SWEP.ReloadTimeMult = 1.25
 
 SWEP.JamBaseMSB = 9
 
