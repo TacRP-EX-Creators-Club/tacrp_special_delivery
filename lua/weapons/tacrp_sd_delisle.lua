@@ -66,7 +66,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 SWEP.Damage_Max = 60
 SWEP.Damage_Min = 25
 SWEP.Range_Min = 250
-SWEP.Range_Max = 3000
+SWEP.Range_Max = 4000
 SWEP.Penetration = 4
 SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 1
@@ -82,7 +82,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.5
 }
 
-SWEP.MuzzleVelocity = 12500
+SWEP.MuzzleVelocity = 15000
 
 // misc. shooting
 
@@ -171,7 +171,7 @@ SWEP.ClipSize = 7
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1
-SWEP.ShootTimeMult = 0.68
+SWEP.ShootTimeMult = 0.7
 
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/delisle.mdl"
 SWEP.DropMagazineImpact = "pistol"
