@@ -223,26 +223,26 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
-			{2, 1}
-		},
+        BGs_WM = {
+            {2, 1}
+        },
     },
-	["akmount"] = {
-		BGs_VM = {
-			{2, 0}
-		},
-		BGs_WM = {
-			{2, 0}
-		},
-		AttPosMods = {
+    ["akmount"] = {
+        BGs_VM = {
+            {2, 0}
+        },
+        BGs_WM = {
+            {2, 0}
+        },
+        AttPosMods = {
             [1] = {
-				VMScale = 0.7,
+                VMScale = 0.7,
                 Pos_VM = Vector(-5, 0.5, 2),
                 Pos_WM = Vector(-0.4, 1, 0.5),
             }
         },
-		SortOrder = 2,
-	}
+        SortOrder = 2,
+    }
 }
 
 
@@ -289,7 +289,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "acc_extmag_smg"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
