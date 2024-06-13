@@ -208,6 +208,21 @@ SWEP.AnimationTranslationTable = {
     ["jam"] = "mid_reload"
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.75, -0.12),
+    vm_ang = Angle(0, 0.3, 0),
+    t = 0.25,
+    tmax = 0.25,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.05,
+            t1 = 0.2,
+        },
+    },
+}
+
 // attachments
 
 SWEP.AttachmentElements = {
