@@ -36,11 +36,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
     },
     [TacRP.BALANCE_TTT] = {
-
         Damage_Max = 50,
         Damage_Min = 50,
-
-        ReloadTimeMult = 1 * 1.25,
     },
     [TacRP.BALANCE_PVE] = {
 
