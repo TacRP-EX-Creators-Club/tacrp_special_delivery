@@ -27,9 +27,23 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 30,
-        Damage_Min = 18,
+        Damage_Max = 35,
+        Damage_Min = 20,
+        Range_Max = 2500,
         RPM = 400,
+        RecoilKick = 6,
+        JamFactor = 0.12,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 4,
+            [HITGROUP_CHEST] = 1,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.75,
+            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_GEAR] = 0.9
+        }
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 25,
@@ -88,7 +102,7 @@ SWEP.Penetration = 8
 SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 0.75
 
-SWEP.MuzzleVelocity = 13000
+SWEP.MuzzleVelocity = 17000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
@@ -292,7 +306,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Bolt",
-        Category = {"bolt_automatic"},
+        Category = {"bolt_automatic", "bolt_jammable"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },

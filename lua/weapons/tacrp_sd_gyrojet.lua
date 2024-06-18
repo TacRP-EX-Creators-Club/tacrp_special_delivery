@@ -220,7 +220,7 @@ SWEP.LastShot = false
 SWEP.Attachments = {
     [1] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_holster", "acc_brace"},
+        Category = {"acc", "acc_holster", "acc_brace", "bolt_jammable"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
