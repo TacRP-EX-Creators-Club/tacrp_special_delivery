@@ -24,7 +24,7 @@ Animations: Tactical Intervention, edited by speedonerd
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_famas_g2.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_famas.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_famas_g2.mdl"
 
 SWEP.Slot = 2
 
@@ -248,6 +248,9 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+        BGs_WM = {
+            {2, 1}
+        }
     },
 }
 
