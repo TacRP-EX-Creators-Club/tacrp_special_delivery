@@ -32,15 +32,15 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 14,
+        Damage_Max = 15,
         Damage_Min = 10,
         Range_Min = 400,
-        Range_Max = 2200,
+        Range_Max = 2400,
         PostBurstDelay = 0.2,
 
-        RecoilResetTime = 0.2,
-        RecoilSpreadPenalty = 0.003,
-        RecoilDissipationRate = 18,
+        RPM = 700,
+        RPMMultBurst = 1000 / 700,
+        RPMMultSemi = 1,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
