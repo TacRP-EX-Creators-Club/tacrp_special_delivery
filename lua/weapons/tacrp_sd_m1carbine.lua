@@ -64,7 +64,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
+SWEP.Damage_Max = 16
 SWEP.Damage_Min = 12
 SWEP.Range_Min = 900
 SWEP.Range_Max = 3000
@@ -88,8 +88,8 @@ SWEP.MuzzleVelocity = 29000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 450
-SWEP.RPMMultSemi = 0.6
+SWEP.RPM = 600
+SWEP.RPMMultSemi = 0.7
 
 SWEP.Spread = 0.003
 
