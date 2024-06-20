@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture" 	"models/weapons/v_models/famas/v_famas_parts"
-	"$bumpmap" 	"models/weapons/v_models/famas/v_famas_parts_normal"
+	"$basetexture" 	"models/tacint_extras/famas_g2/v_famas_parts"
+	"$bumpmap" 	"models/tacint_extras/famas_g2/v_famas_parts_normal"
 	"$envmap" 	"env_cubemap"
 
 	"$normalmapalphaenvmapmask" "1"
