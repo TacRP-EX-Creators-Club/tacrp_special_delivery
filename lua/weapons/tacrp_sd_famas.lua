@@ -30,8 +30,12 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 23,
+        Damage_Max = 22,
         Damage_Min = 12,
+        PostBurstDelay = 0.22,
+
+        RPM = 900,
+        RPMMultBurst = 1000 / 900,
 
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.85,
@@ -99,36 +103,36 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 900
-SWEP.RPMMultBurst = 1000 / 900
+SWEP.RPM = 850 // Slightly lower than actual FAMAS firerate for Balance(TM) reasons
+SWEP.RPMMultBurst = 1000 / 850
 
 SWEP.Spread = 0.002
 
-SWEP.PostBurstDelay = 0.22
+SWEP.PostBurstDelay = 0.25
 SWEP.RunawayBurst = true
 
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 9
+SWEP.RecoilMaximum = 7
 SWEP.RecoilResetTime = 0.01
-SWEP.RecoilDissipationRate = 21
+SWEP.RecoilDissipationRate = 24
 SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 6
+SWEP.RecoilKick = 5
 SWEP.RecoilStability = 0.4
-SWEP.RecoilAltMultiplier = 350
+SWEP.RecoilAltMultiplier = 300
 
-SWEP.RecoilSpreadPenalty = 0.0025
-SWEP.HipFireSpreadPenalty = 0.025
+SWEP.RecoilSpreadPenalty = 0.004
+SWEP.HipFireSpreadPenalty = 0.035
 
 SWEP.CanBlindFire = true
 
 // handling
 
 SWEP.MoveSpeedMult = 0.85
-SWEP.ShootingSpeedMult = 0.7
+SWEP.ShootingSpeedMult = 0.5
 SWEP.SightedSpeedMult = 0.7
 
 SWEP.AimDownSightsTime = 0.33
