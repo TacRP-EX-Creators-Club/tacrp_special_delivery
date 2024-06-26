@@ -167,8 +167,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-1, 1.3, 0)
-SWEP.SightPos = Vector(-4.2, -6, -4.94)
+SWEP.SightAng = Angle(-0.13, 1.3, 0.2)
+SWEP.SightPos = Vector(-4, -6, -4.94)
 
 SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
 SWEP.CorrectiveAng = Angle(0.8, -0.1, -0.2)
@@ -183,12 +183,12 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 25
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.25
+SWEP.ReloadTimeMult = 1.3
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/famas.mdl"
 SWEP.DropMagazineImpact = "metal"
 
-SWEP.ReloadUpInTime = 1.7
-SWEP.DropMagazineTime = 0.5
+SWEP.ReloadUpInTime = 1.25
+SWEP.DropMagazineTime = 0.4
 
 // sounds
 
