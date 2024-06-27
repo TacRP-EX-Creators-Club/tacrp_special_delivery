@@ -231,7 +231,7 @@ end)
 // anims
 
 SWEP.AnimationTranslationTable = {
-    ["fire"] = {"shoot1", "shoot2"},
+    ["fire"] = {"shoot1"},
     ["blind_fire"] = {"blind_shoot1"},
     ["melee"] = {"melee1", "melee2"},
     ["reload"] = {"reload", "reload2"},
