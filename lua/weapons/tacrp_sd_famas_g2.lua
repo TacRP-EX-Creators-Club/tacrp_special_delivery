@@ -11,6 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Bullpup rifle with a blazing fast firerate. While capable of automatic fire, using burst-fire or the built-in bipod is recommended."
+SWEP.Description_Quote = "\"God's got a sense of humor, alright.\""
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "GIAT Industries" // more like GYATT industries ahahahaha amirite fellow zoomies?
@@ -179,8 +180,8 @@ SWEP.ReloadTimeMult = 1.3
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
-SWEP.ReloadUpInTime = 1.7
-SWEP.DropMagazineTime = 0.5
+SWEP.ReloadUpInTime = 1.2
+SWEP.DropMagazineTime = 0.4
 
 // sounds
 
