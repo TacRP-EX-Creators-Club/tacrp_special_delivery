@@ -4,14 +4,14 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "OTs-14 \"Groza-4\""
+SWEP.PrintName = "OTs-14 \"Groza\""
 SWEP.AbbrevName = "Groza-4"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Obscure bullpup carbine made from a reconfigured AK. Weak, but has great handling and stability. \nThe suppressor isn't integral but it acts as a foregrip."
+SWEP.Description = "Obscure bullpup carbine made from a reconfigured AK. Weak, but has great handling and stability. \nThe suppressor isn't actually integral."
 SWEP.Description_Quote = "\"Get out of here, stalker.\""
 
 SWEP.Trivia_Caliber = "9x39mm"
@@ -137,7 +137,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -1, -4.5)
+SWEP.PassivePos = Vector(0, -2, -4.3)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -145,11 +145,11 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.95, 0.15, 0.2)
-SWEP.SightPos = Vector(-4.19, -7.5, -4.05)
+SWEP.SightAng = Angle(-0.9, 0.2, 0.2)
+SWEP.SightPos = Vector(-4.08, -7.5, -4.04)
 
-SWEP.CorrectivePos = Vector(0.2, 0, 0.05)
-SWEP.CorrectiveAng = Angle(0.7, 0, 0)
+SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
+SWEP.CorrectiveAng = Angle(0.95, 0.9, -0.5)
 
 SWEP.CorrectiveBoneAng = Angle(90, 38, 38)
 
@@ -162,7 +162,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.25
+SWEP.ReloadTimeMult = 1.28
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -198,7 +198,7 @@ SWEP.TracerNum = 0
 // anims
 
 SWEP.AnimationTranslationTable = {
-    ["deploy"] = "unholster",
+    ["deploy"] = "deploy",
     ["fire_iron"] = "idle",
     ["fire1"] = "fire1_M",
     ["fire2"] = "fire2_M",
@@ -206,7 +206,7 @@ SWEP.AnimationTranslationTable = {
     ["fire4"] = "fire4_M",
     ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"},
-    ["jam"] = "mid_reload"
+    ["jam"] = "midreload"
 }
 
 
@@ -225,7 +225,7 @@ SWEP.ProceduralIronFire = {
     },
 }
 
-SWEP.DeployTimeMult = 2.2
+SWEP.DeployTimeMult = 1.2
 
 // attachments
 
@@ -248,7 +248,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
         WMScale = 0.75,
-        Pos_VM = Vector(-7.1, -0.03, 0.5),
+        Pos_VM = Vector(-7.1, -0.1, 0.5),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
