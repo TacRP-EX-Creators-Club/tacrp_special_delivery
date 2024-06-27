@@ -181,12 +181,12 @@ SWEP.ScopeHideWeapon = true
 SWEP.ClipSize = 6
 SWEP.Ammo = "357"
 
-SWEP.ReloadTimeMult = 1.3
+SWEP.ReloadTimeMult = 1.35
 SWEP.DropMagazineImpact = "metal"
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/wa2000.mdl"
 
-SWEP.ReloadUpInTime = 2.2
-SWEP.DropMagazineTime = 0.8
+SWEP.ReloadUpInTime = 1.2
+SWEP.DropMagazineTime = 0.4
 
 // sounds
 
@@ -222,7 +222,7 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = "melee2"
 }
 
-SWEP.DeployTimeMult = 2.25
+SWEP.DeployTimeMult = 2.3
 
 // attachments
 
