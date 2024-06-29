@@ -18,7 +18,7 @@ SWEP.Trivia_Year = "1961"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
-Model & Texture: Project Reality
+Assets: Call to Arms
 Sounds: NightmareMutant & speedonerd
 Animations: Tactical Intervention
 ]]
@@ -163,8 +163,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.03, 0.1, 0)
-SWEP.SightPos = Vector(-4.48, -7.5, -3.8)
+SWEP.SightAng = Angle(0.03, 1, 0)
+SWEP.SightPos = Vector(-4.425, -7.5, -4.15)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.125)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -194,6 +194,7 @@ SWEP.BulletBodygroups = {
     [5] = {5, 4},
     [6] = {5, 5},
     [7] = {5, 6},
+    [8] = {5, 7},
 }
 SWEP.DefaultBodygroups = "000006"
 
@@ -266,7 +267,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 1.25,
-        Pos_VM = Vector(-1.75, 0, 0),
+        Pos_VM = Vector(-2, 0, 0),
         Pos_WM = Vector(12, 1.15, -8),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
@@ -277,7 +278,7 @@ SWEP.Attachments = {
         Bone = "ValveBiped.MG4_root",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        Pos_VM = Vector(-5.2, 0, 45),
+        Pos_VM = Vector(-5.1, 0, 43.5),
         Pos_WM = Vector(43.2, 1.15, -5.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
@@ -289,7 +290,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-        Pos_VM = Vector(-4.6, -0.8, 13),
+        Pos_VM = Vector(-4.6, -1.1, 13),
         Pos_WM = Vector(14, 1.75, -4.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, 0, 90),
