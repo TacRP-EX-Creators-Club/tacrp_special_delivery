@@ -8,7 +8,7 @@ SWEP.PrintName = "OTs-14 \"Groza\""
 SWEP.AbbrevName = "Groza-4"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "2Operator"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Obscure bullpup carbine made from a reconfigured AK. Weak, but has great handling and stability. \nThe suppressor isn't actually integral."
