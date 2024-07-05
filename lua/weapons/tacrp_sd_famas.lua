@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Burst-fire bullpup with a high rate of fire and great accuracy but limited by its substandard magazine capacity and pretty intense recoil.\nHas a bipod for esoteric French reasons. "
+SWEP.Description = "Burst-fire bullpup used by the French Army. High rate of fire and great accuracy is limited only by its substandard magazine capacity and pretty intense recoil.\nHas a bipod for esoteric French reasons. "
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "GIAT Industries" // more like GYATT industries ahahahaha amirite fellow zoomies?
@@ -103,8 +103,8 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 850 // Slightly lower than actual FAMAS firerate for Balance(TM) reasons
-SWEP.RPMMultBurst = 1000 / 850
+SWEP.RPM = 780 // Slightly lower than actual FAMAS firerate for Balance(TM) reasons
+SWEP.RPMMultBurst = 1200 / 780
 
 SWEP.Spread = 0.002
 

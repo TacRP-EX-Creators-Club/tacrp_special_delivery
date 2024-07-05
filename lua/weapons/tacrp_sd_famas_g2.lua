@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Bullpup rifle with a blazing fast firerate. While capable of automatic fire, using burst-fire or the built-in bipod is recommended."
+SWEP.Description = "Bullpup rifle with a blazing fast firerate, used by the French Navy. While capable of automatic fire, using burst-fire or the built-in bipod is recommended."
 SWEP.Description_Quote = "\"God's got a sense of humor, alright.\""
 
 SWEP.Trivia_Caliber = "5.56x45mm"
@@ -97,11 +97,11 @@ SWEP.Firemodes = {
 }
 
 SWEP.RPM = 900
-SWEP.RPMMultBurst = 1000 / 900
+SWEP.RPMMultBurst = 1200 / 900
 
 SWEP.Spread = 0.002
 
-SWEP.PostBurstDelay = 0.24
+SWEP.PostBurstDelay = 0.21
 SWEP.RunawayBurst = true
 
 
