@@ -161,6 +161,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
+SWEP.Ammo_Expanded = "ti_pdw"
 
 SWEP.ReloadTimeMult = 1.28
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"

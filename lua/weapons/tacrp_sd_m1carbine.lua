@@ -166,6 +166,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.ClipSize = 15
 SWEP.Ammo = "smg1"
+SWEP.Ammo_Expanded = "ti_pdw"
 
 SWEP.ReloadTimeMult = 0.85
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/m1carbine.mdl"

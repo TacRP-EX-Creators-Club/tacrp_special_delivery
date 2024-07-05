@@ -192,6 +192,7 @@ SWEP.HolsterAng = Angle(90, 0, 0)
 
 SWEP.ClipSize = 8
 SWEP.Ammo = "pistol"
+SWEP.Ammo_Expanded = "ti_pdw"
 
 SWEP.ReloadUpInTime = 1
 SWEP.DropMagazineTime = 0.25

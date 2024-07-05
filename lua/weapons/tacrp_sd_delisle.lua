@@ -169,6 +169,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.ClipSize = 7
 SWEP.Ammo = "pistol"
+SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
 SWEP.ReloadTimeMult = 0.9
 SWEP.ShootTimeMult = 0.7

@@ -14,7 +14,7 @@ SWEP.SubCatType = "7Sniper Rifle"
 SWEP.Description = "Elegant bullpup sniper rifle with high damage and high rate of fire.\nEquipped with a 12x scope by default."
 SWEP.Description_Quote = "\"Names are for friends, so I don't need one.\""
 
-SWEP.Trivia_Caliber = ".300 WinMag"
+SWEP.Trivia_Caliber = ".300 Win Mag"
 SWEP.Trivia_Manufacturer = "Walther"
 SWEP.Trivia_Year = "1982"
 
@@ -56,31 +56,22 @@ SWEP.BalanceStats = {
             [HITGROUP_RIGHTLEG] = 0.675,
             [HITGROUP_GEAR] = 0.6
         },
-    },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 48,
-        Damage_Min = 90,
-        Range_Min = 600,
-        Range_Max = 5000,
-    },
-    [TacRP.BALANCE_OLDSCHOOL] = {
-        RecoilResetTime = 0.25
     }
 }
 
 // "ballistics"
 
-SWEP.Damage_Max = 80 // damage at minimum range
+SWEP.Damage_Max = 70 // damage at minimum range
 SWEP.Damage_Min = 55 // damage at maximum range
-SWEP.Range_Min = 4000 // distance for which to maintain maximum damage
+SWEP.Range_Min = 3000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 9000 // distance at which we drop to minimum damage
 SWEP.Penetration = 25 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.8
 SWEP.ArmorBonus = 3
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2, // nobody is surviving this
-    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_HEAD] = 3,
+    [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.8,
     [HITGROUP_RIGHTARM] = 0.8,
@@ -89,7 +80,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.65
 }
 
-SWEP.MuzzleVelocity = 30000
+SWEP.MuzzleVelocity = 32000
 
 // misc. shooting
 
@@ -180,6 +171,7 @@ SWEP.ScopeHideWeapon = true
 
 SWEP.ClipSize = 6
 SWEP.Ammo = "357"
+SWEP.Ammo_Expanded = "ti_rifle"
 
 SWEP.ReloadTimeMult = 1.35
 SWEP.DropMagazineImpact = "metal"

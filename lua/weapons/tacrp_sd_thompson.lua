@@ -157,6 +157,7 @@ SWEP.HolsterAng = Angle(0, 90, 0)
 
 SWEP.ClipSize = 30
 SWEP.Ammo = "pistol"
+SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
 SWEP.ReloadTimeMult = 1.15
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/thompson.mdl"

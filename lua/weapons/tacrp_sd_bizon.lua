@@ -13,7 +13,7 @@ SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "AK-derrivative SMG with a high-capacity helical magazine.  Pretty weak but easy to control and handle."
 
-SWEP.Trivia_Caliber = "9x18mm Makarov"
+SWEP.Trivia_Caliber = "9x18mm"
 SWEP.Trivia_Manufacturer = "Izhmash"
 SWEP.Trivia_Year = "1996"
 
@@ -162,6 +162,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.ClipSize = 64
 SWEP.Ammo = "pistol"
+SWEP.Ammo_Expanded = "ti_pistol_light"
 
 SWEP.ReloadTimeMult = 1.2
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/bizon.mdl"
