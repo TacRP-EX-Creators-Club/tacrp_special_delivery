@@ -30,8 +30,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 12,
         Damage_Min = 10,
-        RPM = 180,
-        RecoilKick = 4,
+        RPM = 240,
+        RecoilKick = 5,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 9,
@@ -39,6 +39,7 @@ SWEP.BalanceStats = {
         Range_Min = 400,
         Range_Max = 1200,
         RPM = 140,
+        RPMMultSemi = 1,
 
         RecoilSpreadPenalty = 0.02,
 
@@ -109,7 +110,8 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 150
+SWEP.RPM = 200
+SWEP.RPMMultSemi = 0.8
 
 SWEP.Spread = 0.012
 SWEP.ShotgunPelletSpread = 0.012
