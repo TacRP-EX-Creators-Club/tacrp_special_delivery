@@ -29,8 +29,8 @@ SWEP.SlotAlt = 3
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 12,
-        Damage_Min = 8,
-        RPM = 150,
+        Damage_Min = 10,
+        RPM = 180,
         RecoilKick = 4,
     },
     [TacRP.BALANCE_TTT] = {
@@ -72,8 +72,7 @@ SWEP.BalanceStats = {
             [HITGROUP_RIGHTLEG] = 0.5,
             [HITGROUP_GEAR] = 0.9
         },
-    },
-    [TacRP.BALANCE_OLDSCHOOL] = {}
+    }
 }
 
 
@@ -84,8 +83,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AutoShotgun
 SWEP.ShootTimeMult = 0.6
 
 SWEP.Damage_Max = 12
-SWEP.Damage_Min = 6
-SWEP.Range_Min = 700 // distance for which to maintain maximum damage
+SWEP.Damage_Min = 8
+SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
 SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.55
@@ -96,7 +95,7 @@ SWEP.Num = 6
 SWEP.MuzzleVelocity = 12000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -110,7 +109,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 120
+SWEP.RPM = 150
 
 SWEP.Spread = 0.012
 SWEP.ShotgunPelletSpread = 0.012
