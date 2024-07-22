@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with sturdy wooden furniture. Boasts impressive close-range firepower, but is much heavier than it has any right to be."
+SWEP.Description = "WW2-era SMG with sturdy wooden furniture. Boasts impressive close-range firepower, but is rather heavy."
 
 SWEP.Trivia_Caliber = ".45 ACP"
 SWEP.Trivia_Manufacturer = "Auto-Ordnance Company"
@@ -29,13 +29,15 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 27,
         Damage_Min = 5,
+        ClipSize = 30,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 16,
+        Damage_Max = 18,
         Damage_Min = 5,
-        Range_Min = 200,
+        Range_Min = 150,
         Range_Max = 1500,
         RPM = 650,
+        ClipSize = 20,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
@@ -63,10 +65,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
+SWEP.Damage_Max = 22
 SWEP.Damage_Min = 5
-SWEP.Range_Min = 200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 1800 // distance at which we drop to minimum damage
+SWEP.Range_Min = 400 // distance for which to maintain maximum damage
+SWEP.Range_Max = 1500 // distance at which we drop to minimum damage
 SWEP.Penetration = 3 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.4
 SWEP.ArmorBonus = 0.25
@@ -74,7 +76,7 @@ SWEP.ArmorBonus = 0.25
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_STOMACH] = 1.15,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -105,23 +107,23 @@ SWEP.RecoilStability = 0.35
 SWEP.RecoilAltMultiplier = 150
 
 SWEP.RecoilSpreadPenalty = 0.0017
-SWEP.HipFireSpreadPenalty = 0.025
+SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.90
+SWEP.MoveSpeedMult = 0.875
 SWEP.ShootingSpeedMult = 0.6
 SWEP.SightedSpeedMult = 0.6
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.39
+SWEP.AimDownSightsTime = 0.4
 SWEP.SprintToFireTime = 0.36
 
-SWEP.Sway = 0.9
-SWEP.ScopedSway = 0.2
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.25
 SWEP.FreeAimMaxAngle = 5
 
 // hold types
@@ -155,7 +157,7 @@ SWEP.HolsterAng = Angle(0, 90, 0)
 
 // reload
 
-SWEP.ClipSize = 30
+SWEP.ClipSize = 20
 SWEP.Ammo = "pistol"
 SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
