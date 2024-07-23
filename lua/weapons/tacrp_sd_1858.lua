@@ -186,8 +186,8 @@ SWEP.DropMagazineTime = 1.2
 SWEP.ReloadTimeMult = 0.9
 SWEP.ReloadUpInTime = 2
 
-SWEP.JamWaitTime = 0
-SWEP.JamSkipFix = false
+SWEP.JamWaitTime = 1
+SWEP.JamSkipFix = true
 SWEP.JamTakesRound = true
 
 // sounds
