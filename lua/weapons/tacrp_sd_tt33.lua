@@ -11,7 +11,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "1Pistol"
 
-SWEP.Description = "Antique pistol from beyond the Iron Curtain. Ammo packs a surprising punch, but it is unreliable."
+SWEP.Description = "Antique pistol from beyond the Iron Curtain. High range and penetration, but has reliability issues due to its age."
+SWEP.Description_Quote = "\"Perhaps you would prefer to avoid the red tape?\""
 
 SWEP.Trivia_Caliber = "7.62x25mm Tokarev"
 SWEP.Trivia_Manufacturer = "Tula Arms Plant"
@@ -97,7 +98,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 SWEP.Damage_Max = 25
 SWEP.Damage_Min = 14
 SWEP.Range_Min = 1000
-SWEP.Range_Max = 2200
+SWEP.Range_Max = 2600
 SWEP.Penetration = 8
 SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 0.75
@@ -105,9 +106,9 @@ SWEP.ArmorBonus = 0.75
 SWEP.MuzzleVelocity = 17000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -119,10 +120,10 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 330
+SWEP.RPM = 360
 SWEP.RPMMultSemi = 0.75
 
-SWEP.Spread = 0.006
+SWEP.Spread = 0.005
 
 SWEP.ShootTimeMult = 0.5
 
@@ -140,7 +141,7 @@ SWEP.RecoilSpreadPenalty = 0.0045
 
 SWEP.CanBlindFire = true
 
-SWEP.JamFactor = 0.3
+SWEP.JamFactor = 0.175
 
 // handling
 
