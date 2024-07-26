@@ -11,6 +11,7 @@ SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "5Sporter"
 
 SWEP.Description = "WW2-era semi-auto carbine. Intended as a defensive weapon for support troops, it is accurate and lightweight but has mediocre power."
+SWEP.Description_Quote = "\"Flash.\" \"Thunder.\"" // apparently this was the actual correct order. also this is called a countersign. cool.
 
 SWEP.Trivia_Caliber = ".30 Carbine"
 SWEP.Trivia_Manufacturer = "General Motors" // Yes, really.
