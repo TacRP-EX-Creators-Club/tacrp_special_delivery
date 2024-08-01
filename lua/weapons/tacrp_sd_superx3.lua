@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Civilian sporting shotgun, engineered for performance. Long barrel and competition choke offer great accuracy and range     but poor handling."
+SWEP.Description = "Civilian sporting shotgun engineered for performance. Long barrel and competition choke offer great accuracy and range but poor handling."
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Winchester Repeating Arms"
