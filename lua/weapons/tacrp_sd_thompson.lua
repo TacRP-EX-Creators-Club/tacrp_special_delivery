@@ -218,20 +218,27 @@ SWEP.ProceduralIronFire = {
 // attachments
 
 SWEP.AttachmentElements = {
+    ["sight"] = {
+        BGs_VM = {
+            {2, 1}
+        }
+    },
 }
 
+SWEP.NoRMR = true
 
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb_nookp7", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped._ROOT_K1a",
         WMBone = "Box01",
+		InstalledElements = {"sight"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.9,
         WMScale = 0.9,
-        Pos_VM = Vector(-3.6, 0.22, 1),
+        Pos_VM = Vector(-3.9, 0.22, 1),
         Pos_WM = Vector(0.1, 0, 0),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
