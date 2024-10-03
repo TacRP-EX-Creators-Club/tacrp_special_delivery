@@ -226,7 +226,7 @@ SWEP.ProceduralIronFire = {
     },
 }
 
-SWEP.DeployTimeMult = 1.2
+SWEP.DeployTimeMult = 1.05
 
 // attachments
 
@@ -249,7 +249,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
         WMScale = 0.75,
-        Pos_VM = Vector(-7.1, -0.1, 0.5),
+        Pos_VM = Vector(-7.1, -0.15, 0.5),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
