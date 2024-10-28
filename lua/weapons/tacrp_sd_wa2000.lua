@@ -39,6 +39,7 @@ SWEP.BalanceStats = {
         Damage_Min = 95,
         Range_Min = 3000,
         Range_Max = 9000,
+        RecoilKick = 6,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 25,
@@ -61,8 +62,8 @@ SWEP.BalanceStats = {
 
 // "ballistics"
 
-SWEP.Damage_Max = 70 // damage at minimum range
-SWEP.Damage_Min = 55 // damage at maximum range
+SWEP.Damage_Max = 85 // damage at minimum range
+SWEP.Damage_Min = 60 // damage at maximum range
 SWEP.Range_Min = 3000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 9000 // distance at which we drop to minimum damage
 SWEP.Penetration = 25 // units of metal this weapon can penetrate
@@ -86,7 +87,7 @@ SWEP.MuzzleVelocity = 32000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 160
+SWEP.RPM = 200
 
 SWEP.Spread = 0
 SWEP.RecoilSpreadPenalty = 0.014
@@ -99,8 +100,8 @@ SWEP.RecoilResetTime = 0.15
 SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 0.75
 
-SWEP.RecoilVisualKick = 1.5
-SWEP.RecoilKick = 6
+SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 4
 SWEP.RecoilStability = 0.75
 
 SWEP.CanBlindFire = true
