@@ -4,15 +4,15 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "MBA Gyrojet MkI"
+SWEP.PrintName = "MBA Gyrojet"
 SWEP.AbbrevName = "Gyrojet"
 SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "7Special Weapon"
 
-SWEP.Description = "Obscure experimental pistol firing self-propelled minirockets. Mostly a collector's item now, the ammunition is powerful but unreliable."
-SWEP.Description_Quote = "Whose private collection did you steal this from?"
+SWEP.Description = "Experimental weapon firing self-propelled mini-rockets. While they are powerful, the rounds are prone to failure."
+SWEP.Description_Quote = "I wonder how much his remains would go for on Ebay." // Postal 2 - Completely unrelated but its funi
 
 SWEP.Trivia_Caliber = ".51 Caliber Minirockets"
 SWEP.Trivia_Manufacturer = "MBAssociates" // i checked every credible source and they dont put a space between MB and associates please dont change this
@@ -21,8 +21,8 @@ SWEP.Trivia_Year = "1962"
 SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
 Model & Textures: RedRougeXIII
-Sounds: speedonerd
-Animations: Tactical Intervention, with additions from speedonerd
+Sounds: speedonerd, Tactical Intervention
+Animations: speedonerd
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_gyrojet.mdl"
@@ -131,19 +131,28 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0.2, -1, -6)
+SWEP.PassivePos = Vector(0, 0, 0)
+
+SWEP.CustomizeAng = Angle(35, 15, 0)
+SWEP.CustomizePos = Vector(9, 0, -3)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
-SWEP.BlindFirePos = Vector(0, -2, -5)
+SWEP.BlindFirePos = Vector(-1, -2, -2)
+
+SWEP.BlindFireLeftAng = Angle(80, -2, 0)
+SWEP.BlindFireLeftPos = Vector(15, 5, -9)
+
+SWEP.BlindFireRightAng = Angle(-80, -2, 0)
+SWEP.BlindFireRightPos = Vector(-4, 20, -11)
 
 SWEP.BlindFireSuicideAng = Angle(-135, 0, 45)
 SWEP.BlindFireSuicidePos = Vector(25, 19, -5)
 
 SWEP.SprintAng = Angle(0, 30, 0)
-SWEP.SprintPos = Vector(2, 0, -12)
+SWEP.SprintPos = Vector(1, -5, -8)
 
-SWEP.SightAng = Angle(0.06, -0.4, 0)
-SWEP.SightPos = Vector(-3.35, 1, -4)
+SWEP.SightAng = Angle(0.22, -0.7, 0)
+SWEP.SightPos = Vector(-3.72, -4, 1.45)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_PISTOL
@@ -213,6 +222,33 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"}
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.5, -0.6),
+    vm_ang = Angle(0, 2, 0),
+    t = 0.2,
+    tmax = 0.2,
+    bones = {
+        {
+            bone = "gyrojet_hammer",
+            ang = Angle(0, 0, -45),
+            t0 = 0,
+            t1 = 0.15,
+        },
+        {
+            bone = "ValveBiped.Bip01_R_Finger1",
+            ang = Angle(0, -15, 0),
+            t0 = 0,
+            t1 = 0.2,
+        },
+        {
+            bone = "ValveBiped.Bip01_R_Finger11",
+            ang = Angle(-35, 0, 0),
+            t0 = 0,
+            t1 = 0.15,
+        },
+    },
+}
+
 SWEP.LastShot = false
 
 // attachments
@@ -253,15 +289,17 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_gyrojet.clip_in", path1 .. "clip_in-1.wav")
-addsound("tacint_gyrojet.clip_out", path1 .. "clip_out-1.wav")
-addsound("tacint_gyrojet.clip_slap", path1 .. "clip_slap-1.wav")
 addsound("tacint_gyrojet.slide_back", {
     path1 .. "slide_back-1.wav",
     path1 .. "slide_back-2.wav",
 })
-addsound("tacint_gyrojet.cock_hammer", path1 .. "cockhammer.wav")
-addsound("tacint_gyrojet.safety_switch", path1 .. "safety_switch.wav")
+addsound("tacint_gyrojet.Catch",
+	{
+		path .. "gyrojet_reloadcatch.wav",
+		path .. "gyrojet_reloadcatch2.wav",
+	}
+)
+addsound("tacint_gyrojet.hammer", path .. "gyrojet_cockhammer.wav")
 addsound("tacint_gyrojet.insert",
     {
         path .. "gyrojet_insert1.wav",
