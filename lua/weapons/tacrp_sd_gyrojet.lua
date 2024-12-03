@@ -12,9 +12,9 @@ SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "7Special Weapon"
 
 SWEP.Description = "Experimental weapon firing self-propelled mini-rockets. While they are powerful, the rounds are prone to failure."
-SWEP.Description_Quote = "I wonder how much his remains would go for on Ebay." // Postal 2 - Completely unrelated but its funi
+SWEP.Description_Quote = "\"I wonder how much his remains would go for on Ebay.\"" // Postal 2 - Completely unrelated but its funi
 
-SWEP.Trivia_Caliber = ".51 Caliber Minirockets"
+SWEP.Trivia_Caliber = ".51 Caliber"
 SWEP.Trivia_Manufacturer = "MBAssociates" // i checked every credible source and they dont put a space between MB and associates please dont change this
 SWEP.Trivia_Year = "1962"
 
