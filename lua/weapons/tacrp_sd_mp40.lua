@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "WW2-era SMG with a low rate of fire and unstable recoil. Despite its age, it still shows up in many warzones today."
+SWEP.Description = "WW2-era SMG with a low rate of fire and light recoil. Despite its age, it still shows up in many warzones today."
 SWEP.Description_Quote = "\"Hans, your coffee sucks. I'm not drinking that crap.\""
 
 SWEP.Trivia_Caliber = "9x19mm"
@@ -103,8 +103,8 @@ SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 0.75
 SWEP.RecoilKick = 3
-SWEP.RecoilStability = 0.2
-SWEP.RecoilAltMultiplier = 350
+SWEP.RecoilStability = 0.25
+SWEP.RecoilAltMultiplier = 250
 
 SWEP.RecoilSpreadPenalty = 0.0012
 SWEP.HipFireSpreadPenalty = 0.02
