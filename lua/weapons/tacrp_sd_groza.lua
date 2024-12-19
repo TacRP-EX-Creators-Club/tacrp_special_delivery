@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Obscure bullpup carbine made from a reconfigured AK. Weak, but has great handling and stability. \nThe suppressor isn't actually integral."
+SWEP.Description = "Integrally-suppressed bullpup made from a reconfigured AK. Weak, but has great handling and stability and has no visible tracers."
 SWEP.Description_Quote = "\"Get out of here, stalker.\""
 
 SWEP.Trivia_Caliber = "9x39mm"
@@ -133,25 +133,31 @@ SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeBlindFire = false
 
-SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
-
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -4.3)
+SWEP.PassivePos = Vector(0, 1, 0)
 
-SWEP.BlindFireAng = Angle(0, 5, 0)
-SWEP.BlindFirePos = Vector(3, -2, -5)
+SWEP.CustomizeAng = Angle(30, 15, 0)
+SWEP.CustomizePos = Vector(4.5, -0.4, -0.7)
 
-SWEP.SprintAng = Angle(30, -15, 0)
-SWEP.SprintPos = Vector(5, 0, -2)
+SWEP.BlindFireAng = Angle(0, 0, 0)
+SWEP.BlindFirePos = Vector(-1, 1, 1)
 
-SWEP.SightAng = Angle(-0.9, 0.2, 0.2)
-SWEP.SightPos = Vector(-4.08, -7.5, -4.04)
+SWEP.BlindFireLeftAng = Angle(90, 0, 0)
+SWEP.BlindFireLeftPos = Vector(10, 6, -4)
 
-SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
-SWEP.CorrectiveAng = Angle(0.95, 0.9, -0.5)
+SWEP.BlindFireRightAng = Angle(-90, 0, 0)
+SWEP.BlindFireRightPos = Vector(-4, 20, -4)
 
-SWEP.CorrectiveBoneAng = Angle(90, 38, 38)
+SWEP.SprintAng = Angle(30, -15, -5)
+SWEP.SprintPos = Vector(2, 0, 1.5)
+
+SWEP.SightAng = Angle(0, 0.1, 0)
+SWEP.SightPos = Vector(-4, -7, 0.9)
+
+SWEP.CorrectivePos = Vector(0, 0, 0.12)
+SWEP.CorrectiveAng = Angle(0, 0, -0)
+
+--SWEP.CorrectiveBoneAng = Angle(90, 38, 38)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -163,7 +169,7 @@ SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 SWEP.Ammo_Expanded = "ti_pdw"
 
-SWEP.ReloadTimeMult = 1.28
+SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/groza.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -242,28 +248,28 @@ SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         WMBone = "ValveBiped.Bip01_R_Hand",
         InstalledElements = {"rail"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
         WMScale = 0.75,
-        Pos_VM = Vector(-7.1, -0.15, 0.5),
-        Ang_VM = Angle(90, 0, 0),
+        Pos_VM = Vector(0, -6.6, 0.5),
+        Ang_VM = Angle(90, 0, -90),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Tactical",
         Category = {"tactical", "tactical_zoom", "tactical_ebullet"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         WMBone = "ValveBiped.Bip01_R_Hand",
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-4, 0.5, 1),
+        Pos_VM = Vector(-0.55, -3.3, 1),
         Pos_WM = Vector(4, 1.5, -3.75),
-        Ang_VM = Angle(90, 0, 75),
+        Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 90),
     },
     [3] = {
@@ -311,3 +317,5 @@ addsound("tacint_groza.remove_clip", path .. "famas_clipout.wav")
 addsound("tacint_groza.insert_clip", path .. "famas_clipin.wav")
 addsound("tacint_groza.boltaction", path .. "famas_forearm.wav")
 addsound("tacint_groza.Buttstock_Back", path .. "buttstock_back.wav")
+addsound("tacint_groza.bolt_lockback", path .. "famas_boltback.wav")
+addsound("tacint_groza.bolt_release", path .. "famas_boltforward.wav")
