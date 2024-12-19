@@ -159,7 +159,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(-0.4, 0, -0.4)
+SWEP.PassivePos = Vector(0.25, 1.25, -0.4)
 
 SWEP.CustomizeAng = Angle(30, 15, 0)
 SWEP.CustomizePos = Vector(4.5, -0.4, -0.7)
@@ -179,8 +179,8 @@ SWEP.SprintPos = Vector(2, 0, 1.5)
 SWEP.SightAng = Angle(0, 1, 0)
 SWEP.SightPos = Vector(-4, -6, 0.4)
 
-SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
-SWEP.CorrectiveAng = Angle(0.8, 0.9, -0.2)
+SWEP.CorrectivePos = Vector(0, 0, 0.12)
+SWEP.CorrectiveAng = Angle(0, 0, -0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -192,11 +192,11 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 25
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.3
+SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/famas.mdl"
 SWEP.DropMagazineImpact = "metal"
 
-SWEP.ReloadUpInTime = 1.25
+SWEP.ReloadUpInTime = 1.5
 SWEP.DropMagazineTime = 0.4
 
 // sounds
@@ -276,38 +276,38 @@ SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         InstalledElements = {"rail"},
         VMScale = 1,
-        Pos_VM = Vector(-7.8, 0, 4),
-        Ang_VM = Angle(90, 0, 0),
+        Pos_VM = Vector(0, -7, 5),
+        Ang_VM = Angle(90, 0, -90),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.9,
         WMScale = 0.9,
-        Pos_VM = Vector(-3.25, 0, 20.5),
-        Ang_VM = Angle(90, 0, 0),
+        Pos_VM = Vector(0, -2.6, 19.75),
+        Ang_VM = Angle(90, 0, -90),
         Pos_WM = Vector(22, 1, -4.4),
         Ang_WM = Angle(0, 0, 180),
     },
     [3] = {
         PrintName = "Tactical",
         Category = {"tactical", "tactical_zoom", "tactical_ebullet"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         VMScale = 1,
-        Pos_VM = Vector(-4.25, -0.5, 9),
-        Ang_VM = Angle(90, 0, -75),
+        Pos_VM = Vector(-0.6, -5.5, 10.5),
+        Ang_VM = Angle(90, -1, 0),
         Pos_WM = Vector(14.75, 1.5, -6),
         Ang_WM = Angle(0, 0, 90),
     },
