@@ -159,16 +159,25 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -5.5)
+SWEP.PassivePos = Vector(-0.4, 0, -0.4)
 
-SWEP.BlindFireAng = Angle(0, 5, 0)
-SWEP.BlindFirePos = Vector(3, -2, -5)
+SWEP.CustomizeAng = Angle(30, 15, 0)
+SWEP.CustomizePos = Vector(4.5, -0.4, -0.7)
 
-SWEP.SprintAng = Angle(30, -15, 0)
-SWEP.SprintPos = Vector(5, 0, -2)
+SWEP.BlindFireAng = Angle(0, 0, 0)
+SWEP.BlindFirePos = Vector(-1, 1, 1)
 
-SWEP.SightAng = Angle(-0.13, 1.3, 0.2)
-SWEP.SightPos = Vector(-4, -6, -4.94)
+SWEP.BlindFireLeftAng = Angle(90, 0, 0)
+SWEP.BlindFireLeftPos = Vector(10, 6, -4)
+
+SWEP.BlindFireRightAng = Angle(-90, 0, 0)
+SWEP.BlindFireRightPos = Vector(-4, 20, -4)
+
+SWEP.SprintAng = Angle(30, -15, -5)
+SWEP.SprintPos = Vector(2, 0, 1.5)
+
+SWEP.SightAng = Angle(0, 1, 0)
+SWEP.SightPos = Vector(-4, -6, 0.4)
 
 SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
 SWEP.CorrectiveAng = Angle(0.8, 0.9, -0.2)
@@ -224,20 +233,20 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"}
 }
 
-SWEP.ProceduralIronFire = {
-    vm_pos = Vector(0, -0.2, -0.12),
-    vm_ang = Angle(0, 0.25, 0),
-    t = 0.1,
-    tmax = 0.1,
-    bones = {
-        {
-            bone = "ValveBiped.bolt",
-            pos = Vector(0, 0, -3),
-            t0 = 0.01,
-            t1 = 0.08,
-        },
-    },
-}
+-- SWEP.ProceduralIronFire = {
+    -- vm_pos = Vector(0, -0.2, -0.12),
+    -- vm_ang = Angle(0, 0.25, 0),
+    -- t = 0.1,
+    -- tmax = 0.1,
+    -- bones = {
+        -- {
+            -- bone = "ValveBiped.bolt",
+            -- pos = Vector(0, 0, -3),
+            -- t0 = 0.01,
+            -- t1 = 0.08,
+        -- },
+    -- },
+-- }
 
 SWEP.DeployTimeMult = 1.05
 
