@@ -31,17 +31,18 @@ SWEP.BalanceStats = {
         Damage_Min = 20,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 20,
-        Damage_Min = 16,
-        Range_Min = 1200,
-        Range_Max = 3200,
-        RPM = 300,
+        Damage_Max = 14,
+        Damage_Min = 8,
+        Range_Min = 1000,
+        Range_Max = 2000,
+        RPM = 330,
+        RPMMultSemi = 1,
 
         RecoilKick = 1.5,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
-            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_CHEST] = 1,
             [HITGROUP_STOMACH] = 1,
             [HITGROUP_LEFTARM] = 0.75,
             [HITGROUP_RIGHTARM] = 0.75,
@@ -65,9 +66,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 16
-SWEP.Damage_Min = 12
-SWEP.Range_Min = 900
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 14
+SWEP.Range_Min = 600
 SWEP.Range_Max = 3000
 SWEP.Penetration = 9
 SWEP.ArmorPenetration = 0.725
@@ -75,7 +76,7 @@ SWEP.ArmorPenetration = 0.725
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
     [HITGROUP_RIGHTARM] = 0.9,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -89,10 +90,10 @@ SWEP.MuzzleVelocity = 29000
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 600
-SWEP.RPMMultSemi = 0.7
+SWEP.RPM = 700
+SWEP.RPMMultSemi = 0.6
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.0035
 
 SWEP.ShootTimeMult = 0.5
 
