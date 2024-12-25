@@ -11,7 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Bullpup rifle with a blazing fast firerate, used by the French Navy. While capable of automatic fire, using burst-fire or the built-in bipod is recommended."
-SWEP.Description_Quote = "\"God's got a sense of humor, alright.\""
+SWEP.Description_Quote = "\"God's got a sense of humor, alright.\"" // Metal Gear Solid
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "GIAT Industries" // more like GYATT industries ahahahaha amirite fellow zoomies?
@@ -21,7 +21,7 @@ SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
 Model: SnipaMasta
 Texture: SnipaMasta, Fnuxray
-Animations: Tactical Intervention, edited by speedonerd
+Animations: speedonerd
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_famas_g2.mdl"
@@ -152,19 +152,28 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -5.5)
+SWEP.PassivePos = Vector(0.25, 1.25, -0.4)
 
-SWEP.BlindFireAng = Angle(0, 5, 0)
-SWEP.BlindFirePos = Vector(3, -2, -5)
+SWEP.CustomizeAng = Angle(30, 15, 0)
+SWEP.CustomizePos = Vector(4.5, -0.4, -0.7)
 
-SWEP.SprintAng = Angle(30, -15, 0)
-SWEP.SprintPos = Vector(5, 0, -2)
+SWEP.BlindFireAng = Angle(0, 0, 0)
+SWEP.BlindFirePos = Vector(-1, 1, 1)
 
-SWEP.SightAng = Angle(-0, 1.3, 0.2)
-SWEP.SightPos = Vector(-3.96, -6, -4.8)
+SWEP.BlindFireLeftAng = Angle(90, 0, 0)
+SWEP.BlindFireLeftPos = Vector(10, 6, -4)
 
-SWEP.CorrectivePos = Vector(0.3, 0, -0.2)
-SWEP.CorrectiveAng = Angle(0.8, 0.9, -0.2)
+SWEP.BlindFireRightAng = Angle(-90, 0, 0)
+SWEP.BlindFireRightPos = Vector(-4, 20, -4)
+
+SWEP.SprintAng = Angle(30, -15, -5)
+SWEP.SprintPos = Vector(2, 0, 1.5)
+
+SWEP.SightAng = Angle(0, 1, 0)
+SWEP.SightPos = Vector(-4.035, -6, 0.42)
+
+SWEP.CorrectivePos = Vector(0, 0, 0.12)
+SWEP.CorrectiveAng = Angle(0, 0, -0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -176,7 +185,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1.3
+SWEP.ReloadTimeMult = 0.95
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -260,38 +269,38 @@ SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         InstalledElements = {"rail"},
         VMScale = 1,
-        Pos_VM = Vector(-7.8, 0, 4),
-        Ang_VM = Angle(90, 0, 0),
+        Pos_VM = Vector(0, -7.15, 4),
+        Ang_VM = Angle(90, 0, -90),
         Pos_WM = Vector(7.6, 1, -8.3),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.9,
         WMScale = 0.9,
-        Pos_VM = Vector(-3.1, 0, 20.5),
-        Ang_VM = Angle(90, 0, 0),
+        Pos_VM = Vector(-0.02, -2.5, 20.3),
+        Ang_VM = Angle(90, 0, -90),
         Pos_WM = Vector(22, 1, -4.4),
         Ang_WM = Angle(0, 0, 180),
     },
     [3] = {
         PrintName = "Tactical",
         Category = {"tactical", "tactical_zoom", "tactical_ebullet"},
-        Bone = "ValveBiped.AUG_rootbone",
+        Bone = "famas_root",
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         VMScale = 1,
-        Pos_VM = Vector(-4.25, -0.5, 9),
-        Ang_VM = Angle(90, 0, -75),
+        Pos_VM = Vector(-0.6, -4.8, 11.4),
+        Ang_VM = Angle(90, -1, 0),
         Pos_WM = Vector(14.75, 1.5, -6),
         Ang_WM = Angle(0, 0, 90),
     },

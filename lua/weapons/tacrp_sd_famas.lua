@@ -20,7 +20,7 @@ SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
 Model: SnipaMasta
 Texture: SnipaMasta, Fnuxray
-Animations: Tactical Intervention, edited by speedonerd
+Animations: speedonerd
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_famas.mdl"
