@@ -12,7 +12,7 @@ SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Modern-production short double-barrel shotgun.  Easy to handle, reliable and deadly in close quarters."
-SWEP.Description_Quote = "\"The only thing they fear, is you.\"" -- DOOM Eternal (ugh)
+SWEP.Description_Quote = "\"The only thing they fear, is you.\"" // DOOM Eternal (ugh)
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Stoeger"
@@ -32,7 +32,6 @@ SWEP.BalanceStats = {
         Damage_Min = 4,
     },
     [TacRP.BALANCE_TTT] = {
-
         Damage_Max = 8,
         Damage_Min = 4,
 
@@ -72,10 +71,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 13
-SWEP.Damage_Min = 4
-SWEP.Range_Min = 100
-SWEP.Range_Max = 1200
+SWEP.Damage_Max = 12
+SWEP.Damage_Min = 3
+SWEP.Range_Min = 250
+SWEP.Range_Max = 750
 SWEP.Penetration = 1
 SWEP.ArmorPenetration = 0.45
 
@@ -102,12 +101,12 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 250
-SWEP.RPMMultBurst = 8
+SWEP.RPM = 200
+SWEP.RPMMultBurst = 10
 SWEP.RunawayBurst = true
 
-SWEP.Spread = 0.03
-SWEP.ShotgunPelletSpread = 0.015
+SWEP.Spread = 0.035
+SWEP.ShotgunPelletSpread = 0.02
 
 SWEP.HipFireSpreadPenalty = 0.01
 SWEP.MidAirSpreadPenalty = 0
