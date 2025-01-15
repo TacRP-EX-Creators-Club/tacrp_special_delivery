@@ -77,6 +77,7 @@ SWEP.Range_Min = 250
 SWEP.Range_Max = 750
 SWEP.Penetration = 1
 SWEP.ArmorPenetration = 0.45
+SWEP.ArmorBonus = 0.25
 
 SWEP.Num = 9
 
