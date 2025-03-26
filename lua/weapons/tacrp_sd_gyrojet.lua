@@ -128,7 +128,7 @@ SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeBlindFire = "pistol"
 
 SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
-SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
+SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 
 SWEP.PassiveAng = Angle(0, 0, 0)
 SWEP.PassivePos = Vector(0, 0, 0)
