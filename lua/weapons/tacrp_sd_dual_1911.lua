@@ -11,6 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "3Akimbo"
 
 SWEP.Description = "A pair of gaudy, custom made golden M1911 pistols complete with wyvern-engraved grip. Hits hard, but its low capacity can be hurting."
+SWEP.Description_Quote = nil
 
 SWEP.Trivia_Caliber = ".45 ACP"
 SWEP.Trivia_Manufacturer = "Springfield Armory"

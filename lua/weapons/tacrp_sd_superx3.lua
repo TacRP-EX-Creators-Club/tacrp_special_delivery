@@ -12,6 +12,7 @@ SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Civilian sporting shotgun engineered for performance. Long barrel and competition choke offer great accuracy and range but poor handling."
+SWEP.Description_Quote = "A great choice when it comes to self defense and hunting small game." -- Took the description it had in Way of the Hunter and shortened it
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Winchester Repeating Arms"

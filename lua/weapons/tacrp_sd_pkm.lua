@@ -11,6 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "5Machine Gun"
 
 SWEP.Description = "General-purpose machine gun capable of intense suppressive fire. High capacity and damage but is very, very bulky."
+SWEP.Description_Quote = "Notably seen atop Mercedes-Benz G-Wagens." -- The Expendables 2 (2012) opening scene
 
 SWEP.Trivia_Caliber = "7.62x54mmR"
 SWEP.Trivia_Manufacturer = "Degtyaryov Plant"

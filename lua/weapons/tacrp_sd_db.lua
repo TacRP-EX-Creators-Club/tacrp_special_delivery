@@ -12,7 +12,7 @@ SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Modern-production short double-barrel shotgun.  Easy to handle, reliable and deadly in close quarters."
-SWEP.Description_Quote = "\"The only thing they fear, is you.\"" // DOOM Eternal (ugh)
+SWEP.Description_Quote = "\"Eat leaden death, demon.\"" -- Terry Pratchett
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Stoeger"

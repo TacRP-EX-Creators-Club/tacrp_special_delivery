@@ -11,6 +11,7 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Burst-fire bullpup used by the French Army. High rate of fire and great accuracy is limited only by its substandard magazine capacity and pretty intense recoil.\nHas a bipod for esoteric French reasons. "
+SWEP.Description_Quote = "why mag not divide by 3" --because it lets you know when to reload, dipshit.
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "GIAT Industries" // more like GYATT industries ahahahaha amirite fellow zoomies?

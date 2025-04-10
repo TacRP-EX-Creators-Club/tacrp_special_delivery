@@ -12,6 +12,7 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "5Battle Rifle"
 
 SWEP.Description = "Precise heavy battle rifle with a somewhat managable automatic firemode but slow handling."
+SWEP.Description_Quote = "Who knew Spain and Germany had so much in common?" -- The CETME was designed by a German engineer, and then H&K based the G3 off it.
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"

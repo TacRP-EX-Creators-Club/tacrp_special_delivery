@@ -12,6 +12,7 @@ SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "5Sporter"
 
 SWEP.Description = "Ultra-lightweight plinking rifle. Highly accurate and easy to handle, but is barely lethal unless scoring a headshot."
+SWEP.Description_Quote = "Better than your bare hands." -- It's surprising how many zombie games have this gun...
 
 SWEP.Trivia_Caliber = ".22 LR"
 SWEP.Trivia_Manufacturer = "Sturm, Ruger & Co."
