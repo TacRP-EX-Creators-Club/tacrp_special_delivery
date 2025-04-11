@@ -12,7 +12,7 @@ SWEP.SubCatTier = "5Value"
 SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "WW2-era SMG with sturdy wooden furniture. Boasts impressive close-range firepower, but is rather heavy."
-SWEP.Description_Quote = "Enough bullets to whack at least one rat."
+SWEP.Description_Quote = "\"Eat lead, jerries!\""
 
 SWEP.Trivia_Caliber = ".45 ACP"
 SWEP.Trivia_Manufacturer = "Auto-Ordnance Company"

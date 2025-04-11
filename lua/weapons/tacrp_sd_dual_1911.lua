@@ -11,7 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "3Akimbo"
 
 SWEP.Description = "A pair of gaudy, custom made golden M1911 pistols complete with wyvern-engraved grip. Hits hard, but its low capacity can be hurting."
-SWEP.Description_Quote = nil
+SWEP.Description_Quote = "\"Engraving... give you no tactical advantage whatsoever.\"" -- Metal Gear Solid V: The Phantom Pain (2015), which itself is a reference to Metal Gear Solid 3: Snake Eater (2004)
 
 SWEP.Trivia_Caliber = ".45 ACP"
 SWEP.Trivia_Manufacturer = "Springfield Armory"
