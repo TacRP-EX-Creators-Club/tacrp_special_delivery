@@ -12,7 +12,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "A lightweight assault rifle with an integral suppressor. Powerful in close quarters and has no visible tracer, but has poor performance at range."
-SWEP.Description_Quote = "A real chimera of a rifle." -- Reference to the gun's name in MWII
+SWEP.Description_Quote = "\"We're Ghosts, Merrick. We finish the mission.\"" -- Call of Duty: Ghosts (2013)
 
 SWEP.Trivia_Caliber = ".300 Blackout"
 SWEP.Trivia_Manufacturer = "AAC"
