@@ -102,8 +102,10 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {-2, 2}
-SWEP.Firemode = false
+SWEP.Firemodes = {1}
+SWEP.Firemode = 1
+SWEP.RunawayBurst = false
+SWEP.PostBurstDelay = 0.06
 
 SWEP.RPM = 400
 SWEP.RPMMultBurst = 1.1
@@ -177,7 +179,8 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.ClipSize = 24
+SWEP.ClipSize = 12
+SWEP.ClipSize2 = 12
 SWEP.Ammo = "pistol"
 SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
@@ -225,6 +228,7 @@ SWEP.AnimationTranslationTable = {
 
 SWEP.LastShot = true
 SWEP.Akimbo = true
+SWEP.DualAkimbo = true
 SWEP.EffectsAlternate = true
 
 // attachments
@@ -258,7 +262,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Trigger",
-        Category = {"trigger_akimbo"},
+        Category = {"trigger_semi"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },

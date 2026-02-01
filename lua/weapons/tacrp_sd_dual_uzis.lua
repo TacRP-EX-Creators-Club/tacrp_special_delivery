@@ -57,8 +57,6 @@ SWEP.Penetration = 1 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.4
 SWEP.ArmorBonus = 0.5
 
-SWEP.Num = 2
-
 SWEP.MuzzleVelocity = 12000
 
 SWEP.BodyDamageMultipliers = {
@@ -74,7 +72,10 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
+SWEP.Firemodes = {2}
 SWEP.Firemode = 2
+SWEP.RunawayBurst = false
+SWEP.PostBurstDelay = 0.06
 
 SWEP.RPM = 900
 
@@ -146,9 +147,8 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.AmmoPerShot = 2
-
-SWEP.ClipSize = 60
+SWEP.ClipSize = 30
+SWEP.ClipSize2 = 30
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1.05
@@ -172,9 +172,10 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 // effects
 SWEP.EjectEffect = 1
 
+SWEP.LastShot = true
 SWEP.Akimbo = true
+SWEP.DualAkimbo = true
 SWEP.EffectsAlternate = true
-SWEP.EffectsDoubled = true
 
 SWEP.WM_QCA_MuzzleL = 1
 SWEP.WM_QCA_MuzzleR = 2
@@ -209,8 +210,8 @@ SWEP.AnimationTranslationTable = {
     ["blind_idle"] = "idle",
     ["blind_fire"] = "idle",
     ["melee"] = {"melee1", "melee2"},
-    ["shoot_left"] = {"shoot1", "shoot2"},
-    ["shoot_right"] = {"shoot1", "shoot2"},
+    ["shoot_left"] = {"shoot_left-2"},
+    ["shoot_right"] = {"shoot_right-1", "shoot_right-2"},
     ["jam"] = "draw"
 }
 

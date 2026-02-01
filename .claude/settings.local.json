@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(dir \"C:\\\\Program Files \\(x86\\)\\\\Steam\\\\steamapps\\\\common\\\\GarrysMod\\\\garrysmod\\\\addons\\\\Tacrp-Special-Delivery\" /s /b)",
+      "Bash(ls:*)"
+    ]
+  }
+}
