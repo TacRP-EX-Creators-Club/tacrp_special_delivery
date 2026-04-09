@@ -1,31 +1,13 @@
 local ATT = {}
 
--------------------------------------------------
+------------------------------
+-- #region trigger_dual_uzis_semi (Marksman Trigger)
+------------------------------
 ATT = {}
-ATT.PrintName = "att.acc_extmag.name"
-ATT.FullName = "att.acc_extmag.name.full"
-ATT.Icon = Material("entities/tacrp_att_acc_extmag_shotgun.png", "mips smooth")
-ATT.Description = "att.acc_extmag.desc"
-ATT.Pros = {"stat.clipsize"}
-
-ATT.Category = "acc_extmag_a5"
-
-ATT.InvAtt = "acc_extmag_rifle"
-
-ATT.SortOrder = 1
-
-ATT.Add_ClipSize = 2
-
-ATT.InstalledElements = {"extmag"}
-
-TacRP.LoadAtt(ATT, "acc_extmag_auto5")
-
--------------------------------------------------
-ATT = {}
-ATT.PrintName = "Marksman"
-ATT.FullName = "Marksman Trigger"
+ATT.PrintName = "att.trigger_semi.name"
+ATT.FullName = "att.trigger_semi.name.full"
 ATT.Icon = Material("entities/tacrp_att_trigger_semi.png", "mips smooth")
-ATT.Description = "Trigger that sacrfices automatic fire for precision."
+ATT.Description = "att.trigger_semi.desc"
 ATT.Pros = {"stat.damage", "stat.spread", "rating.control"}
 ATT.Cons = {"att.procon.semi", "stat.rpm"}
 
@@ -48,13 +30,14 @@ ATT.Mult_RPM = 0.75
 
 TacRP.LoadAtt(ATT, "trigger_dual_uzis_semi")
 
--------------------------------------------------
+------------------------------
+-- #region tac_1858_spin (Cowboy Tricks/Spin)
+------------------------------
 ATT = {}
-ATT.PrintName = "Spin"
-ATT.FullName = "Revolver Spin"
-
+ATT.PrintName = "att.tac_1858_spin.name"
+ATT.FullName = "att.tac_1858_spin.name.full"
 ATT.Icon = Material("entities/tacrp_sd_1858.png", "mips smooth")
-ATT.Description = "wheeeeeeeeeeeee"
+ATT.Description = "att.tac_1858_spin.desc"
 ATT.Pros = {"att.procon.yeehaw"}
 
 ATT.Category = "tac_1858"
@@ -75,12 +58,14 @@ end
 
 TacRP.LoadAtt(ATT, "tac_1858_spin")
 
--------------------------------------------------
+------------------------------
+-- #region optic_m1_scope (M1 Carbine 3.5×24 Scope/3.5x Scope)
+------------------------------
 ATT = {}
-ATT.PrintName = "3.5x Scope"
-ATT.FullName = "M1 Carbine 3.5x24 Scope"
+ATT.PrintName = "att.optic_m1_scope.name"
+ATT.FullName = "att.optic_m1_scope.name.full"
 ATT.Icon = Material("entities/tacrp_att_optic_carbinescope.png", "mips smooth")
-ATT.Description = "Optical scope with specialized mount for the M1 Carbine."
+ATT.Description = "att.optic_m1_scope.desc"
 ATT.Pros = {"att.zoom.3.5"}
 ATT.Cons = {"stat.aimdownsights"}
 
@@ -103,12 +88,14 @@ end
 
 TacRP.LoadAtt(ATT, "optic_m1_scope")
 
--------------------------------------------------
+------------------------------
+-- #region optic_delisle_scope (De Lisle 4×24 Scope/4x Scope)
+------------------------------
 ATT = {}
-ATT.PrintName = "4x Scope"
-ATT.FullName = "De Lisle 4x24 Scope"
+ATT.PrintName = "att.optic_delisle_scope.name"
+ATT.FullName = "att.optic_delisle_scope.name.full"
 ATT.Icon = Material("entities/tacrp_att_optic_m16a2_colt.png", "mips smooth")
-ATT.Description = "Optical scope with specialized mount for the De Lisle."
+ATT.Description = "att.optic_delisle_scope.desc"
 ATT.Pros = {"att.zoom.4"}
 ATT.Cons = {"stat.aimdownsights"}
 
@@ -131,12 +118,14 @@ end
 
 TacRP.LoadAtt(ATT, "optic_delisle_scope")
 
--------------------------------------------------
+------------------------------
+-- #region muzz_supp_assassin (Assassin Suppressor/A. Suppressor)
+------------------------------
 ATT = {}
-ATT.PrintName = "A. Suppressor"
-ATT.FullName = "Assassin Suppressor"
+ATT.PrintName = "att.muzz_supp_assassin.name"
+ATT.FullName = "att.muzz_supp_assassin.name.full"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
-ATT.Description = "Extended suppressor improving range significantly at cost of stability."
+ATT.Description = "att.muzz_supp_assassin.desc"
 ATT.Pros = {"stat.vol_shoot", "stat.range", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.recoil",  "rating.handling"}
 
@@ -170,13 +159,14 @@ ATT.Override_MuzzleEffect = "muzzleflash_suppressed"
 
 TacRP.LoadAtt(ATT, "muzz_supp_assassin")
 
--------------------------------------------------
+------------------------------
+-- #region ammo_gyrojet_ratshot (13mm Ratshot Mini-Rockets)
+------------------------------
 ATT = {}
-ATT.PrintName = "Ratshot"
-ATT.FullName = "13mm Ratshot Mini-Rockets"
-
+ATT.PrintName = "att.ammo_gyrojet_ratshot.name"
+ATT.FullName = "att.ammo_gyrojet_ratshot.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
-ATT.Description = "Proximity fuse fragmentation mini-rockets. For rodents of unexpected size."
+ATT.Description = "att.ammo_gyrojet_ratshot.desc"
 ATT.Pros = {"att.procon.airburst"}
 ATT.Cons = {"stat.damage", "stat.muzzlevelocity", "stat.rpm"}
 
@@ -200,13 +190,14 @@ end
 
 TacRP.LoadAtt(ATT, "ammo_gyrojet_ratshot")
 
--------------------------------------------------
+------------------------------
+-- #region ammo_gyrojet_pipe (15mm Boosted Pipe Grenades)
+------------------------------
 ATT = {}
-ATT.PrintName = "Pipe"
-ATT.FullName = "15mm Boosted Pipe Grenades"
-
+ATT.PrintName = "att.ammo_gyrojet_pipe.name"
+ATT.FullName = "att.ammo_gyrojet_pipe.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
-ATT.Description = "Heavy grenades with timed fuse. Direct hits detonate instantly."
+ATT.Description = "att.ammo_gyrojet_pipe.desc"
 ATT.Pros = {"att.procon.explosive"}
 ATT.Cons = {"stat.muzzlevelocity", "stat.clipsize", "stat.rpm"}
 
@@ -243,13 +234,14 @@ end
 
 TacRP.LoadAtt(ATT, "ammo_gyrojet_pipe")
 
--------------------------------------------------
+------------------------------
+-- #region ammo_gyrojet_lv (11mm Low Velocity Mini-Rockets)
+------------------------------
 ATT = {}
-ATT.PrintName = "LV"
-ATT.FullName = "11mm Low Velocity Mini-Rockets"
-
+ATT.PrintName = "att.ammo_gyrojet_lv.name"
+ATT.FullName = "att.ammo_gyrojet_lv.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
-ATT.Description = "Projectiles with reduced diameter and velocity, leaving a less visible trail."
+ATT.Description = "att.ammo_gyrojet_lv.desc"
 ATT.Pros = {"att.procon.reliability", "stat.clipsize", "stat.rpm"}
 ATT.Cons = {"stat.damage", "stat.muzzlevelocity"}
 
@@ -274,13 +266,14 @@ end
 
 TacRP.LoadAtt(ATT, "ammo_gyrojet_lv")
 
--------------------------------------------------
+------------------------------
+-- #region ammo_gyrojet_he (13mm High-Explosive Mini-Rockets)
+------------------------------
 ATT = {}
-ATT.PrintName = "HE"
-ATT.FullName = "13mm High Explosive Mini-Rockets"
-
+ATT.PrintName = "att.ammo_gyrojet_he.name"
+ATT.FullName = "att.ammo_gyrojet_he.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_gyrojet.png", "mips smooth")
-ATT.Description = "Projectile with a small explosive charge instead of a bullet head."
+ATT.Description = "att.ammo_gyrojet_he.desc"
 ATT.Pros = {"att.procon.explosive"}
 ATT.Cons = {"stat.damage", "att.procon.unreliable", "stat.rpm", "stat.muzzlevelocity"}
 
@@ -317,13 +310,14 @@ end
 
 TacRP.LoadAtt(ATT, "ammo_gyrojet_he")
 
--------------------------------------------------
+------------------------------
+-- #region ammo_1858_45colt (Remington 1858 .45 Colt Conversion)
+------------------------------
 ATT = {}
-ATT.PrintName = ".45 Colt"
-ATT.FullName = "Remington 1858 .45 Colt Conversion"
-
+ATT.PrintName = "att.ammo_1858_45colt.name"
+ATT.FullName = "att.ammo_1858_45colt.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_1858_45colt.png", "mips smooth")
-ATT.Description = "Cartridge conversion firing larger, more powerful, but less reliable rounds."
+ATT.Description = "att.ammo_1858_45colt.desc"
 ATT.Pros = {"stat.damage", "stat.range_min", "att.procon.armor"}
 ATT.Cons = {"rating.control", "att.procon.unreliable"}
 
@@ -353,13 +347,14 @@ ATT.Override_Sound_Shoot = "^tacint_shark/weapons/1858/nma_fire_45.wav"
 
 TacRP.LoadAtt(ATT, "ammo_1858_45colt")
 
--------------------------------------------------
+------------------------------
+-- #region ammo_1858_36perc (Remington 1858 .36 Caliber Conversion)
+------------------------------
 ATT = {}
-ATT.PrintName = ".36 Percussion"
-ATT.FullName = "Remington 1858 .36 Caliber Conversion"
-
+ATT.PrintName = "att.ammo_1858_36perc.name"
+ATT.FullName = "att.ammo_1858_36perc.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_1858_36perc.png", "mips smooth")
-ATT.Description = "Caliber conversion firing smaller rounds with better range."
+ATT.Description = "att.ammo_1858_36perc.desc"
 ATT.Pros = {"stat.range", "stat.recoil", "stat.rpm"}
 ATT.Cons = {"stat.damage_max", "att.procon.armor"}
 
